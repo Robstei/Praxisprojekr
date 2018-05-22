@@ -559,7 +559,7 @@
 <require_name_match>0</require_name_match>
 <reschg>1</reschg>
 <rng>1</rng>
-<rts>1</rts>
+<rts>0</rts>
 <sce>
 <idv>
 <device_type>3</device_type>
@@ -638,13 +638,13 @@
 <use_rewind_distance>0</use_rewind_distance>
 </sde>
 <sdv>Primärer Soundtreiber</sdv>
-<show_dis>0</show_dis>
-<show_parm>0</show_parm>
-<show_term>0</show_term>
+<show_dis>1</show_dis>
+<show_parm>1</show_parm>
+<show_term>1</show_term>
 <smc>2</smc>
 <smd>16</smd>
 <smr>44100</smr>
-<srs>1</srs>
+<srs>0</srs>
 <sse>
 <s>
 <a></a>
@@ -671,4 +671,4 @@
 <unc></unc>
 <upb>0</upb>
 <urp>0</urp>
-<wob>1</wob>
+<wob>0</wob>
