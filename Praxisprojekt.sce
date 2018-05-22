@@ -20,6 +20,7 @@ array {
 	text{caption = "7";};
 	text{caption = "9";};
 }numbers;
+
 array {
 	picture {
 	
@@ -58,15 +59,28 @@ array {
 
 trial {
 	trial_duration = 1000;
+	
+	stimulus_event{
 	picture {} main_picture;
+	}stim_event;
+
 } main_trial;
+
+trial {
+	trial_duration = 1000;
+	picture {
+		text { caption = ""; font_size = 24;} feedback_text; 
+		x=0; y=0;
+	} feedback_pic;
+} feedback_trial;
 
 
 begin_pcl;
 
 
-int LETTER = 1;
+int CHAR = 1;
 int FORM = 2;
+int max_time= 3000;
 
 sub array<int,2> make_trial (int repeat)
 begin
@@ -77,7 +91,7 @@ begin
 		begin
 			array<int> tmp[2];
 			tmp[FORM] = (i);
-			tmp[LETTER] = (j);
+			tmp[CHAR] = (j);
 			loop int r = 1 until r > repeat
 			begin
 			list.add(tmp);
@@ -91,33 +105,55 @@ begin
 	return list;
 end;
 
-sub present_trials( array<int> trial_list[][])
+sub present_trials( array<int> trial_list[][], bool show_feedback, string target)
 begin
 
 	loop int i = 1 until i > trial_list.count()
 	begin
-		int Letter_index = trial_list[i][LETTER];
-		int Form_index = trial_list[i][FORM];
-		main_trial.clear_stimulus_events();
-		picture stim = form_array[Form_index];
-		stim.set_part(3,letters[Letter_index]);
-		main_trial.add_stimulus_event(stim);
-		
-		i =i+1;
+		int char_index = trial_list[i][CHAR];
+		int form_index = trial_list[i][FORM];
 
+		picture stim = form_array[form_index];
+		stim.set_part(3,letters[char_index]);
+		stim_event.set_stimulus(stim);
+		stim_event.set_event_code("test");
+
+		string caption = letters[char_index].caption();
+		
+		
+		term.print_line(target);
+		term.print_line(caption);
+		term.print_line("-------");
+		if target == caption
+		then
+		stim_event.set_target_button(1);
+		else
+		stim_event.set_target_button(0);
+		end;
 		main_trial.present();
-	
+		i=i+1;
+		
+		if (show_feedback) then
+			string new_caption;
+			stimulus_data last = stimulus_manager.last_stimulus_data();
+			
+		if (last.type() == last.HIT) then
+				new_caption = "correct";
+			else
+				new_caption = "incorrect";
+			end;
+		
+			if( last.reaction_time() > max_time) then
+				new_caption = new_caption + "\nPlease respond faster";
+			end;
+			feedback_text.set_caption(new_caption, true);
+			feedback_trial.present();	
+		end;
 	end;
 end;
 
-array<int> test[][] = make_trial(2);
-present_trials(test);
-term.print_line(test);
-#main_trial.add_stimulus_event(form_array[1],1);
-#main_trial.present();
-#main_trial.clear_stimulus_events();
-#main_trial.add_stimulus_event(main_picture_circle,1);
-#main_trial.present();
+array<int> test[][] = make_trial(1);
+present_trials(test, true, "A");
 
 
 
