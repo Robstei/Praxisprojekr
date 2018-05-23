@@ -35,6 +35,7 @@ array {
 	} main_picture_box;
 	
 	picture {
+	
 		ellipse_graphic {
 			height = 600;
 			width = 600;
@@ -58,12 +59,15 @@ array {
 } form_array;
 
 trial {
-	trial_duration = 1000;
+	trial_duration = 1500;
+	trial_type = first_response;
 	
 	stimulus_event{
 	picture {} main_picture;
+		duration = 250;
+		duration = 250;
 	}stim_event;
-
+	
 } main_trial;
 
 trial {
@@ -105,7 +109,10 @@ begin
 	return list;
 end;
 
-sub present_trials( array<int> trial_list[][], bool show_feedback, string target)
+# form_target:
+# 1 = Recktangle
+# 2 = Circle
+sub present_trials( array<int> trial_list[][], bool show_feedback, bool seperate_attention, int form_target, string target)
 begin
 
 	loop int i = 1 until i > trial_list.count()
@@ -113,24 +120,26 @@ begin
 		int char_index = trial_list[i][CHAR];
 		int form_index = trial_list[i][FORM];
 
-		picture stim = form_array[form_index];
-		stim.set_part(3,letters[char_index]);
-		stim_event.set_stimulus(stim);
+		main_picture = form_array[form_index];
+		main_picture.set_part(3,letters[char_index]);
+		stim_event.set_stimulus(main_picture);
+		picture pic = picture(stim_event.get_stimulus());
 		stim_event.set_event_code("test");
 
 		string caption = letters[char_index].caption();
-		
-		
-		term.print_line(target);
-		term.print_line(caption);
-		term.print_line("-------");
+			
 		if target == caption
 		then
 		stim_event.set_target_button(1);
+		elseif seperate_attention && form_target == form_index
+		then
+		stim_event.set_target_button(2);
 		else
 		stim_event.set_target_button(0);
 		end;
+	
 		main_trial.present();
+		
 		i=i+1;
 		
 		if (show_feedback) then
@@ -153,7 +162,7 @@ begin
 end;
 
 array<int> test[][] = make_trial(1);
-present_trials(test, true, "A");
+present_trials(test, true, true, 1, "A");
 
 
 
