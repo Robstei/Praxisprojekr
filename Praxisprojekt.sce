@@ -105,27 +105,36 @@ int CHAR = 1;
 int FORM = 2;
 int max_time= 3000;
 
-sub bool validade (array<int,2> list_to_test, bool seperate_attention, int form_target, string target, array<text,1> char_array)
-begin 
+sub bool validade (array<int,2> list_to_test, bool seperate_attention, int form_target_index, int char_target_index, array<text,1> char_array)begin 
 	
-	loop int i = 1 until i == 5
+	loop int i = 1 until i == list_to_test.count() -1
 	begin
-		if (char_array[list_to_test[i][CHAR]].caption() == target) || (seperate_attention && list_to_test[i][FORM] == form_target)
+		if list_to_test[i] == list_to_test[i+1]
+		then 
+			return false;
+		end;
+		i = i + 1;
+	end;
+	loop int i = 1 until i == 6
+	begin
+		if (char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption()) || (seperate_attention && list_to_test[i][FORM] == form_target_index)
 		then
 			return false;
 		end;
 		i = i + 1;
 	end;
-	loop int i = 5 until i == list_to_test.count() - 1 
+	loop int i = 6 until i == list_to_test.count() - 1 
 	begin
-		if char_array[list_to_test[i][CHAR]].caption() == target && char_array[list_to_test[i+1][CHAR]].caption() == target
+		if char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption() &&
+			char_array[list_to_test[i+1][CHAR]].caption() == char_array[char_target_index].caption()
 		then 
 			return false;
 		end;
-		if char_array[list_to_test[i][CHAR]].caption() == target || (seperate_attention && list_to_test[i][FORM] == form_target)
+		
+		if char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption() || (seperate_attention && list_to_test[i][FORM] == form_target_index)
 		then
 			if 
-				char_array[list_to_test[i+1][CHAR]].caption() == target || (seperate_attention && list_to_test[i+1][FORM] == form_target)
+				char_array[list_to_test[i+1][CHAR]].caption() == char_array[char_target_index].caption()|| (seperate_attention && list_to_test[i+1][FORM] == form_target_index)
 			then
 				return false;
 			end;
@@ -135,29 +144,74 @@ begin
 	return true;
 end;
 
-sub array<int,2> make_trial (int repeat, bool seperate_attention, int form_target, string target, array<text,1> char_array)
+sub array<int,2> make_trial (int number_of_stimuli, int number_of_non_stimuli, bool seperate_attention, int char_target_index, int form_target_index, array<text,1> char_array)
 begin
 	array<int> list[0][2];
-	loop int i = 1 until i > form_array.count()
-	
-	begin
-		loop int j = 1 until j > char_array.count()
+		
+		if seperate_attention
+		then
+			loop int i = 1 until i > number_of_stimuli/2
+			begin
+				array<int> tmp[2];
+				tmp[CHAR] = char_target_index;
+				tmp[FORM] = random(1, form_array.count());
+				if tmp[FORM] != form_target_index
+				then
+				list.add(tmp);
+				i = i + 1;
+				end
+			end;
+			
+			loop until list.count() == number_of_stimuli
+			begin
+				array<int> tmp[2];
+					tmp[CHAR] = random(1,char_array.count());
+					tmp[FORM] = form_target_index;
+					if tmp[CHAR] != char_target_index
+					then
+					list.add(tmp);
+					end;
+			end;
+			
+			loop until list.count() == number_of_stimuli + number_of_non_stimuli
+			begin
+			array<int> tmp[2];
+			int rmd_char = random(1,char_array.count());
+			int rmd_form = random(1,form_array.count());
+			if rmd_char != char_target_index && rmd_form != form_target_index
+			then
+			tmp[CHAR] = rmd_char;
+			tmp[FORM] = rmd_form;
+			list.add(tmp);
+			end;
+		end;
+		else 
+			loop int i = 1 until i > number_of_stimuli
+			begin
+					array<int> tmp[2];
+					tmp[CHAR] = char_target_index;
+					tmp[FORM] = random(1, form_array.count());
+					list.add(tmp);
+					i = i + 1;
+			end;
+			
+		end;
+		
+		loop until list.count() == number_of_stimuli + number_of_non_stimuli
 		begin
 			array<int> tmp[2];
-			tmp[FORM] = (i);
-			tmp[CHAR] = (j);
-			loop int r = 1 until r > repeat
-			begin
+			int rmd = random(1,char_array.count());
+			if rmd != char_target_index
+			then
+			tmp[CHAR] = rmd;
+			tmp[FORM] = random(1, form_array.count());
 			list.add(tmp);
-			r = r +1;
 			end;
-			j = j + 1;
 		end;
-		i = i + 1;
-	end;                                        
-	loop until (validade(list, seperate_attention ,form_target,target,char_array))
+	                                      
+
+	loop until (validade(list, seperate_attention ,form_target_index ,char_target_index,char_array))
 	begin
-	term.print_line(list);
 	list.shuffle();
 	end;
 	return list;
@@ -166,6 +220,7 @@ end;
 # form_target:
 # 1 = Recktangle
 # 2 = Circle
+# 3 = Triangle
 sub present_trials( array<int> trial_list[][], bool show_feedback, bool seperate_attention, int form_target, string target)
 begin
 
@@ -214,7 +269,8 @@ begin
 	end;
 end;
 
-array<int> test[][] = make_trial(1, false, 1, "A", letters);
+array<int> test[][] = make_trial(2, 8, true, 4, 1, letters);
+
 term.print_line(test);
 present_trials(test, false, false, 1, "A");
 
