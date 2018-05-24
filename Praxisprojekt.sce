@@ -65,7 +65,6 @@ trial {
 	stimulus_event{
 	picture {} main_picture;
 		duration = 250;
-		duration = 250;
 	}stim_event;
 	
 } main_trial;
@@ -78,20 +77,49 @@ trial {
 	} feedback_pic;
 } feedback_trial;
 
-
 begin_pcl;
-
 
 int CHAR = 1;
 int FORM = 2;
 int max_time= 3000;
 
-sub array<int,2> make_trial (int repeat)
+sub bool validade (array<int,2> list_to_test, bool seperate_attention, int form_target, string target, array<text,1> char_array)
+begin 
+	
+	loop int i = 1 until i == 5
+	begin
+		if (char_array[list_to_test[i][CHAR]].caption() == target) || (seperate_attention && list_to_test[i][FORM] == form_target)
+		then
+			return false;
+		end;
+		i = i + 1;
+	end;
+	loop int i = 5 until i == list_to_test.count() - 1 
+	begin
+		if char_array[list_to_test[i][CHAR]].caption() == target && char_array[list_to_test[i+1][CHAR]].caption() == target
+		then 
+			return false;
+		end;
+		if char_array[list_to_test[i][CHAR]].caption() == target || (seperate_attention && list_to_test[i][FORM] == form_target)
+		then
+			if 
+				char_array[list_to_test[i+1][CHAR]].caption() == target || (seperate_attention && list_to_test[i+1][FORM] == form_target)
+			then
+				return false;
+			end;
+		end;
+		i = i +1;
+	end;
+	return true;
+end;
+
+sub array<int,2> make_trial (int repeat, bool seperate_attention, int form_target, string target, array<text,1> char_array)
 begin
 	array<int> list[0][2];
 	loop int i = 1 until i > form_array.count()
+	
 	begin
-		loop int j = 1 until j > letters.count()
+		loop int j = 1 until j > char_array.count()
 		begin
 			array<int> tmp[2];
 			tmp[FORM] = (i);
@@ -104,8 +132,12 @@ begin
 			j = j + 1;
 		end;
 		i = i + 1;
-	end;
+	end;                                        
+	loop until (validade(list, seperate_attention ,form_target,target,char_array))
+	begin
+	term.print_line(list);
 	list.shuffle();
+	end;
 	return list;
 end;
 
@@ -123,7 +155,6 @@ begin
 		main_picture = form_array[form_index];
 		main_picture.set_part(3,letters[char_index]);
 		stim_event.set_stimulus(main_picture);
-		picture pic = picture(stim_event.get_stimulus());
 		stim_event.set_event_code("test");
 
 		string caption = letters[char_index].caption();
@@ -161,8 +192,9 @@ begin
 	end;
 end;
 
-array<int> test[][] = make_trial(1);
-present_trials(test, true, true, 1, "A");
+array<int> test[][] = make_trial(1, true, 1, "A", letters);
+term.print_line(test);
+present_trials(test, false, true, 1, "A");
 
 
 
