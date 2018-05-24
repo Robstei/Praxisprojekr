@@ -55,16 +55,38 @@ array {
 		text{caption = ""; font_size= 50;};
 		x=0;y=0;
 	} main_picture_circle;
+	
+	picture {
+	
+		polygon_graphic {
+			height = 750;
+			width = 700;
+			sides = 3;
+			line_width = 15;
+			line_color = 255,255,255,255;
+			radius = 350;};
+		x = 0; y = -50;
+		
+		polygon_graphic {
+			height = 0;
+			width = 0;
+			sides = 3;
+			fill_color = 0,0,0,255;};
+		x = 0; y = 0;
+		
+		text{caption = ""; font_size= 50;};
+		x=0;y=0;
+	} main_picture_triangle;
 			
 } form_array;
 
 trial {
-	trial_duration = 1500;
+	trial_duration = forever;
 	trial_type = first_response;
 	
 	stimulus_event{
 	picture {} main_picture;
-		duration = 250;
+	#	duration = 250;
 	}stim_event;
 	
 } main_trial;
@@ -192,9 +214,9 @@ begin
 	end;
 end;
 
-array<int> test[][] = make_trial(1, true, 1, "A", letters);
+array<int> test[][] = make_trial(1, false, 1, "A", letters);
 term.print_line(test);
-present_trials(test, false, true, 1, "A");
+present_trials(test, false, false, 1, "A");
 
 
 
