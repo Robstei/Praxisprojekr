@@ -81,16 +81,24 @@ array {
 } form_array;
 
 trial {
-	trial_duration = forever;
+	trial_duration = 1000;
 	trial_type = first_response;
 	
 	stimulus_event{
 	picture {} main_picture;
-	#	duration = 250;
+	duration = 250;
 	}stim_event;
 	
 } main_trial;
-
+trial {
+	picture {
+		text {
+			caption="+";
+			font_size=50;
+		};
+		x=0; y=0;
+	}cross;
+} trial_cross;
 trial {
 	trial_duration = 1000;
 	picture {
@@ -103,7 +111,7 @@ begin_pcl;
 
 int CHAR = 1;
 int FORM = 2;
-int max_time= 3000;
+int max_time= 1000;
 
 sub bool validade (array<int,2> list_to_test, bool seperate_attention, int form_target_index, int char_target_index, array<text,1> char_array)begin 
 	
@@ -247,17 +255,20 @@ begin
 		end;
 	
 		main_trial.present();
-		
+
 		i=i+1;
 		
 		if (show_feedback) then
-			string new_caption;
+			string new_caption = "test";
 			stimulus_data last = stimulus_manager.last_stimulus_data();
-			
-		if (last.type() == last.HIT) then
-				new_caption = "correct";
-			else
-				new_caption = "incorrect";
+			if (last.type() == last.HIT) then
+				new_caption = "Korekt";
+			elseif (last.type() == last.INCORRECT) then
+				new_caption = "Falsche Taste";
+			elseif (last.type() == last.MISS) then
+				new_caption = "Sie hätten drücken müssen";
+			elseif (last.type() == last.FALSE_ALARM) then
+				new_caption = "Sie hätten nicht drücken müssen";
 			end;
 		
 			if( last.reaction_time() > max_time) then
@@ -266,13 +277,16 @@ begin
 			feedback_text.set_caption(new_caption, true);
 			feedback_trial.present();	
 		end;
+		
+		trial_cross.set_duration(random(500,2300));
+		trial_cross.present();
 	end;
 end;
 
 array<int> test[][] = make_trial(2, 8, true, 4, 1, letters);
 
 term.print_line(test);
-present_trials(test, false, false, 1, "A");
+present_trials(test, true, false, 1, "A");
 
 
 
