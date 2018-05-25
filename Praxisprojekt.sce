@@ -366,9 +366,9 @@ begin_pcl;
 #	1. Value: selective_attention: 1 = only a char is a target
 #											 2 = only a form is a target
 #											 3 = a char and a form is a target
-#	2. Value: index of char target
+#	2. Value: index of char target. Use -1 if no char targets will be presentet
 #	3. Value: char array to be used
-#	4. Value: index of form target in form_array
+#	4. Value: index of form target in form_array. Use -1 if no char targets will be presentet
 
 # make_trial:
 #	5. Value: number of targets in returned trial
@@ -376,9 +376,11 @@ begin_pcl;
 
 # present_trial
 #	5. Value: trial to be presentet as array<int,2>
-#	6. Value: bool to determin if feedback will be given. true = feedbacks
-	
-	array<int> test[][] = make_trial(1, 4, letters, 1, 2, 8);
+#	6. Value: bool to determin if feedback will be given. true = feedbacks#
+
+##########################Test trials########################################
+
+	array<int> test[][] = make_trial(1, 4, letters, -1, 2, 8);
 	present_trials(1, 4, letters, 1, test, true);
 	array<int> test2[][] = make_trial(2, 4, numbers, 1, 2, 8);
 	present_trials(2, 4, numbers, 1, test2, true);
@@ -387,8 +389,49 @@ begin_pcl;
 	array<int> test4[][] = make_trial(2, 4, letters, 1, 2, 8);
 	present_trials(2, 4, letters, 1, test4, true);
 	
+##########################Block 1########################################
+
+	array<int> block1_trial1[][] = make_trial(2, 4, letters, 1, 6, 20);
+	present_trials(2, 4, letters, 1, block1_trial1, false);
+	array<int> block1_trial2[][] = make_trial(1, 1, letters, 1, 6, 20);
+	present_trials(1, 1, letters, 1, block1_trial2, false);
+	array<int> block1_trial3[][] = make_trial(1, 4, numbers, 1, 6, 20);
+	present_trials(1, 4, numbers, 1, block1_trial3, false);
+	array<int> block1_trial4[][] = make_trial(3, 4, letters, 1, 6, 20);
+	present_trials(3, 4, letters, 1, block1_trial4, false);
+	array<int> block1_trial5[][] = make_trial(3, 5, numbers, 2, 6, 20);
+	present_trials(3, 5, numbers, 1, block1_trial5, false);
+	array<int> block1_trial6[][] = make_trial(3, 1, letters, 3, 6, 20);
+	present_trials(3, 1, letters, 1, block1_trial6, false);
 	
+##########################Block 2########################################
 
+	array<int> block2_trial1[][] = make_trial(1, 2, letters, 1, 6, 20);
+	present_trials(1, 2, letters, 1, block2_trial1, false);
+	array<int> block2_trial2[][] = make_trial(1, 1, numbers, 1, 6, 20);
+	present_trials(2, 1, letters, 1, block2_trial2, false);
+	array<int> block2_trial3[][] = make_trial(3, 4, letters, 1, 6, 20);
+	present_trials(3, 4, numbers, 1, block2_trial3, false);
+	array<int> block2_trial4[][] = make_trial(3, 4, numbers, 1, 6, 20);
+	present_trials(3, 4, letters, 1, block1_trial4, false);
+	array<int> block2_trial5[][] = make_trial(2, 5, numbers, 2, 6, 20);
+	present_trials(2, 5, numbers, 1, block2_trial5, false);
+	array<int> block2_trial6[][] = make_trial(3, 1, letters, 3, 6, 20);
+	present_trials(3, 1, letters, 1, block2_trial6, false);
+	
+##########################Block 3########################################
 
-
-
+	array<int> block3_trial1[][] = make_trial(3, 4, letters, 1, 6, 20);
+	present_trials(3, 4, letters, 1, block3_trial1, false);
+	array<int> block3_trial2[][] = make_trial(1, 1, numbers, 1, 6, 20);
+	present_trials(1, 1, letters, 1, block3_trial2, false);
+	array<int> block3_trial3[][] = make_trial(3, 4, letters, 1, 6, 20);
+	present_trials(3, 4, letters, 1, block3_trial3, false);
+	array<int> block3_trial4[][] = make_trial(2, 4, numbers, 1, 6, 20);
+	present_trials(2, 4, numbers, 1, block3_trial4, false);
+	array<int> block3_trial5[][] = make_trial(3, 5, numbers, 2, 6, 20);
+	present_trials(3, 5, numbers, 1, block3_trial5, false);
+	array<int> block3_trial6[][] = make_trial(1, 1, letters, 3, 6, 20);
+	present_trials(1, 1, letters, 1, block3_trial6, false);
+	
+	
