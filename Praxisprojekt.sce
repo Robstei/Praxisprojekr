@@ -126,7 +126,7 @@ begin_pcl;
 	int FORM = 2;
 	int max_time= 1000;
 
-	sub bool validade (array<int,2> list_to_test, bool seperate_attention, int form_target_index, 
+	sub bool validade (array<int,2> list_to_test, int seperate_attention, int form_target_index, 
 							int char_target_index, array<text,1> char_array)
 	begin 
 		loop int i = 1 until i == list_to_test.count() -1
@@ -140,27 +140,42 @@ begin_pcl;
 		
 		loop int i = 1 until i == 6
 		begin
-			if (char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption()) 
-				|| (seperate_attention && list_to_test[i][FORM] == form_target_index)
+			if seperate_attention == 1 &&
+				char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption()
+			then
+				return false;
+			elseif seperate_attention == 2 &&	
+						list_to_test[i][FORM] == form_target_index
+			then
+				return false;
+			elseif seperate_attention == 3 &&
+				(char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption()
+				|| list_to_test[i][FORM] == form_target_index)
 			then
 				return false;
 			end;
 			i = i + 1;
-		end;
+		end;		
+	
 		loop int i = 6 until i == list_to_test.count() - 1 
 		begin
-			if char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption() &&
+			if seperate_attention == 1 &&
+				char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption() &&
 				char_array[list_to_test[i+1][CHAR]].caption() == char_array[char_target_index].caption()
 			then 
 				return false;
-			end;
-			
-			if char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption() 
-								|| (seperate_attention && list_to_test[i][FORM] == form_target_index)
+			elseif seperate_attention == 2 &&
+				list_to_test[i][FORM] == form_target_index &&
+				list_to_test[i+1][FORM] == form_target_index 
+			then
+				return false;
+			elseif seperate_attention == 3 &&
+						(char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption() 
+								|| list_to_test[i][FORM] == form_target_index)
 			then
 				if 
 					char_array[list_to_test[i+1][CHAR]].caption() == char_array[char_target_index].caption()
-								|| (seperate_attention && list_to_test[i+1][FORM] == form_target_index)
+								|| list_to_test[i+1][FORM] == form_target_index
 				then
 					return false;
 				end;
@@ -170,12 +185,56 @@ begin_pcl;
 		return true;
 	end;
 
-	sub array<int,2> make_trial (bool seperate_attention, int char_target_index, array<text,1> char_array ,int form_target_index, 
+	sub array<int,2> make_trial (int seperate_attention, int char_target_index, array<text,1> char_array ,int form_target_index, 
 											int number_of_stimuli, int number_of_non_stimuli)
 	begin
 		array<int> list[0][2];
+		
+		if seperate_attention == 1
+		then
+			loop int i = 1 until i > number_of_stimuli
+			begin
+				array<int> tmp[2];
+				tmp[CHAR] = char_target_index;
+				tmp[FORM] = random(1, form_array.count());
+				list.add(tmp);
+				i = i + 1;
+			end;
 			
-		if seperate_attention
+			loop until list.count() == number_of_stimuli + number_of_non_stimuli
+			begin
+				array<int> tmp[2];
+				int rmd = random(1,char_array.count());
+				if rmd != char_target_index
+				then
+					tmp[CHAR] = rmd;
+					tmp[FORM] = random(1, form_array.count());
+					list.add(tmp);
+				end;
+			end;
+		elseif seperate_attention == 2
+		then
+			loop int i = 1 until i > number_of_stimuli
+			begin
+				array<int> tmp[2];
+				tmp[CHAR] = random(1, char_array.count());
+				tmp[FORM] = form_target_index;
+				list.add(tmp);
+				i = i + 1;
+			end;
+			
+			loop until list.count() == number_of_stimuli + number_of_non_stimuli
+			begin
+				array<int> tmp[2];
+				int rmd = random(1,form_array.count());
+				if rmd != form_target_index
+				then
+					tmp[CHAR] = random(1,char_target_index);
+					tmp[FORM] = rmd;
+					list.add(tmp);
+				end;
+			end;
+		elseif seperate_attention == 3
 		then
 			loop int i = 1 until i > number_of_stimuli/2
 			begin
@@ -212,28 +271,6 @@ begin_pcl;
 					list.add(tmp);
 				end;
 			end;
-			
-		else 
-			loop int i = 1 until i > number_of_stimuli
-			begin
-				array<int> tmp[2];
-				tmp[CHAR] = char_target_index;
-				tmp[FORM] = random(1, form_array.count());
-				list.add(tmp);
-				i = i + 1;
-			end;
-			
-			loop until list.count() == number_of_stimuli + number_of_non_stimuli
-			begin
-				array<int> tmp[2];
-				int rmd = random(1,char_array.count());
-				if rmd != char_target_index
-				then
-					tmp[CHAR] = rmd;
-					tmp[FORM] = random(1, form_array.count());
-					list.add(tmp);
-				end;
-			end;
 		end;
 														  
 		loop until (validade(list, seperate_attention ,form_target_index ,
@@ -248,19 +285,23 @@ begin_pcl;
 	# 1 = Recktangle
 	# 2 = Circle
 	# 3 = Triangle
-	sub present_trials( bool seperate_attention, int char_target_index, array<text,1> char_array, 
+	sub present_trials( int seperate_attention, int char_target_index, array<text,1> char_array, 
 								int form_target_index, array<int> trial_list[][], bool show_feedback)
 	begin
 	string instruction_string = "";
-	instruction_string = ("Drücken Sie die Taste L wenn " + char_array[char_target_index].caption() + " erscheint.");
-	if seperate_attention
+	if seperate_attention == 1
 	then
-		instruction_string = instruction_string + "\nDrücken Sie die Taste S wenn ein " + 
-									form_array[form_target_index].description() +
-									" ernscheint."
+		instruction_string = ("Drücken Sie die Taste L wenn " + char_array[char_target_index].caption() + " erscheint.");
+	elseif seperate_attention == 2
+	then
+		instruction_string = ("Drücken Sie die Taste S wenn " + form_array[form_target_index].description() + " erscheint.");
+	elseif seperate_attention == 3
+	then
+		instruction_string = "Drücken Sie die Taste L wenn " + char_array[char_target_index].caption() + " erscheint." +
+									"Drücken Sie die Taste S wenn " + form_array[form_target_index].description() + " erscheint."
 	end;
-	instruction_string = instruction_string + "\nAntworten Sie so schnell sie können."
-												+ "\nDrücken Sie die Leertaste um fortzufahren.";
+	instruction_string = instruction_string + "\nAntworten Sie so schnell sie können." +
+															"\nDrücken Sie die Leertaste um fortzufahren.";
 	instruction_text.set_caption(instruction_string, true);
 	instruction_trial.present();
 	
@@ -278,12 +319,19 @@ begin_pcl;
 		stim_event.set_stimulus(main_picture);
 		stim_event.set_event_code("test");
 
-		string caption = letters[char_index].caption();
+		string caption = char_array[char_index].caption();
 				
-		if char_array[char_target_index].caption() == caption
+		if seperate_attention == 1 && char_array[char_target_index].caption() == caption
 		then
 			stim_event.set_target_button(1);
-		elseif seperate_attention && form_target_index == form_index
+		elseif seperate_attention == 2 && form_target_index == form_index
+		then
+			stim_event.set_target_button(2);
+		elseif seperate_attention == 3 && char_array[char_target_index].caption() == caption
+		then
+			stim_event.set_target_button(1);
+		elseif
+		seperate_attention == 3 && form_target_index == form_index
 		then
 			stim_event.set_target_button(2);
 		else
@@ -313,9 +361,11 @@ begin_pcl;
 		end;
 	end;
 
-	array<int> test[][] = make_trial(true, 4, letters, 1, 2, 8);
+	array<int> test[][] = make_trial(1, 4, letters, 1, 2, 8);
 	term.print_line(test);
-	present_trials(true, 4, letters, 1, test, true);
+	present_trials(1, 4, letters, 1, test, true);
+	
+
 
 
 
