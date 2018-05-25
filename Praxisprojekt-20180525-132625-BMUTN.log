@@ -1,0 +1,40 @@
+Scenario - 
+Logfile written - 05/25/2018 13:27:01
+
+Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+1	Picture	test	200	0	1	6800	1	0	next	false_alarm	2
+1	Response	1	6773	6573	0
+4	Picture	test	39200	0	1	38800	1	0	next	false_alarm	4
+4	Response	1	77874	38675	0
+7	Picture	test	94400	0	1	4600	1	0	next	false_alarm	6
+7	Response	1	98918	4518	0
+10	Picture	test	116600	0	1	9200	1	0	next	false_alarm	8
+10	Response	2	125766	9166	0
+13	Picture	test	153600	0	1	7800	1	0	next	false_alarm	10
+13	Response	1	161245	7645	0
+16	Picture	test	191800	0	1	9600	1	0	next	false_alarm	12
+16	Response	1	201285	9485	0
+19	Picture	test	232400	0	1	9600	1	0	next	false_alarm	14
+19	Response	1	241811	9411	0
+22	Picture	test	265000	0	1	3600	1	0	next	false_alarm	16
+22	Response	1	268471	3471	0
+25	Picture	test	289200	0	1	3400	1	0	next	hit	18
+25	Response	1	292448	3248	0
+28	Picture	test	308800	0	1	7000	1	0	next	hit	20
+28	Response	2	315637	6837	0
+
+
+{
+   "app": "Presentation Version 20.1 Build 12.04.17",
+   "device": "LENOVO 20DTCTO1WW",
+   "experiment": "{3EDEE026-D8DC-4466-8CD4-50C9D6AA7BA0}",
+   "os": "Windows 10 64 bit",
+   "package": "",
+   "parameters": {
+      "configuration": "Default configuration"
+   },
+   "scenario": "Praxisprojekt.sce",
+   "subject": "",
+   "timestamp": "2018/05/25 11:26:25 GMT"
+}

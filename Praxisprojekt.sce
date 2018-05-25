@@ -1,5 +1,5 @@
 response_matching = simple_matching;
-active_buttons = 2;
+active_buttons = 3;
 
 begin;
 
@@ -23,15 +23,17 @@ begin;
 
 	array {
 		picture {
+			description = "Viereck";
 			box {width= 600; height= 600; color = 255,255,255;};
 			x=0;y=0;
 			box {width= 570; height=570; color = 0,0,0;};
 			x=0;y=0;
 			text{caption = ""; font_size= 50;};
 			x=0;y=0;
-		} main_picture_box;
+			} main_picture_box;
 		
 		picture {
+			description = "Kreis";
 			ellipse_graphic {
 				height = 600;
 				width = 600;
@@ -52,9 +54,10 @@ begin;
 			
 			text{caption = ""; font_size= 50;};
 			x=0;y=0;
-		} main_picture_circle;
+			} main_picture_circle;
 		
 		picture {
+			description = "Dreieck";
 			polygon_graphic {
 				height = 750;
 				width = 700;
@@ -76,7 +79,6 @@ begin;
 			text{caption = ""; font_size= 50;};
 			x=0;y=0;
 		} main_picture_triangle;
-				
 	} form_array;
 
 	trial {
@@ -85,6 +87,7 @@ begin;
 		
 		stimulus_event{
 		picture {} main_picture;
+		duration = 250;
 		}stim_event;
 		
 	} main_trial;
@@ -106,7 +109,17 @@ begin;
 			x=0; y=0;
 		} feedback_pic;
 	} feedback_trial;
-
+	
+	trial {
+		trial_duration = forever;
+		trial_type = first_response;
+		picture {
+			text { caption = ""; font_size = 30;} instruction_text;
+			x=0; y=0;
+		} instruction_pic;
+		target_button = 3;
+	} instruction_trial;
+	
 begin_pcl;
 
 	int CHAR = 1;
@@ -157,8 +170,8 @@ begin_pcl;
 		return true;
 	end;
 
-	sub array<int,2> make_trial (int number_of_stimuli, int number_of_non_stimuli, bool seperate_attention,
-											int char_target_index, int form_target_index, array<text,1> char_array)
+	sub array<int,2> make_trial (bool seperate_attention, int char_target_index, array<text,1> char_array ,int form_target_index, 
+											int number_of_stimuli, int number_of_non_stimuli)
 	begin
 		array<int> list[0][2];
 			
@@ -223,7 +236,8 @@ begin_pcl;
 			end;
 		end;
 														  
-		loop until (validade(list, seperate_attention ,form_target_index ,char_target_index,char_array))
+		loop until (validade(list, seperate_attention ,form_target_index ,
+						char_target_index,char_array))
 		begin
 			list.shuffle();
 		end;
@@ -234,9 +248,26 @@ begin_pcl;
 	# 1 = Recktangle
 	# 2 = Circle
 	# 3 = Triangle
-	sub present_trials( array<int> trial_list[][], bool show_feedback, 
-								bool seperate_attention, int form_target, string target)
+	sub present_trials( bool seperate_attention, int char_target_index, array<text,1> char_array, 
+								int form_target_index, array<int> trial_list[][], bool show_feedback)
 	begin
+	string instruction_string = "";
+	instruction_string = ("Drücken Sie die Taste L wenn " + char_array[char_target_index].caption() + " erscheint.");
+	if seperate_attention
+	then
+		instruction_string = instruction_string + "\nDrücken Sie die Taste S wenn ein " + 
+									form_array[form_target_index].description() +
+									" ernscheint."
+	end;
+	instruction_string = instruction_string + "\nAntworten Sie so schnell sie können."
+												+ "\nDrücken Sie die Leertaste um fortzufahren.";
+	instruction_text.set_caption(instruction_string, true);
+	instruction_trial.present();
+	
+	#ISI
+	trial_cross.set_duration(random(500,2300));
+	trial_cross.present();
+	
 	loop int i = 1 until i > trial_list.count()
 	begin
 		int char_index = trial_list[i][CHAR];
@@ -249,10 +280,10 @@ begin_pcl;
 
 		string caption = letters[char_index].caption();
 				
-		if target == caption
+		if char_array[char_target_index].caption() == caption
 		then
 			stim_event.set_target_button(1);
-		elseif seperate_attention && form_target == form_index
+		elseif seperate_attention && form_target_index == form_index
 		then
 			stim_event.set_target_button(2);
 		else
@@ -276,22 +307,15 @@ begin_pcl;
 				new_caption = "Sie hätten nicht drücken müssen";
 			end;
 			
-			if( last.reaction_time() > max_time) then
-				new_caption = new_caption + "\nPlease respond faster";
+			feedback_text.set_caption(new_caption, true);
+			feedback_trial.present();	
 			end;
-				feedback_text.set_caption(new_caption, true);
-				feedback_trial.present();	
-			end;
-			
-			trial_cross.set_duration(random(500,2300));
-			trial_cross.present();
 		end;
 	end;
 
-	array<int> test[][] = make_trial(2, 8, true, 4, 1, letters);
-
+	array<int> test[][] = make_trial(true, 4, letters, 1, 2, 8);
 	term.print_line(test);
-	present_trials(test, true, true, 1, "A");
+	present_trials(true, 4, letters, 1, test, true);
 
 
 
