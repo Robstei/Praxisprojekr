@@ -112,7 +112,20 @@ begin;
 	
 	trial {
 		trial_duration = forever;
-		trial_type = first_response;
+		trial_type = correct_response;
+		all_responses = false;
+		
+		picture {
+			text { caption = ""; font_size = 30;} introduction_text;
+			x=0;y=0;
+		} introduction_picture;
+		stimulus_time_in = 3000;
+		target_button = 3;
+	} introduction_trial;
+	
+	trial {
+		trial_duration = forever;
+		trial_type = correct_response;
 		picture {
 			text { caption = ""; font_size = 30;} instruction_text;
 			x=0; y=0;
@@ -368,7 +381,7 @@ begin_pcl;
 #											 3 = a char and a form is a target
 #	2. Value: index of char target. Use -1 if no char targets will be presentet
 #	3. Value: char array to be used
-#	4. Value: index of form target in form_array. Use -1 if no char targets will be presentet
+#	4. Value: index of form target in form_array. Use -1 if no form targets will be presentet
 
 # make_trial:
 #	5. Value: number of targets in returned trial
@@ -380,17 +393,41 @@ begin_pcl;
 
 ##########################Test trials########################################
 
+	introduction_text.set_caption("Test trial text. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+	introduction_trial.present();
 	array<int> test[][] = make_trial(1, 4, letters, -1, 2, 8);
 	present_trials(1, 4, letters, 1, test, true);
-	array<int> test2[][] = make_trial(2, 4, numbers, 1, 2, 8);
+	array<int> test2[][] = make_trial(2, -1, numbers, 1, 2, 8);
 	present_trials(2, 4, numbers, 1, test2, true);
-	array<int> test3[][] = make_trial(1, 4, numbers, 1, 2, 8);
+	array<int> test3[][] = make_trial(1, 4, numbers, -1, 2, 8);
 	present_trials(1, 4, numbers, 1, test3, true);
-	array<int> test4[][] = make_trial(2, 4, letters, 1, 2, 8);
+	array<int> test4[][] = make_trial(2, -1, letters, 1, 2, 8);
 	present_trials(2, 4, letters, 1, test4, true);
+	
+	
+	array<int> test5[][] = make_trial(3, 4, letters, 1, 2, 8);
+	present_trials(1, 4, letters, 1, test5, true);
+	array<int> test6[][] = make_trial(3, 1, numbers, 1, 2, 8);
+	present_trials(2, 4, numbers, 1, test6, true);
+	array<int> test7[][] = make_trial(3, 4, numbers, 2, 2, 8);
+	present_trials(1, 4, numbers, 1, test7, true);
+	array<int> test8[][] = make_trial(3, 6, letters, 3, 2, 8);
+	present_trials(2, 4, letters, 1, test8, true);
+	
+	array<int> test9[][] = make_trial(3, 4, letters, 1, 2, 8);
+	present_trials(1, 4, letters, 1, test9, true);
+	array<int> test10[][] = make_trial(2, -1, numbers, 1, 2, 8);
+	present_trials(2, 4, numbers, 1, test10, true);
+	array<int> test11[][] = make_trial(1, 4, numbers, -1, 2, 8);
+	present_trials(1, 4, numbers, 1, test11, true);
+	array<int> test12[][] = make_trial(3, 6, letters, 3, 2, 8);
+	present_trials(2, 4, letters, 1, test12, true);
 	
 ##########################Block 1########################################
 
+	introduction_text.set_caption("Block1 text. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+	introduction_trial.present();
+	
 	array<int> block1_trial1[][] = make_trial(2, 4, letters, 1, 6, 20);
 	present_trials(2, 4, letters, 1, block1_trial1, false);
 	array<int> block1_trial2[][] = make_trial(1, 1, letters, 1, 6, 20);
@@ -406,6 +443,9 @@ begin_pcl;
 	
 ##########################Block 2########################################
 
+	introduction_text.set_caption("Block2 text. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+	introduction_trial.present();
+	
 	array<int> block2_trial1[][] = make_trial(1, 2, letters, 1, 6, 20);
 	present_trials(1, 2, letters, 1, block2_trial1, false);
 	array<int> block2_trial2[][] = make_trial(1, 1, numbers, 1, 6, 20);
@@ -421,6 +461,9 @@ begin_pcl;
 	
 ##########################Block 3########################################
 
+	introduction_text.set_caption("Block3 text. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+	introduction_trial.present();
+	
 	array<int> block3_trial1[][] = make_trial(3, 4, letters, 1, 6, 20);
 	present_trials(3, 4, letters, 1, block3_trial1, false);
 	array<int> block3_trial2[][] = make_trial(1, 1, numbers, 1, 6, 20);
