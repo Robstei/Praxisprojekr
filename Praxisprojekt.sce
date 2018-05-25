@@ -13,12 +13,12 @@ begin;
 	}letters;
 
 	array {
-		text{caption = "2";};
-		text{caption = "3";};
-		text{caption = "4";};
-		text{caption = "6";};
-		text{caption = "7";};
-		text{caption = "9";};
+		text{caption = "2"; font_size= 50;};
+		text{caption = "3"; font_size= 50;};
+		text{caption = "4"; font_size= 50;};
+		text{caption = "6"; font_size= 50;};
+		text{caption = "7"; font_size= 50;};
+		text{caption = "9"; font_size= 50;};
 	}numbers;
 
 	array {
@@ -305,9 +305,7 @@ begin_pcl;
 	instruction_text.set_caption(instruction_string, true);
 	instruction_trial.present();
 	
-	#ISI
-	trial_cross.set_duration(random(500,2300));
-	trial_cross.present();
+	
 	
 	loop int i = 1 until i > trial_list.count()
 	begin
@@ -315,12 +313,13 @@ begin_pcl;
 		int form_index = trial_list[i][FORM];
 
 		main_picture = form_array[form_index];
-		main_picture.set_part(3,letters[char_index]);
+		main_picture.set_part(3,char_array[char_index]);
 		stim_event.set_stimulus(main_picture);
 		stim_event.set_event_code("test");
 
 		string caption = char_array[char_index].caption();
 				
+			stim_event.set_target_button(0);
 		if seperate_attention == 1 && char_array[char_target_index].caption() == caption
 		then
 			stim_event.set_target_button(1);
@@ -337,7 +336,9 @@ begin_pcl;
 		else
 			stim_event.set_response_active(true);
 		end;
-		
+		#ISI
+		trial_cross.set_duration(random(500,2300));
+		trial_cross.present();
 		main_trial.present();
 
 		i=i+1;
@@ -360,10 +361,32 @@ begin_pcl;
 			end;
 		end;
 	end;
+	
+#	Parameter for make_trial and present_trial
+#	1. Value: selective_attention: 1 = only a char is a target
+#											 2 = only a form is a target
+#											 3 = a char and a form is a target
+#	2. Value: index of char target
+#	3. Value: char array to be used
+#	4. Value: index of form target in form_array
 
+# make_trial:
+#	5. Value: number of targets in returned trial
+#	6. Value: number of non targets in returned trial
+
+# present_trial
+#	5. Value: trial to be presentet as array<int,2>
+#	6. Value: bool to determin if feedback will be given. true = feedbacks
+	
 	array<int> test[][] = make_trial(1, 4, letters, 1, 2, 8);
-	term.print_line(test);
 	present_trials(1, 4, letters, 1, test, true);
+	array<int> test2[][] = make_trial(2, 4, numbers, 1, 2, 8);
+	present_trials(2, 4, numbers, 1, test2, true);
+	array<int> test3[][] = make_trial(1, 4, numbers, 1, 2, 8);
+	present_trials(1, 4, numbers, 1, test3, true);
+	array<int> test4[][] = make_trial(2, 4, letters, 1, 2, 8);
+	present_trials(2, 4, letters, 1, test4, true);
+	
 	
 
 
