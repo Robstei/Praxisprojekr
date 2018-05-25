@@ -86,11 +86,12 @@ trial {
 	
 	stimulus_event{
 	picture {} main_picture;
-	duration = 250;
 	}stim_event;
 	
 } main_trial;
+
 trial {
+
 	picture {
 		text {
 			caption="+";
@@ -99,6 +100,7 @@ trial {
 		x=0; y=0;
 	}cross;
 } trial_cross;
+
 trial {
 	trial_duration = 1000;
 	picture {
@@ -251,7 +253,7 @@ begin
 		then
 		stim_event.set_target_button(2);
 		else
-		stim_event.set_target_button(0);
+		stim_event.set_response_active(true);
 		end;
 	
 		main_trial.present();
@@ -259,7 +261,7 @@ begin
 		i=i+1;
 		
 		if (show_feedback) then
-			string new_caption = "test";
+			string new_caption = "";
 			stimulus_data last = stimulus_manager.last_stimulus_data();
 			if (last.type() == last.HIT) then
 				new_caption = "Korekt";
@@ -286,7 +288,7 @@ end;
 array<int> test[][] = make_trial(2, 8, true, 4, 1, letters);
 
 term.print_line(test);
-present_trials(test, true, false, 1, "A");
+present_trials(test, true, true, 1, "A");
 
 
 
