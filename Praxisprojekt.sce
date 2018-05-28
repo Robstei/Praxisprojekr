@@ -142,7 +142,7 @@ begin_pcl;
 	sub bool validade (array<int,2> list_to_test, int seperate_attention, int form_target_index, 
 							int char_target_index, array<text,1> char_array)
 	begin 
-		loop int i = 1 until i == list_to_test.count() -1
+		loop int i = 1 until i == list_to_test.count()
 		begin
 			if list_to_test[i] == list_to_test[i+1]
 			then 
@@ -153,14 +153,18 @@ begin_pcl;
 		
 		loop int i = 1 until i == 6
 		begin
-			if seperate_attention == 1 &&
-				char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption()
+			if seperate_attention == 1 
 			then
-				return false;
-			elseif seperate_attention == 2 &&	
-						list_to_test[i][FORM] == form_target_index
+				if char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption()
+				then
+					return false;
+				end;
+			elseif seperate_attention == 2			
 			then
-				return false;
+				if list_to_test[i][FORM] == form_target_index
+				then
+					return false;
+				end;
 			elseif seperate_attention == 3 &&
 				(char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption()
 				|| list_to_test[i][FORM] == form_target_index)
@@ -170,7 +174,7 @@ begin_pcl;
 			i = i + 1;
 		end;		
 	
-		loop int i = 6 until i == list_to_test.count() - 1 
+		loop int i = 6 until i == list_to_test.count()
 		begin
 			if seperate_attention == 1 &&
 				char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption() &&
@@ -198,8 +202,8 @@ begin_pcl;
 		return true;
 	end;
 
-	sub array<int,2> make_trial (int seperate_attention, int char_target_index, array<text,1> char_array ,int form_target_index, 
-											int number_of_stimuli, int number_of_non_stimuli)
+	sub array<int,2> make_trial (int seperate_attention, int char_target_index, array<text,1> char_array,
+											int form_target_index, int number_of_stimuli, int number_of_non_stimuli)
 	begin
 		array<int> list[0][2];
 		
@@ -318,8 +322,6 @@ begin_pcl;
 	instruction_text.set_caption(instruction_string, true);
 	instruction_trial.present();
 	
-	
-	
 	loop int i = 1 until i > trial_list.count()
 	begin
 		int char_index = trial_list[i][CHAR];
@@ -389,7 +391,7 @@ begin_pcl;
 
 # present_trial
 #	5. Value: trial to be presentet as array<int,2>
-#	6. Value: bool to determin if feedback will be given. true = feedbacks#
+#	6. Value: bool to determin if feedback will be given. true = feedback
 
 ##########################Test trials########################################
 
@@ -403,7 +405,6 @@ begin_pcl;
 	present_trials(1, 4, numbers, 1, test3, true);
 	array<int> test4[][] = make_trial(2, -1, letters, 1, 2, 8);
 	present_trials(2, 4, letters, 1, test4, true);
-	
 	
 	array<int> test5[][] = make_trial(3, 4, letters, 1, 2, 8);
 	present_trials(1, 4, letters, 1, test5, true);
