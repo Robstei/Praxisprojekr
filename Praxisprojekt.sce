@@ -1,4 +1,5 @@
 response_matching = simple_matching;
+default_font = "Apercu Mono";
 active_buttons = 3;
 event_code_delimiter = ";";
 stimulus_properties = blockid, string, trialid, string, form, string, character, string;
@@ -253,7 +254,7 @@ begin_pcl;
 				int rmd = random(1,form_array.count());
 				if rmd != form_target_index
 				then
-					tmp[CHAR] = random(1,char_target_index);
+					tmp[CHAR] = random(1,char_array.count());
 					tmp[FORM] = rmd;
 					list.add(tmp);
 				end;
@@ -271,7 +272,7 @@ begin_pcl;
 				i = i + 1;
 				end
 			end;
-				
+			
 			loop until list.count() == number_of_stimuli
 			begin
 				array<int> tmp[2];
@@ -368,7 +369,12 @@ begin_pcl;
 		end;
 		
 		#ISI
-		trial_cross.set_duration(random(500,2300));
+		if i == 1
+		then 
+			trial_cross.set_duration(1000);
+		else
+			trial_cross.set_duration(random(500,2300));
+		end;
 		trial_cross.present();
 		main_trial.present();
 

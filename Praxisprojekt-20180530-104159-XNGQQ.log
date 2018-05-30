@@ -1,0 +1,42 @@
+Scenario - 
+Logfile written - 05/30/2018 10:42:47
+
+Trial	Event Type	Code	blockid(str)	trialid(str)	form(str)	character(str)	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+1	Response	3					8417	8017	0
+1	Response	3					15057	14658	0
+1	Response	3					21097	20697	0
+1	Response	3					25320	24920	0
+1	Response	3					29877	29478	0
+1	Response	3					33556	33157	0
+2	Response	3					40383	6583	0
+4	Picture	test;trial1;Viereck;M	test	trial1	Viereck	M	56200	0	1	2600	1	0	2500	other	0
+7	Picture	test;trial1;Dreieck;M	test	trial1	Dreieck	M	82200	0	1	2600	1	0	2500	other	0
+10	Picture	test;trial1;Dreieck;D	test	trial1	Dreieck	D	115400	0	1	2600	1	0	2500	other	0
+13	Picture	test;trial1;Viereck;E	test	trial1	Viereck	E	146400	0	1	2600	1	0	2500	other	0
+16	Picture	test;trial1;Viereck;D	test	trial1	Viereck	D	176000	0	1	2600	1	0	2500	other	0
+19	Picture	test;trial1;Viereck;A	test	trial1	Viereck	A	208200	0	1	2600	1	0	2500	miss	0
+22	Picture	test;trial1;Viereck;M	test	trial1	Viereck	M	246000	0	1	2600	1	0	2500	other	0
+25	Picture	test;trial1;Kreis;E	test	trial1	Kreis	E	284600	0	1	2600	1	0	2500	other	0
+28	Picture	test;trial1;Dreieck;T	test	trial1	Dreieck	T	311401	0	1	2600	1	0	2500	other	0
+31	Picture	test;trial1;Viereck;A	test	trial1	Viereck	A	349201	0	1	2600	1	0	2500	miss	0
+33	Response	3					383676	14075	0
+35	Picture	test;trial2;Kreis;2	test	trial2	Kreis	2	394801	0	1	2600	1	0	2500	other	0
+38	Picture	test;trial2;Dreieck;2	test	trial2	Dreieck	2	432601	0	1	2600	1	0	2500	other	0
+41	Picture	test;trial2;Kreis;2	test	trial2	Kreis	2	463401	0	1	2600	1	0	2500	other	0
+41	Quit						466987	3586	NA
+
+
+{
+   "app": "Presentation Version 20.1 Build 12.04.17",
+   "device": "LENOVO 20DTCTO1WW",
+   "experiment": "{3EDEE026-D8DC-4466-8CD4-50C9D6AA7BA0}",
+   "os": "Windows 10 64 bit",
+   "package": "",
+   "parameters": {
+      "configuration": "Default configuration"
+   },
+   "scenario": "Praxisprojekt.sce",
+   "subject": "",
+   "timestamp": "2018/05/30 08:41:59 GMT"
+}
