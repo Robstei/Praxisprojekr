@@ -1,5 +1,7 @@
 response_matching = simple_matching;
 active_buttons = 3;
+event_code_delimiter = ";";
+stimulus_properties = blockid, string, trialid, string, form, string, character, string;
 
 begin;
 
@@ -93,6 +95,7 @@ begin;
 	} main_trial;
 
 	trial {
+		all_responses = false;
 		picture {
 			text {
 				caption="+";
@@ -104,6 +107,7 @@ begin;
 
 	trial {
 		trial_duration = 1000;
+		all_responses = false;
 		picture {
 			text { caption = ""; font_size = 24;} feedback_text; 
 			x=0; y=0;
@@ -112,7 +116,7 @@ begin;
 	
 	trial {
 		trial_duration = forever;
-		trial_type = correct_response;
+		trial_type = first_response;
 		all_responses = false;
 		
 		picture {
@@ -120,17 +124,16 @@ begin;
 			x=0;y=0;
 		} introduction_picture;
 		stimulus_time_in = 3000;
-		target_button = 3;
+		target_button=3;
 	} introduction_trial;
 	
 	trial {
 		trial_duration = forever;
-		trial_type = correct_response;
+		trial_type = first_response;
 		picture {
 			text { caption = ""; font_size = 30;} instruction_text;
 			x=0; y=0;
 		} instruction_pic;
-		target_button = 3;
 	} instruction_trial;
 	
 begin_pcl;
@@ -176,16 +179,20 @@ begin_pcl;
 	
 		loop int i = 6 until i == list_to_test.count()
 		begin
-			if seperate_attention == 1 &&
-				char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption() &&
-				char_array[list_to_test[i+1][CHAR]].caption() == char_array[char_target_index].caption()
-			then 
-				return false;
-			elseif seperate_attention == 2 &&
-				list_to_test[i][FORM] == form_target_index &&
-				list_to_test[i+1][FORM] == form_target_index 
+			if seperate_attention == 1
 			then
-				return false;
+				if char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption() &&
+					char_array[list_to_test[i+1][CHAR]].caption() == char_array[char_target_index].caption()
+				then 
+					return false;
+				end;
+			elseif seperate_attention == 2
+			then
+				if list_to_test[i][FORM] == form_target_index &&
+					list_to_test[i+1][FORM] == form_target_index 
+				then
+					return false;
+				end;
 			elseif seperate_attention == 3 &&
 						(char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption() 
 								|| list_to_test[i][FORM] == form_target_index)
@@ -290,7 +297,7 @@ begin_pcl;
 			end;
 		end;
 														  
-		loop until (validade(list, seperate_attention ,form_target_index ,
+		loop until (validade(list, seperate_attention ,form_target_index,
 						char_target_index,char_array))
 		begin
 			list.shuffle();
@@ -303,7 +310,7 @@ begin_pcl;
 	# 2 = Circle
 	# 3 = Triangle
 	sub present_trials( int seperate_attention, int char_target_index, array<text,1> char_array, 
-								int form_target_index, array<int> trial_list[][], bool show_feedback)
+								int form_target_index, array<int> trial_list[][], bool show_feedback, string block_id, string trial_id)
 	begin
 	string instruction_string = "";
 	if seperate_attention == 1
@@ -330,27 +337,36 @@ begin_pcl;
 		main_picture = form_array[form_index];
 		main_picture.set_part(3,char_array[char_index]);
 		stim_event.set_stimulus(main_picture);
-		stim_event.set_event_code("test");
+		stim_event.set_event_code(block_id + ";" + trial_id + ";" + main_picture.description() + ";" + char_array[char_index].caption());
 
 		string caption = char_array[char_index].caption();
-				
-			stim_event.set_target_button(0);
-		if seperate_attention == 1 && char_array[char_target_index].caption() == caption
+		stim_event.set_target_button(0);
+		stim_event.set_response_active(true);
+		if seperate_attention == 1
 		then
-			stim_event.set_target_button(1);
-		elseif seperate_attention == 2 && form_target_index == form_index
+			if char_array[char_target_index].caption() == caption
+			then
+				stim_event.set_target_button(1);
+			end;
+		elseif seperate_attention == 2
 		then
-			stim_event.set_target_button(2);
-		elseif seperate_attention == 3 && char_array[char_target_index].caption() == caption
+			if form_target_index == form_index
+			then 
+				stim_event.set_target_button(2);
+			end;
+		elseif seperate_attention == 3 
 		then
-			stim_event.set_target_button(1);
-		elseif
-		seperate_attention == 3 && form_target_index == form_index
-		then
-			stim_event.set_target_button(2);
-		else
-			stim_event.set_response_active(true);
+			if char_array[char_target_index].caption() == caption
+			then
+				stim_event.set_target_button(1);
+			end;
+			if form_target_index == form_index
+			then
+				stim_event.set_target_button(2);
+			end;
+			
 		end;
+		
 		#ISI
 		trial_cross.set_duration(random(500,2300));
 		trial_cross.present();
@@ -358,11 +374,12 @@ begin_pcl;
 
 		i=i+1;
 			
-		if (show_feedback) then
+		if show_feedback
+		then
 			string new_caption = "";
 			stimulus_data last = stimulus_manager.last_stimulus_data();
 			if (last.type() == last.HIT) then
-				new_caption = "Korekt";
+				new_caption = "Korrekt";
 			elseif (last.type() == last.INCORRECT) then
 				new_caption = "Falsche Taste";
 			elseif (last.type() == last.MISS) then
@@ -395,52 +412,51 @@ begin_pcl;
 
 ##########################Test trials########################################
 
-	introduction_text.set_caption("Test trial text. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+	introduction_text.set_caption("Allgemeiner Text über das gesamte Experiment. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
 	introduction_trial.present();
 	array<int> test[][] = make_trial(1, 4, letters, -1, 2, 8);
-	present_trials(1, 4, letters, 1, test, true);
+	present_trials(1, 4, letters, 1, test, true, "test", "trial1");
 	array<int> test2[][] = make_trial(2, -1, numbers, 1, 2, 8);
-	present_trials(2, 4, numbers, 1, test2, true);
+	present_trials(2, 4, numbers, 1, test2, true, "test", "trial2");
 	array<int> test3[][] = make_trial(1, 4, numbers, -1, 2, 8);
-	present_trials(1, 4, numbers, 1, test3, true);
+	present_trials(1, 4, numbers, 1, test3, true, "test", "trial3");
 	array<int> test4[][] = make_trial(2, -1, letters, 1, 2, 8);
-	present_trials(2, 4, letters, 1, test4, true);
+	present_trials(2, 4, letters, 1, test4, true, "test", "trial4");
 	
 	array<int> test5[][] = make_trial(3, 4, letters, 1, 2, 8);
-	present_trials(1, 4, letters, 1, test5, true);
+	present_trials(1, 4, letters, 1, test5, true, "test", "trial5");
 	array<int> test6[][] = make_trial(3, 1, numbers, 1, 2, 8);
-	present_trials(2, 4, numbers, 1, test6, true);
+	present_trials(2, 4, numbers, 1, test6, true, "test", "trial6");
 	array<int> test7[][] = make_trial(3, 4, numbers, 2, 2, 8);
-	present_trials(1, 4, numbers, 1, test7, true);
+	present_trials(1, 4, numbers, 1, test7, true, "test", "trial7");
 	array<int> test8[][] = make_trial(3, 6, letters, 3, 2, 8);
-	present_trials(2, 4, letters, 1, test8, true);
+	present_trials(2, 4, letters, 1, test8, true, "test", "trial8");
 	
 	array<int> test9[][] = make_trial(3, 4, letters, 1, 2, 8);
-	present_trials(1, 4, letters, 1, test9, true);
+	present_trials(1, 4, letters, 1, test9, true, "test", "trial9");
 	array<int> test10[][] = make_trial(2, -1, numbers, 1, 2, 8);
-	present_trials(2, 4, numbers, 1, test10, true);
+	present_trials(2, 4, numbers, 1, test10, true, "test", "trial10");
 	array<int> test11[][] = make_trial(1, 4, numbers, -1, 2, 8);
-	present_trials(1, 4, numbers, 1, test11, true);
+	present_trials(1, 4, numbers, 1, test11, true, "test", "trial11");
 	array<int> test12[][] = make_trial(3, 6, letters, 3, 2, 8);
-	present_trials(2, 4, letters, 1, test12, true);
+	present_trials(2, 4, letters, 1, test12, true, "test", "trial12");
 	
 ##########################Block 1########################################
 
 	introduction_text.set_caption("Block1 text. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
 	introduction_trial.present();
-	
 	array<int> block1_trial1[][] = make_trial(2, 4, letters, 1, 6, 20);
-	present_trials(2, 4, letters, 1, block1_trial1, false);
+	present_trials(2, 4, letters, 1, block1_trial1, false, "block_1", "trial_1");
 	array<int> block1_trial2[][] = make_trial(1, 1, letters, 1, 6, 20);
-	present_trials(1, 1, letters, 1, block1_trial2, false);
+	present_trials(1, 1, letters, 1, block1_trial2, false, "block_1", "trial_2");
 	array<int> block1_trial3[][] = make_trial(1, 4, numbers, 1, 6, 20);
-	present_trials(1, 4, numbers, 1, block1_trial3, false);
+	present_trials(1, 4, numbers, 1, block1_trial3, false, "block_1", "trial_3");
 	array<int> block1_trial4[][] = make_trial(3, 4, letters, 1, 6, 20);
-	present_trials(3, 4, letters, 1, block1_trial4, false);
+	present_trials(3, 4, letters, 1, block1_trial4, false, "block_1", "trial_4");
 	array<int> block1_trial5[][] = make_trial(3, 5, numbers, 2, 6, 20);
-	present_trials(3, 5, numbers, 1, block1_trial5, false);
+	present_trials(3, 5, numbers, 1, block1_trial5, false, "block_1", "trial_5");
 	array<int> block1_trial6[][] = make_trial(3, 1, letters, 3, 6, 20);
-	present_trials(3, 1, letters, 1, block1_trial6, false);
+	present_trials(3, 1, letters, 1, block1_trial6, false, "block_1", "trial_6");
 	
 ##########################Block 2########################################
 
@@ -448,17 +464,17 @@ begin_pcl;
 	introduction_trial.present();
 	
 	array<int> block2_trial1[][] = make_trial(1, 2, letters, 1, 6, 20);
-	present_trials(1, 2, letters, 1, block2_trial1, false);
+	present_trials(1, 2, letters, 1, block2_trial1, false, "block_2", "trial_1");
 	array<int> block2_trial2[][] = make_trial(1, 1, numbers, 1, 6, 20);
-	present_trials(2, 1, letters, 1, block2_trial2, false);
+	present_trials(2, 1, letters, 1, block2_trial2, false, "block_2", "trial_2");
 	array<int> block2_trial3[][] = make_trial(3, 4, letters, 1, 6, 20);
-	present_trials(3, 4, numbers, 1, block2_trial3, false);
+	present_trials(3, 4, numbers, 1, block2_trial3, false, "block_2", "trial_3");
 	array<int> block2_trial4[][] = make_trial(3, 4, numbers, 1, 6, 20);
-	present_trials(3, 4, letters, 1, block1_trial4, false);
+	present_trials(3, 4, letters, 1, block1_trial4, false, "block_2", "trial_4");
 	array<int> block2_trial5[][] = make_trial(2, 5, numbers, 2, 6, 20);
-	present_trials(2, 5, numbers, 1, block2_trial5, false);
+	present_trials(2, 5, numbers, 1, block2_trial5, false, "block_2", "trial_5");
 	array<int> block2_trial6[][] = make_trial(3, 1, letters, 3, 6, 20);
-	present_trials(3, 1, letters, 1, block2_trial6, false);
+	present_trials(3, 1, letters, 1, block2_trial6, false, "block_2", "trial_6");
 	
 ##########################Block 3########################################
 
@@ -466,16 +482,16 @@ begin_pcl;
 	introduction_trial.present();
 	
 	array<int> block3_trial1[][] = make_trial(3, 4, letters, 1, 6, 20);
-	present_trials(3, 4, letters, 1, block3_trial1, false);
+	present_trials(3, 4, letters, 1, block3_trial1, false, "block_3", "trial_1");
 	array<int> block3_trial2[][] = make_trial(1, 1, numbers, 1, 6, 20);
-	present_trials(1, 1, letters, 1, block3_trial2, false);
+	present_trials(1, 1, letters, 1, block3_trial2, false, "block_3", "trial_2");
 	array<int> block3_trial3[][] = make_trial(3, 4, letters, 1, 6, 20);
-	present_trials(3, 4, letters, 1, block3_trial3, false);
+	present_trials(3, 4, letters, 1, block3_trial3, false, "block_3", "trial_3");
 	array<int> block3_trial4[][] = make_trial(2, 4, numbers, 1, 6, 20);
-	present_trials(2, 4, numbers, 1, block3_trial4, false);
+	present_trials(2, 4, numbers, 1, block3_trial4, false, "block_3", "trial_4");
 	array<int> block3_trial5[][] = make_trial(3, 5, numbers, 2, 6, 20);
-	present_trials(3, 5, numbers, 1, block3_trial5, false);
+	present_trials(3, 5, numbers, 1, block3_trial5, false, "block_3", "trial_5");
 	array<int> block3_trial6[][] = make_trial(1, 1, letters, 3, 6, 20);
-	present_trials(1, 1, letters, 1, block3_trial6, false);
+	present_trials(1, 1, letters, 1, block3_trial6, false, "block_3", "trial_6");
 	
 	

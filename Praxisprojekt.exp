@@ -69,7 +69,7 @@
 <dl>
 <grps>
 <grp>
-<gn></gn>
+<gn>[No name]</gn>
 <pl></pl>
 </grp>
 </grps>
@@ -555,7 +555,7 @@
 </device>
 </rdl>
 <refchg>1</refchg>
-<rep>2</rep>
+<rep>1</rep>
 <require_name_match>0</require_name_match>
 <reschg>1</reschg>
 <rng>1</rng>
