@@ -1,0 +1,35 @@
+Scenario - 
+Logfile written - 06/05/2018 14:05:30
+
+Trial	Event Type	Code	blockid(str)	trialid(str)	form(str)	character(str)	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+1	Response	3					3990	3790	0
+1	Response	3					5803	5604	0
+1	Response	3					17594	17394	0
+1	Response	3					23380	23181	0
+1	Response	3					30687	30487	0
+2	Response	3					35588	4788	0
+4	Picture	test;block1;Dreieck;M	test	block1	Dreieck	M	46000	0	1	2600	1	0	2500	false_alarm	8
+4	Response	1					50097	4097	0
+5	Response	1					51999	1800	0
+5	Response	1					53899	3700	0
+6	Response	2					63936	3536	0
+6	Response	2					65738	5338	0
+7	Picture	test;block1;Viereck;D	test	block1	Viereck	D	75600	0	1	2600	1	0	2500	false_alarm	14
+7	Response	1					78118	2518	0
+9	Quit						91189	2590	NA
+
+
+{
+   "app": "Presentation Version 20.1 Build 12.04.17",
+   "device": "LENOVO 20DTCTO1WW",
+   "experiment": "{3EDEE026-D8DC-4466-8CD4-50C9D6AA7BA0}",
+   "os": "Windows 10 64 bit",
+   "package": "",
+   "parameters": {
+      "configuration": "Default configuration"
+   },
+   "scenario": "Praxisprojekt.sce",
+   "subject": "",
+   "timestamp": "2018/06/05 12:05:20 GMT"
+}
