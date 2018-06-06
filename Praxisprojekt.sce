@@ -2,7 +2,7 @@ response_matching = simple_matching;
 default_font = "Apercu Mono";
 active_buttons = 3;
 event_code_delimiter = ";";
-stimulus_properties = blockid, string, trialid, string, form, string, character, string;
+stimulus_properties = runid, string, blockid, string, form, string, character, string;
 response_logging = log_active;
 
 begin;
@@ -86,7 +86,7 @@ begin;
 	} form_array;
 
 	trial {
-		trial_duration = 1000;
+		trial_duration = 1800;
 		trial_type = first_response;
 		
 		stimulus_event{
@@ -148,7 +148,7 @@ begin;
 			text {caption = "Pause \nIn 2 Minuten geht es weiter"; font_size = 30;};
 			x=0; y=0;
 		};
-	} wait_trial;
+	} pause_trial;
 	
 begin_pcl;
 
@@ -169,7 +169,7 @@ begin_pcl;
 			i = i + 1;
 		end;
 		
-		loop int i = 1 until i == 6
+		loop int i = 1 until i == 2
 		begin
 			if seperate_attention == 1 
 			then
@@ -192,7 +192,7 @@ begin_pcl;
 			i = i + 1;
 		end;		
 	
-		loop int i = 6 until i == list_to_test.count()
+		loop int i = 2 until i == list_to_test.count()
 		begin
 			if seperate_attention == 1
 			then
@@ -434,6 +434,7 @@ begin_pcl;
 
 	introduction_text.set_caption("Allgemeiner Text über das gesamte Experiment. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
 	introduction_trial.present();
+	
 	array<int> test[][] = make_trial(1, 4, letters, -1, 2, 8);
 	present_trials(1, 4, letters, -1, test, true, "test", "block1");
 	array<int> test2[][] = make_trial(2, -1, numbers, 1, 2, 8);
@@ -463,7 +464,7 @@ begin_pcl;
 	
 ##########################Run 1########################################
 
-	wait_trial.present();
+	pause_trial.present();
 	
 	introduction_text.set_caption("Run1 text. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
 	introduction_trial.present();
@@ -483,7 +484,7 @@ begin_pcl;
 	
 ##########################Run 2########################################
 
-	wait_trial.present();
+	pause_trial.present();
 	
 	introduction_text.set_caption("Run2 text. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
 	introduction_trial.present();
@@ -502,6 +503,8 @@ begin_pcl;
 	present_trials(3, 1, letters, 1, run2_block6, false, "run_2", "block_6");
 	
 ##########################Run 3########################################
+
+	pause_trial.present();
 
 	introduction_text.set_caption("Run3 text. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
 	introduction_trial.present();
