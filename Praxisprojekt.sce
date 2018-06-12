@@ -108,7 +108,7 @@ begin;
 	} trial_cross;
 
 	trial {
-		trial_duration = 1000;
+		trial_duration = 2000;
 		all_responses = false;
 		picture {
 			text { caption = ""; font_size = 24;} feedback_text; 
@@ -399,7 +399,7 @@ begin_pcl;
 			string new_caption = "";
 			stimulus_data last = stimulus_manager.last_stimulus_data();
 			if (last.type() == last.HIT) then
-				new_caption = "Korrekt";
+				new_caption = "Richtig";
 			elseif (last.type() == last.INCORRECT) then
 				new_caption = "Falsche Taste";
 			elseif (last.type() == last.MISS) then
