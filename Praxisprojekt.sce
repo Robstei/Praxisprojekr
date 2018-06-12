@@ -149,7 +149,8 @@ begin;
 			x=0; y=0;
 		};
 	} pause_trial;
-	
+
+################################PCL##############################################	
 begin_pcl;
 
 	int CHAR = 1;
@@ -157,6 +158,20 @@ begin_pcl;
 	int max_time= 1000;
 	array <int> ISI_values [] = {500, 700, 900, 1100, 1300, 1500, 1700, 1900, 2100, 2300};
 
+	sub set_response_mode (int mode)
+	begin
+		if mode == 1
+		then
+			response_manager.set_button_active(1, false);
+			response_manager.set_button_active(2, false);
+			response_manager.set_button_active(3, true);
+		elseif mode == 2
+		then
+			response_manager.set_button_active(1, true);
+			response_manager.set_button_active(2, true);
+			response_manager.set_button_active(3, false);
+		end;
+	end;
 	sub bool validade (array<int,2> list_to_test, int seperate_attention, int form_target_index, 
 							int char_target_index, array<text,1> char_array)
 	begin 
@@ -342,6 +357,7 @@ begin_pcl;
 	instruction_string = instruction_string + "\nAntworten Sie so schnell sie können." +
 															"\nDrücken Sie die Leertaste um fortzufahren.";
 	instruction_text.set_caption(instruction_string, true);
+	set_response_mode(1);
 	instruction_trial.present();
 	
 	loop int i = 1 until i > trial_list.count()
@@ -390,6 +406,7 @@ begin_pcl;
 			trial_cross.set_duration(ISI_values[random(1,ISI_values.count())]);
 		end;
 		trial_cross.present();
+		set_response_mode(2);
 		main_trial.present();
 
 		i=i+1;
@@ -432,7 +449,9 @@ begin_pcl;
 
 ##########################Test Run########################################
 
+
 	introduction_text.set_caption("Allgemeiner Text über das gesamte Experiment. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+	set_response_mode(1);
 	introduction_trial.present();
 	
 	array<int> test[][] = make_trial(1, 4, letters, -1, 2, 8);
@@ -467,6 +486,7 @@ begin_pcl;
 	pause_trial.present();
 	
 	introduction_text.set_caption("Run1 text. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+	set_response_mode(1);
 	introduction_trial.present();
 	
 	array<int> run1_block1[][] = make_trial(2, 4, letters, 1, 6, 20);
@@ -487,6 +507,7 @@ begin_pcl;
 	pause_trial.present();
 	
 	introduction_text.set_caption("Run2 text. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+	set_response_mode(1);
 	introduction_trial.present();
 	
 	array<int> run2_block1[][] = make_trial(1, 2, letters, 1, 6, 20);
@@ -507,6 +528,7 @@ begin_pcl;
 	pause_trial.present();
 
 	introduction_text.set_caption("Run3 text. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+	set_response_mode(1);
 	introduction_trial.present();
 	
 	array<int> run3_block1[][] = make_trial(3, 4, letters, 1, 6, 20);
