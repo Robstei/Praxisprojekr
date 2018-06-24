@@ -111,7 +111,7 @@ begin;
 		trial_duration = 2000;
 		all_responses = false;
 		picture {
-			text { caption = ""; font_size = 24;} feedback_text; 
+			text { caption = ""; font_size = 24; max_text_width = 600;} feedback_text; 
 			x=0; y=0;
 		} feedback_pic;
 	} feedback_trial;
@@ -122,7 +122,7 @@ begin;
 		all_responses = false;
 
 		picture {
-			text { caption = ""; font_size = 30;} introduction_text;
+			text { caption = ""; font_size = 30; max_text_width = 1200;} introduction_text;
 			x=0;y=0;
 		} introduction_picture;
 		stimulus_time_in = 3000;
@@ -420,9 +420,9 @@ begin_pcl;
 			elseif (last.type() == last.INCORRECT) then
 				new_caption = "Falsche Taste";
 			elseif (last.type() == last.MISS) then
-				new_caption = "Sie hätten drücken müssen";
+				new_caption = "Falsch\nSie hätten drücken müssen";
 			elseif (last.type() == last.FALSE_ALARM) then
-				new_caption = "Sie hätten nicht drücken müssen";
+				new_caption = "Falsch\nSie hätten nicht drücken müssen";
 			end;
 			
 			feedback_text.set_caption(new_caption, true);
@@ -544,4 +544,6 @@ begin_pcl;
 	array<int> run3_block6[][] = make_trial(1, 1, letters, 3, 6, 20);
 	present_trials(1, 1, letters, 1, run3_block6, false, "run_3", "block_6");
 	
-	
+	introduction_text.set_caption("Bitte wenden Sie sich an den Versuchsleiter",true);
+	set_response_mode(1);
+	introduction_trial.present();
