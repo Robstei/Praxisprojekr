@@ -83,6 +83,28 @@ begin;
 			text{caption = ""; font_size= 50;};
 			x=0;y=0;
 		} main_picture_triangle;
+		
+		picture {
+			description = "Stern";
+			line_graphic {
+			coordinates = 0, 300, 67, 93, 285, 93, 109, -35, 176, -243, 
+								0, -115, -176, -243, -109, -35, -285, 93, -67, 93, 
+								0, 300, 67, 93;
+			line_width = 15;
+			};
+			x = 0; y = 0;
+			
+			polygon_graphic {
+				height = 0;
+				width = 0;
+				sides = 3;
+				fill_color = 0,0,0,255;
+			};
+			x = 0; y = 0;
+			
+			text{caption = ""; font_size= 50;};
+			x=0;y=0;
+		} main_picture_star;
 	} form_array;
 
 	trial {
@@ -172,6 +194,7 @@ begin_pcl;
 			response_manager.set_button_active(3, false);
 		end;
 	end;
+	
 	sub bool validade (array<int,2> list_to_test, int seperate_attention, int form_target_index, 
 							int char_target_index, array<text,1> char_array)
 	begin 
@@ -456,7 +479,8 @@ begin_pcl;
 
 ##########################Test Run########################################
 
-	introduction_text.set_caption("Dies ist ein Testdurchlauf. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+	introduction_text.set_caption("Dies ist ein Testdurchlauf.\n" + 
+											"Weiter mit Leertaste(nach 3 sekunden möglich)",true);
 	set_response_mode(1);
 	introduction_trial.present();
 	
