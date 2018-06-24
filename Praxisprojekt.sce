@@ -431,21 +431,28 @@ begin_pcl;
 		end;
 	end;
 	
-#	Parameter for make_trial and present_trial
+	sub make_and_present_trials (int seperate_attention, int char_target_index, array<text,1> char_array,
+											int form_target_index, int number_of_stimuli, int number_of_non_stimuli,  
+											bool show_feedback, string run_id, string block_id)
+	begin
+		array<int> trial_presentet[][] = make_trial(seperate_attention,char_target_index, char_array,
+											form_target_index, number_of_stimuli, number_of_non_stimuli);
+		present_trials(seperate_attention, char_target_index, char_array,
+											 form_target_index, trial_presentet, show_feedback, run_id, block_id)
+	end;
+	
+#	Parameter for make_and_present_trials
 #	1. Value: selective_attention: 1 = only a char is a target
 #											 2 = only a form is a target
 #											 3 = a char and a form is a target
 #	2. Value: index of char target. Use -1 if no char targets will be presentet
 #	3. Value: char array to be used
 #	4. Value: index of form target in form_array. Use -1 if no form targets will be presentet
-
-# make_trial:
 #	5. Value: number of targets in returned trial
 #	6. Value: number of non targets in returned trial
-
-# present_trial
-#	5. Value: trial to be presentet as array<int,2>
-#	6. Value: bool to determin if feedback will be given. true = feedback
+#	7. Value: bool to determin if feedback will be given. true = feedback
+#	8. Value: run_id for event_code
+#	9. Value: block_id for event_code
 
 ##########################Test Run########################################
 
@@ -453,14 +460,7 @@ begin_pcl;
 	set_response_mode(1);
 	introduction_trial.present();
 	
-	array<int> test[][] = make_trial(1, 4, letters, -1, 2, 8);
-	present_trials(1, 4, letters, -1, test, true, "test", "block1");
-	array<int> test2[][] = make_trial(2, -1, numbers, 1, 2, 8);
-	present_trials(2, -1, numbers, 1, test2, true, "test", "block2");
-	array<int> test3[][] = make_trial(1, 4, numbers, -1, 2, 8);
-	present_trials(1, 4, numbers, -1, test3, true, "test", "block3");
-	array<int> test4[][] = make_trial(2, -1, letters, 1, 2, 8);
-	present_trials(2, -1, letters, 1, test4, true, "test", "block4");
+	make_and_present_trials(1, 
 	
 ##########################Run 1########################################
 
@@ -516,15 +516,8 @@ begin_pcl;
 	present_trials(3, 4, letters, 1, run3_block3, false, "run_3", "block_3");
 	array<int> run3_block4[][] = make_trial(2, 4, numbers, 1, 6, 20);
 	present_trials(2, 4, numbers, 1, run3_block4, false, "run_3", "block_4");
-<<<<<<< HEAD
-	array<int> run3_block5[][] = make_trial(3, 5, numbers, 2, 6, 20);
-	present_trials(3, 5, numbers, 1, run3_block5, false, "run_3", "block_5");
-	array<int> run3_block6[][] = make_trial(1, 1, letters, 3, 6, 20);
-	present_trials(1, 1, letters, 1, run3_block6, false, "run_3", "block_6");
 	
 	introduction_text.set_caption("Bitte wenden Sie sich an den Versuchsleiter",true);
 	set_response_mode(1);
 	introduction_trial.present();
-=======
-	
->>>>>>> 9f9e58e813547514a96817ec1a2fe3f0a429537c
+
