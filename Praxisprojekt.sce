@@ -83,6 +83,28 @@ begin;
 			text{caption = ""; font_size= 50;};
 			x=0;y=0;
 		} main_picture_triangle;
+		
+		picture {
+			description = "Stern";
+			line_graphic {
+			coordinates = 0, 300, 67, 93, 285, 93, 109, -35, 176, -243, 
+								0, -115, -176, -243, -109, -35, -285, 93, -67, 93, 
+								0, 300, 67, 93;
+			line_width = 15;
+			};
+			x = 0; y = 0;
+			
+			polygon_graphic {
+				height = 0;
+				width = 0;
+				sides = 3;
+				fill_color = 0,0,0,255;
+			};
+			x = 0; y = 0;
+			
+			text{caption = ""; font_size= 50;};
+			x=0;y=0;
+		} main_picture_star;
 	} form_array;
 
 	trial {
