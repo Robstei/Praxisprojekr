@@ -367,10 +367,10 @@ begin_pcl;
 	string instruction_string = "";
 	if seperate_attention == 1
 	then
-		instruction_string = ("Drücken Sie die Taste L wenn " + char_array[char_target_index].caption() + " erscheint.");
+		instruction_string = ("Drücken Sie die Taste L wenn ein(e)" + char_array[char_target_index].caption() + " erscheint.");
 	elseif seperate_attention == 2
 	then
-		instruction_string = ("Drücken Sie die Taste S wenn " + form_array[form_target_index].description() + " erscheint.");
+		instruction_string = ("Drücken Sie die Taste S wenn ein" + form_array[form_target_index].description() + " erscheint.");
 	elseif seperate_attention == 3
 	then
 		instruction_string = "Drücken Sie die Taste L wenn " + char_array[char_target_index].caption() + " erscheint." +
@@ -482,7 +482,8 @@ begin_pcl;
 	set_response_mode(1);
 	introduction_trial.present();
 	
-	make_and_present_trials(1, 
+	make_and_present_trials(1, 1, letters, -1, 4, 6, true, "test", "block_1");
+	make_and_present_trials(3, 1, numbers, 1, 4, 6, true, "test", "block_2");
 	
 ##########################Run 1########################################
 
@@ -494,14 +495,10 @@ begin_pcl;
 	set_response_mode(1);
 	introduction_trial.present();
 	
-	array<int> run1_block1[][] = make_trial(2, 4, letters, 1, 6, 20);
-	present_trials(2, 4, letters, 1, run1_block1, false, "run_1", "block_1");
-	array<int> run1_block2[][] = make_trial(1, 1, letters, 1, 6, 20);
-	present_trials(1, 1, letters, 1, run1_block2, false, "run_1", "block_2");
-	array<int> run1_block3[][] = make_trial(1, 4, numbers, 1, 6, 20);
-	present_trials(1, 4, numbers, 1, run1_block3, false, "run_1", "block_3");
-	array<int> run1_block4[][] = make_trial(3, 4, letters, 1, 6, 20);
-	present_trials(3, 4, letters, 1, run1_block4, false, "run_1", "block_4");
+	make_and_present_trials(2, -1, letters, 2, 6, 20, false, "run_1", "block_1");
+	make_and_present_trials(1, 2, numbers, -1, 6, 20, false, "run_1", "block_2");
+	make_and_present_trials(1, 2, letters, -1, 6, 20, false, "run_1", "block_3");
+	make_and_present_trials(2, -1, numbers, 3, 6, 20, false, "run_1", "block_4");
 	
 ##########################Run 2########################################
 
@@ -512,14 +509,10 @@ begin_pcl;
 	set_response_mode(1);
 	introduction_trial.present();
 	
-	array<int> run2_block1[][] = make_trial(1, 2, letters, 1, 6, 20);
-	present_trials(1, 2, letters, 1, run2_block1, false, "run_2", "block_1");
-	array<int> run2_block2[][] = make_trial(1, 1, numbers, 1, 6, 20);
-	present_trials(2, 1, letters, 1, run2_block2, false, "run_2", "block_2");
-	array<int> run2_block3[][] = make_trial(3, 4, letters, 1, 6, 20);
-	present_trials(3, 4, numbers, 1, run2_block3, false, "run_2", "block_3");
-	array<int> run2_block4[][] = make_trial(3, 4, numbers, 1, 6, 20);
-	present_trials(3, 4, letters, 1, run1_block4, false, "run_2", "block_4");
+	make_and_present_trials(3, 3, letters, 4, 6, 20, false, "run_2", "block_1");
+	make_and_present_trials(3, 3, numbers, 1, 6, 20, false, "run_2", "block_2");
+	make_and_present_trials(3, 4, letters, 2, 6, 20, false, "run_2", "block_3");
+	make_and_present_trials(3, 4, numbers, 3, 6, 20, false, "run_2", "block_4");
 	
 ##########################Run 3########################################
 
@@ -530,14 +523,15 @@ begin_pcl;
 	set_response_mode(1);
 	introduction_trial.present();
 	
-	array<int> run3_block1[][] = make_trial(3, 4, letters, 1, 6, 20);
-	present_trials(3, 4, letters, 1, run3_block1, false, "run_3", "block_1");
-	array<int> run3_block2[][] = make_trial(1, 1, numbers, 1, 6, 20);
-	present_trials(1, 1, letters, 1, run3_block2, false, "run_3", "block_2");
-	array<int> run3_block3[][] = make_trial(3, 4, letters, 1, 6, 20);
-	present_trials(3, 4, letters, 1, run3_block3, false, "run_3", "block_3");
-	array<int> run3_block4[][] = make_trial(2, 4, numbers, 1, 6, 20);
-	present_trials(2, 4, numbers, 1, run3_block4, false, "run_3", "block_4");
+	make_and_present_trials(2, -1, letters, 4, 6, 20, false, "run_3", "block_1");
+	make_and_present_trials(3, 5, numbers, 1, 6, 20, false, "run_3", "block_2");
+	make_and_present_trials(1, 5, letters, -1, 6, 20, false, "run_3", "block_3");
+	make_and_present_trials(3, 6, numbers, 2, 6, 20, false, "run_3", "block_4");
+	
+	make_and_present_trials(2, -1, numbers, 3, 6, 20, false, "run_3", "block_5");
+	make_and_present_trials(3, 6, letters, 4, 6, 20, false, "run_3", "block_6");
+	make_and_present_trials(1, 1, numbers, -1, 6, 20, false, "run_3", "block_7");
+	make_and_present_trials(3, 1, letters, 1, 6, 20, false, "run_3", "block_8");
 	
 	introduction_text.set_caption("Bitte wenden Sie sich an den Versuchsleiter",true);
 	set_response_mode(1);
