@@ -177,10 +177,17 @@ begin_pcl;
 	int FORM = 2;
 	array <int> ISI_values [] = {500, 700, 900, 1100, 1300, 1500, 1700, 1900, 2100, 2300};
 	
-	sub pause (int time_in_seconds)
+	sub pause_seconds (int time_in_seconds)
 	begin
 		pause_trial.set_duration(time_in_seconds *1000);
-		pause_text.set_caption("Pause \nIn" + string(time_in_seconds) + " Sekunden geht es weiter", true);
+		pause_text.set_caption("Pause \nIn " + string(time_in_seconds) + " Sekunden geht es weiter", true);
+		pause_trial.present();
+	end;
+	
+	sub pause_minutes (int time_in_minutes)
+	begin
+		pause_trial.set_duration(time_in_minutes *60000);
+		pause_text.set_caption("Pause \nIn " + string(time_in_minutes) + " Minuten geht es weiter", true);
 		pause_trial.present();
 	end;
 	
@@ -372,14 +379,14 @@ begin_pcl;
 	string instruction_string = "";
 	if seperate_attention == 1
 	then
-		instruction_string = ("Drücken Sie die Taste L wenn ein(e) " + char_array[char_target_index].caption() + " erscheint.");
+		instruction_string = ("Drücken Sie die Taste \"L\" wenn ein(e) " + char_array[char_target_index].caption() + " erscheint.");
 	elseif seperate_attention == 2
 	then
-		instruction_string = ("Drücken Sie die Taste S wenn ein" + form_array[form_target_index].description() + " erscheint.");
+		instruction_string = ("Drücken Sie die Taste \"S\" wenn ein " + form_array[form_target_index].description() + " erscheint.");
 	elseif seperate_attention == 3
 	then
-		instruction_string = "Drücken Sie die Taste L wenn " + char_array[char_target_index].caption() + " erscheint." +
-									"\nDrücken Sie die Taste S wenn " + form_array[form_target_index].description() + " erscheint."
+		instruction_string = "Drücken Sie die Taste \"L\" wenn ein(e) " + char_array[char_target_index].caption() + " erscheint." +
+									"\nDrücken Sie die Taste \"S\" wenn ein " + form_array[form_target_index].description() + " erscheint."
 	end;
 	instruction_string = instruction_string + "\nAntworten Sie so schnell sie können." +
 															"\nDrücken Sie die Leertaste um fortzufahren.";
@@ -483,16 +490,16 @@ begin_pcl;
 #	9. Value: block_id for event_code
 
 ##########################Test Run########################################
-
+	
 	set_response_mode(1);
 	introduction_text.set_font_size(25);
-	introduction_text.set_caption("Im folgenden Paradigma wird ihre Aufmerksamkeit getestet. Auf dem Bildschirm erscheinen Buchstaben " +
-											"oder Zahlen innerhalb von Formen, auf welche Sie reagieren müssen. Vor jedem Durchlauf erhalten Sie " +
-											"eine kurze Instruktion, auf welches Symbol (Buchstabe, Zahl, Form) reagiert werden soll. Bitte reagieren Sie " +
-											"auf Buchstaben und Zahlen mit der Taste \"L\" und auf Formen mit der Taste \"S\" Bitte reagieren Sie so schnell " +
-											"und so richtig wie möglich. Wir starten mit einem Testdurchlauf \n\n Drücken Sie die Leertaste um fortzufahren",true);
+	introduction_text.set_caption("Im Folgenden werden ihnen auf dem Bildschirm unterschieldiche Buchstaben," +
+											" Zahlen  und Formen präsentiert. Vor jedem Durchlauf erhalten Sie " +
+											"eine kurze Instruktion, auf welche Symbole (Buchstaben, Zahlen, Formen) Sie reagiert sollen." +
+											"Die Reaktion erfolgt mit den Tasten \"L\" und \"S\". Reagieren Sie so schnell " +
+											"und so richtig wie möglich. \n\n Zunächst folgt ein Testdurchlauf. \n\n Drücken Sie die Leertaste um fortzufahren",true);
 	introduction_trial.present();
-	introduction_text.set_caption("Dies ist ein Testdurchlauf. Weiter mit Leertaste(nach einer Sekunde möglich)",true);
+	introduction_text.set_caption("Dies ist ein Testdurchlauf. Weiter mit Leertaste (nach einer Sekunde möglich)",true);
 	introduction_trial.present();
 	
 	make_and_present_trials(1, 1, letters, -1, 4, 6, true, "test", "block_1");
@@ -500,11 +507,11 @@ begin_pcl;
 	
 ##########################Run 1########################################
 
-	pause(30);
+	pause_seconds(30);
 	
 	introduction_text.set_caption("Der Testdurchlauf ist vorbei.\n" +
 											"Der erste Durchgang beginnt.\n" + 
-											"Weiter mit Leertaste(nach einer Sekunde möglich)",true);
+											"Weiter mit Leertaste (nach einer Sekunde möglich)",true);
 	set_response_mode(1);
 	introduction_trial.present();
 	
@@ -515,10 +522,10 @@ begin_pcl;
 	
 ##########################Run 2########################################
 
-	pause(120);
+	pause_minutes(2);
 	
 	introduction_text.set_caption("Der zweite Durchgang beginnt.\n" + 
-											"Weiter mit Leertaste(nach einer Sekunde möglich)",true);
+											"Weiter mit Leertaste (nach einer Sekunde möglich)",true);
 	set_response_mode(1);
 	introduction_trial.present();
 	
@@ -529,10 +536,10 @@ begin_pcl;
 	
 ##########################Run 3########################################
 
-	pause(120);
+	pause_minutes(2);
 
 	introduction_text.set_caption("Der dritte Durchgang beginnt.\n" + 
-											"Weiter mit Leertaste(nach einer Sekunde möglich)",true);
+											"Weiter mit Leertaste (nach einer Sekunde möglich)",true);
 	set_response_mode(1);
 	introduction_trial.present();
 	

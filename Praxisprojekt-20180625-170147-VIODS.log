@@ -1,0 +1,21 @@
+Scenario - 
+Logfile written - 06/25/2018 17:01:50
+
+Trial	Event Type	Code	runid(str)	blockid(str)	form(str)	character(str)	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+2	Quit						24021	3882	NA
+
+
+{
+   "app": "Presentation Version 20.1 Build 12.04.17",
+   "device": "To Be Filled By O.E.M. To Be Filled By O.E.M.",
+   "experiment": "{3EDEE026-D8DC-4466-8CD4-50C9D6AA7BA0}",
+   "os": "Windows 10 64 bit",
+   "package": "",
+   "parameters": {
+      "configuration": "Default configuration"
+   },
+   "scenario": "Praxisprojekt.sce",
+   "subject": "",
+   "timestamp": "2018/06/25 15:01:47 GMT"
+}
