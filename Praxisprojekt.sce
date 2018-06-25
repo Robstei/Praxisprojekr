@@ -388,7 +388,7 @@ begin_pcl;
 		instruction_string = "Drücken Sie die Taste \"L\" wenn ein(e) " + char_array[char_target_index].caption() + " erscheint." +
 									"\nDrücken Sie die Taste \"S\" wenn ein " + form_array[form_target_index].description() + " erscheint."
 	end;
-	instruction_string = instruction_string + "\nAntworten Sie so schnell sie können." +
+	instruction_string = instruction_string + "\nAntworten Sie so schnell und richtig wie möglich." +
 															"\nDrücken Sie die Leertaste um fortzufahren.";
 	instruction_text.set_caption(instruction_string, true);
 	set_response_mode(1);
