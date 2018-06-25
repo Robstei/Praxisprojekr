@@ -119,7 +119,6 @@ begin;
 	} main_trial;
 
 	trial {
-		all_responses = false;
 		picture {
 			text {
 				caption="+";
@@ -131,7 +130,6 @@ begin;
 
 	trial {
 		trial_duration = 2000;
-		all_responses = false;
 		picture {
 			text { caption = ""; font_size = 24; max_text_width = 600;} feedback_text; 
 			x=0; y=0;
@@ -147,7 +145,7 @@ begin;
 			text { caption = ""; font_size = 30; max_text_width = 1200;} introduction_text;
 			x=0;y=0;
 		} introduction_picture;
-		stimulus_time_in = 3000;
+		stimulus_time_in = 1000;
 		response_active= true;
 	} introduction_trial;
 	
@@ -159,7 +157,7 @@ begin;
 			text { caption = ""; font_size = 30;} instruction_text;
 			x=0; y=0;
 		} instruction_pic;
-		stimulus_time_in = 2000;
+		stimulus_time_in = 1500;
 		response_active= true;
 		} instruction_trial;
 	
@@ -177,13 +175,12 @@ begin_pcl;
 
 	int CHAR = 1;
 	int FORM = 2;
-	int max_time= 1000;
 	array <int> ISI_values [] = {500, 700, 900, 1100, 1300, 1500, 1700, 1900, 2100, 2300};
 	
 	sub pause (int time_in_seconds)
 	begin
 		pause_trial.set_duration(time_in_seconds *1000);
-		pause_text.set_caption("Pause \nIn" + time_in_seconds + " Sekunden geht es weiter", true);
+		pause_text.set_caption("Pause \nIn" + string(time_in_seconds) + " Sekunden geht es weiter", true);
 		pause_trial.present();
 	end;
 	
@@ -368,13 +365,14 @@ begin_pcl;
 	# 1 = Recktangle
 	# 2 = Circle
 	# 3 = Triangle
+	# 4 = Star
 	sub present_trials( int seperate_attention, int char_target_index, array<text,1> char_array, 
 								int form_target_index, array<int> trial_list[][], bool show_feedback, string run_id, string block_id)
 	begin
 	string instruction_string = "";
 	if seperate_attention == 1
 	then
-		instruction_string = ("Drücken Sie die Taste L wenn ein(e)" + char_array[char_target_index].caption() + " erscheint.");
+		instruction_string = ("Drücken Sie die Taste L wenn ein(e) " + char_array[char_target_index].caption() + " erscheint.");
 	elseif seperate_attention == 2
 	then
 		instruction_string = ("Drücken Sie die Taste S wenn ein" + form_array[form_target_index].description() + " erscheint.");
@@ -397,7 +395,8 @@ begin_pcl;
 		main_picture = form_array[form_index];
 		main_picture.set_part(3,char_array[char_index]);
 		stim_event.set_stimulus(main_picture);
-		stim_event.set_event_code(run_id + ";" + block_id + ";" + main_picture.description() + ";" + char_array[char_index].caption());
+		stim_event.set_event_code(run_id + ";" + block_id + ";" + main_picture.description() + 
+											";" + char_array[char_index].caption());
 
 		string caption = char_array[char_index].caption();
 		stim_event.set_target_button(0);
@@ -485,8 +484,15 @@ begin_pcl;
 
 ##########################Test Run########################################
 
-	introduction_text.set_caption("Dies ist ein Testdurchlauf. Weiter mit Leertaste(nach 1 Sekunde möglich)",true);
 	set_response_mode(1);
+	introduction_text.set_font_size(25);
+	introduction_text.set_caption("Im folgenden Paradigma wird ihre Aufmerksamkeit getestet. Auf dem Bildschirm erscheinen Buchstaben " +
+											"oder Zahlen innerhalb von Formen, auf welche Sie reagieren müssen. Vor jedem Durchlauf erhalten Sie " +
+											"eine kurze Instruktion, auf welches Symbol (Buchstabe, Zahl, Form) reagiert werden soll. Bitte reagieren Sie " +
+											"auf Buchstaben und Zahlen mit der Taste \"L\" und auf Formen mit der Taste \"S\" Bitte reagieren Sie so schnell " +
+											"und so richtig wie möglich. Wir starten mit einem Testdurchlauf \n\n Drücken Sie die Leertaste um fortzufahren",true);
+	introduction_trial.present();
+	introduction_text.set_caption("Dies ist ein Testdurchlauf. Weiter mit Leertaste(nach einer Sekunde möglich)",true);
 	introduction_trial.present();
 	
 	make_and_present_trials(1, 1, letters, -1, 4, 6, true, "test", "block_1");
