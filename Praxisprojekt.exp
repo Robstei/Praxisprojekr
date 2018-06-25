@@ -122,20 +122,20 @@
 <lnb>2</lnb>
 <lno>4</lno>
 <log>
-<append_counter>0</append_counter>
+<append_counter>1</append_counter>
 <delimiter>9</delimiter>
 <general_list>1</general_list>
 <its>0</its>
 <meta>1</meta>
 <pien>0</pien>
 <set_def_file>C:\Praxisprojekt\Praxisprojekt.sdf</set_def_file>
-<stimulus_list>0</stimulus_list>
+<stimulus_list>1</stimulus_list>
 <subject_id></subject_id>
 <subject_id_pol>0</subject_id_pol>
 <video_list>0</video_list>
 <warnings>1</warnings>
 </log>
-<lol>1</lol>
+<lol>0</lol>
 <lpr></lpr>
 <lslset>
 <col>0</col>
@@ -152,7 +152,25 @@
 <out_encrypt_key></out_encrypt_key>
 <pi_list></pi_list>
 <plat>1</plat>
-<port_devices></port_devices>
+<port_devices>
+<device>
+<parameters>
+<cts>0</cts>
+<dsrin>0</dsrin>
+<dsrout>0</dsrout>
+<dtr>disable</dtr>
+<rts>disable</rts>
+<set_fifo>1</set_fifo>
+<spd></spd>
+<spp></spp>
+<spr></spr>
+<sps></sps>
+</parameters>
+<piai>COM1</piai>
+<pian>Serial Port</pian>
+<pihpn>COM1</pihpn>
+</device>
+</port_devices>
 <rdl>
 <device>
 <abs_axis>
@@ -204,7 +222,7 @@
 <device>
 <device_type>3</device_type>
 <dx_device_type>0</dx_device_type>
-<name>Standard PS/2 Keyboard</name>
+<name>HID Keyboard Device</name>
 </device>
 <device>
 <abs_axis>
@@ -246,12 +264,22 @@
 <dx_device_type>0</dx_device_type>
 <max_raw_pos>65535</max_raw_pos>
 <min_raw_pos>0</min_raw_pos>
-<name>Synaptics Pointing Device</name>
+<name>HID-compliant mouse</name>
 </device>
 <device>
 <device_type>4</device_type>
 <dx_device_type>17</dx_device_type>
-<name>Lenovo HID Mini-driver for Hardware Radio Switch</name>
+<name>HyperX 7.1 Audio</name>
+</device>
+<device>
+<device_type>4</device_type>
+<dx_device_type>17</dx_device_type>
+<name>ndPoint1 Inte</name>
+</device>
+<device>
+<device_type>4</device_type>
+<dx_device_type>17</dx_device_type>
+<name>ndPoint1 Inte 1</name>
 </device>
 <device>
 <axis>

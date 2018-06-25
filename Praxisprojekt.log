@@ -1,0 +1,99 @@
+Scenario - Messung von Wechselkosten zwischen geteilter und selektiver Aufmerksamkeit
+Logfile written - 06/26/2018 00:29:07
+
+Trial	Event Type	Code	runid(str)	blockid(str)	form(str)	character(str)	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+1	Response	3					21460	21391	0
+2	Response	3					39220	17693	0
+3	Response	3					54980	15675	0
+4	Response	3					57940	2941	0
+5	Picture	test;block_1;Viereck;X	test	block_1	Viereck	X	65068	0	1	2569	1	0	2500	other	0
+6	Response	1					93140	10017	0
+6	Response	2					98580	15457	0
+6	Response	1					100420	17297	0
+7	Response	2					107540	4348	0
+7	Response	1					109300	6107	0
+7	Response	2					110660	7467	0
+7	Response	1					112100	8908	0
+7	Response	2					113380	10188	0
+7	Response	1					114580	11388	0
+7	Response	2					115940	12748	0
+7	Response	1					116900	13708	0
+8	Picture	test;block_1;Viereck;D	test	block_1	Viereck	D	118261	0	1	2569	1	0	2500	incorrect	18
+8	Response	2					122020	3759	0
+9	Response	1					122820	739	0
+9	Response	2					124420	2339	0
+9	Response	1					125140	3059	0
+9	Response	1					126100	4019	0
+9	Response	1					129060	6979	0
+9	Response	2					130259	8179	0
+9	Response	1					131460	9379	0
+9	Response	1					137300	15219	0
+10	Response	2					145300	3150	0
+11	Picture	test;block_1;Stern;M	test	block_1	Stern	M	159233	0	1	2569	1	0	2500	false_alarm	29
+11	Response	2					162020	2787	0
+12	Response	1					162180	100	0
+12	Response	2					171860	9780	0
+12	Response	2					181140	19060	0
+13	Response	2					185620	3471	0
+14	Picture	test;block_1;Dreieck;D	test	block_1	Dreieck	D	191246	0	1	2569	1	0	2500	hit	35
+14	Response	1					195140	3894	0
+15	Response	1					198020	2815	0
+17	Picture	test;block_1;Dreieck;A	test	block_1	Dreieck	A	234370	0	1	2569	1	0	2500	false_alarm	38
+17	Response	2					238180	3810	0
+20	Picture	test;block_1;Viereck;D	test	block_1	Viereck	D	275411	0	1	2569	1	0	2500	hit	40
+20	Response	1					278900	3489	0
+23	Picture	test;block_1;Viereck;T	test	block_1	Viereck	T	314091	0	1	2570	1	0	2500	false_alarm	42
+23	Response	2					317620	3529	0
+26	Picture	test;block_1;Kreis;M	test	block_1	Kreis	M	354854	0	1	2569	1	0	2500	false_alarm	44
+26	Response	1					358020	3165	0
+29	Picture	test;block_1;Stern;X	test	block_1	Stern	X	387145	0	1	2569	1	0	2500	other	0
+31	Response	2					428340	3071	0
+31	Response	1					429700	4430	0
+31	Response	1					434340	9070	0
+31	Response	1					438180	12910	0
+31	Response	1					442100	16831	0
+31	Response	1					445620	20350	0
+32	Picture	test;block_1;Dreieck;D	test	block_1	Dreieck	D	446380	0	1	2292	1	0	2500	hit	53
+32	Response	1					448579	2199	0
+33	Response	1					450740	2068	0
+33	Response	1					455860	7188	0
+33	Response	1					458420	9748	0
+33	Response	1					460659	11987	0
+33	Response	1					462739	14067	0
+33	Response	1					464420	15748	0
+33	Response	1					466660	17988	0
+34	Quit						542740	73998	NA
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture		false_alarm	3	21391	1	69	1	21458	1	0	next
+Picture		false_alarm	3	17693	1	21527	1	17777	1	0	next
+Picture		false_alarm	3	15675	1	39305	1	15694	1	0	next
+Picture	test;block_1;Viereck;X	other				65068	1	2569	1	0	2500
+Picture	test;block_1;Viereck;D	incorrect	2	3759	1	118261	1	2569	1	0	2500
+Picture	test;block_1;Stern;M	false_alarm	2	2787	1	159233	1	2569	1	0	2500
+Picture	test;block_1;Dreieck;D	hit	1	3894	1	191246	1	2569	1	0	2500
+Picture	test;block_1;Dreieck;A	false_alarm	2	3810	1	234370	1	2569	1	0	2500
+Picture	test;block_1;Viereck;D	hit	1	3489	1	275411	1	2569	1	0	2500
+Picture	test;block_1;Viereck;T	false_alarm	2	3529	1	314091	1	2570	1	0	2500
+Picture	test;block_1;Kreis;M	false_alarm	1	3165	1	354854	1	2569	1	0	2500
+Picture	test;block_1;Stern;X	other				387145	1	2569	1	0	2500
+Picture	test;block_1;Dreieck;D	hit	1	2199	1	446380	1	2292	1	0	2500
+Picture		other				468741	1	77887	1	0	next
+
+
+{
+   "app": "Presentation Version 20.1 Build 12.04.17",
+   "device": "To Be Filled By O.E.M. To Be Filled By O.E.M.",
+   "experiment": "{3EDEE026-D8DC-4466-8CD4-50C9D6AA7BA0}",
+   "os": "Windows 10 64 bit",
+   "package": "",
+   "parameters": {
+      "configuration": "Default configuration"
+   },
+   "scenario": "Praxisprojekt.sce",
+   "subject": "",
+   "timestamp": "2018/06/25 22:28:12 GMT"
+}

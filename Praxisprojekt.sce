@@ -1,4 +1,5 @@
 response_matching = simple_matching;
+scenario = "Messung von Wechselkosten zwischen geteilter und selektiver Aufmerksamkeit";
 default_font = "Apercu Mono";
 active_buttons = 3;
 event_code_delimiter = ";";
@@ -495,7 +496,7 @@ begin_pcl;
 	introduction_text.set_font_size(25);
 	introduction_text.set_caption("Im Folgenden werden ihnen auf dem Bildschirm unterschieldiche Buchstaben," +
 											" Zahlen  und Formen präsentiert. Vor jedem Durchlauf erhalten Sie " +
-											"eine kurze Instruktion, auf welche Symbole (Buchstaben, Zahlen, Formen) Sie reagiert sollen." +
+											"eine kurze Instruktion, auf welche Symbole (Buchstaben, Zahlen, Formen) Sie reagieren sollen." +
 											"Die Reaktion erfolgt mit den Tasten \"L\" und \"S\". Reagieren Sie so schnell " +
 											"und so richtig wie möglich. \n\n Zunächst folgt ein Testdurchlauf. \n\n Drücken Sie die Leertaste um fortzufahren",true);
 	introduction_trial.present();
