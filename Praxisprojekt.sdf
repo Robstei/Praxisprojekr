@@ -1,6 +1,6 @@
 event_pair_table custom_pair_table(runid1, blockid1, form1, character1, seperateAttention1, target1, time1, code2, time2, time_diff, rm_type, subject1)
 
-allruns(rm_all):: runid1 == "test"
+allruns(rm_all):: runid1 != "test"
 run1(rm_all):: runid1 == "run_1"
 run2(rm_all):: runid1 == "run_2"
 run3(rm_all):: runid1 == "run_3"
