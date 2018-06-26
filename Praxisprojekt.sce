@@ -1,4 +1,5 @@
 response_matching = simple_matching;
+scenario = "Messung von Wechselkosten zwischen geteilter und selektiver Aufmerksamkeit";
 default_font = "Apercu Mono";
 active_buttons = 3;
 event_code_delimiter = ";";
@@ -119,7 +120,6 @@ begin;
 	} main_trial;
 
 	trial {
-		all_responses = false;
 		picture {
 			text {
 				caption="+";
@@ -131,7 +131,6 @@ begin;
 
 	trial {
 		trial_duration = 2000;
-		all_responses = false;
 		picture {
 			text { caption = ""; font_size = 24; max_text_width = 600;} feedback_text; 
 			x=0; y=0;
@@ -147,7 +146,7 @@ begin;
 			text { caption = ""; font_size = 30; max_text_width = 1200;} introduction_text;
 			x=0;y=0;
 		} introduction_picture;
-		stimulus_time_in = 3000;
+		stimulus_time_in = 1000;
 		response_active= true;
 	} introduction_trial;
 	
@@ -159,7 +158,7 @@ begin;
 			text { caption = ""; font_size = 30;} instruction_text;
 			x=0; y=0;
 		} instruction_pic;
-		stimulus_time_in = 2000;
+		stimulus_time_in = 1500;
 		response_active= true;
 		} instruction_trial;
 	
@@ -167,7 +166,7 @@ begin;
 		trial_duration = 120000;
 		
 		picture {
-			text {caption = "Pause \nIn 2 Minuten geht es weiter"; font_size = 30;};
+			text {caption = "Pause \nIn 2 Minuten geht es weiter"; font_size = 30;}pause_text;
 			x=0; y=0;
 		};
 	} pause_trial;
@@ -177,9 +176,22 @@ begin_pcl;
 
 	int CHAR = 1;
 	int FORM = 2;
-	int max_time= 1000;
 	array <int> ISI_values [] = {500, 700, 900, 1100, 1300, 1500, 1700, 1900, 2100, 2300};
-
+	
+	sub pause_seconds (int time_in_seconds)
+	begin
+		pause_trial.set_duration(time_in_seconds *1000);
+		pause_text.set_caption("Pause \nIn " + string(time_in_seconds) + " Sekunden geht es weiter", true);
+		pause_trial.present();
+	end;
+	
+	sub pause_minutes (int time_in_minutes)
+	begin
+		pause_trial.set_duration(time_in_minutes *60000);
+		pause_text.set_caption("Pause \nIn " + string(time_in_minutes) + " Minuten geht es weiter", true);
+		pause_trial.present();
+	end;
+	
 	sub set_response_mode (int mode)
 	begin
 		if mode == 1
@@ -361,22 +373,23 @@ begin_pcl;
 	# 1 = Recktangle
 	# 2 = Circle
 	# 3 = Triangle
+	# 4 = Star
 	sub present_trials( int seperate_attention, int char_target_index, array<text,1> char_array, 
 								int form_target_index, array<int> trial_list[][], bool show_feedback, string run_id, string block_id)
 	begin
 	string instruction_string = "";
 	if seperate_attention == 1
 	then
-		instruction_string = ("Drücken Sie die Taste L wenn " + char_array[char_target_index].caption() + " erscheint.");
+		instruction_string = ("Drücken Sie die Taste \"L\" wenn ein(e) " + char_array[char_target_index].caption() + " erscheint.");
 	elseif seperate_attention == 2
 	then
-		instruction_string = ("Drücken Sie die Taste S wenn " + form_array[form_target_index].description() + " erscheint.");
+		instruction_string = ("Drücken Sie die Taste \"S\" wenn ein " + form_array[form_target_index].description() + " erscheint.");
 	elseif seperate_attention == 3
 	then
-		instruction_string = "Drücken Sie die Taste L wenn " + char_array[char_target_index].caption() + " erscheint." +
-									"\nDrücken Sie die Taste S wenn " + form_array[form_target_index].description() + " erscheint."
+		instruction_string = "Drücken Sie die Taste \"L\" wenn ein(e) " + char_array[char_target_index].caption() + " erscheint." +
+									"\nDrücken Sie die Taste \"S\" wenn ein " + form_array[form_target_index].description() + " erscheint."
 	end;
-	instruction_string = instruction_string + "\nAntworten Sie so schnell sie können." +
+	instruction_string = instruction_string + "\nAntworten Sie so schnell und richtig wie möglich." +
 															"\nDrücken Sie die Leertaste um fortzufahren.";
 	instruction_text.set_caption(instruction_string, true);
 	set_response_mode(1);
@@ -390,7 +403,8 @@ begin_pcl;
 		main_picture = form_array[form_index];
 		main_picture.set_part(3,char_array[char_index]);
 		stim_event.set_stimulus(main_picture);
-		stim_event.set_event_code(run_id + ";" + block_id + ";" + main_picture.description() + ";" + char_array[char_index].caption());
+		stim_event.set_event_code(run_id + ";" + block_id + ";" + main_picture.description() + 
+											";" + char_array[char_index].caption());
 
 		string caption = char_array[char_index].caption();
 		stim_event.set_target_button(0);
@@ -477,67 +491,68 @@ begin_pcl;
 #	9. Value: block_id for event_code
 
 ##########################Test Run########################################
-
-	introduction_text.set_caption("Dies ist ein Testdurchlauf. Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+	
 	set_response_mode(1);
+	introduction_text.set_font_size(25);
+	introduction_text.set_caption("Im Folgenden werden ihnen auf dem Bildschirm unterschieldiche Buchstaben," +
+											" Zahlen  und Formen präsentiert. Vor jedem Durchlauf erhalten Sie " +
+											"eine kurze Instruktion, auf welche Symbole (Buchstaben, Zahlen, Formen) Sie reagieren sollen." +
+											"Die Reaktion erfolgt mit den Tasten \"L\" und \"S\". Reagieren Sie so schnell " +
+											"und so richtig wie möglich. \n\n Zunächst folgt ein Testdurchlauf. \n\n Drücken Sie die Leertaste um fortzufahren",true);
+	introduction_trial.present();
+	introduction_text.set_caption("Dies ist ein Testdurchlauf. Weiter mit Leertaste (nach einer Sekunde möglich)",true);
 	introduction_trial.present();
 	
-	make_and_present_trials(1, 
+	make_and_present_trials(1, 1, letters, -1, 4, 6, true, "test", "block_1");
+	make_and_present_trials(3, 1, numbers, 1, 4, 6, true, "test", "block_2");
 	
 ##########################Run 1########################################
 
-	pause_trial.present();
+	pause_seconds(30);
 	
 	introduction_text.set_caption("Der Testdurchlauf ist vorbei.\n" +
 											"Der erste Durchgang beginnt.\n" + 
-											"Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+											"Weiter mit Leertaste (nach einer Sekunde möglich)",true);
 	set_response_mode(1);
 	introduction_trial.present();
 	
-	array<int> run1_block1[][] = make_trial(2, 4, letters, 1, 6, 20);
-	present_trials(2, 4, letters, 1, run1_block1, false, "run_1", "block_1");
-	array<int> run1_block2[][] = make_trial(1, 1, letters, 1, 6, 20);
-	present_trials(1, 1, letters, 1, run1_block2, false, "run_1", "block_2");
-	array<int> run1_block3[][] = make_trial(1, 4, numbers, 1, 6, 20);
-	present_trials(1, 4, numbers, 1, run1_block3, false, "run_1", "block_3");
-	array<int> run1_block4[][] = make_trial(3, 4, letters, 1, 6, 20);
-	present_trials(3, 4, letters, 1, run1_block4, false, "run_1", "block_4");
+	make_and_present_trials(2, -1, letters, 2, 6, 20, false, "run_1", "block_1");
+	make_and_present_trials(1, 2, numbers, -1, 6, 20, false, "run_1", "block_2");
+	make_and_present_trials(1, 2, letters, -1, 6, 20, false, "run_1", "block_3");
+	make_and_present_trials(2, -1, numbers, 3, 6, 20, false, "run_1", "block_4");
 	
 ##########################Run 2########################################
 
-	pause_trial.present();
+	pause_minutes(2);
 	
 	introduction_text.set_caption("Der zweite Durchgang beginnt.\n" + 
-											"Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+											"Weiter mit Leertaste (nach einer Sekunde möglich)",true);
 	set_response_mode(1);
 	introduction_trial.present();
 	
-	array<int> run2_block1[][] = make_trial(1, 2, letters, 1, 6, 20);
-	present_trials(1, 2, letters, 1, run2_block1, false, "run_2", "block_1");
-	array<int> run2_block2[][] = make_trial(1, 1, numbers, 1, 6, 20);
-	present_trials(2, 1, letters, 1, run2_block2, false, "run_2", "block_2");
-	array<int> run2_block3[][] = make_trial(3, 4, letters, 1, 6, 20);
-	present_trials(3, 4, numbers, 1, run2_block3, false, "run_2", "block_3");
-	array<int> run2_block4[][] = make_trial(3, 4, numbers, 1, 6, 20);
-	present_trials(3, 4, letters, 1, run1_block4, false, "run_2", "block_4");
+	make_and_present_trials(3, 3, letters, 4, 6, 20, false, "run_2", "block_1");
+	make_and_present_trials(3, 3, numbers, 1, 6, 20, false, "run_2", "block_2");
+	make_and_present_trials(3, 4, letters, 2, 6, 20, false, "run_2", "block_3");
+	make_and_present_trials(3, 4, numbers, 3, 6, 20, false, "run_2", "block_4");
 	
 ##########################Run 3########################################
 
-	pause_trial.present();
+	pause_minutes(2);
 
 	introduction_text.set_caption("Der dritte Durchgang beginnt.\n" + 
-											"Weiter mit Leertaste(nach 3 sekunden möglich)",true);
+											"Weiter mit Leertaste (nach einer Sekunde möglich)",true);
 	set_response_mode(1);
 	introduction_trial.present();
 	
-	array<int> run3_block1[][] = make_trial(3, 4, letters, 1, 6, 20);
-	present_trials(3, 4, letters, 1, run3_block1, false, "run_3", "block_1");
-	array<int> run3_block2[][] = make_trial(1, 1, numbers, 1, 6, 20);
-	present_trials(1, 1, letters, 1, run3_block2, false, "run_3", "block_2");
-	array<int> run3_block3[][] = make_trial(3, 4, letters, 1, 6, 20);
-	present_trials(3, 4, letters, 1, run3_block3, false, "run_3", "block_3");
-	array<int> run3_block4[][] = make_trial(2, 4, numbers, 1, 6, 20);
-	present_trials(2, 4, numbers, 1, run3_block4, false, "run_3", "block_4");
+	make_and_present_trials(2, -1, letters, 4, 6, 20, false, "run_3", "block_1");
+	make_and_present_trials(3, 5, numbers, 1, 6, 20, false, "run_3", "block_2");
+	make_and_present_trials(1, 5, letters, -1, 6, 20, false, "run_3", "block_3");
+	make_and_present_trials(3, 6, numbers, 2, 6, 20, false, "run_3", "block_4");
+	
+	make_and_present_trials(2, -1, numbers, 3, 6, 20, false, "run_3", "block_5");
+	make_and_present_trials(3, 6, letters, 4, 6, 20, false, "run_3", "block_6");
+	make_and_present_trials(1, 1, numbers, -1, 6, 20, false, "run_3", "block_7");
+	make_and_present_trials(3, 1, letters, 1, 6, 20, false, "run_3", "block_8");
 	
 	introduction_text.set_caption("Bitte wenden Sie sich an den Versuchsleiter",true);
 	set_response_mode(1);

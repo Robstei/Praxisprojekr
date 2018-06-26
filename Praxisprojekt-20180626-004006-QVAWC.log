@@ -1,0 +1,37 @@
+Scenario - Messung von Wechselkosten zwischen geteilter und selektiver Aufmerksamkeit
+Logfile written - 06/26/2018 00:40:16
+
+Trial	Event Type	Code	runid(str)	blockid(str)	form(str)	character(str)	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+1	Response	3					12505	12435	0
+2	Response	3					27145	14576	0
+3	Response	3					45065	17843	0
+4	Response	3					48505	3367	0
+4	Response	3					52665	7527	0
+4	Response	3					54344	9207	0
+5	Picture	test;block_1;Dreieck;T	test	block_1	Dreieck	T	55276	0	1	2569	1	0	2500	other	0
+6	Response	1					83465	10133	0
+6	Quit						84664	11333	NA
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture		false_alarm	3	12435	1	69	1	12500	1	0	next
+Picture		false_alarm	3	14576	1	12569	1	14653	1	0	next
+Picture		false_alarm	3	17843	1	27221	1	17916	1	0	next
+Picture	test;block_1;Dreieck;T	other				55276	1	2569	1	0	2500
+
+
+{
+   "app": "Presentation Version 20.1 Build 12.04.17",
+   "device": "To Be Filled By O.E.M. To Be Filled By O.E.M.",
+   "experiment": "{3EDEE026-D8DC-4466-8CD4-50C9D6AA7BA0}",
+   "os": "Windows 10 64 bit",
+   "package": "",
+   "parameters": {
+      "configuration": "Default configuration"
+   },
+   "scenario": "Praxisprojekt.sce",
+   "subject": "",
+   "timestamp": "2018/06/25 22:40:06 GMT"
+}
