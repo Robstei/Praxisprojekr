@@ -3,7 +3,7 @@ scenario = "Messung von Wechselkosten zwischen geteilter und selektiver Aufmerks
 default_font = "Apercu Mono";
 active_buttons = 3;
 event_code_delimiter = ";";
-stimulus_properties = runid, string, blockid, string, form, string, character, string;
+stimulus_properties = runid, string, blockid, string, form, string, character, string, seperateAttention, number, target, number;
 response_logging = log_active;
 
 begin;
@@ -403,8 +403,8 @@ begin_pcl;
 		main_picture = form_array[form_index];
 		main_picture.set_part(3,char_array[char_index]);
 		stim_event.set_stimulus(main_picture);
-		stim_event.set_event_code(run_id + ";" + block_id + ";" + main_picture.description() + 
-											";" + char_array[char_index].caption());
+		string tmp_event_code = run_id + ";" + block_id + ";" + main_picture.description() + 
+											";" + char_array[char_index].caption() + ";" + string(seperate_attention);
 
 		string caption = char_array[char_index].caption();
 		stim_event.set_target_button(0);
@@ -414,23 +414,33 @@ begin_pcl;
 			if char_array[char_target_index].caption() == caption
 			then
 				stim_event.set_target_button(1);
+				stim_event.set_event_code(tmp_event_code + ";" + "1");
+			else
+				stim_event.set_event_code(tmp_event_code + ";" + "0");
 			end;
 		elseif seperate_attention == 2
 		then
 			if form_target_index == form_index
 			then 
 				stim_event.set_target_button(2);
+				stim_event.set_event_code(tmp_event_code + ";" + "2");
+			else
+				stim_event.set_event_code(tmp_event_code + ";" + "0");
 			end;
 		elseif seperate_attention == 3 
 		then
 			if char_array[char_target_index].caption() == caption
 			then
 				stim_event.set_target_button(1);
-			end;
-			if form_target_index == form_index
+				stim_event.set_event_code(tmp_event_code + ";" + "1");
+			elseif form_target_index == form_index
 			then
 				stim_event.set_target_button(2);
+				stim_event.set_event_code(tmp_event_code + ";" + "2");
+			else
+				stim_event.set_event_code(tmp_event_code + ";" + "0");
 			end;
+		else
 			
 		end;
 		
@@ -500,6 +510,7 @@ begin_pcl;
 											"Die Reaktion erfolgt mit den Tasten \"L\" und \"S\". Reagieren Sie so schnell " +
 											"und so richtig wie möglich. \n\n Zunächst folgt ein Testdurchlauf. \n\n Drücken Sie die Leertaste um fortzufahren",true);
 	introduction_trial.present();
+	introduction_text.set_font_size(30);
 	introduction_text.set_caption("Dies ist ein Testdurchlauf. Weiter mit Leertaste (nach einer Sekunde möglich)",true);
 	introduction_trial.present();
 	
