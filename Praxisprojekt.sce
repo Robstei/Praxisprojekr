@@ -206,6 +206,7 @@ begin_pcl;
 			response_manager.set_button_active(3, false);
 		end;
 	end;
+	
 	sub bool validade (array<int,2> list_to_test, int seperate_attention, int form_target_index, 
 							int char_target_index, array<text,1> char_array)
 	begin 
@@ -504,7 +505,7 @@ begin_pcl;
 	
 	set_response_mode(1);
 	introduction_text.set_font_size(25);
-	introduction_text.set_caption("Im Folgenden werden ihnen auf dem Bildschirm unterschieldiche Buchstaben," +
+	introduction_text.set_caption("Im Folgenden werden ihnen auf dem Bildschirm unterschiedliche Buchstaben," +
 											" Zahlen  und Formen präsentiert. Vor jedem Durchlauf erhalten Sie " +
 											"eine kurze Instruktion, auf welche Symbole (Buchstaben, Zahlen, Formen) Sie reagieren sollen." +
 											"Die Reaktion erfolgt mit den Tasten \"L\" und \"S\". Reagieren Sie so schnell " +
