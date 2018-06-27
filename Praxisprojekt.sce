@@ -523,6 +523,7 @@ begin_pcl;
 	pause_seconds(30);
 	
 	introduction_text.set_caption("Der Testdurchlauf ist vorbei.\n" +
+											"Im Folgenden wird ihnen kein Feedback mehr präsentiert.\m" +
 											"Der erste Durchgang beginnt.\n" + 
 											"Weiter mit Leertaste (nach einer Sekunde möglich)",true);
 	set_response_mode(1);
