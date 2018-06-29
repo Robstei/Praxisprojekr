@@ -455,7 +455,6 @@ begin_pcl;
 		trial_cross.present();
 		set_response_mode(2);
 		main_trial.present();
-
 		i=i+1;
 			
 		if show_feedback
