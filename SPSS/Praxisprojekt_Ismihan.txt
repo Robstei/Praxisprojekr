@@ -1,0 +1,418 @@
+runid1	blockid1	form1	character1	seperateAttention1	target1	time1	code2	time2	time_diff	rm_type	subject1
+run_1	block_1	Dreieck	M	2	0	222345.3		-1	-222346.3	rm_other	ismihan
+run_1	block_1	Dreieck	T	2	0	224681.2		-1	-224682.2	rm_other	ismihan
+run_1	block_1	Viereck	A	2	0	227417.6		-1	-227418.6	rm_other	ismihan
+run_1	block_1	Kreis	E	2	2	229953.7	2	230322.4	368.7	rm_hit	ismihan
+run_1	block_1	Stern	M	2	0	231054.9		-1	-231055.9	rm_other	ismihan
+run_1	block_1	Viereck	T	2	0	233791.3		-1	-233792.3	rm_other	ismihan
+run_1	block_1	Stern	X	2	0	237929.2		-1	-237930.2	rm_other	ismihan
+run_1	block_1	Stern	T	2	0	240265.1		-1	-240266.1	rm_other	ismihan
+run_1	block_1	Viereck	T	2	0	243602.1		-1	-243603.1	rm_other	ismihan
+run_1	block_1	Stern	T	2	0	246338.4		-1	-246339.4	rm_other	ismihan
+run_1	block_1	Kreis	E	2	2	250075.9	2	250366.8	290.9	rm_hit	ismihan
+run_1	block_1	Dreieck	D	2	0	251293.9		-1	-251294.9	rm_other	ismihan
+run_1	block_1	Stern	T	2	0	254630.9		-1	-254631.9	rm_other	ismihan
+run_1	block_1	Kreis	T	2	2	258568.6	2	259058	489.4	rm_hit	ismihan
+run_1	block_1	Dreieck	M	2	0	259586.4		-1	-259587.4	rm_other	ismihan
+run_1	block_1	Stern	X	2	0	262723.2		-1	-262724.2	rm_other	ismihan
+run_1	block_1	Stern	E	2	0	265459.5		-1	-265460.5	rm_other	ismihan
+run_1	block_1	Viereck	M	2	0	269597.4		-1	-269598.4	rm_other	ismihan
+run_1	block_1	Viereck	A	2	0	272934.4		-1	-272935.4	rm_other	ismihan
+run_1	block_1	Stern	A	2	0	276071.2		-1	-276072.2	rm_other	ismihan
+run_1	block_1	Dreieck	X	2	0	278807.6		-1	-278808.6	rm_other	ismihan
+run_1	block_1	Kreis	D	2	2	281343.7	2	281789.6	445.9	rm_hit	ismihan
+run_1	block_1	Dreieck	T	2	0	282311.5		-1	-282312.5	rm_other	ismihan
+run_1	block_1	Kreis	A	2	2	285448.3	2	285865.1	416.8	rm_hit	ismihan
+run_1	block_1	Viereck	E	2	0	287400.4		-1	-287401.4	rm_other	ismihan
+run_1	block_1	Kreis	E	2	2	290937.6	2	291365.6	428	rm_hit	ismihan
+run_1	block_2	Viereck	7	1	0	297995.4		-1	-297996.4	rm_other	ismihan
+run_1	block_2	Kreis	3	1	1	301933.1	1	302462.2	529.1	rm_hit	ismihan
+run_1	block_2	Dreieck	7	1	0	304385.8		-1	-304386.8	rm_other	ismihan
+run_1	block_2	Kreis	7	1	0	307522.6		-1	-307523.6	rm_other	ismihan
+run_1	block_2	Kreis	9	1	0	311660.5		-1	-311661.5	rm_other	ismihan
+run_1	block_2	Viereck	4	1	0	315598.2		-1	-315599.2	rm_other	ismihan
+run_1	block_2	Stern	9	1	0	318134.3		-1	-318135.3	rm_other	ismihan
+run_1	block_2	Viereck	4	1	0	320470.2		-1	-320471.2	rm_other	ismihan
+run_1	block_2	Dreieck	3	1	1	323206.6	1	323549.6	343	rm_hit	ismihan
+run_1	block_2	Kreis	7	1	0	325876.2		-1	-325877.2	rm_other	ismihan
+run_1	block_2	Stern	6	1	0	329413.4		-1	-329414.4	rm_other	ismihan
+run_1	block_2	Stern	7	1	0	333351.1		-1	-333352.1	rm_other	ismihan
+run_1	block_2	Kreis	6	1	0	336688.1		-1	-336689.1	rm_other	ismihan
+run_1	block_2	Dreieck	9	1	0	340225.4		-1	-340226.4	rm_other	ismihan
+run_1	block_2	Stern	4	1	0	343562.4		-1	-343563.4	rm_other	ismihan
+run_1	block_2	Dreieck	6	1	0	346098.5		-1	-346099.5	rm_other	ismihan
+run_1	block_2	Viereck	3	1	1	348834.9	1	349241.9	407	rm_hit	ismihan
+run_1	block_2	Viereck	2	1	0	350570.1		-1	-350571.1	rm_other	ismihan
+run_1	block_2	Viereck	7	1	0	352906		-1	-352907	rm_other	ismihan
+run_1	block_2	Stern	4	1	0	355241.9		-1	-355242.9	rm_other	ismihan
+run_1	block_2	Dreieck	3	1	1	358578.9	1	358938.8	359.9	rm_hit	ismihan
+run_1	block_2	Kreis	7	1	0	359663.5		-1	-359664.5	rm_other	ismihan
+run_1	block_2	Dreieck	6	1	0	362399.8		-1	-362400.8	rm_other	ismihan
+run_1	block_2	Viereck	3	1	1	365136.2	1	365465	328.8	rm_hit	ismihan
+run_1	block_2	Viereck	7	1	0	366788		-1	-366789	rm_other	ismihan
+run_1	block_2	Dreieck	3	1	1	370325.2	1	370643.7	318.5	rm_hit	ismihan
+run_1	block_3	Stern	T	1	0	381220.6		-1	-381221.6	rm_other	ismihan
+run_1	block_3	Dreieck	T	1	0	383756.7		-1	-383757.7	rm_other	ismihan
+run_1	block_3	Dreieck	D	1	0	387694.4		-1	-387695.4	rm_other	ismihan
+run_1	block_3	Dreieck	A	1	0	390030.3		-1	-390031.3	rm_other	ismihan
+run_1	block_3	Viereck	D	1	0	394168.2		-1	-394169.2	rm_other	ismihan
+run_1	block_3	Viereck	M	1	1	397905.7	1	398231.3	325.6	rm_hit	ismihan
+run_1	block_3	Viereck	A	1	0	399957.9		-1	-399958.9	rm_other	ismihan
+run_1	block_3	Dreieck	M	1	1	403495.2	1	403819.7	324.5	rm_hit	ismihan
+run_1	block_3	Dreieck	T	1	0	404346.1		-1	-404347.1	rm_other	ismihan
+run_1	block_3	Viereck	M	1	1	406682	1	407078.1	396.1	rm_hit	ismihan
+run_1	block_3	Dreieck	A	1	0	409418.4		-1	-409419.4	rm_other	ismihan
+run_1	block_3	Dreieck	X	1	0	413556.3		-1	-413557.3	rm_other	ismihan
+run_1	block_3	Stern	T	1	0	417493.9		-1	-417494.9	rm_other	ismihan
+run_1	block_3	Kreis	E	1	0	421231.4		-1	-421232.4	rm_other	ismihan
+run_1	block_3	Dreieck	M	1	1	424568.4	1	425312.7	744.3	rm_hit	ismihan
+run_1	block_3	Viereck	X	1	0	427238		-1	-427239	rm_other	ismihan
+run_1	block_3	Dreieck	E	1	0	429774.2		-1	-429775.2	rm_other	ismihan
+run_1	block_3	Viereck	D	1	0	432310.3		-1	-432311.3	rm_other	ismihan
+run_1	block_3	Kreis	E	1	0	435647.3		-1	-435648.3	rm_other	ismihan
+run_1	block_3	Viereck	A	1	0	439785.2		-1	-439786.2	rm_other	ismihan
+run_1	block_3	Kreis	M	1	1	443122.2	1	443547.1	424.9	rm_hit	ismihan
+run_1	block_3	Dreieck	D	1	0	445875.3		-1	-445876.3	rm_other	ismihan
+run_1	block_3	Stern	D	1	0	449212.3		-1	-449213.3	rm_other	ismihan
+run_1	block_3	Stern	T	1	0	451748.4		-1	-451749.4	rm_other	ismihan
+run_1	block_3	Stern	M	1	1	455886.3	1	456271.9	385.6	rm_hit	ismihan
+run_1	block_3	Dreieck	A	1	0	457805.1		-1	-457806.1	rm_other	ismihan
+run_1	block_4	Viereck	9	2	0	465163.2		-1	-465164.2	rm_other	ismihan
+run_1	block_4	Viereck	7	2	0	468700.4		-1	-468701.4	rm_other	ismihan
+run_1	block_4	Viereck	2	2	0	472838.3		-1	-472839.3	rm_other	ismihan
+run_1	block_4	Dreieck	3	2	2	476776	2	477124.8	348.8	rm_hit	ismihan
+run_1	block_4	Stern	9	2	0	477860.5		-1	-477861.5	rm_other	ismihan
+run_1	block_4	Kreis	2	2	0	481798.2		-1	-481799.2	rm_other	ismihan
+run_1	block_4	Viereck	4	2	0	484734.8		-1	-484735.8	rm_other	ismihan
+run_1	block_4	Kreis	7	2	0	487270.9		-1	-487271.9	rm_other	ismihan
+run_1	block_4	Viereck	4	2	0	490607.9		-1	-490608.9	rm_other	ismihan
+run_1	block_4	Dreieck	7	2	2	492943.9	2	493245	301.1	rm_hit	ismihan
+run_1	block_4	Stern	6	2	0	494579		-1	-494580	rm_other	ismihan
+run_1	block_4	Viereck	4	2	0	497315.3		-1	-497316.3	rm_other	ismihan
+run_1	block_4	Dreieck	7	2	2	499851.5	2	500205.3	353.8	rm_hit	ismihan
+run_1	block_4	Stern	9	2	0	501536.7		-1	-501537.7	rm_other	ismihan
+run_1	block_4	Dreieck	6	2	2	505474.4	2	505928.9	454.5	rm_hit	ismihan
+run_1	block_4	Stern	2	2	0	508260.8		-1	-508261.8	rm_other	ismihan
+run_1	block_4	Stern	3	2	0	511197.3		-1	-511198.3	rm_other	ismihan
+run_1	block_4	Kreis	6	2	0	514133.9		-1	-514134.9	rm_other	ismihan
+run_1	block_4	Stern	4	2	0	516870.3		-1	-516871.3	rm_other	ismihan
+run_1	block_4	Viereck	2	2	0	519806.8		-1	-519807.8	rm_other	ismihan
+run_1	block_4	Kreis	2	2	0	522543.2		-1	-522544.2	rm_other	ismihan
+run_1	block_4	Viereck	9	2	0	525880.2		-1	-525881.2	rm_other	ismihan
+run_1	block_4	Kreis	9	2	0	529017		-1	-529018	rm_other	ismihan
+run_1	block_4	Dreieck	4	2	2	532554.2	2	532927.2	373	rm_hit	ismihan
+run_1	block_4	Kreis	9	2	0	534456.3		-1	-534457.3	rm_other	ismihan
+run_1	block_4	Dreieck	4	2	2	537593.1	2	538019.3	426.2	rm_hit	ismihan
+run_2	block_1	Kreis	E	3	0	677097		-1	-677098	rm_other	ismihan
+run_2	block_1	Viereck	E	3	0	680233.8		-1	-680234.8	rm_other	ismihan
+run_2	block_1	Kreis	A	3	0	683971.3		-1	-683972.3	rm_other	ismihan
+run_2	block_1	Dreieck	D	3	0	686907.9		-1	-686908.9	rm_other	ismihan
+run_2	block_1	Viereck	D	3	0	691045.8		-1	-691046.8	rm_other	ismihan
+run_2	block_1	Viereck	M	3	0	693982.3		-1	-693983.3	rm_other	ismihan
+run_2	block_1	Dreieck	M	3	0	697920		-1	-697921	rm_other	ismihan
+run_2	block_1	Kreis	A	3	0	700856.6		-1	-700857.6	rm_other	ismihan
+run_2	block_1	Stern	A	3	2	704794.3	2	705638.9	844.6	rm_hit	ismihan
+run_2	block_1	Kreis	E	3	0	707964.4		-1	-707965.4	rm_other	ismihan
+run_2	block_1	Kreis	D	3	0	712102.3		-1	-712103.3	rm_other	ismihan
+run_2	block_1	Viereck	X	3	1	715839.8	1	716549.2	709.4	rm_hit	ismihan
+run_2	block_1	Viereck	A	3	0	717474.9		-1	-717475.9	rm_other	ismihan
+run_2	block_1	Dreieck	D	3	0	721012.2		-1	-721013.2	rm_other	ismihan
+run_2	block_1	Viereck	X	3	1	725150.1	1	725772.7	622.6	rm_hit	ismihan
+run_2	block_1	Kreis	E	3	0	727502.7		-1	-727503.7	rm_other	ismihan
+run_2	block_1	Dreieck	M	3	0	730038.8		-1	-730039.8	rm_other	ismihan
+run_2	block_1	Stern	D	3	2	732975.4	2	733463.1	487.7	rm_hit	ismihan
+run_2	block_1	Kreis	D	3	0	735795.1		-1	-735796.1	rm_other	ismihan
+run_2	block_1	Stern	A	3	2	738731.7	2	739296.3	564.6	rm_hit	ismihan
+run_2	block_1	Viereck	A	3	0	741234.5		-1	-741235.5	rm_other	ismihan
+run_2	block_1	Kreis	A	3	0	744571.5		-1	-744572.5	rm_other	ismihan
+run_2	block_1	Dreieck	X	3	1	746907.4	2	747449.9	542.5	rm_incorrect	ismihan
+run_2	block_1	Kreis	T	3	0	748776.1		-1	-748777.1	rm_other	ismihan
+run_2	block_1	Dreieck	M	3	0	751712.7		-1	-751713.7	rm_other	ismihan
+run_2	block_1	Kreis	D	3	0	754048.6		-1	-754049.6	rm_other	ismihan
+run_2	block_2	Stern	9	3	0	766662.5		-1	-766663.5	rm_other	ismihan
+run_2	block_2	Dreieck	4	3	1	769198.7	1	769969.1	770.4	rm_hit	ismihan
+run_2	block_2	Dreieck	9	3	0	770900.5		-1	-770901.5	rm_other	ismihan
+run_2	block_2	Dreieck	2	3	0	774037.3		-1	-774038.3	rm_other	ismihan
+run_2	block_2	Viereck	2	3	2	776773.7	2	777340.9	567.2	rm_hit	ismihan
+run_2	block_2	Stern	6	3	0	779676.9		-1	-779677.9	rm_other	ismihan
+run_2	block_2	Dreieck	9	3	0	783614.6		-1	-783615.6	rm_other	ismihan
+run_2	block_2	Viereck	9	3	2	786150.7	2	787176.1	1025.4	rm_hit	ismihan
+run_2	block_2	Kreis	3	3	0	789504.4		-1	-789505.4	rm_other	ismihan
+run_2	block_2	Dreieck	2	3	0	792841.4		-1	-792842.4	rm_other	ismihan
+run_2	block_2	Dreieck	3	3	0	796178.4		-1	-796179.4	rm_other	ismihan
+run_2	block_2	Dreieck	4	3	1	798514.3	2	799185.1	670.8	rm_incorrect	ismihan
+run_2	block_2	Kreis	2	3	0	800917		-1	-800918	rm_other	ismihan
+run_2	block_2	Stern	6	3	0	803252.9		-1	-803253.9	rm_other	ismihan
+run_2	block_2	Viereck	2	3	2	806990.4	2	807766	775.6	rm_hit	ismihan
+run_2	block_2	Stern	6	3	0	809893.6		-1	-809894.6	rm_other	ismihan
+run_2	block_2	Stern	3	3	0	813631		-1	-813632	rm_other	ismihan
+run_2	block_2	Kreis	3	3	0	816167.2		-1	-816168.2	rm_other	ismihan
+run_2	block_2	Stern	6	3	0	819504.2		-1	-819505.2	rm_other	ismihan
+run_2	block_2	Kreis	4	3	1	823642.1	1	824111.5	469.4	rm_hit	ismihan
+run_2	block_2	Kreis	7	3	0	826244.9		-1	-826245.9	rm_other	ismihan
+run_2	block_2	Kreis	6	3	0	828981.3		-1	-828982.3	rm_other	ismihan
+run_2	block_2	Stern	9	3	0	831717.6		-1	-831718.6	rm_other	ismihan
+run_2	block_2	Stern	6	3	0	834854.4		-1	-834855.4	rm_other	ismihan
+run_2	block_2	Kreis	3	3	0	837390.6		-1	-837391.6	rm_other	ismihan
+run_2	block_2	Dreieck	2	3	0	841328.2		-1	-841329.2	rm_other	ismihan
+run_2	block_3	Dreieck	X	3	0	851155.8		-1	-851156.8	rm_other	ismihan
+run_2	block_3	Dreieck	A	3	1	855093.4	1	855923.2	829.8	rm_hit	ismihan
+run_2	block_3	Stern	E	3	0	858246.9		-1	-858247.9	rm_other	ismihan
+run_2	block_3	Viereck	D	3	0	860783		-1	-860784	rm_other	ismihan
+run_2	block_3	Stern	X	3	0	864120.1		-1	-864121.1	rm_other	ismihan
+run_2	block_3	Viereck	E	3	0	867256.9		-1	-867257.9	rm_other	ismihan
+run_2	block_3	Stern	M	3	0	870794.1		-1	-870795.1	rm_other	ismihan
+run_2	block_3	Dreieck	A	3	1	873330.2	1	873920	589.8	rm_hit	ismihan
+run_2	block_3	Stern	X	3	0	875849.7		-1	-875850.7	rm_other	ismihan
+run_2	block_3	Kreis	D	3	2	878185.6	2	878556.6	371	rm_hit	ismihan
+run_2	block_3	Viereck	X	3	0	879086.6		-1	-879087.6	rm_other	ismihan
+run_2	block_3	Stern	X	3	0	882623.8		-1	-882624.8	rm_other	ismihan
+run_2	block_3	Dreieck	M	3	0	885960.8		-1	-885961.8	rm_other	ismihan
+run_2	block_3	Kreis	D	3	2	889097.6	2	889835.6	738	rm_hit	ismihan
+run_2	block_3	Stern	X	3	0	890766.1		-1	-890767.1	rm_other	ismihan
+run_2	block_3	Dreieck	D	3	0	893302.3		-1	-893303.3	rm_other	ismihan
+run_2	block_3	Dreieck	X	3	0	897239.9		-1	-897240.9	rm_other	ismihan
+run_2	block_3	Dreieck	A	3	1	900577	1	901274.2	697.2	rm_hit	ismihan
+run_2	block_3	Viereck	X	3	0	903613.6		-1	-903614.6	rm_other	ismihan
+run_2	block_3	Dreieck	M	3	0	907751.5		-1	-907752.5	rm_other	ismihan
+run_2	block_3	Stern	M	3	0	910888.3		-1	-910889.3	rm_other	ismihan
+run_2	block_3	Kreis	D	3	2	913824.9	2	914509.3	684.4	rm_hit	ismihan
+run_2	block_3	Dreieck	X	3	0	916244.2		-1	-916245.2	rm_other	ismihan
+run_2	block_3	Stern	M	3	0	919781.5		-1	-919782.5	rm_other	ismihan
+run_2	block_3	Viereck	M	3	0	922117.4		-1	-922118.4	rm_other	ismihan
+run_2	block_3	Dreieck	D	3	0	926055.1		-1	-926056.1	rm_other	ismihan
+run_2	block_4	Viereck	9	3	0	936032.7		-1	-936033.7	rm_other	ismihan
+run_2	block_4	Viereck	4	3	0	939369.8		-1	-939370.8	rm_other	ismihan
+run_2	block_4	Viereck	7	3	0	943307.4		-1	-943308.4	rm_other	ismihan
+run_2	block_4	Stern	4	3	0	946244		-1	-946245	rm_other	ismihan
+run_2	block_4	Dreieck	3	3	2	950181.7	2	950597.7	416	rm_hit	ismihan
+run_2	block_4	Kreis	2	3	0	952133.8		-1	-952134.8	rm_other	ismihan
+run_2	block_4	Viereck	3	3	0	954870.2		-1	-954871.2	rm_other	ismihan
+run_2	block_4	Viereck	2	3	0	957606.5		-1	-957607.5	rm_other	ismihan
+run_2	block_4	Kreis	3	3	0	960743.3		-1	-960744.3	rm_other	ismihan
+run_2	block_4	Viereck	2	3	0	963880.1		-1	-963881.1	rm_other	ismihan
+run_2	block_4	Viereck	7	3	0	966816.7		-1	-966817.7	rm_other	ismihan
+run_2	block_4	Kreis	3	3	0	970754.4		-1	-970755.4	rm_other	ismihan
+run_2	block_4	Viereck	6	3	1	973090.3		-1	-973091.3	rm_miss	ismihan
+run_2	block_4	Kreis	4	3	0	976627.5		-1	-976628.5	rm_other	ismihan
+run_2	block_4	Dreieck	7	3	2	979363.9	2	979760.8	396.9	rm_hit	ismihan
+run_2	block_4	Kreis	3	3	0	980898.9		-1	-980899.9	rm_other	ismihan
+run_2	block_4	Stern	9	3	0	983234.8		-1	-983235.8	rm_other	ismihan
+run_2	block_4	Viereck	6	3	1	985771	1	986416.1	645.1	rm_hit	ismihan
+run_2	block_4	Viereck	7	3	0	987539.6		-1	-987540.6	rm_other	ismihan
+run_2	block_4	Stern	2	3	0	990275.9		-1	-990276.9	rm_other	ismihan
+run_2	block_4	Stern	4	3	0	994013.4		-1	-994014.4	rm_other	ismihan
+run_2	block_4	Stern	6	3	1	997951.1	1	998476.9	525.8	rm_hit	ismihan
+run_2	block_4	Kreis	3	3	0	999002.2		-1	-999003.2	rm_other	ismihan
+run_2	block_4	Dreieck	3	3	2	1001738.6	2	1002244.1	505.5	rm_hit	ismihan
+run_2	block_4	Stern	2	3	0	1003373.7		-1	-1003374.7	rm_other	ismihan
+run_2	block_4	Kreis	3	3	0	1007111.2		-1	-1007112.2	rm_other	ismihan
+run_3	block_1	Dreieck	E	2	0	1160180.1		-1	-1160181.1	rm_other	ismihan
+run_3	block_1	Stern	E	2	2	1163917.5	2	1164250.3	332.8	rm_hit	ismihan
+run_3	block_1	Dreieck	E	2	0	1165986.5		-1	-1165987.5	rm_other	ismihan
+run_3	block_1	Stern	E	2	2	1168722.8	2	1169037.1	314.3	rm_hit	ismihan
+run_3	block_1	Kreis	M	2	0	1171175.5		-1	-1171176.5	rm_other	ismihan
+run_3	block_1	Dreieck	T	2	0	1175113.2		-1	-1175114.2	rm_other	ismihan
+run_3	block_1	Viereck	X	2	0	1179251.1		-1	-1179252.1	rm_other	ismihan
+run_3	block_1	Stern	A	2	2	1181787.2	2	1182139.5	352.3	rm_hit	ismihan
+run_3	block_1	Viereck	M	2	0	1183072		-1	-1183073	rm_other	ismihan
+run_3	block_1	Viereck	A	2	0	1185808.3		-1	-1185809.3	rm_other	ismihan
+run_3	block_1	Viereck	D	2	0	1188344.5		-1	-1188345.5	rm_other	ismihan
+run_3	block_1	Viereck	E	2	0	1192482.4		-1	-1192483.4	rm_other	ismihan
+run_3	block_1	Viereck	A	2	0	1194818.3		-1	-1194819.3	rm_other	ismihan
+run_3	block_1	Kreis	T	2	0	1198956.2		-1	-1198957.2	rm_other	ismihan
+run_3	block_1	Viereck	A	2	0	1201692.5		-1	-1201693.5	rm_other	ismihan
+run_3	block_1	Stern	D	2	2	1204028.4	2	1204376	347.6	rm_hit	ismihan
+run_3	block_1	Dreieck	M	2	0	1205113		-1	-1205114	rm_other	ismihan
+run_3	block_1	Kreis	T	2	0	1209250.9		-1	-1209251.9	rm_other	ismihan
+run_3	block_1	Viereck	M	2	0	1212788.1		-1	-1212789.1	rm_other	ismihan
+run_3	block_1	Dreieck	A	2	0	1216926		-1	-1216927	rm_other	ismihan
+run_3	block_1	Stern	T	2	2	1219261.9	2	1219620.3	358.4	rm_hit	ismihan
+run_3	block_1	Dreieck	X	2	0	1220346.4		-1	-1220347.4	rm_other	ismihan
+run_3	block_1	Stern	D	2	2	1223883.7	2	1224324.1	440.4	rm_hit	ismihan
+run_3	block_1	Kreis	T	2	0	1225452.1		-1	-1225453.1	rm_other	ismihan
+run_3	block_1	Kreis	D	2	0	1229189.5		-1	-1229190.5	rm_other	ismihan
+run_3	block_1	Dreieck	E	2	0	1232326.3		-1	-1232327.3	rm_other	ismihan
+run_3	block_2	Stern	9	3	0	1240084.9		-1	-1240085.9	rm_other	ismihan
+run_3	block_2	Kreis	2	3	0	1242420.8		-1	-1242421.8	rm_other	ismihan
+run_3	block_2	Dreieck	7	3	1	1245157.1	1	1245764.6	607.5	rm_hit	ismihan
+run_3	block_2	Dreieck	6	3	0	1247092.6		-1	-1247093.6	rm_other	ismihan
+run_3	block_2	Kreis	3	3	0	1251030.3		-1	-1251031.3	rm_other	ismihan
+run_3	block_2	Dreieck	9	3	0	1254567.5		-1	-1254568.5	rm_other	ismihan
+run_3	block_2	Stern	2	3	0	1257704.3		-1	-1257705.3	rm_other	ismihan
+run_3	block_2	Stern	7	3	1	1261041.3	1	1261732.3	691	rm_hit	ismihan
+run_3	block_2	Kreis	6	3	0	1263260.5		-1	-1263261.5	rm_other	ismihan
+run_3	block_2	Kreis	4	3	0	1267398.4		-1	-1267399.4	rm_other	ismihan
+run_3	block_2	Dreieck	9	3	0	1271135.8		-1	-1271136.8	rm_other	ismihan
+run_3	block_2	Stern	9	3	0	1273471.7		-1	-1273472.7	rm_other	ismihan
+run_3	block_2	Stern	6	3	0	1277209.2		-1	-1277210.2	rm_other	ismihan
+run_3	block_2	Dreieck	2	3	0	1281347.1		-1	-1281348.1	rm_other	ismihan
+run_3	block_2	Stern	4	3	0	1285284.8		-1	-1285285.8	rm_other	ismihan
+run_3	block_2	Stern	3	3	0	1287820.9		-1	-1287821.9	rm_other	ismihan
+run_3	block_2	Viereck	3	3	2	1291758.6	2	1292525.6	767	rm_hit	ismihan
+run_3	block_2	Kreis	6	3	0	1293660.7		-1	-1293661.7	rm_other	ismihan
+run_3	block_2	Stern	2	3	0	1296997.7		-1	-1296998.7	rm_other	ismihan
+run_3	block_2	Viereck	2	3	2	1300334.7	2	1300998.6	663.9	rm_hit	ismihan
+run_3	block_2	Stern	2	3	0	1301936.5		-1	-1301937.5	rm_other	ismihan
+run_3	block_2	Dreieck	7	3	1	1306074.4	1	1306761.3	686.9	rm_hit	ismihan
+run_3	block_2	Kreis	3	3	0	1308693.9		-1	-1308694.9	rm_other	ismihan
+run_3	block_2	Dreieck	3	3	0	1312030.9		-1	-1312031.9	rm_other	ismihan
+run_3	block_2	Stern	4	3	0	1316168.8		-1	-1316169.8	rm_other	ismihan
+run_3	block_2	Viereck	6	3	2	1319305.6	2	1320308.9	1003.3	rm_hit	ismihan
+run_3	block_3	Dreieck	M	1	0	1335323.3		-1	-1335324.3	rm_other	ismihan
+run_3	block_3	Kreis	M	1	0	1338059.6		-1	-1338060.6	rm_other	ismihan
+run_3	block_3	Stern	X	1	0	1340395.6		-1	-1340396.6	rm_other	ismihan
+run_3	block_3	Dreieck	M	1	0	1343131.9		-1	-1343132.9	rm_other	ismihan
+run_3	block_3	Dreieck	A	1	0	1346068.5		-1	-1346069.5	rm_other	ismihan
+run_3	block_3	Dreieck	D	1	0	1349805.9		-1	-1349806.9	rm_other	ismihan
+run_3	block_3	Stern	T	1	1	1353943.8	1	1354418.6	474.8	rm_hit	ismihan
+run_3	block_3	Kreis	X	1	0	1355745.8		-1	-1355746.8	rm_other	ismihan
+run_3	block_3	Stern	X	1	0	1359082.8		-1	-1359083.8	rm_other	ismihan
+run_3	block_3	Stern	D	1	0	1361819.2		-1	-1361820.2	rm_other	ismihan
+run_3	block_3	Dreieck	A	1	0	1365156.2		-1	-1365157.2	rm_other	ismihan
+run_3	block_3	Viereck	X	1	0	1368092.8		-1	-1368093.8	rm_other	ismihan
+run_3	block_3	Stern	T	1	1	1370428.7	1	1370861.9	433.2	rm_hit	ismihan
+run_3	block_3	Stern	E	1	0	1372798		-1	-1372799	rm_other	ismihan
+run_3	block_3	Dreieck	X	1	0	1376535.4		-1	-1376536.4	rm_other	ismihan
+run_3	block_3	Stern	M	1	0	1379872.4		-1	-1379873.4	rm_other	ismihan
+run_3	block_3	Kreis	T	1	1	1383009.2	1	1383364.7	355.5	rm_hit	ismihan
+run_3	block_3	Dreieck	E	1	0	1385495.3		-1	-1385496.3	rm_other	ismihan
+run_3	block_3	Kreis	T	1	1	1389232.8	1	1389682.3	449.5	rm_hit	ismihan
+run_3	block_3	Viereck	M	1	0	1390617.6		-1	-1390618.6	rm_other	ismihan
+run_3	block_3	Stern	A	1	0	1394755.5		-1	-1394756.5	rm_other	ismihan
+run_3	block_3	Kreis	M	1	0	1398493		-1	-1398494	rm_other	ismihan
+run_3	block_3	Viereck	T	1	1	1401229.3	1	1401566.1	336.8	rm_hit	ismihan
+run_3	block_3	Kreis	E	1	0	1403298.3		-1	-1403299.3	rm_other	ismihan
+run_3	block_3	Kreis	T	1	1	1406635.3	1	1407011.3	376	rm_hit	ismihan
+run_3	block_3	Viereck	X	1	0	1408937.9		-1	-1408938.9	rm_other	ismihan
+run_3	block_4	Stern	3	3	0	1420567.3		-1	-1420568.3	rm_other	ismihan
+run_3	block_4	Viereck	9	3	1	1424304.8	1	1424845.5	540.7	rm_hit	ismihan
+run_3	block_4	Viereck	6	3	0	1426574		-1	-1426575	rm_other	ismihan
+run_3	block_4	Kreis	4	3	2	1429911	2	1430276.4	365.4	rm_hit	ismihan
+run_3	block_4	Viereck	2	3	0	1431212.4		-1	-1431213.4	rm_other	ismihan
+run_3	block_4	Kreis	7	3	2	1433748.6	1	1434611.5	862.9	rm_incorrect	ismihan
+run_3	block_4	Viereck	7	3	0	1436134.5		-1	-1436135.5	rm_other	ismihan
+run_3	block_4	Viereck	2	3	0	1438470.4		-1	-1438471.4	rm_other	ismihan
+run_3	block_4	Dreieck	7	3	0	1441607.2		-1	-1441608.2	rm_other	ismihan
+run_3	block_4	Viereck	6	3	0	1445144.5		-1	-1445145.5	rm_other	ismihan
+run_3	block_4	Viereck	3	3	0	1448881.9		-1	-1448882.9	rm_other	ismihan
+run_3	block_4	Stern	4	3	0	1452619.4		-1	-1452620.4	rm_other	ismihan
+run_3	block_4	Dreieck	2	3	0	1456757.3		-1	-1456758.3	rm_other	ismihan
+run_3	block_4	Stern	9	3	1	1460695	1	1461264.7	569.7	rm_hit	ismihan
+run_3	block_4	Dreieck	6	3	0	1462597.1		-1	-1462598.1	rm_other	ismihan
+run_3	block_4	Dreieck	2	3	0	1465133.2		-1	-1465134.2	rm_other	ismihan
+run_3	block_4	Viereck	9	3	1	1469271.1	1	1470037.7	766.6	rm_hit	ismihan
+run_3	block_4	Stern	4	3	0	1471573.6		-1	-1471574.6	rm_other	ismihan
+run_3	block_4	Viereck	7	3	0	1474910.6		-1	-1474911.6	rm_other	ismihan
+run_3	block_4	Dreieck	2	3	0	1478648.1		-1	-1478649.1	rm_other	ismihan
+run_3	block_4	Kreis	3	3	2	1481384.5	2	1481907	522.5	rm_hit	ismihan
+run_3	block_4	Dreieck	3	3	0	1483036.3		-1	-1483037.3	rm_other	ismihan
+run_3	block_4	Viereck	3	3	0	1486573.5		-1	-1486574.5	rm_other	ismihan
+run_3	block_4	Dreieck	2	3	0	1488909.4		-1	-1488910.4	rm_other	ismihan
+run_3	block_4	Viereck	6	3	0	1492046.2		-1	-1492047.2	rm_other	ismihan
+run_3	block_4	Stern	3	3	0	1494582.3		-1	-1494583.3	rm_other	ismihan
+run_3	block_5	Kreis	2	2	0	1502441		-1	-1502442	rm_other	ismihan
+run_3	block_5	Viereck	9	2	0	1505978.3		-1	-1505979.3	rm_other	ismihan
+run_3	block_5	Kreis	9	2	0	1509315.3		-1	-1509316.3	rm_other	ismihan
+run_3	block_5	Kreis	7	2	0	1513252.9		-1	-1513253.9	rm_other	ismihan
+run_3	block_5	Kreis	4	2	0	1516990.4		-1	-1516991.4	rm_other	ismihan
+run_3	block_5	Stern	3	2	0	1519927		-1	-1519928	rm_other	ismihan
+run_3	block_5	Dreieck	2	2	2	1522663.3	2	1523009.1	345.8	rm_hit	ismihan
+run_3	block_5	Kreis	9	2	0	1525132.7		-1	-1525133.7	rm_other	ismihan
+run_3	block_5	Dreieck	9	2	2	1527668.9	2	1528147.3	478.4	rm_hit	ismihan
+run_3	block_5	Kreis	3	2	0	1530471.9		-1	-1530472.9	rm_other	ismihan
+run_3	block_5	Viereck	2	2	0	1534209.4		-1	-1534210.4	rm_other	ismihan
+run_3	block_5	Viereck	9	2	0	1538347.3		-1	-1538348.3	rm_other	ismihan
+run_3	block_5	Dreieck	9	2	2	1540883.4	2	1541196.8	313.4	rm_hit	ismihan
+run_3	block_5	Viereck	7	2	0	1542935.7		-1	-1542936.7	rm_other	ismihan
+run_3	block_5	Kreis	9	2	0	1545872.3		-1	-1545873.3	rm_other	ismihan
+run_3	block_5	Dreieck	7	2	2	1548808.8	2	1549116.5	307.7	rm_hit	ismihan
+run_3	block_5	Kreis	4	2	0	1551244.9		-1	-1551245.9	rm_other	ismihan
+run_3	block_5	Stern	9	2	0	1554581.9		-1	-1554582.9	rm_other	ismihan
+run_3	block_5	Kreis	4	2	0	1558319.3		-1	-1558320.3	rm_other	ismihan
+run_3	block_5	Dreieck	7	2	2	1562457.2	2	1562831.5	374.3	rm_hit	ismihan
+run_3	block_5	Stern	3	2	0	1563558.4		-1	-1563559.4	rm_other	ismihan
+run_3	block_5	Kreis	4	2	0	1566294.8		-1	-1566295.8	rm_other	ismihan
+run_3	block_5	Viereck	7	2	0	1569231.4		-1	-1569232.4	rm_other	ismihan
+run_3	block_5	Kreis	6	2	0	1571967.7		-1	-1571968.7	rm_other	ismihan
+run_3	block_5	Dreieck	9	2	2	1575505	2	1575942.3	437.3	rm_hit	ismihan
+run_3	block_5	Kreis	9	2	0	1576672.9		-1	-1576673.9	rm_other	ismihan
+run_3	block_6	Kreis	X	3	0	1584898.7		-1	-1584899.7	rm_other	ismihan
+run_3	block_6	Viereck	E	3	1	1588836.3	1	1589215.9	379.6	rm_hit	ismihan
+run_3	block_6	Dreieck	M	3	0	1591556		-1	-1591557	rm_other	ismihan
+run_3	block_6	Viereck	T	3	0	1594492.6		-1	-1594493.6	rm_other	ismihan
+run_3	block_6	Kreis	M	3	0	1597028.7		-1	-1597029.7	rm_other	ismihan
+run_3	block_6	Kreis	D	3	0	1599564.8		-1	-1599565.8	rm_other	ismihan
+run_3	block_6	Stern	D	3	2	1602501.4	2	1602938.5	437.1	rm_hit	ismihan
+run_3	block_6	Dreieck	A	3	0	1604270		-1	-1604271	rm_other	ismihan
+run_3	block_6	Kreis	M	3	0	1608407.9		-1	-1608408.9	rm_other	ismihan
+run_3	block_6	Dreieck	A	3	0	1611945.2		-1	-1611946.2	rm_other	ismihan
+run_3	block_6	Viereck	E	3	1	1614881.7	1	1615385	503.3	rm_hit	ismihan
+run_3	block_6	Viereck	M	3	0	1617718.2		-1	-1617719.2	rm_other	ismihan
+run_3	block_6	Kreis	D	3	0	1621455.7		-1	-1621456.7	rm_other	ismihan
+run_3	block_6	Dreieck	T	3	0	1623991.8		-1	-1623992.8	rm_other	ismihan
+run_3	block_6	Dreieck	M	3	0	1627729.3		-1	-1627730.3	rm_other	ismihan
+run_3	block_6	Viereck	M	3	0	1630065.2		-1	-1630066.2	rm_other	ismihan
+run_3	block_6	Viereck	A	3	0	1634002.8		-1	-1634003.8	rm_other	ismihan
+run_3	block_6	Dreieck	T	3	0	1637740.3		-1	-1637741.3	rm_other	ismihan
+run_3	block_6	Kreis	X	3	0	1641077.3		-1	-1641078.3	rm_other	ismihan
+run_3	block_6	Stern	X	3	2	1644414.3	2	1644920.1	505.8	rm_hit	ismihan
+run_3	block_6	Viereck	D	3	0	1646049.5		-1	-1646050.5	rm_other	ismihan
+run_3	block_6	Viereck	X	3	0	1648385.4		-1	-1648386.4	rm_other	ismihan
+run_3	block_6	Viereck	M	3	0	1651322		-1	-1651323	rm_other	ismihan
+run_3	block_6	Stern	X	3	2	1653657.9	2	1654204.9	547	rm_hit	ismihan
+run_3	block_6	Dreieck	T	3	0	1656344.2		-1	-1656345.2	rm_other	ismihan
+run_3	block_6	Dreieck	E	3	1	1659481	1	1659808.6	327.6	rm_hit	ismihan
+run_3	block_7	Stern	7	1	0	1665938.1		-1	-1665939.1	rm_other	ismihan
+run_3	block_7	Viereck	4	1	0	1669275.1		-1	-1669276.1	rm_other	ismihan
+run_3	block_7	Stern	2	1	1	1672411.9	1	1672853.2	441.3	rm_hit	ismihan
+run_3	block_7	Viereck	4	1	0	1673379.6		-1	-1673380.6	rm_other	ismihan
+run_3	block_7	Kreis	9	1	0	1677317.3		-1	-1677318.3	rm_other	ismihan
+run_3	block_7	Dreieck	3	1	0	1681054.8		-1	-1681055.8	rm_other	ismihan
+run_3	block_7	Stern	2	1	1	1684992.4	1	1685324	331.6	rm_hit	ismihan
+run_3	block_7	Kreis	9	1	0	1687461.8		-1	-1687462.8	rm_other	ismihan
+run_3	block_7	Dreieck	4	1	0	1691599.7		-1	-1691600.7	rm_other	ismihan
+run_3	block_7	Kreis	4	1	0	1694135.9		-1	-1694136.9	rm_other	ismihan
+run_3	block_7	Viereck	9	1	0	1696471.8		-1	-1696472.8	rm_other	ismihan
+run_3	block_7	Viereck	6	1	0	1699608.6		-1	-1699609.6	rm_other	ismihan
+run_3	block_7	Viereck	9	1	0	1703546.2		-1	-1703547.2	rm_other	ismihan
+run_3	block_7	Dreieck	2	1	1	1706883.3	1	1707349.1	465.8	rm_hit	ismihan
+run_3	block_7	Kreis	9	1	0	1708284.8		-1	-1708285.8	rm_other	ismihan
+run_3	block_7	Kreis	2	1	1	1712022.3	1	1712379.2	356.9	rm_hit	ismihan
+run_3	block_7	Stern	4	1	0	1714508.3		-1	-1714509.3	rm_other	ismihan
+run_3	block_7	Dreieck	9	1	0	1717044.5		-1	-1717045.5	rm_other	ismihan
+run_3	block_7	Stern	9	1	0	1720181.3		-1	-1720182.3	rm_other	ismihan
+run_3	block_7	Kreis	6	1	0	1723318.1		-1	-1723319.1	rm_other	ismihan
+run_3	block_7	Dreieck	2	1	1	1727255.7	1	1727693.9	438.2	rm_hit	ismihan
+run_3	block_7	Viereck	4	1	0	1728223.5		-1	-1728224.5	rm_other	ismihan
+run_3	block_7	Kreis	3	1	0	1731760.7		-1	-1731761.7	rm_other	ismihan
+run_3	block_7	Kreis	4	1	0	1734096.6		-1	-1734097.6	rm_other	ismihan
+run_3	block_7	Viereck	7	1	0	1736432.5		-1	-1736433.5	rm_other	ismihan
+run_3	block_7	Dreieck	2	1	1	1739369.1	1	1739765.3	396.2	rm_hit	ismihan
+run_3	block_8	Stern	M	3	0	1750347.9		-1	-1750348.9	rm_other	ismihan
+run_3	block_8	Stern	T	3	0	1752683.8		-1	-1752684.8	rm_other	ismihan
+run_3	block_8	Kreis	E	3	0	1756020.8		-1	-1756021.8	rm_other	ismihan
+run_3	block_8	Stern	A	3	0	1759958.5		-1	-1759959.5	rm_other	ismihan
+run_3	block_8	Stern	D	3	1	1762895.1	1	1763718.1	823	rm_hit	ismihan
+run_3	block_8	Stern	M	3	0	1764246.5		-1	-1764247.5	rm_other	ismihan
+run_3	block_8	Stern	A	3	0	1767984		-1	-1767985	rm_other	ismihan
+run_3	block_8	Kreis	T	3	0	1771921.7		-1	-1771922.7	rm_other	ismihan
+run_3	block_8	Stern	X	3	0	1775258.7		-1	-1775259.7	rm_other	ismihan
+run_3	block_8	Viereck	X	3	2	1778996.2	2	1779542.3	546.1	rm_hit	ismihan
+run_3	block_8	Kreis	E	3	0	1781265.3		-1	-1781266.3	rm_other	ismihan
+run_3	block_8	Stern	T	3	0	1785203		-1	-1785204	rm_other	ismihan
+run_3	block_8	Dreieck	X	3	0	1789340.9		-1	-1789341.9	rm_other	ismihan
+run_3	block_8	Kreis	M	3	0	1792477.7		-1	-1792478.7	rm_other	ismihan
+run_3	block_8	Kreis	A	3	0	1795013.8		-1	-1795014.8	rm_other	ismihan
+run_3	block_8	Kreis	D	3	1	1798150.6	1	1798929.3	778.7	rm_hit	ismihan
+run_3	block_8	Kreis	T	3	0	1800853.6		-1	-1800854.6	rm_other	ismihan
+run_3	block_8	Viereck	A	3	2	1803189.5	2	1804078.9	889.4	rm_hit	ismihan
+run_3	block_8	Kreis	M	3	0	1806409.7		-1	-1806410.7	rm_other	ismihan
+run_3	block_8	Kreis	T	3	0	1810547.6		-1	-1810548.6	rm_other	ismihan
+run_3	block_8	Kreis	M	3	0	1813684.4		-1	-1813685.4	rm_other	ismihan
+run_3	block_8	Dreieck	X	3	0	1817421.9		-1	-1817422.9	rm_other	ismihan
+run_3	block_8	Dreieck	D	3	1	1821159.3	1	1821914.8	755.5	rm_hit	ismihan
+run_3	block_8	Dreieck	E	3	0	1822644.3		-1	-1822645.3	rm_other	ismihan
+run_3	block_8	Viereck	X	3	2	1826582	2	1826973.9	391.9	rm_hit	ismihan
+run_3	block_8	Stern	X	3	0	1827499.7		-1	-1827500.7	rm_other	ismihan
+

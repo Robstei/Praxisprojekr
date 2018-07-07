@@ -1,6 +1,6 @@
 ﻿* Encoding: UTF-8.
 GET
-  FILE='C:\Praxisprojekt\TestSPSS.sav'.
+  FILE='C:\Praxisprojekt\SPSS\TestSPSS.sav'.
 DATASET NAME DataSet1 WINDOW=FRONT.
 
 SELECT IF  time_diff >  100 OR time_diff < 0. 
@@ -158,7 +158,7 @@ AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
 
 DATASET ACTIVATE DataSet1.
 AGGREGATE
-  OUTFILE = 'C:\Praxisprojekt\aggr.sav'
+  OUTFILE = 'C:\Praxisprojekt\SPSS\aggr.sav'
   /BREAK=subject1
   /mean_run1cleaned=MEAN(mean_run1cleaned) 
   /sd_run1cleaned=MEAN(sd_run1cleaned) 

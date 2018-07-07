@@ -1,0 +1,418 @@
+runid1	blockid1	form1	character1	seperateAttention1	target1	time1	code2	time2	time_diff	rm_type	subject1
+run_1	block_1	Dreieck	D	2	0	176030		-1	-176031	rm_other	Melanie
+run_1	block_1	Dreieck	A	2	0	179359.5		-1	-179360.5	rm_other	Melanie
+run_1	block_1	Kreis	E	2	2	183288.3	2	183973.9	685.6	rm_hit	Melanie
+run_1	block_1	Viereck	A	2	0	185702.2		-1	-185703.2	rm_other	Melanie
+run_1	block_1	Dreieck	M	2	0	189031.7		-1	-189032.7	rm_other	Melanie
+run_1	block_1	Kreis	A	2	2	193160.2	2	193449.8	289.6	rm_hit	Melanie
+run_1	block_1	Viereck	E	2	0	195374.3		-1	-195375.3	rm_other	Melanie
+run_1	block_1	Viereck	T	2	0	199502.9		-1	-199503.9	rm_other	Melanie
+run_1	block_1	Stern	E	2	0	202033.3		-1	-202034.3	rm_other	Melanie
+run_1	block_1	Kreis	D	2	2	204963.3	2	205272.6	309.3	rm_hit	Melanie
+run_1	block_1	Stern	T	2	0	206395		-1	-206396	rm_other	Melanie
+run_1	block_1	Dreieck	E	2	0	209724.4		-1	-209725.4	rm_other	Melanie
+run_1	block_1	Stern	E	2	0	212854.2		-1	-212855.2	rm_other	Melanie
+run_1	block_1	Dreieck	M	2	0	216183.7		-1	-216184.7	rm_other	Melanie
+run_1	block_1	Kreis	M	2	2	219313.4	2	219646.6	333.2	rm_hit	Melanie
+run_1	block_1	Stern	E	2	0	220778.3		-1	-220779.3	rm_other	Melanie
+run_1	block_1	Viereck	E	2	0	224906.9		-1	-224907.9	rm_other	Melanie
+run_1	block_1	Stern	M	2	0	228635.9		-1	-228636.9	rm_other	Melanie
+run_1	block_1	Viereck	E	2	0	231366.1		-1	-231367.1	rm_other	Melanie
+run_1	block_1	Stern	A	2	0	233896.5		-1	-233897.5	rm_other	Melanie
+run_1	block_1	Viereck	M	2	0	238025.1		-1	-238026.1	rm_other	Melanie
+run_1	block_1	Kreis	X	2	2	241354.6	2	241730.2	375.6	rm_hit	Melanie
+run_1	block_1	Dreieck	X	2	0	242453.3		-1	-242454.3	rm_other	Melanie
+run_1	block_1	Dreieck	M	2	0	245982.6		-1	-245983.6	rm_other	Melanie
+run_1	block_1	Kreis	A	2	2	249511.8	2	249941.3	429.5	rm_hit	Melanie
+run_1	block_1	Dreieck	X	2	0	251276.5		-1	-251277.5	rm_other	Melanie
+run_1	block_2	Dreieck	9	1	0	260182.8		-1	-260183.8	rm_other	Melanie
+run_1	block_2	Stern	3	1	1	263312.6	1	263652.8	340.2	rm_hit	Melanie
+run_1	block_2	Viereck	7	1	0	264777.5		-1	-264778.5	rm_other	Melanie
+run_1	block_2	Viereck	9	1	0	267707.5		-1	-267708.5	rm_other	Melanie
+run_1	block_2	Kreis	6	1	0	271436.5		-1	-271437.5	rm_other	Melanie
+run_1	block_2	Dreieck	6	1	0	274566.3		-1	-274567.3	rm_other	Melanie
+run_1	block_2	Dreieck	4	1	0	277696		-1	-277697	rm_other	Melanie
+run_1	block_2	Stern	3	1	1	280026.6	1	280571.8	545.2	rm_hit	Melanie
+run_1	block_2	Viereck	7	1	0	282690.2		-1	-282691.2	rm_other	Melanie
+run_1	block_2	Stern	3	1	1	285420.4	1	285963.4	543	rm_hit	Melanie
+run_1	block_2	Stern	6	1	0	288283.7		-1	-288284.7	rm_other	Melanie
+run_1	block_2	Kreis	3	1	1	290814.2	1	291255	440.8	rm_hit	Melanie
+run_1	block_2	Viereck	6	1	0	292379		-1	-292380	rm_other	Melanie
+run_1	block_2	Stern	4	1	0	296108		-1	-296109	rm_other	Melanie
+run_1	block_2	Dreieck	9	1	0	298438.7		-1	-298439.7	rm_other	Melanie
+run_1	block_2	Kreis	7	1	0	301568.4		-1	-301569.4	rm_other	Melanie
+run_1	block_2	Kreis	3	1	1	303899	1	304279.5	380.5	rm_hit	Melanie
+run_1	block_2	Dreieck	2	1	0	305613.7		-1	-305614.7	rm_other	Melanie
+run_1	block_2	Dreieck	4	1	0	307944.4		-1	-307945.4	rm_other	Melanie
+run_1	block_2	Viereck	6	1	0	311673.4		-1	-311674.4	rm_other	Melanie
+run_1	block_2	Viereck	3	1	1	314203.8	1	314544.8	341	rm_hit	Melanie
+run_1	block_2	Dreieck	6	1	0	316667.6		-1	-316668.6	rm_other	Melanie
+run_1	block_2	Stern	6	1	0	318998.3		-1	-318999.3	rm_other	Melanie
+run_1	block_2	Kreis	2	1	0	323126.8		-1	-323127.8	rm_other	Melanie
+run_1	block_2	Kreis	7	1	0	326056.8		-1	-326057.8	rm_other	Melanie
+run_1	block_2	Viereck	7	1	0	328986.7		-1	-328987.7	rm_other	Melanie
+run_1	block_3	Viereck	D	1	0	342604.3		-1	-342605.3	rm_other	Melanie
+run_1	block_3	Dreieck	M	1	1	345534.3	1	345926.4	392.1	rm_hit	Melanie
+run_1	block_3	Stern	E	1	0	347249		-1	-347250	rm_other	Melanie
+run_1	block_3	Stern	M	1	1	351377.6	1	351758.7	381.1	rm_hit	Melanie
+run_1	block_3	Stern	E	1	0	353092.2		-1	-353093.2	rm_other	Melanie
+run_1	block_3	Dreieck	E	1	0	356621.5		-1	-356622.5	rm_other	Melanie
+run_1	block_3	Stern	M	1	1	360150.8	1	360484.7	333.9	rm_hit	Melanie
+run_1	block_3	Kreis	D	1	0	361016.4		-1	-361017.4	rm_other	Melanie
+run_1	block_3	Kreis	M	1	1	364345.9	1	364742.4	396.5	rm_hit	Melanie
+run_1	block_3	Viereck	E	1	0	365877.5		-1	-365878.5	rm_other	Melanie
+run_1	block_3	Viereck	T	1	0	369207		-1	-369208	rm_other	Melanie
+run_1	block_3	Dreieck	X	1	0	372736.2		-1	-372737.2	rm_other	Melanie
+run_1	block_3	Stern	T	1	0	375666.2		-1	-375667.2	rm_other	Melanie
+run_1	block_3	Kreis	D	1	0	378396.4		-1	-378397.4	rm_other	Melanie
+run_1	block_3	Kreis	X	1	0	381326.3		-1	-381327.3	rm_other	Melanie
+run_1	block_3	Dreieck	A	1	0	383856.7		-1	-383857.7	rm_other	Melanie
+run_1	block_3	Stern	A	1	0	386786.7		-1	-386787.7	rm_other	Melanie
+run_1	block_3	Viereck	M	1	1	390315.9	1	390665.4	349.5	rm_hit	Melanie
+run_1	block_3	Viereck	A	1	0	392796.4		-1	-392797.4	rm_other	Melanie
+run_1	block_3	Dreieck	X	1	0	396725.2		-1	-396726.2	rm_other	Melanie
+run_1	block_3	Dreieck	T	1	0	400254.5		-1	-400255.5	rm_other	Melanie
+run_1	block_3	Dreieck	E	1	0	402585.1		-1	-402586.1	rm_other	Melanie
+run_1	block_3	Kreis	D	1	0	405914.6		-1	-405915.6	rm_other	Melanie
+run_1	block_3	Kreis	A	1	0	410043.2		-1	-410044.2	rm_other	Melanie
+run_1	block_3	Dreieck	M	1	1	414171.7	1	414554.9	383.2	rm_hit	Melanie
+run_1	block_3	Kreis	A	1	0	416285.9		-1	-416286.9	rm_other	Melanie
+run_1	block_4	Kreis	3	2	0	421829.5		-1	-421830.5	rm_other	Melanie
+run_1	block_4	Stern	6	2	0	424160.2		-1	-424161.2	rm_other	Melanie
+run_1	block_4	Dreieck	7	2	2	428089	2	428445.7	356.7	rm_hit	Melanie
+run_1	block_4	Kreis	6	2	0	430569.5		-1	-430570.5	rm_other	Melanie
+run_1	block_4	Kreis	9	2	0	434098.7		-1	-434099.7	rm_other	Melanie
+run_1	block_4	Stern	2	2	0	438227.3		-1	-438228.3	rm_other	Melanie
+run_1	block_4	Stern	4	2	0	442156.1		-1	-442157.1	rm_other	Melanie
+run_1	block_4	Kreis	3	2	0	445285.8		-1	-445286.8	rm_other	Melanie
+run_1	block_4	Kreis	6	2	0	449214.6		-1	-449215.6	rm_other	Melanie
+run_1	block_4	Dreieck	7	2	2	451745	2	452057.3	312.3	rm_hit	Melanie
+run_1	block_4	Viereck	4	2	0	453992.4		-1	-453993.4	rm_other	Melanie
+run_1	block_4	Viereck	3	2	0	456722.6		-1	-456723.6	rm_other	Melanie
+run_1	block_4	Stern	6	2	0	460052.1		-1	-460053.1	rm_other	Melanie
+run_1	block_4	Dreieck	4	2	2	462382.7	2	462862.7	480	rm_hit	Melanie
+run_1	block_4	Kreis	6	2	0	463598		-1	-463599	rm_other	Melanie
+run_1	block_4	Dreieck	3	2	2	466128.4	2	466663.6	535.2	rm_hit	Melanie
+run_1	block_4	Kreis	9	2	0	467393.6		-1	-467394.6	rm_other	Melanie
+run_1	block_4	Kreis	2	2	0	470723.1		-1	-470724.1	rm_other	Melanie
+run_1	block_4	Stern	4	2	0	474252.3		-1	-474253.3	rm_other	Melanie
+run_1	block_4	Viereck	3	2	0	476583		-1	-476584	rm_other	Melanie
+run_1	block_4	Stern	6	2	0	479113.4		-1	-479114.4	rm_other	Melanie
+run_1	block_4	Dreieck	4	2	2	482243.1	2	482660.8	417.7	rm_hit	Melanie
+run_1	block_4	Kreis	2	2	0	483591.6		-1	-483592.6	rm_other	Melanie
+run_1	block_4	Dreieck	2	2	2	487720.1	2	488080.5	360.4	rm_hit	Melanie
+run_1	block_4	Kreis	6	2	0	489601.3		-1	-489602.3	rm_other	Melanie
+run_1	block_4	Stern	7	2	0	493729.9		-1	-493730.9	rm_other	Melanie
+run_2	block_1	Kreis	A	3	0	633551.7		-1	-633552.7	rm_other	Melanie
+run_2	block_1	Dreieck	T	3	0	636481.7		-1	-636482.7	rm_other	Melanie
+run_2	block_1	Viereck	D	3	0	640011		-1	-640012	rm_other	Melanie
+run_2	block_1	Kreis	M	3	0	642341.6		-1	-642342.6	rm_other	Melanie
+run_2	block_1	Dreieck	X	3	1	644872	1	645245.9	373.9	rm_hit	Melanie
+run_2	block_1	Dreieck	T	3	0	646370.3		-1	-646371.3	rm_other	Melanie
+run_2	block_1	Kreis	D	3	0	650498.9		-1	-650499.9	rm_other	Melanie
+run_2	block_1	Kreis	X	3	1	653828.3	2	654248.9	420.6	rm_incorrect	Melanie
+run_2	block_1	Dreieck	T	3	0	654777.2		-1	-654778.2	rm_other	Melanie
+run_2	block_1	Stern	T	3	2	658306.5	2	658740.9	434.4	rm_hit	Melanie
+run_2	block_1	Dreieck	E	3	0	659272.1		-1	-659273.1	rm_other	Melanie
+run_2	block_1	Kreis	D	3	0	662002.2		-1	-662003.2	rm_other	Melanie
+run_2	block_1	Viereck	A	3	0	664732.4		-1	-664733.4	rm_other	Melanie
+run_2	block_1	Viereck	D	3	0	667262.8		-1	-667263.8	rm_other	Melanie
+run_2	block_1	Kreis	T	3	0	671191.6		-1	-671192.6	rm_other	Melanie
+run_2	block_1	Viereck	X	3	1	674720.9	1	675360.1	639.2	rm_hit	Melanie
+run_2	block_1	Viereck	D	3	0	676285.7		-1	-676286.7	rm_other	Melanie
+run_2	block_1	Viereck	A	3	0	680014.8		-1	-680015.8	rm_other	Melanie
+run_2	block_1	Kreis	E	3	0	683743.8		-1	-683744.8	rm_other	Melanie
+run_2	block_1	Viereck	A	3	0	686474		-1	-686475	rm_other	Melanie
+run_2	block_1	Kreis	E	3	0	689004.4		-1	-689005.4	rm_other	Melanie
+run_2	block_1	Stern	D	3	2	693133	2	693599.6	466.6	rm_hit	Melanie
+run_2	block_1	Kreis	A	3	0	695929.7		-1	-695930.7	rm_other	Melanie
+run_2	block_1	Viereck	D	3	0	699259.2		-1	-699260.2	rm_other	Melanie
+run_2	block_1	Stern	E	3	2	701589.9	2	702039.8	449.9	rm_hit	Melanie
+run_2	block_1	Kreis	D	3	0	702771.8		-1	-702772.8	rm_other	Melanie
+run_2	block_2	Kreis	6	3	0	715041		-1	-715042	rm_other	Melanie
+run_2	block_2	Kreis	2	3	0	717970.9		-1	-717971.9	rm_other	Melanie
+run_2	block_2	Dreieck	7	3	0	720900.9		-1	-720901.9	rm_other	Melanie
+run_2	block_2	Dreieck	9	3	0	723231.5		-1	-723232.5	rm_other	Melanie
+run_2	block_2	Dreieck	4	3	1	726760.8	1	727179.3	418.5	rm_hit	Melanie
+run_2	block_2	Kreis	6	3	0	727709.7		-1	-727710.7	rm_other	Melanie
+run_2	block_2	Kreis	3	3	0	730439.9		-1	-730440.9	rm_other	Melanie
+run_2	block_2	Dreieck	6	3	0	733569.6		-1	-733570.6	rm_other	Melanie
+run_2	block_2	Viereck	3	3	2	737098.9	2	737452.3	353.4	rm_hit	Melanie
+run_2	block_2	Stern	9	3	0	739179.8		-1	-739180.8	rm_other	Melanie
+run_2	block_2	Viereck	9	3	2	743108.6	2	743903.9	795.3	rm_hit	Melanie
+run_2	block_2	Dreieck	9	3	0	745439.2		-1	-745440.2	rm_other	Melanie
+run_2	block_2	Kreis	9	3	0	749567.8		-1	-749568.8	rm_other	Melanie
+run_2	block_2	Dreieck	9	3	0	753496.6		-1	-753497.6	rm_other	Melanie
+run_2	block_2	Stern	4	3	1	757025.9	1	757625.6	599.7	rm_hit	Melanie
+run_2	block_2	Kreis	7	3	0	759556.3		-1	-759557.3	rm_other	Melanie
+run_2	block_2	Dreieck	6	3	0	762286.4		-1	-762287.4	rm_other	Melanie
+run_2	block_2	Kreis	4	3	1	765815.7		-1	-765816.7	rm_miss	Melanie
+run_2	block_2	Dreieck	6	3	0	769345		-1	-769346	rm_other	Melanie
+run_2	block_2	Kreis	7	3	0	771875.4		-1	-771876.4	rm_other	Melanie
+run_2	block_2	Dreieck	2	3	0	774206		-1	-774207	rm_other	Melanie
+run_2	block_2	Stern	6	3	0	777735.3		-1	-777736.3	rm_other	Melanie
+run_2	block_2	Kreis	7	3	0	781863.8		-1	-781864.8	rm_other	Melanie
+run_2	block_2	Kreis	2	3	0	784394.2		-1	-784395.2	rm_other	Melanie
+run_2	block_2	Viereck	6	3	2	787124.4	2	787858.8	734.4	rm_hit	Melanie
+run_2	block_2	Dreieck	2	3	0	790187.6		-1	-790188.6	rm_other	Melanie
+run_2	block_3	Stern	E	3	0	799077.3		-1	-799078.3	rm_other	Melanie
+run_2	block_3	Dreieck	D	3	0	802606.6		-1	-802607.6	rm_other	Melanie
+run_2	block_3	Dreieck	X	3	0	806135.8		-1	-806136.8	rm_other	Melanie
+run_2	block_3	Dreieck	M	3	0	810064.6		-1	-810065.6	rm_other	Melanie
+run_2	block_3	Kreis	D	3	2	812994.6	2	813525.2	530.6	rm_hit	Melanie
+run_2	block_3	Stern	T	3	0	815658.1		-1	-815659.1	rm_other	Melanie
+run_2	block_3	Stern	A	3	1	819786.7	1	820734.8	948.1	rm_hit	Melanie
+run_2	block_3	Dreieck	E	3	0	822467		-1	-822468	rm_other	Melanie
+run_2	block_3	Viereck	A	3	1	825197.1	1	825820.8	623.7	rm_hit	Melanie
+run_2	block_3	Dreieck	X	3	0	828143.7		-1	-828144.7	rm_other	Melanie
+run_2	block_3	Kreis	X	3	2	831673	2	832135.3	462.3	rm_hit	Melanie
+run_2	block_3	Dreieck	M	3	0	832871.6		-1	-832872.6	rm_other	Melanie
+run_2	block_3	Viereck	E	3	0	835801.6		-1	-835802.6	rm_other	Melanie
+run_2	block_3	Dreieck	E	3	0	839730.4		-1	-839731.4	rm_other	Melanie
+run_2	block_3	Dreieck	A	3	1	842660.3	1	843229.1	568.8	rm_hit	Melanie
+run_2	block_3	Stern	X	3	0	845157.4		-1	-845158.4	rm_other	Melanie
+run_2	block_3	Viereck	E	3	0	847887.6		-1	-847888.6	rm_other	Melanie
+run_2	block_3	Kreis	M	3	2	851017.3	2	851755.9	738.6	rm_hit	Melanie
+run_2	block_3	Stern	X	3	0	853481.1		-1	-853482.1	rm_other	Melanie
+run_2	block_3	Stern	T	3	0	856011.6		-1	-856012.6	rm_other	Melanie
+run_2	block_3	Stern	M	3	0	859540.8		-1	-859541.8	rm_other	Melanie
+run_2	block_3	Viereck	X	3	0	862470.8		-1	-862471.8	rm_other	Melanie
+run_2	block_3	Viereck	T	3	0	865800.3		-1	-865801.3	rm_other	Melanie
+run_2	block_3	Dreieck	X	3	0	869729.1		-1	-869730.1	rm_other	Melanie
+run_2	block_3	Dreieck	T	3	0	872659		-1	-872660	rm_other	Melanie
+run_2	block_3	Dreieck	E	3	0	875788.7		-1	-875789.7	rm_other	Melanie
+run_2	block_4	Stern	4	3	0	882847.2		-1	-882848.2	rm_other	Melanie
+run_2	block_4	Stern	6	3	1	885977	1	886869.6	892.6	rm_hit	Melanie
+run_2	block_4	Kreis	2	3	0	887392		-1	-887393	rm_other	Melanie
+run_2	block_4	Stern	2	3	0	890921.3		-1	-890922.3	rm_other	Melanie
+run_2	block_4	Kreis	4	3	0	893451.7		-1	-893452.7	rm_other	Melanie
+run_2	block_4	Stern	3	3	0	897580.2		-1	-897581.2	rm_other	Melanie
+run_2	block_4	Kreis	2	3	0	900709.9		-1	-900710.9	rm_other	Melanie
+run_2	block_4	Dreieck	3	3	2	904638.7	2	905263.4	624.7	rm_hit	Melanie
+run_2	block_4	Kreis	4	3	0	907185.8		-1	-907186.8	rm_other	Melanie
+run_2	block_4	Stern	6	3	1	910914.8	1	911441.1	526.3	rm_hit	Melanie
+run_2	block_4	Kreis	2	3	0	913362		-1	-913363	rm_other	Melanie
+run_2	block_4	Viereck	7	3	0	915692.7		-1	-915693.7	rm_other	Melanie
+run_2	block_4	Kreis	7	3	0	918422.8		-1	-918423.8	rm_other	Melanie
+run_2	block_4	Viereck	2	3	0	922151.9		-1	-922152.9	rm_other	Melanie
+run_2	block_4	Dreieck	4	3	2	925081.8	2	925716.1	634.3	rm_hit	Melanie
+run_2	block_4	Viereck	4	3	0	926846.4		-1	-926847.4	rm_other	Melanie
+run_2	block_4	Kreis	2	3	0	929576.6		-1	-929577.6	rm_other	Melanie
+run_2	block_4	Stern	2	3	0	932306.8		-1	-932307.8	rm_other	Melanie
+run_2	block_4	Kreis	2	3	0	934637.5		-1	-934638.5	rm_other	Melanie
+run_2	block_4	Stern	6	3	1	938366.5	1	938997.3	630.8	rm_hit	Melanie
+run_2	block_4	Kreis	2	3	0	939931.3		-1	-939932.3	rm_other	Melanie
+run_2	block_4	Dreieck	7	3	2	942461.7	2	943164.7	703	rm_hit	Melanie
+run_2	block_4	Stern	7	3	0	945291.8		-1	-945292.8	rm_other	Melanie
+run_2	block_4	Stern	4	3	0	948221.8		-1	-948222.8	rm_other	Melanie
+run_2	block_4	Kreis	4	3	0	951950.8		-1	-951951.8	rm_other	Melanie
+run_2	block_4	Viereck	9	3	0	956079.3		-1	-956080.3	rm_other	Melanie
+run_3	block_1	Dreieck	A	2	0	1087560.9		-1	-1087561.9	rm_other	Melanie
+run_3	block_1	Viereck	A	2	0	1090690.6		-1	-1090691.6	rm_other	Melanie
+run_3	block_1	Kreis	D	2	0	1094020.1		-1	-1094021.1	rm_other	Melanie
+run_3	block_1	Dreieck	D	2	0	1098148.7		-1	-1098149.7	rm_other	Melanie
+run_3	block_1	Viereck	E	2	0	1101677.9		-1	-1101678.9	rm_other	Melanie
+run_3	block_1	Dreieck	T	2	0	1105806.5		-1	-1105807.5	rm_other	Melanie
+run_3	block_1	Kreis	X	2	0	1108936.2		-1	-1108937.2	rm_other	Melanie
+run_3	block_1	Stern	E	2	2	1112865	2	1113223.8	358.8	rm_hit	Melanie
+run_3	block_1	Viereck	X	2	0	1114146.8		-1	-1114147.8	rm_other	Melanie
+run_3	block_1	Stern	D	2	2	1117676.1	2	1118113	436.9	rm_hit	Melanie
+run_3	block_1	Viereck	M	2	0	1118841.4		-1	-1118842.4	rm_other	Melanie
+run_3	block_1	Viereck	E	2	0	1121172.1		-1	-1121173.1	rm_other	Melanie
+run_3	block_1	Viereck	T	2	0	1125100.9		-1	-1125101.9	rm_other	Melanie
+run_3	block_1	Viereck	M	2	0	1128630.1		-1	-1128631.1	rm_other	Melanie
+run_3	block_1	Kreis	T	2	0	1132159.4		-1	-1132160.4	rm_other	Melanie
+run_3	block_1	Viereck	E	2	0	1134689.8		-1	-1134690.8	rm_other	Melanie
+run_3	block_1	Stern	X	2	2	1138219	2	1138587	368	rm_hit	Melanie
+run_3	block_1	Kreis	D	2	0	1139118		-1	-1139119	rm_other	Melanie
+run_3	block_1	Stern	T	2	2	1142847	2	1143195.7	348.7	rm_hit	Melanie
+run_3	block_1	Dreieck	E	2	0	1144128.9		-1	-1144129.9	rm_other	Melanie
+run_3	block_1	Viereck	T	2	0	1147458.4		-1	-1147459.4	rm_other	Melanie
+run_3	block_1	Stern	T	2	2	1149789	2	1150268.3	479.3	rm_hit	Melanie
+run_3	block_1	Kreis	X	2	0	1152602.4		-1	-1152603.4	rm_other	Melanie
+run_3	block_1	Viereck	T	2	0	1154933.1		-1	-1154934.1	rm_other	Melanie
+run_3	block_1	Kreis	T	2	0	1158062.8		-1	-1158063.8	rm_other	Melanie
+run_3	block_1	Stern	M	2	2	1160593.2	2	1160912	318.8	rm_hit	Melanie
+run_3	block_2	Kreis	4	3	0	1167501.9		-1	-1167502.9	rm_other	Melanie
+run_3	block_2	Dreieck	7	3	1	1170232.1	1	1170556.2	324.1	rm_hit	Melanie
+run_3	block_2	Stern	2	3	0	1171680.4		-1	-1171681.4	rm_other	Melanie
+run_3	block_2	Stern	3	3	0	1175409.4		-1	-1175410.4	rm_other	Melanie
+run_3	block_2	Viereck	2	3	2	1178738.9	2	1179228.7	489.8	rm_hit	Melanie
+run_3	block_2	Kreis	4	3	0	1179954.2		-1	-1179955.2	rm_other	Melanie
+run_3	block_2	Viereck	2	3	2	1184082.8	2	1184719.4	636.6	rm_hit	Melanie
+run_3	block_2	Stern	3	3	0	1186246.9		-1	-1186247.9	rm_other	Melanie
+run_3	block_2	Dreieck	4	3	0	1188777.3		-1	-1188778.3	rm_other	Melanie
+run_3	block_2	Stern	6	3	0	1191507.5		-1	-1191508.5	rm_other	Melanie
+run_3	block_2	Stern	7	3	1	1194437.5	1	1195013.4	575.9	rm_hit	Melanie
+run_3	block_2	Dreieck	2	3	0	1195536.2		-1	-1195537.2	rm_other	Melanie
+run_3	block_2	Dreieck	7	3	1	1199465	2	1200519.2	1054.2	rm_incorrect	Melanie
+run_3	block_2	Stern	4	3	0	1202444.9		-1	-1202445.9	rm_other	Melanie
+run_3	block_2	Stern	9	3	0	1205374.8		-1	-1205375.8	rm_other	Melanie
+run_3	block_2	Kreis	9	3	0	1208304.8		-1	-1208305.8	rm_other	Melanie
+run_3	block_2	Dreieck	3	3	0	1211234.7		-1	-1211235.7	rm_other	Melanie
+run_3	block_2	Stern	4	3	0	1214364.5		-1	-1214365.5	rm_other	Melanie
+run_3	block_2	Stern	3	3	0	1217893.7		-1	-1217894.7	rm_other	Melanie
+run_3	block_2	Stern	9	3	0	1220424.1		-1	-1220425.1	rm_other	Melanie
+run_3	block_2	Viereck	9	3	2	1224352.9	2	1225045.9	693	rm_hit	Melanie
+run_3	block_2	Kreis	4	3	0	1225568.2		-1	-1225569.2	rm_other	Melanie
+run_3	block_2	Dreieck	6	3	0	1228697.9		-1	-1228698.9	rm_other	Melanie
+run_3	block_2	Kreis	4	3	0	1231627.9		-1	-1231628.9	rm_other	Melanie
+run_3	block_2	Dreieck	4	3	0	1235157.1		-1	-1235158.1	rm_other	Melanie
+run_3	block_2	Kreis	3	3	0	1238286.8		-1	-1238287.8	rm_other	Melanie
+run_3	block_3	Dreieck	A	1	0	1244845.9		-1	-1244846.9	rm_other	Melanie
+run_3	block_3	Kreis	T	1	1	1248974.5	1	1249338	363.5	rm_hit	Melanie
+run_3	block_3	Stern	D	1	0	1250273		-1	-1250274	rm_other	Melanie
+run_3	block_3	Stern	M	1	0	1254401.6	1	1256150.1	1748.5	rm_false_alarm	Melanie
+run_3	block_3	Stern	X	1	0	1258080.6		-1	-1258081.6	rm_other	Melanie
+run_3	block_3	Dreieck	D	1	0	1261010.6		-1	-1261011.6	rm_other	Melanie
+run_3	block_3	Dreieck	X	1	0	1263541		-1	-1263542	rm_other	Melanie
+run_3	block_3	Kreis	M	1	0	1266471		-1	-1266472	rm_other	Melanie
+run_3	block_3	Kreis	X	1	0	1269600.7		-1	-1269601.7	rm_other	Melanie
+run_3	block_3	Dreieck	E	1	0	1271931.3		-1	-1271932.3	rm_other	Melanie
+run_3	block_3	Dreieck	A	1	0	1275660.4		-1	-1275661.4	rm_other	Melanie
+run_3	block_3	Stern	T	1	1	1278390.5	1	1278827.9	437.4	rm_hit	Melanie
+run_3	block_3	Kreis	A	1	0	1279955.4		-1	-1279956.4	rm_other	Melanie
+run_3	block_3	Dreieck	T	1	1	1283484.7	1	1283958.2	473.5	rm_hit	Melanie
+run_3	block_3	Stern	D	1	0	1284883		-1	-1284884	rm_other	Melanie
+run_3	block_3	Stern	T	1	1	1287613.2	1	1288072.7	459.5	rm_hit	Melanie
+run_3	block_3	Kreis	D	1	0	1289794		-1	-1289795	rm_other	Melanie
+run_3	block_3	Stern	E	1	0	1292923.7		-1	-1292924.7	rm_other	Melanie
+run_3	block_3	Kreis	D	1	0	1295853.7		-1	-1295854.7	rm_other	Melanie
+run_3	block_3	Viereck	E	1	0	1298384.1		-1	-1298385.1	rm_other	Melanie
+run_3	block_3	Viereck	T	1	1	1300714.8	1	1301242.1	527.3	rm_hit	Melanie
+run_3	block_3	Viereck	X	1	0	1302962.2		-1	-1302963.2	rm_other	Melanie
+run_3	block_3	Dreieck	E	1	0	1306691.2		-1	-1306692.2	rm_other	Melanie
+run_3	block_3	Stern	X	1	0	1310420.2		-1	-1310421.2	rm_other	Melanie
+run_3	block_3	Stern	M	1	0	1313949.5		-1	-1313950.5	rm_other	Melanie
+run_3	block_3	Viereck	T	1	1	1317079.2	1	1317495.9	416.7	rm_hit	Melanie
+run_3	block_4	Stern	7	3	0	1323388.6		-1	-1323389.6	rm_other	Melanie
+run_3	block_4	Stern	6	3	0	1327117.6		-1	-1327118.6	rm_other	Melanie
+run_3	block_4	Dreieck	2	3	0	1330846.6		-1	-1330847.6	rm_other	Melanie
+run_3	block_4	Dreieck	9	3	1	1334975.2	1	1335528.7	553.5	rm_hit	Melanie
+run_3	block_4	Dreieck	2	3	0	1336456.8		-1	-1336457.8	rm_other	Melanie
+run_3	block_4	Dreieck	6	3	0	1339986.1		-1	-1339987.1	rm_other	Melanie
+run_3	block_4	Stern	2	3	0	1343115.8		-1	-1343116.8	rm_other	Melanie
+run_3	block_4	Stern	9	3	1	1346245.5	1	1346891.2	645.7	rm_hit	Melanie
+run_3	block_4	Viereck	3	3	0	1349025.7		-1	-1349026.7	rm_other	Melanie
+run_3	block_4	Viereck	4	3	0	1352155.4		-1	-1352156.4	rm_other	Melanie
+run_3	block_4	Stern	3	3	0	1355085.3		-1	-1355086.3	rm_other	Melanie
+run_3	block_4	Dreieck	7	3	0	1358215		-1	-1358216	rm_other	Melanie
+run_3	block_4	Stern	9	3	1	1360545.7	1	1360924.3	378.6	rm_hit	Melanie
+run_3	block_4	Stern	6	3	0	1361844.2		-1	-1361845.2	rm_other	Melanie
+run_3	block_4	Kreis	3	3	2	1365573.2	2	1365970.9	397.7	rm_hit	Melanie
+run_3	block_4	Dreieck	2	3	0	1366505.5		-1	-1366506.5	rm_other	Melanie
+run_3	block_4	Viereck	7	3	0	1369035.9		-1	-1369036.9	rm_other	Melanie
+run_3	block_4	Stern	6	3	0	1372165.6		-1	-1372166.6	rm_other	Melanie
+run_3	block_4	Viereck	7	3	0	1375495.1		-1	-1375496.1	rm_other	Melanie
+run_3	block_4	Kreis	6	3	2	1378025.5	2	1378403.9	378.4	rm_hit	Melanie
+run_3	block_4	Viereck	6	3	0	1379324		-1	-1379325	rm_other	Melanie
+run_3	block_4	Viereck	4	3	0	1382253.9		-1	-1382254.9	rm_other	Melanie
+run_3	block_4	Kreis	3	3	2	1384984.1	2	1385288.1	304	rm_hit	Melanie
+run_3	block_4	Viereck	2	3	0	1387614.4		-1	-1387615.4	rm_other	Melanie
+run_3	block_4	Viereck	6	3	0	1390544.4		-1	-1390545.4	rm_other	Melanie
+run_3	block_4	Stern	6	3	0	1393873.9		-1	-1393874.9	rm_other	Melanie
+run_3	block_5	Kreis	4	2	0	1403879		-1	-1403880	rm_other	Melanie
+run_3	block_5	Dreieck	3	2	2	1406409.4	2	1406727	317.6	rm_hit	Melanie
+run_3	block_5	Stern	9	2	0	1408656.8		-1	-1408657.8	rm_other	Melanie
+run_3	block_5	Kreis	3	2	0	1412186.1		-1	-1412187.1	rm_other	Melanie
+run_3	block_5	Viereck	6	2	0	1415715.3		-1	-1415716.3	rm_other	Melanie
+run_3	block_5	Kreis	3	2	0	1418045.9		-1	-1418046.9	rm_other	Melanie
+run_3	block_5	Stern	7	2	0	1421375.4		-1	-1421376.4	rm_other	Melanie
+run_3	block_5	Dreieck	2	2	2	1425504	2	1425888.4	384.4	rm_hit	Melanie
+run_3	block_5	Viereck	3	2	0	1426819.2		-1	-1426820.2	rm_other	Melanie
+run_3	block_5	Kreis	4	2	0	1430947.7		-1	-1430948.7	rm_other	Melanie
+run_3	block_5	Stern	7	2	0	1433877.7		-1	-1433878.7	rm_other	Melanie
+run_3	block_5	Kreis	4	2	0	1436607.9		-1	-1436608.9	rm_other	Melanie
+run_3	block_5	Dreieck	7	2	2	1440536.7	2	1441128.1	591.4	rm_hit	Melanie
+run_3	block_5	Kreis	7	2	0	1442251.3		-1	-1442252.3	rm_other	Melanie
+run_3	block_5	Stern	4	2	0	1445580.8		-1	-1445581.8	rm_other	Melanie
+run_3	block_5	Viereck	6	2	0	1448510.8		-1	-1448511.8	rm_other	Melanie
+run_3	block_5	Kreis	9	2	0	1451840.3		-1	-1451841.3	rm_other	Melanie
+run_3	block_5	Stern	4	2	0	1455369.5		-1	-1455370.5	rm_other	Melanie
+run_3	block_5	Stern	2	2	0	1458099.7		-1	-1458100.7	rm_other	Melanie
+run_3	block_5	Dreieck	4	2	2	1461629	2	1461976.3	347.3	rm_hit	Melanie
+run_3	block_5	Viereck	3	2	0	1462910.8		-1	-1462911.8	rm_other	Melanie
+run_3	block_5	Dreieck	9	2	2	1466240.3	2	1466800.9	560.6	rm_hit	Melanie
+run_3	block_5	Stern	6	2	0	1468920.5		-1	-1468921.5	rm_other	Melanie
+run_3	block_5	Stern	4	2	0	1472449.8		-1	-1472450.8	rm_other	Melanie
+run_3	block_5	Stern	9	2	0	1474780.5		-1	-1474781.5	rm_other	Melanie
+run_3	block_5	Dreieck	3	2	2	1477710.4	2	1478091.2	380.8	rm_hit	Melanie
+run_3	block_6	Viereck	M	3	0	1489247.1		-1	-1489248.1	rm_other	Melanie
+run_3	block_6	Kreis	M	3	0	1492776.3		-1	-1492777.3	rm_other	Melanie
+run_3	block_6	Viereck	A	3	0	1495706.3		-1	-1495707.3	rm_other	Melanie
+run_3	block_6	Dreieck	D	3	0	1499035.8		-1	-1499036.8	rm_other	Melanie
+run_3	block_6	Kreis	D	3	0	1502565		-1	-1502566	rm_other	Melanie
+run_3	block_6	Viereck	A	3	0	1504895.7		-1	-1504896.7	rm_other	Melanie
+run_3	block_6	Stern	T	3	2	1508225.2	2	1508541.9	316.7	rm_hit	Melanie
+run_3	block_6	Dreieck	D	3	0	1509074.2		-1	-1509075.2	rm_other	Melanie
+run_3	block_6	Stern	A	3	2	1511804.4	1	1512469.8	665.4	rm_incorrect	Melanie
+run_3	block_6	Kreis	T	3	0	1513202.8		-1	-1513203.8	rm_other	Melanie
+run_3	block_6	Kreis	M	3	0	1517331.3		-1	-1517332.3	rm_other	Melanie
+run_3	block_6	Stern	X	3	2	1520660.8	2	1521312	651.2	rm_hit	Melanie
+run_3	block_6	Viereck	T	3	0	1522042.5		-1	-1522043.5	rm_other	Melanie
+run_3	block_6	Dreieck	D	3	0	1525372		-1	-1525373	rm_other	Melanie
+run_3	block_6	Dreieck	M	3	0	1528302		-1	-1528303	rm_other	Melanie
+run_3	block_6	Dreieck	E	3	1	1532430.6		-1	-1532431.6	rm_miss	Melanie
+run_3	block_6	Viereck	T	3	0	1535760		-1	-1535761	rm_other	Melanie
+run_3	block_6	Kreis	T	3	0	1538490.2		-1	-1538491.2	rm_other	Melanie
+run_3	block_6	Kreis	D	3	0	1542019.5		-1	-1542020.5	rm_other	Melanie
+run_3	block_6	Kreis	M	3	0	1545349		-1	-1545350	rm_other	Melanie
+run_3	block_6	Kreis	E	3	1	1548878.2	1	1550151.6	1273.4	rm_hit	Melanie
+run_3	block_6	Viereck	A	3	0	1551075.7		-1	-1551076.7	rm_other	Melanie
+run_3	block_6	Kreis	E	3	1	1554604.9	1	1554948.8	343.9	rm_hit	Melanie
+run_3	block_6	Kreis	D	3	0	1556069.9		-1	-1556070.9	rm_other	Melanie
+run_3	block_6	Kreis	X	3	0	1560198.5		-1	-1560199.5	rm_other	Melanie
+run_3	block_6	Kreis	D	3	0	1564127.3		-1	-1564128.3	rm_other	Melanie
+run_3	block_7	Stern	7	1	0	1570603.1		-1	-1570604.1	rm_other	Melanie
+run_3	block_7	Viereck	2	1	1	1573932.6	1	1574294.4	361.8	rm_hit	Melanie
+run_3	block_7	Dreieck	4	1	0	1575014.7		-1	-1575015.7	rm_other	Melanie
+run_3	block_7	Stern	9	1	0	1578544		-1	-1578545	rm_other	Melanie
+run_3	block_7	Kreis	4	1	0	1582073.2		-1	-1582074.2	rm_other	Melanie
+run_3	block_7	Stern	3	1	0	1584603.6		-1	-1584604.6	rm_other	Melanie
+run_3	block_7	Kreis	2	1	1	1588732.2	1	1589039.9	307.7	rm_hit	Melanie
+run_3	block_7	Dreieck	7	1	0	1589564.6		-1	-1589565.6	rm_other	Melanie
+run_3	block_7	Dreieck	9	1	0	1593493.4		-1	-1593494.4	rm_other	Melanie
+run_3	block_7	Stern	3	1	0	1596423.3		-1	-1596424.3	rm_other	Melanie
+run_3	block_7	Dreieck	3	1	0	1599952.6		-1	-1599953.6	rm_other	Melanie
+run_3	block_7	Dreieck	2	1	1	1602882.5	1	1603227.3	344.8	rm_hit	Melanie
+run_3	block_7	Stern	6	1	0	1604747.1		-1	-1604748.1	rm_other	Melanie
+run_3	block_7	Dreieck	3	1	0	1608875.6		-1	-1608876.6	rm_other	Melanie
+run_3	block_7	Dreieck	6	1	0	1611206.3		-1	-1611207.3	rm_other	Melanie
+run_3	block_7	Dreieck	2	1	1	1614336	1	1614662.8	326.8	rm_hit	Melanie
+run_3	block_7	Viereck	9	1	0	1615984.1		-1	-1615985.1	rm_other	Melanie
+run_3	block_7	Dreieck	2	1	1	1619313.6	1	1619703.8	390.2	rm_hit	Melanie
+run_3	block_7	Stern	9	1	0	1622027.1		-1	-1622028.1	rm_other	Melanie
+run_3	block_7	Viereck	4	1	0	1624557.5		-1	-1624558.5	rm_other	Melanie
+run_3	block_7	Kreis	4	1	0	1626888.2		-1	-1626889.2	rm_other	Melanie
+run_3	block_7	Stern	3	1	0	1630417.4		-1	-1630418.4	rm_other	Melanie
+run_3	block_7	Kreis	6	1	0	1632748.1		-1	-1632749.1	rm_other	Melanie
+run_3	block_7	Dreieck	6	1	0	1636876.6		-1	-1636877.6	rm_other	Melanie
+run_3	block_7	Viereck	4	1	0	1641005.2		-1	-1641006.2	rm_other	Melanie
+run_3	block_7	Dreieck	2	1	1	1643935.1	1	1644266.1	331	rm_hit	Melanie
+run_3	block_8	Kreis	M	3	0	1657036.7		-1	-1657037.7	rm_other	Melanie
+run_3	block_8	Kreis	D	3	1	1659966.6	1	1660349.2	382.6	rm_hit	Melanie
+run_3	block_8	Stern	A	3	0	1662680.2		-1	-1662681.2	rm_other	Melanie
+run_3	block_8	Stern	T	3	0	1665410.3		-1	-1665411.3	rm_other	Melanie
+run_3	block_8	Viereck	X	3	2	1669139.4	2	1669857.3	717.9	rm_hit	Melanie
+run_3	block_8	Kreis	M	3	0	1670587.7		-1	-1670588.7	rm_other	Melanie
+run_3	block_8	Kreis	T	3	0	1674117		-1	-1674118	rm_other	Melanie
+run_3	block_8	Dreieck	E	3	0	1676447.6		-1	-1676448.6	rm_other	Melanie
+run_3	block_8	Stern	X	3	0	1678978		-1	-1678979	rm_other	Melanie
+run_3	block_8	Kreis	A	3	0	1683106.6		-1	-1683107.6	rm_other	Melanie
+run_3	block_8	Dreieck	A	3	0	1686436.1		-1	-1686437.1	rm_other	Melanie
+run_3	block_8	Stern	T	3	0	1688966.5		-1	-1688967.5	rm_other	Melanie
+run_3	block_8	Stern	D	3	1	1691696.7	1	1692206.2	509.5	rm_hit	Melanie
+run_3	block_8	Stern	A	3	0	1694526.7		-1	-1694527.7	rm_other	Melanie
+run_3	block_8	Stern	E	3	0	1696857.4		-1	-1696858.4	rm_other	Melanie
+run_3	block_8	Stern	X	3	0	1699188		-1	-1699189	rm_other	Melanie
+run_3	block_8	Stern	E	3	0	1701718.4		-1	-1701719.4	rm_other	Melanie
+run_3	block_8	Viereck	E	3	2	1704248.8	2	1704746.7	497.9	rm_hit	Melanie
+run_3	block_8	Stern	M	3	0	1705880.3		-1	-1705881.3	rm_other	Melanie
+run_3	block_8	Viereck	X	3	2	1708810.2	2	1709527.3	717.1	rm_hit	Melanie
+run_3	block_8	Stern	M	3	0	1711457.2		-1	-1711458.2	rm_other	Melanie
+run_3	block_8	Kreis	D	3	1	1714786.7	1	1715327.6	540.9	rm_hit	Melanie
+run_3	block_8	Stern	E	3	0	1716051.9		-1	-1716052.9	rm_other	Melanie
+run_3	block_8	Kreis	A	3	0	1718981.8		-1	-1718982.8	rm_other	Melanie
+run_3	block_8	Stern	T	3	0	1721712		-1	-1721713	rm_other	Melanie
+run_3	block_8	Kreis	X	3	0	1724042.6		-1	-1724043.6	rm_other	Melanie
+
