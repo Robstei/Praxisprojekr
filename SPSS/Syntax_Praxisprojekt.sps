@@ -3,7 +3,8 @@ GET
   FILE='C:\Praxisprojekt\SPSS\TestSPSS.sav'.
 DATASET NAME DataSet1 WINDOW=FRONT.
 
-SELECT IF  time_diff >  100 OR time_diff < 0. 
+SELECT IF  time_diff >  100. 
+
 TEMPORARY.
 SELECT IF time_diff >  100 AND  runid1 = 'run_1'.
 AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
@@ -52,60 +53,394 @@ AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
   /BREAK subject1
   /sd_run3divided = SD(time_diff).
 
-select if (runid1 = 'run_1' AND time_diff > mean_run1 - 2 *sd_run1 AND time_diff < mean_run1 + 2 *sd_run1)
-OR          (runid1 = 'run_2' AND time_diff > mean_run2 - 2 *sd_run2 AND time_diff < mean_run2 + 2 *sd_run2)
-OR          (runid1 = 'run_3' AND seperateAttention1 NE 3 AND time_diff > mean_run3selective - 2 *sd_run3selective AND time_diff < mean_run3selective + 2 *sd_run3selective)
-OR          (runid1 = 'run_3' AND seperateAttention1 EQ 3 AND time_diff > mean_run3divided - 2 *sd_run3divided AND time_diff < mean_run3divided + 2 *sd_run3divided)
-OR          (time_diff < 0).
+*
+* mean run1 blocks 
+*
 
 TEMPORARY.
-SELECT IF runid1 = 'run_1' AND time_diff > 0.
+SELECT IF time_diff >  100 AND  runid1 = 'run_1' and blockid1 = 'block_1'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run1_block1 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_1' and blockid1 = 'block_2'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run1_block2 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_1' and blockid1 = 'block_3'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run1_block3 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_1' and blockid1 = 'block_4'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run1_block4 = mean(time_diff).
+
+
+*
+* mean run2 blocks 
+*
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_2' and blockid1 = 'block_1'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run2_block1 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_2' and blockid1 = 'block_2'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run2_block2 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_2' and blockid1 = 'block_3'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run2_block3 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_2' and blockid1 = 'block_4'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run2_block4 = mean(time_diff).
+
+*
+* mean run3 blocks 
+*
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_1'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block1 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_2'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block2 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_3'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block3 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_4'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block4 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_5'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block5 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_6'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block6 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_7'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block7 = mean(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_8'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block8 = mean(time_diff).
+
+*
+* SD run1 blocks 
+*
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_1' and blockid1 = 'block_1'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run1_block1 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_1' and blockid1 = 'block_2'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run1_block2 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_1' and blockid1 = 'block_3'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run1_block3 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_1' and blockid1 = 'block_4'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run1_block4 = SD(time_diff).
+
+*
+* SD run2 blocks 
+*
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_2' and blockid1 = 'block_1'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run2_block1 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_2' and blockid1 = 'block_2'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run2_block2 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_2' and blockid1 = 'block_3'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run2_block3 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_2' and blockid1 = 'block_4'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run2_block4 = SD(time_diff).
+
+*
+* SD run3 blocks 
+*
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_1'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run3_block1 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_2'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run3_block2 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_3'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run3_block3 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_4'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run3_block4 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_5'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run3_block5 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_6'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run3_block6 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_7'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run3_block7 = SD(time_diff).
+
+TEMPORARY.
+SELECT IF time_diff >  100 AND  runid1 = 'run_3' and blockid1 = 'block_8'.
+AGGREGATE  /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /sd_run3_block8 = SD(time_diff).
+
+*
+* cleaned runs MEAN
+*
+
+TEMPORARY.
+SELECT IF runid1 = 'run_1' AND time_diff > mean_run1 - 2 *sd_run1 AND time_diff < mean_run1 + 2 *sd_run1 AND time_diff > 0.
 AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
   /BREAK subject1
   /mean_run1cleaned = MEAN(time_diff).
 
 TEMPORARY.
-SELECT IF runid1 = 'run_2' AND time_diff > 0.
+SELECT IF runid1 = 'run_2' AND time_diff > mean_run2 - 2 *sd_run2 AND time_diff < mean_run2 + 2 *sd_run2 AND time_diff > 0.
 AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
   /BREAK subject1
   /mean_run2cleaned = MEAN(time_diff).
 
 TEMPORARY.
-SELECT IF runid1 = 'run_3' AND seperateAttention1 NE 3 AND time_diff > 0.
+SELECT IF runid1 = 'run_3' AND seperateAttention1 NE 3 AND time_diff > mean_run3selective - 2 *sd_run3selective AND time_diff < mean_run3selective + 2 *sd_run3selective AND time_diff > 0.
 AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
   /BREAK subject1
   /mean_run3selectiveCleaned = MEAN(time_diff).
 
 TEMPORARY.
-SELECT IF runid1 = 'run_3' AND seperateAttention1 = 3 AND time_diff > 0.
+SELECT IF runid1 = 'run_3' AND seperateAttention1 EQ 3 AND time_diff > mean_run3divided - 2 *sd_run3divided AND time_diff < mean_run3divided + 2 *sd_run3divided AND time_diff > 0.
 AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
   /BREAK subject1
   /mean_run3dividedCleaned = MEAN(time_diff).
 
 
+*
+* cleaned runs SD
+*
+
 TEMPORARY.
-SELECT IF runid1 = 'run_1' AND time_diff > 0.
+SELECT IF runid1 = 'run_1' AND time_diff > mean_run1 - 2 *sd_run1 AND time_diff < mean_run1 + 2 *sd_run1 AND time_diff > 0.
 AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
   /BREAK subject1
   /sd_run1cleaned = SD(time_diff).
 
 TEMPORARY.
-SELECT IF runid1 = 'run_2' AND time_diff > 0.
+SELECT IF runid1 = 'run_2' AND time_diff > mean_run2 - 2 *sd_run2 AND time_diff < mean_run2 + 2 *sd_run2 AND time_diff > 0.
 AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
   /BREAK subject1
   /sd_run2cleaned = SD(time_diff).
 
 TEMPORARY.
-SELECT IF runid1 = 'run_3' AND seperateAttention1 NE 3 AND time_diff > 0.
+SELECT IF runid1 =  'run_3' AND seperateAttention1 NE 3 AND time_diff > mean_run3selective - 2 *sd_run3selective AND time_diff < mean_run3selective + 2 *sd_run3selective AND time_diff > 0.
 AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
   /BREAK subject1
   /sd_run3selectiveCleaned = SD(time_diff).
 
 TEMPORARY.
-SELECT IF runid1 = 'run_3' AND seperateAttention1 = 3 AND time_diff > 0.
+SELECT IF runid1 = 'run_3' AND seperateAttention1 EQ 3 AND time_diff > mean_run3divided - 2 *sd_run3divided AND time_diff < mean_run3divided + 2 *sd_run3divided AND time_diff > 0.
 AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
   /BREAK subject1
   /sd_run3dividedCleaned = SD(time_diff).
+
+*
+* cleaned blocks(run1) MEAN
+*
+
+TEMPORARY.
+SELECT IF runid1 = 'run_1' AND blockid1 = 'block_1'  AND time_diff > mean_run1_block1 - 2 *sd_run1_block1 AND time_diff < mean_run1_block1 + 2 *sd_run1_block1 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run1_block1cleaned = MEAN(time_diff).
+
+TEMPORARY.
+SELECT IF runid1 = 'run_1' AND blockid1 = 'block_2'  AND time_diff > mean_run1_block2 - 2 *sd_run1_block2 AND time_diff < mean_run1_block2 + 2 *sd_run1_block2 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run1_block2cleaned = MEAN(time_diff).
+
+TEMPORARY.
+SELECT IF runid1 = 'run_1' AND blockid1 = 'block_3'  AND time_diff > mean_run1_block3 - 2 *sd_run1_block3 AND time_diff < mean_run1_block3 + 2 *sd_run1_block3 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run1_block3cleaned = MEAN(time_diff).
+
+
+TEMPORARY.
+SELECT IF runid1 = 'run_1' AND blockid1 = 'block_4'  AND time_diff > mean_run1_block4 - 2 *sd_run1_block4 AND time_diff < mean_run1_block4 + 2 *sd_run1_block4 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run1_block4cleaned = MEAN(time_diff).
+
+*
+* cleaned blocks(run2) MEAN
+*
+
+TEMPORARY.
+SELECT IF runid1 = 'run_2' AND blockid1 = 'block_1'  AND time_diff > mean_run2_block1 - 2 *sd_run2_block1 AND time_diff < mean_run2_block1 + 2 *sd_run2_block1 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run2_block1cleaned = MEAN(time_diff).
+
+TEMPORARY.
+SELECT IF runid1 = 'run_2' AND blockid1 = 'block_2'  AND time_diff > mean_run2_block2 - 2 *sd_run2_block2 AND time_diff < mean_run2_block2 + 2 *sd_run2_block2 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run2_block2cleaned = MEAN(time_diff).
+
+TEMPORARY.
+SELECT IF runid1 = 'run_2' AND blockid1 = 'block_3'  AND time_diff > mean_run2_block3 - 2 *sd_run2_block3 AND time_diff < mean_run2_block3 + 2 *sd_run2_block3 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run2_block3cleaned = MEAN(time_diff).
+
+
+TEMPORARY.
+SELECT IF runid1 = 'run_2' AND blockid1 = 'block_4'  AND time_diff > mean_run2_block4 - 2 *sd_run2_block4 AND time_diff < mean_run2_block4 + 2 *sd_run2_block4 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run2_block4cleaned = MEAN(time_diff).
+
+*
+* cleaned blocks(run3) MEAN
+*
+
+TEMPORARY.
+SELECT IF runid1 = 'run_3' AND blockid1 = 'block_1'  AND time_diff > mean_run3_block1 - 2 *sd_run3_block1 AND time_diff < mean_run3_block1 + 2 *sd_run3_block1 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block1cleaned = MEAN(time_diff).
+
+TEMPORARY.
+SELECT IF runid1 = 'run_3' AND blockid1 = 'block_2'  AND time_diff > mean_run3_block2 - 2 *sd_run3_block2 AND time_diff < mean_run3_block2 + 2 *sd_run3_block2 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block2cleaned = MEAN(time_diff).
+
+TEMPORARY.
+SELECT IF runid1 = 'run_3' AND blockid1 = 'block_3'  AND time_diff > mean_run3_block3 - 2 *sd_run3_block3 AND time_diff < mean_run3_block3 + 2 *sd_run3_block3 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block3cleaned = MEAN(time_diff).
+
+TEMPORARY.
+SELECT IF runid1 = 'run_3' AND blockid1 = 'block_4'  AND time_diff > mean_run3_block4 - 2 *sd_run3_block4 AND time_diff < mean_run3_block4 + 2 *sd_run3_block4 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block4cleaned = MEAN(time_diff).
+
+TEMPORARY.
+SELECT IF runid1 = 'run_3' AND blockid1 = 'block_5'  AND time_diff > mean_run3_block5 - 2 *sd_run3_block5 AND time_diff < mean_run3_block5 + 2 *sd_run3_block5 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block5cleaned = MEAN(time_diff).
+
+TEMPORARY.
+SELECT IF runid1 = 'run_3' AND blockid1 = 'block_6'  AND time_diff > mean_run3_block6 - 2 *sd_run3_block6 AND time_diff < mean_run3_block6 + 2 *sd_run3_block6 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block6cleaned = MEAN(time_diff).
+
+TEMPORARY.
+SELECT IF runid1 = 'run_3' AND blockid1 = 'block_7'  AND time_diff > mean_run3_block7 - 2 *sd_run3_block7 AND time_diff < mean_run3_block7 + 2 *sd_run3_block7 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block7cleaned = MEAN(time_diff).
+
+
+TEMPORARY.
+SELECT IF runid1 = 'run_3' AND blockid1 = 'block_8'  AND time_diff > mean_run3_block8 - 2 *sd_run3_block8 AND time_diff < mean_run3_block8 + 2 *sd_run3_block8 AND time_diff > 0.
+AGGREGATE /OUTFILE=* MODE=ADDVARIABLES
+  /BREAK subject1
+  /mean_run3_block8cleaned = MEAN(time_diff).
+
+*
+* ERROR
+*
 
 TEMPORARY.
 SELECT IF runid1 = 'run_1' AND rm_type EQ 'rm_hit'.
@@ -175,7 +510,24 @@ AGGREGATE
   /mean_run3dividedCleaned=MEAN(mean_run3dividedCleaned)
   /sd_run3dividedCleaned=MEAN(sd_run3dividedCleaned) 
   /correct_run3divided=MEAN(correct_run3divided) 
-  /error_run3divided=MEAN(error_run3divided).
+  /error_run3divided=MEAN(error_run3divided)
+ /mean_run1_block1cleaned=MEAN(mean_run1_block1cleaned)
+ /mean_run1_block2cleaned=MEAN(mean_run1_block2cleaned)
+ /mean_run1_block3cleaned=MEAN(mean_run1_block3cleaned)
+ /mean_run1_block4cleaned=MEAN(mean_run1_block4cleaned)
+ /mean_run2_block1cleaned=MEAN(mean_run2_block1cleaned)
+ /mean_run2_block2cleaned=MEAN(mean_run2_block2cleaned)
+ /mean_run2_block3cleaned=MEAN(mean_run2_block3cleaned)
+ /mean_run2_block4cleaned=MEAN(mean_run2_block3cleaned)
+ /mean_run3_block1cleaned=MEAN(mean_run3_block1cleaned)
+ /mean_run3_block2cleaned=MEAN(mean_run3_block2cleaned)
+ /mean_run3_block3cleaned=MEAN(mean_run3_block3cleaned)
+ /mean_run3_block4cleaned=MEAN(mean_run3_block4cleaned)
+ /mean_run3_block5cleaned=MEAN(mean_run3_block5cleaned)
+ /mean_run3_block6cleaned=MEAN(mean_run3_block6cleaned)
+ /mean_run3_block7cleaned=MEAN(mean_run3_block7cleaned)
+ /mean_run3_block8cleaned=MEAN(mean_run3_block8cleaned).
+ 
 
   /*/mean_run1=MEAN(mean_run1)
   /*/sd_run1=MEAN(sd_run1) 
@@ -185,3 +537,4 @@ AGGREGATE
    /*/sd_run3selective=MEAN(sd_run3selective) 
    /* /mean_run3divided=MEAN(mean_run3divided) 
    /*/sd_run3divided=MEAN(sd_run3divided) 
+
