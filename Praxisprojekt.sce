@@ -274,7 +274,7 @@ begin_pcl;
 		return true;
 	end;
 
-	sub array<int,2> make_trial (int seperate_attention, int char_target_index, array<text,1> char_array,
+	sub array<int,2> make_trials (int seperate_attention, int char_target_index, array<text,1> char_array,
 											int form_target_index, int number_of_stimuli, int number_of_non_stimuli)
 	begin
 		array<int> list[0][2];
@@ -361,7 +361,6 @@ begin_pcl;
 				end;
 			end;
 		end;
-														  
 		loop until (validade(list, seperate_attention ,form_target_index,
 						char_target_index,char_array))
 		begin
@@ -481,7 +480,7 @@ begin_pcl;
 											int form_target_index, int number_of_stimuli, int number_of_non_stimuli,  
 											bool show_feedback, string run_id, string block_id)
 	begin
-		array<int> trial_presentet[][] = make_trial(seperate_attention,char_target_index, char_array,
+		array<int> trial_presentet[][] = make_trials(seperate_attention,char_target_index, char_array,
 											form_target_index, number_of_stimuli, number_of_non_stimuli);
 		present_trials(seperate_attention, char_target_index, char_array,
 											 form_target_index, trial_presentet, show_feedback, run_id, block_id)
