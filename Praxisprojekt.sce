@@ -116,7 +116,6 @@ begin;
 		picture {} main_picture;
 		duration = EXPARAM("Time Stimulus" : 250);
 		}stim_event;
-		
 	} trial_main;
 
 	trial {
@@ -166,7 +165,7 @@ begin;
 		trial_duration = 120000;
 		
 		picture {
-			text {caption = "Pause \nIn 2 Minuten geht es weiter"; font_size = 30;}pause_text;
+			text {caption = "Pause \nIn 2 Minuten geht es weiter"; font_size = 30;} pause_text;
 			x=0; y=0;
 		};
 	} pause_trial;
