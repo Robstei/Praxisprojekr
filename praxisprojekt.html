@@ -12,20 +12,35 @@
             
             <div class="form-container">
                 <form>
-                    <label for="run-amount">Number of Runs</label>
-                    <select onchange="runsChanged()" name="run-amount" id="run-amount" required>
-                        <option value=1>1</option>
-                        <option value=2>2</option>
-                        <option value=3>3</option>
-                        <option value=4>4</option>
-                        <option value=5>5</option>
-                        <option value=6>6</option>
-                        <option value=7>7</option>
-                        <option value=8>8</option>
-                        <option value=9>9</option>
-                        <option value=10>10</option>
-                    </select>
                     <div>
+                        <label for="run-amount">Number of Runs</label>
+                        <select onchange="runsChanged()" name="run-amount" id="run-amount" required>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>
+                    </div>
+                    <div id="button-container">
+                        <button type="button" class = "run-button" id="button-run1" onclick="openRun('tab-run1')">Run 1</button>
+                        <button type="button" class = "run-button" id="button-run2" onclick="openRun('tab-run2')">Run 2</button>
+                        <button type="button" class = "run-button" id="button-run3" onclick="openRun('tab-run3')">Run 3</button>
+                        <button type="button" class = "run-button" id="button-run4" onclick="openRun('tab-run4')">Run 4</button>
+                        <button type="button" class = "run-button" id="button-run5" onclick="openRun('tab-run5')">Run 5</button>
+                        <button type="button" class = "run-button" id="button-run6" onclick="openRun('tab-run6')">Run 6</button>
+                        <button type="button" class = "run-button" id="button-run7" onclick="openRun('tab-run7')">Run 7</button>
+                        <button type="button" class = "run-button" id="button-run8" onclick="openRun('tab-run8')">Run 8</button>
+                        <button type="button" class = "run-button" id="button-run9" onclick="openRun('tab-run9')">Run 9</button>
+                        <button type="button" class = "run-button" id="button-run10"onclick="openRun('tab-run10')">Run 10</button>
+                        <div style="clear: both;"></div>
+                    </div>
+                    <div id="tab-run1" class="tab">
                         <label for="run1" class="run-submenu" id="run-label1">Blocks in Run 1</label>
                         <select class="run-submenu" name="run1" id="run1" required>
                             <option value=1>1</option>
@@ -39,6 +54,8 @@
                             <option value=9>9</option>
                             <option value=10>10</option>
                         </select>
+                    </div>
+                    <div id="tab-run2" class="tab">
                         <label for="run2" class="run-submenu" id="run-label2">Blocks in Run 2</label>
                         <select class="run-submenu" name="run2" id="run2" required>
                             <option value=1>1</option>
@@ -52,6 +69,8 @@
                             <option value=9>9</option>
                             <option value=10>10</option>
                         </select>
+                    </div>
+                    <div id="tab-run3" class="tab">
                         <label for="run3" class="run-submenu" id="run-label3">Blocks in Run 3</label>
                         <select class="run-submenu" name="run3" id="run3" required>
                             <option value=1>1</option>
@@ -65,6 +84,8 @@
                             <option value=9>9</option>
                             <option value=10>10</option>
                         </select>
+                    </div>
+                    <div id="tab-run4" class="tab">
                         <label for="run4" class="run-submenu" id="run-label4">Blocks in Run 4</label>
                         <select class="run-submenu" name="run4" id="run4" required>
                             <option value=1>1</option>
@@ -78,6 +99,8 @@
                             <option value=9>9</option>
                             <option value=10>10</option>
                         </select>
+                    </div>
+                    <div id="tab-run5" class="tab">
                         <label for="run5" class="run-submenu" id="run-label5">Blocks in Run 5</label>
                         <select class="run-submenu" name="run5" id="run5" required>
                             <option value=1>1</option>
@@ -91,6 +114,8 @@
                             <option value=9>9</option>
                             <option value=10>10</option>
                         </select>
+                    </div>
+                    <div id="tab-run6" class="tab">
                         <label for="run6" class="run-submenu" id="run-label6">Blocks in Run 6</label>
                         <select class="run-submenu" name="run6" id="run6" required>
                             <option value=1>1</option>
@@ -104,6 +129,8 @@
                             <option value=9>9</option>
                             <option value=10>10</option>
                         </select>
+                    </div>
+                    <div id="tab-run7" class="tab">
                         <label for="run7" class="run-submenu" id="run-label7">Blocks in Run 7</label>
                         <select class="run-submenu" name="run7" id="run7" required>
                             <option value=1>1</option>
@@ -117,6 +144,8 @@
                             <option value=9>9</option>
                             <option value=10>10</option>
                         </select>
+                    </div>
+                    <div id="tab-run8" class="tab">
                         <label for="run8" class="run-submenu" id="run-label8">Blocks in Run 8</label>
                         <select class="run-submenu" name="run8" id="run8" required>
                             <option value=1>1</option>
@@ -130,6 +159,8 @@
                             <option value=9>9</option>
                             <option value=10>10</option>
                         </select>
+                    </div>
+                    <div id="tab-run9" class="tab">
                         <label for="run9" class="run-submenu" id="run-label9">Blocks in Run 9</label>
                         <select class="run-submenu" name="run9" id="run9" required>
                             <option value=1>1</option>
@@ -143,6 +174,8 @@
                             <option value=9>9</option>
                             <option value=10>10</option>
                         </select>
+                    </div>
+                    <div id="tab-run10" class="tab">
                         <label for="run10" class="run-submenu" id="run-label10">Blocks in Run 10</label>
                         <select class="run-submenu" name="run10" id="run10" required>
                             <option value=1>1</option>
@@ -155,8 +188,8 @@
                             <option value=8>8</option>
                             <option value=9>9</option>
                             <option value=10>10</option>
-                        </select>
-                    </div>      
+                        </select>  
+                    </div>   
                 </form>
             </div>
         </div>

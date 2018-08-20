@@ -19,11 +19,56 @@ body {
 }
 
 .form-container {
-    background-color: lightblue;
     text-align: center;
-    margin: 5em 5em;
+    margin: 1em 1em;
+}
+
+.tab {
+    display: none;
 }
 
 .run-submenu {
+    display: inline-block;
+}
+
+#button-container {
+    margin: 10px 0px;
+    height: 3em; 
+    background-color: black;
+}
+
+.run-button {
+    background-color: black;
+    color: white;
+    outline: 0;
+    height: 100%;
+    width: 150px;
+    float: left;
+    border: none;
     display: none;
+}
+
+.run-button:hover {
+    background-color: darkgray;
+    color: black;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #2c3e50;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #2c3e50;
+    overflow: hidden;
+    border-radius: .25em;
+    color: #fff;
+    cursor: auto;
+    padding: 0 10px;
 }

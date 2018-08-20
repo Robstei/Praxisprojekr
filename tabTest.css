@@ -1,41 +1,9 @@
-#tablist {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #tablist li {
-    background-color: lightgrey;	
-    border: 1px solid black;
-    border-bottom: none;
-    border-radius: 0.5em 0.5em 0 0;
-    display: inline;
-    font-weight: bold;
-    height: 1em;
-    padding: 0.5em 0.5em 10px;
-  }
-  
-  #tablist li:focus, 
-  #tablist li:hover {
-    background-color: yellow;
-  }
-  
-  #tablist li[aria-selected="true"] {
-    background-color: white;
-    padding: 0.5em 0.5em 11px;  
-  }
-  
-  .tabcontent {
-    background-color: white;
-    border: 1px solid black; 
-    margin-top: 10px;
-    padding: 1em;
-  }
-  
-  [aria-hidden="true"] {
-    display: none;
-  }
-   
-  [aria-hidden="false"] {
-    display: block;
-  }
+#main {
+  background-color: red;
+}
+
+.button {
+  float: left;
+  height: 300px;
+  width: 300px;
+}
