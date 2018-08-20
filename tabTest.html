@@ -1,0 +1,28 @@
+<!Doctype = html>
+<head>
+    <link rel="stylesheet" href="tabTest.css">
+</head>
+<html>
+    <div id="tabpanel">
+        <ul role="tablist" id="tablist">
+            <li id="link1" role="tab" aria-controls="panel-1" aria-selected="true">1 - Button</li>
+            <li id="link2" role="tab" aria-controls="panel-2" aria-selected="false">2 - Button</li>
+            <li id="link3" role="tab" aria-controls="panel-3" aria-selected="false">3 - Button</li>
+        </ul>
+        
+        <div id="tabcontent">
+            <div id="panel-1" role="tabpanel" aria-labelledby="link1" aria-hidden="false">
+            <h3>Inhalt 1</h3>
+            <p> Hier kommt was hin!</p>
+            </div>
+            <div id="panel-2" role="tabpanel" aria-labelledby="link2" aria-hidden="true">
+            <h3>Inhalt 1</h3>
+            <p> Hier kommt was hin!</p>
+            </div>
+            <div id="panel-3" role="tabpanel" aria-labelledby="link3" aria-hidden="true">
+            <h3>Inhalt 1</h3>
+            <p> Hier kommt was hin!</p>
+            </div>
+        </div>
+    </div>  
+</html>

@@ -60,7 +60,52 @@
 <ss>0</ss>
 </r>
 <ss>
-<sd></sd>
+<sd>
+<val>
+<dat>
+<val>1800</val>
+</dat>
+<id>0</id>
+</val>
+<val>
+<dat>
+<val>250</val>
+</dat>
+<id>1</id>
+</val>
+<val>
+<dat>
+<val>2000</val>
+</dat>
+<id>2</id>
+</val>
+<val>
+<dat>
+<val>Richtig</val>
+</dat>
+<id>3</id>
+</val>
+<val>
+<dat>
+<val>Falsch
+Sie hätten nicht drücken müssen</val>
+</dat>
+<id>4</id>
+</val>
+<val>
+<dat>
+<val>Falsche Taste</val>
+</dat>
+<id>5</id>
+</val>
+<val>
+<dat>
+<val>Falsch
+Sie hätten drücken müssen</val>
+</dat>
+<id>6</id>
+</val>
+</sd>
 <sid>-1</sid>
 </ss>
 </dcfg>
@@ -69,13 +114,125 @@
 <dl>
 <grps>
 <grp>
-<gn>[No name]</gn>
-<pl></pl>
+<gn>Main</gn>
+<pl>
+<pid>0</pid>
+<pid>1</pid>
+</pl>
+</grp>
+<grp>
+<gn>Feedback</gn>
+<pl>
+<pid>2</pid>
+<pid>3</pid>
+<pid>5</pid>
+<pid>6</pid>
+<pid>4</pid>
+</pl>
 </grp>
 </grps>
 </dl>
 <parms>
-<parms></parms>
+<parms>
+<parm>
+<id>0</id>
+<set>
+<desc>Sets the time in milliseconds of how long a subject has to react</desc>
+<edit>1</edit>
+<name>Time Response Active</name>
+<set>
+<rest>[1,)</rest>
+</set>
+<temp>0</temp>
+<type>int</type>
+<vis>1</vis>
+</set>
+</parm>
+<parm>
+<id>1</id>
+<set>
+<desc>Sets the time in milliseconds of how long a stimulus will be presented</desc>
+<edit>1</edit>
+<name>Time Stimulus</name>
+<set>
+<rest>[1,)</rest>
+</set>
+<temp>0</temp>
+<type>int</type>
+<vis>1</vis>
+</set>
+</parm>
+<parm>
+<id>2</id>
+<set>
+<desc>Sets Time in milliseconds of how long feedback should be presented</desc>
+<edit>1</edit>
+<name>Time Feedback</name>
+<set>
+<rest>[1,)</rest>
+</set>
+<temp>0</temp>
+<type>int</type>
+<vis>1</vis>
+</set>
+</parm>
+<parm>
+<id>3</id>
+<set>
+<desc>Feedback for HIT</desc>
+<edit>1</edit>
+<name>Feedback HIT</name>
+<set>
+<rest></rest>
+</set>
+<temp>0</temp>
+<type>string</type>
+<vis>1</vis>
+</set>
+</parm>
+<parm>
+<id>4</id>
+<set>
+<desc>Feedback for FALSE ALARM</desc>
+<edit>1</edit>
+<name>Feedback FALSE ALARM</name>
+<set>
+<rest></rest>
+</set>
+<temp>0</temp>
+<type>string</type>
+<vis>1</vis>
+</set>
+</parm>
+<parm>
+<id>5</id>
+<set>
+<desc>Feedback for INCORRECT</desc>
+<edit>1</edit>
+<name>Feedback INCORRECT</name>
+<set>
+<rest></rest>
+</set>
+<temp>0</temp>
+<type>string</type>
+<vis>1</vis>
+</set>
+</parm>
+<parm>
+<id>6</id>
+<set>
+<desc>Feedback for MISS</desc>
+<edit>1</edit>
+<name>Feedback MISS</name>
+<set>
+<rest></rest>
+</set>
+<temp>0</temp>
+<type>string</type>
+<vis>1</vis>
+</set>
+</parm>
+</parms>
 <ssl></ssl>
 </parms>
 <pass></pass>
@@ -152,7 +309,25 @@
 <out_encrypt_key></out_encrypt_key>
 <pi_list></pi_list>
 <plat>1</plat>
-<port_devices></port_devices>
+<port_devices>
+<device>
+<parameters>
+<cts>0</cts>
+<dsrin>0</dsrin>
+<dsrout>0</dsrout>
+<dtr>disable</dtr>
+<rts>disable</rts>
+<set_fifo>1</set_fifo>
+<spd></spd>
+<spp></spp>
+<spr></spr>
+<sps></sps>
+</parameters>
+<piai>COM1</piai>
+<pian>Serial Port</pian>
+<pihpn>COM1</pihpn>
+</device>
+</port_devices>
 <rdl>
 <device>
 <abs_axis>
@@ -204,7 +379,7 @@
 <device>
 <device_type>3</device_type>
 <dx_device_type>0</dx_device_type>
-<name>Standard PS/2 Keyboard</name>
+<name>HID Keyboard Device</name>
 </device>
 <device>
 <abs_axis>
@@ -246,12 +421,22 @@
 <dx_device_type>0</dx_device_type>
 <max_raw_pos>65535</max_raw_pos>
 <min_raw_pos>0</min_raw_pos>
-<name>Synaptics Pointing Device</name>
+<name>HID-compliant mouse</name>
 </device>
 <device>
 <device_type>4</device_type>
 <dx_device_type>17</dx_device_type>
-<name>Lenovo HID Mini-driver for Hardware Radio Switch</name>
+<name>HyperX 7.1 Audio</name>
+</device>
+<device>
+<device_type>4</device_type>
+<dx_device_type>17</dx_device_type>
+<name>ndPoint1 Inte</name>
+</device>
+<device>
+<device_type>4</device_type>
+<dx_device_type>17</dx_device_type>
+<name>ndPoint1 Inte 1</name>
 </device>
 <device>
 <axis>

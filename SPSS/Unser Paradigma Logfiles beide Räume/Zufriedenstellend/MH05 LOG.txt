@@ -1,0 +1,418 @@
+runid1	blockid1	form1	character1	seperateAttention1	target1	time1	code2	time2	time_diff	rm_type	subject1
+run_1	block_1	Dreieck	T	2	0	239316.9		-1	-239317.9	rm_other	MH05
+run_1	block_1	Stern	D	2	0	242850.2		-1	-242851.2	rm_other	MH05
+run_1	block_1	Dreieck	D	2	0	245383.6		-1	-245384.6	rm_other	MH05
+run_1	block_1	Kreis	T	2	2	248716.9	2	249038.5	321.6	rm_hit	MH05
+run_1	block_1	Dreieck	T	2	0	249766.9		-1	-249767.9	rm_other	MH05
+run_1	block_1	Stern	X	2	0	253500.2		-1	-253501.2	rm_other	MH05
+run_1	block_1	Viereck	E	2	0	257633.6		-1	-257634.6	rm_other	MH05
+run_1	block_1	Stern	A	2	0	261166.9		-1	-261167.9	rm_other	MH05
+run_1	block_1	Viereck	T	2	0	263900.2		-1	-263901.2	rm_other	MH05
+run_1	block_1	Dreieck	T	2	0	266833.6		-1	-266834.6	rm_other	MH05
+run_1	block_1	Stern	A	2	0	270366.9		-1	-270367.9	rm_other	MH05
+run_1	block_1	Stern	M	2	0	273100.3		-1	-273101.3	rm_other	MH05
+run_1	block_1	Viereck	A	2	0	276433.6		-1	-276434.6	rm_other	MH05
+run_1	block_1	Viereck	X	2	0	279566.9		-1	-279567.9	rm_other	MH05
+run_1	block_1	Kreis	M	2	2	282300.3	2	282710.5	410.2	rm_hit	MH05
+run_1	block_1	Dreieck	D	2	0	284033.6		-1	-284034.6	rm_other	MH05
+run_1	block_1	Kreis	D	2	2	287566.9	2	287926.5	359.6	rm_hit	MH05
+run_1	block_1	Dreieck	M	2	0	289050.3		-1	-289051.3	rm_other	MH05
+run_1	block_1	Kreis	X	2	2	292583.6	2	292950.5	366.9	rm_hit	MH05
+run_1	block_1	Dreieck	D	2	0	294283.6		-1	-294284.6	rm_other	MH05
+run_1	block_1	Kreis	X	2	2	297816.9	2	298542.5	725.6	rm_hit	MH05
+run_1	block_1	Viereck	A	2	0	299666.9		-1	-299667.9	rm_other	MH05
+run_1	block_1	Viereck	M	2	0	303400.3		-1	-303401.3	rm_other	MH05
+run_1	block_1	Dreieck	A	2	0	306333.6		-1	-306334.6	rm_other	MH05
+run_1	block_1	Kreis	A	2	2	309467	2	309830.5	363.5	rm_hit	MH05
+run_1	block_1	Viereck	X	2	0	311367		-1	-311368	rm_other	MH05
+run_1	block_2	Stern	4	1	0	317200.3		-1	-317201.3	rm_other	MH05
+run_1	block_2	Viereck	4	1	0	321133.6		-1	-321134.6	rm_other	MH05
+run_1	block_2	Dreieck	2	1	0	323467		-1	-323468	rm_other	MH05
+run_1	block_2	Dreieck	9	1	0	327200.3		-1	-327201.3	rm_other	MH05
+run_1	block_2	Viereck	3	1	1	330133.6	1	330494.5	360.9	rm_hit	MH05
+run_1	block_2	Dreieck	7	1	0	332617		-1	-332618	rm_other	MH05
+run_1	block_2	Stern	3	1	1	334950.3	1	335334.5	384.2	rm_hit	MH05
+run_1	block_2	Viereck	7	1	0	336267		-1	-336268	rm_other	MH05
+run_1	block_2	Viereck	2	1	0	340000.3		-1	-340001.3	rm_other	MH05
+run_1	block_2	Stern	3	1	1	342733.7	1	343158.5	424.8	rm_hit	MH05
+run_1	block_2	Dreieck	4	1	0	344883.7		-1	-344884.7	rm_other	MH05
+run_1	block_2	Viereck	6	1	0	347217		-1	-347218	rm_other	MH05
+run_1	block_2	Kreis	3	1	1	350750.3	1	351094.5	344.2	rm_hit	MH05
+run_1	block_2	Dreieck	7	1	0	353017		-1	-353018	rm_other	MH05
+run_1	block_2	Stern	4	1	0	355950.3		-1	-355951.3	rm_other	MH05
+run_1	block_2	Kreis	2	1	0	359683.7		-1	-359684.7	rm_other	MH05
+run_1	block_2	Dreieck	4	1	0	363417		-1	-363418	rm_other	MH05
+run_1	block_2	Kreis	3	1	1	367550.3	1	367998.5	448.2	rm_hit	MH05
+run_1	block_2	Viereck	9	1	0	369133.7		-1	-369134.7	rm_other	MH05
+run_1	block_2	Viereck	7	1	0	372667		-1	-372668	rm_other	MH05
+run_1	block_2	Viereck	4	1	0	376800.4		-1	-376801.4	rm_other	MH05
+run_1	block_2	Stern	6	1	0	380933.7		-1	-380934.7	rm_other	MH05
+run_1	block_2	Viereck	6	1	0	383467		-1	-383468	rm_other	MH05
+run_1	block_2	Stern	6	1	0	387200.4		-1	-387201.4	rm_other	MH05
+run_1	block_2	Viereck	3	1	1	390133.7	1	390526.5	392.8	rm_hit	MH05
+run_1	block_2	Stern	6	1	0	392250.4		-1	-392251.4	rm_other	MH05
+run_1	block_3	Stern	T	1	0	398433.7		-1	-398434.7	rm_other	MH05
+run_1	block_3	Viereck	A	1	0	401167		-1	-401168	rm_other	MH05
+run_1	block_3	Dreieck	T	1	0	404100.4		-1	-404101.4	rm_other	MH05
+run_1	block_3	Kreis	D	1	0	407433.7		-1	-407434.7	rm_other	MH05
+run_1	block_3	Stern	D	1	0	409767.1		-1	-409768.1	rm_other	MH05
+run_1	block_3	Dreieck	E	1	0	413700.4		-1	-413701.4	rm_other	MH05
+run_1	block_3	Dreieck	D	1	0	416833.7		-1	-416834.7	rm_other	MH05
+run_1	block_3	Viereck	A	1	0	420767.1		-1	-420768.1	rm_other	MH05
+run_1	block_3	Kreis	E	1	0	423300.4		-1	-423301.4	rm_other	MH05
+run_1	block_3	Dreieck	M	1	1	426833.7	1	427246.5	412.8	rm_hit	MH05
+run_1	block_3	Kreis	T	1	0	429167.1		-1	-429168.1	rm_other	MH05
+run_1	block_3	Dreieck	A	1	0	432900.4		-1	-432901.4	rm_other	MH05
+run_1	block_3	Dreieck	M	1	1	435833.7	1	436246.5	412.8	rm_hit	MH05
+run_1	block_3	Stern	X	1	0	438167.1		-1	-438168.1	rm_other	MH05
+run_1	block_3	Dreieck	E	1	0	440900.4		-1	-440901.4	rm_other	MH05
+run_1	block_3	Kreis	D	1	0	444833.8		-1	-444834.8	rm_other	MH05
+run_1	block_3	Stern	A	1	0	448767.1		-1	-448768.1	rm_other	MH05
+run_1	block_3	Kreis	A	1	0	452300.4		-1	-452301.4	rm_other	MH05
+run_1	block_3	Stern	M	1	1	456233.8	1	456566.5	332.7	rm_hit	MH05
+run_1	block_3	Viereck	T	1	0	457500.4		-1	-457501.4	rm_other	MH05
+run_1	block_3	Dreieck	M	1	1	460633.8	1	461094.5	460.7	rm_hit	MH05
+run_1	block_3	Stern	A	1	0	462017.1		-1	-462018.1	rm_other	MH05
+run_1	block_3	Viereck	A	1	0	464750.4		-1	-464751.4	rm_other	MH05
+run_1	block_3	Viereck	M	1	1	468483.8	1	468886.5	402.7	rm_hit	MH05
+run_1	block_3	Viereck	T	1	0	470017.1		-1	-470018.1	rm_other	MH05
+run_1	block_3	Kreis	M	1	1	472550.5	1	473006.4	455.9	rm_hit	MH05
+run_1	block_4	Stern	2	2	0	477850.5		-1	-477851.5	rm_other	MH05
+run_1	block_4	Kreis	2	2	0	481983.8		-1	-481984.8	rm_other	MH05
+run_1	block_4	Stern	4	2	0	484717.1		-1	-484718.1	rm_other	MH05
+run_1	block_4	Viereck	2	2	0	487050.5		-1	-487051.5	rm_other	MH05
+run_1	block_4	Stern	7	2	0	491183.8		-1	-491184.8	rm_other	MH05
+run_1	block_4	Dreieck	9	2	2	494517.1	2	495054.4	537.3	rm_hit	MH05
+run_1	block_4	Kreis	2	2	0	497383.8		-1	-497384.8	rm_other	MH05
+run_1	block_4	Viereck	6	2	0	500717.1		-1	-500718.1	rm_other	MH05
+run_1	block_4	Viereck	7	2	0	504050.5		-1	-504051.5	rm_other	MH05
+run_1	block_4	Dreieck	3	2	2	506783.8	2	507318.5	534.7	rm_hit	MH05
+run_1	block_4	Kreis	3	2	0	508850.5		-1	-508851.5	rm_other	MH05
+run_1	block_4	Kreis	6	2	0	511983.8		-1	-511984.8	rm_other	MH05
+run_1	block_4	Viereck	2	2	0	514317.2		-1	-514318.2	rm_other	MH05
+run_1	block_4	Viereck	6	2	0	517250.5		-1	-517251.5	rm_other	MH05
+run_1	block_4	Stern	4	2	0	520383.8		-1	-520384.8	rm_other	MH05
+run_1	block_4	Dreieck	7	2	2	523717.2	2	524374.5	657.3	rm_hit	MH05
+run_1	block_4	Kreis	3	2	0	526700.5		-1	-526701.5	rm_other	MH05
+run_1	block_4	Kreis	7	2	0	529233.8		-1	-529234.8	rm_other	MH05
+run_1	block_4	Viereck	3	2	0	533367.2		-1	-533368.2	rm_other	MH05
+run_1	block_4	Dreieck	7	2	2	537300.5	2	537790.4	489.9	rm_hit	MH05
+run_1	block_4	Kreis	9	2	0	540117.2		-1	-540118.2	rm_other	MH05
+run_1	block_4	Dreieck	2	2	2	542650.5	2	543254.4	603.9	rm_hit	MH05
+run_1	block_4	Stern	4	2	0	543983.9		-1	-543984.9	rm_other	MH05
+run_1	block_4	Stern	9	2	0	547117.2		-1	-547118.2	rm_other	MH05
+run_1	block_4	Dreieck	4	2	2	549450.5	2	549894.4	443.9	rm_hit	MH05
+run_1	block_4	Viereck	2	2	0	550417.2		-1	-550418.2	rm_other	MH05
+run_2	block_1	Dreieck	E	3	0	777267.4		-1	-777268.4	rm_other	MH05
+run_2	block_1	Kreis	M	3	0	780000.8		-1	-780001.8	rm_other	MH05
+run_2	block_1	Viereck	M	3	0	783534.1		-1	-783535.1	rm_other	MH05
+run_2	block_1	Dreieck	X	3	1	786067.4	2	786590.4	523	rm_incorrect	MH05
+run_2	block_1	Kreis	T	3	0	788517.4		-1	-788518.4	rm_other	MH05
+run_2	block_1	Stern	T	3	2	791850.8	2	792678.4	827.6	rm_hit	MH05
+run_2	block_1	Dreieck	E	3	0	793800.8		-1	-793801.8	rm_other	MH05
+run_2	block_1	Viereck	D	3	0	797134.1		-1	-797135.1	rm_other	MH05
+run_2	block_1	Stern	E	3	2	799467.5	2	800102.4	634.9	rm_hit	MH05
+run_2	block_1	Kreis	D	3	0	800634.1		-1	-800635.1	rm_other	MH05
+run_2	block_1	Kreis	A	3	0	804167.5		-1	-804168.5	rm_other	MH05
+run_2	block_1	Viereck	M	3	0	807500.8		-1	-807501.8	rm_other	MH05
+run_2	block_1	Dreieck	A	3	0	810634.1		-1	-810635.1	rm_other	MH05
+run_2	block_1	Viereck	X	3	1	813367.5	1	813902.4	534.9	rm_hit	MH05
+run_2	block_1	Viereck	E	3	0	814634.1		-1	-814635.1	rm_other	MH05
+run_2	block_1	Viereck	M	3	0	817567.5		-1	-817568.5	rm_other	MH05
+run_2	block_1	Viereck	T	3	0	821700.8		-1	-821701.8	rm_other	MH05
+run_2	block_1	Stern	E	3	2	824034.1	2	825470.4	1436.3	rm_hit	MH05
+run_2	block_1	Kreis	M	3	0	827000.8	1	827646.4	645.6	rm_false_alarm	MH05
+run_2	block_1	Kreis	T	3	0	828967.5		-1	-828968.5	rm_other	MH05
+run_2	block_1	Kreis	E	3	0	832700.8		-1	-832701.8	rm_other	MH05
+run_2	block_1	Dreieck	M	3	0	836834.2		-1	-836835.2	rm_other	MH05
+run_2	block_1	Viereck	A	3	0	839767.5		-1	-839768.5	rm_other	MH05
+run_2	block_1	Viereck	X	3	1	843100.8	1	843526.4	425.6	rm_hit	MH05
+run_2	block_1	Kreis	D	3	0	845650.8		-1	-845651.8	rm_other	MH05
+run_2	block_1	Viereck	M	3	0	849784.2		-1	-849785.2	rm_other	MH05
+run_2	block_2	Stern	9	3	0	855267.5		-1	-855268.5	rm_other	MH05
+run_2	block_2	Viereck	3	3	2	859200.8	2	860198.4	997.6	rm_hit	MH05
+run_2	block_2	Stern	9	3	0	862334.2		-1	-862335.2	rm_other	MH05
+run_2	block_2	Stern	7	3	0	866467.5		-1	-866468.5	rm_other	MH05
+run_2	block_2	Viereck	3	3	2	870000.9	1	870742.4	741.5	rm_incorrect	MH05
+run_2	block_2	Kreis	7	3	0	871467.5		-1	-871468.5	rm_other	MH05
+run_2	block_2	Dreieck	7	3	0	874400.9		-1	-874401.9	rm_other	MH05
+run_2	block_2	Dreieck	4	3	1	877934.2	1	878606.4	672.2	rm_hit	MH05
+run_2	block_2	Kreis	9	3	0	879134.2		-1	-879135.2	rm_other	MH05
+run_2	block_2	Kreis	3	3	0	883067.5		-1	-883068.5	rm_other	MH05
+run_2	block_2	Stern	7	3	0	886600.9		-1	-886601.9	rm_other	MH05
+run_2	block_2	Stern	4	3	1	890534.2	1	891094.4	560.2	rm_hit	MH05
+run_2	block_2	Kreis	3	3	0	892817.5		-1	-892818.5	rm_other	MH05
+run_2	block_2	Dreieck	6	3	0	896350.9		-1	-896351.9	rm_other	MH05
+run_2	block_2	Kreis	3	3	0	900484.2		-1	-900485.2	rm_other	MH05
+run_2	block_2	Kreis	7	3	0	903817.6		-1	-903818.6	rm_other	MH05
+run_2	block_2	Dreieck	2	3	0	906150.9		-1	-906151.9	rm_other	MH05
+run_2	block_2	Viereck	6	3	2	909884.2	2	910550.4	666.2	rm_hit	MH05
+run_2	block_2	Kreis	9	3	0	911884.2		-1	-911885.2	rm_other	MH05
+run_2	block_2	Stern	2	3	0	916017.6		-1	-916018.6	rm_other	MH05
+run_2	block_2	Dreieck	3	3	0	918950.9		-1	-918951.9	rm_other	MH05
+run_2	block_2	Kreis	3	3	0	922284.2		-1	-922285.2	rm_other	MH05
+run_2	block_2	Kreis	7	3	0	924817.6		-1	-924818.6	rm_other	MH05
+run_2	block_2	Kreis	9	3	0	927150.9		-1	-927151.9	rm_other	MH05
+run_2	block_2	Kreis	4	3	1	931084.3	1	931678.3	594	rm_hit	MH05
+run_2	block_2	Stern	2	3	0	932400.9		-1	-932401.9	rm_other	MH05
+run_2	block_3	Stern	M	3	0	938000.9		-1	-938001.9	rm_other	MH05
+run_2	block_3	Viereck	M	3	0	940534.3		-1	-940535.3	rm_other	MH05
+run_2	block_3	Stern	E	3	0	944267.6		-1	-944268.6	rm_other	MH05
+run_2	block_3	Viereck	X	3	0	947600.9		-1	-947601.9	rm_other	MH05
+run_2	block_3	Viereck	T	3	0	950734.3		-1	-950735.3	rm_other	MH05
+run_2	block_3	Viereck	M	3	0	954467.6		-1	-954468.6	rm_other	MH05
+run_2	block_3	Dreieck	A	3	1	958400.9	1	959070.4	669.5	rm_hit	MH05
+run_2	block_3	Viereck	M	3	0	960000.9		-1	-960001.9	rm_other	MH05
+run_2	block_3	Stern	M	3	0	963934.3		-1	-963935.3	rm_other	MH05
+run_2	block_3	Stern	A	3	1	966867.6	1	967438.4	570.8	rm_hit	MH05
+run_2	block_3	Dreieck	D	3	0	968967.6		-1	-968968.6	rm_other	MH05
+run_2	block_3	Kreis	D	3	2	973101	2	973838.4	737.4	rm_hit	MH05
+run_2	block_3	Stern	E	3	0	975167.6		-1	-975168.6	rm_other	MH05
+run_2	block_3	Kreis	T	3	2	978501	2	978998.3	497.3	rm_hit	MH05
+run_2	block_3	Stern	E	3	0	981134.3		-1	-981135.3	rm_other	MH05
+run_2	block_3	Dreieck	D	3	0	983867.6		-1	-983868.6	rm_other	MH05
+run_2	block_3	Stern	X	3	0	986401		-1	-986402	rm_other	MH05
+run_2	block_3	Stern	E	3	0	989734.3		-1	-989735.3	rm_other	MH05
+run_2	block_3	Dreieck	D	3	0	992867.6		-1	-992868.6	rm_other	MH05
+run_2	block_3	Kreis	X	3	2	995401	2	996086.4	685.4	rm_hit	MH05
+run_2	block_3	Viereck	D	3	0	997417.7		-1	-997418.7	rm_other	MH05
+run_2	block_3	Dreieck	D	3	0	999751		-1	-999752	rm_other	MH05
+run_2	block_3	Stern	A	3	1	1003084.3	1	1003534.3	450	rm_hit	MH05
+run_2	block_3	Viereck	X	3	0	1004867.7		-1	-1004868.7	rm_other	MH05
+run_2	block_3	Viereck	M	3	0	1009001		-1	-1009002	rm_other	MH05
+run_2	block_3	Stern	M	3	0	1011934.3		-1	-1011935.3	rm_other	MH05
+run_2	block_4	Kreis	7	3	0	1017567.7		-1	-1017568.7	rm_other	MH05
+run_2	block_4	Viereck	2	3	0	1020101		-1	-1020102	rm_other	MH05
+run_2	block_4	Viereck	3	3	0	1024034.3		-1	-1024035.3	rm_other	MH05
+run_2	block_4	Dreieck	9	3	2	1027967.7	2	1028782.5	814.8	rm_hit	MH05
+run_2	block_4	Viereck	4	3	0	1030317.7		-1	-1030318.7	rm_other	MH05
+run_2	block_4	Viereck	3	3	0	1033851		-1	-1033852	rm_other	MH05
+run_2	block_4	Stern	9	3	0	1037584.4		-1	-1037585.4	rm_other	MH05
+run_2	block_4	Kreis	3	3	0	1041517.7		-1	-1041518.7	rm_other	MH05
+run_2	block_4	Viereck	7	3	0	1044051		-1	-1044052	rm_other	MH05
+run_2	block_4	Stern	4	3	0	1047784.4		-1	-1047785.4	rm_other	MH05
+run_2	block_4	Stern	6	3	1	1050717.7	1	1051382.4	664.7	rm_hit	MH05
+run_2	block_4	Stern	9	3	0	1053517.7		-1	-1053518.7	rm_other	MH05
+run_2	block_4	Stern	4	3	0	1056051		-1	-1056052	rm_other	MH05
+run_2	block_4	Viereck	6	3	1	1058984.4	1	1059390.3	405.9	rm_hit	MH05
+run_2	block_4	Viereck	2	3	0	1061117.7		-1	-1061118.7	rm_other	MH05
+run_2	block_4	Kreis	3	3	0	1064051.1		-1	-1064052.1	rm_other	MH05
+run_2	block_4	Stern	7	3	0	1066784.4		-1	-1066785.4	rm_other	MH05
+run_2	block_4	Stern	6	3	1	1070317.7	1	1070830.4	512.7	rm_hit	MH05
+run_2	block_4	Stern	4	3	0	1071951.1		-1	-1071952.1	rm_other	MH05
+run_2	block_4	Stern	9	3	0	1074484.4		-1	-1074485.4	rm_other	MH05
+run_2	block_4	Dreieck	3	3	2	1077817.7		-1	-1077818.7	rm_miss	MH05
+run_2	block_4	Stern	4	3	0	1080751.1		-1	-1080752.1	rm_other	MH05
+run_2	block_4	Viereck	2	3	0	1084484.4		-1	-1084485.4	rm_other	MH05
+run_2	block_4	Stern	4	3	0	1088017.7		-1	-1088018.7	rm_other	MH05
+run_2	block_4	Stern	7	3	0	1091951.1		-1	-1091952.1	rm_other	MH05
+run_2	block_4	Dreieck	3	3	2	1094484.4	2	1095662.3	1177.9	rm_hit	MH05
+run_3	block_1	Dreieck	E	2	0	1236984.6		-1	-1236985.6	rm_other	MH05
+run_3	block_1	Stern	E	2	2	1239517.9	2	1239886.3	368.4	rm_hit	MH05
+run_3	block_1	Dreieck	A	2	0	1241617.9		-1	-1241618.9	rm_other	MH05
+run_3	block_1	Dreieck	T	2	0	1243951.2		-1	-1243952.2	rm_other	MH05
+run_3	block_1	Stern	X	2	2	1247884.6	2	1248246.4	361.8	rm_hit	MH05
+run_3	block_1	Dreieck	D	2	0	1248967.9		-1	-1248968.9	rm_other	MH05
+run_3	block_1	Viereck	A	2	0	1252901.2		-1	-1252902.2	rm_other	MH05
+run_3	block_1	Viereck	D	2	0	1256834.6		-1	-1256835.6	rm_other	MH05
+run_3	block_1	Stern	T	2	2	1259567.9	2	1260078.3	510.4	rm_hit	MH05
+run_3	block_1	Kreis	X	2	0	1262201.3		-1	-1262202.3	rm_other	MH05
+run_3	block_1	Dreieck	E	2	0	1265934.6		-1	-1265935.6	rm_other	MH05
+run_3	block_1	Dreieck	M	2	0	1269267.9		-1	-1269268.9	rm_other	MH05
+run_3	block_1	Kreis	T	2	0	1272801.3		-1	-1272802.3	rm_other	MH05
+run_3	block_1	Viereck	E	2	0	1276134.6	2	1276398.3	263.7	rm_false_alarm	MH05
+run_3	block_1	Kreis	X	2	0	1276934.6		-1	-1276935.6	rm_other	MH05
+run_3	block_1	Viereck	T	2	0	1279867.9		-1	-1279868.9	rm_other	MH05
+run_3	block_1	Dreieck	X	2	0	1283001.3		-1	-1283002.3	rm_other	MH05
+run_3	block_1	Kreis	E	2	0	1285334.6		-1	-1285335.6	rm_other	MH05
+run_3	block_1	Kreis	A	2	0	1288068		-1	-1288069	rm_other	MH05
+run_3	block_1	Stern	M	2	2	1292001.3	2	1292462.3	461	rm_hit	MH05
+run_3	block_1	Dreieck	A	2	0	1294384.6		-1	-1294385.6	rm_other	MH05
+run_3	block_1	Viereck	A	2	0	1297318		-1	-1297319	rm_other	MH05
+run_3	block_1	Stern	A	2	2	1300451.3	2	1300966.3	515	rm_hit	MH05
+run_3	block_1	Dreieck	D	2	0	1302301.3		-1	-1302302.3	rm_other	MH05
+run_3	block_1	Stern	E	2	2	1306034.6	2	1306558.3	523.7	rm_hit	MH05
+run_3	block_1	Dreieck	D	2	0	1308484.6		-1	-1308485.6	rm_other	MH05
+run_3	block_2	Kreis	2	3	0	1314618		-1	-1314619	rm_other	MH05
+run_3	block_2	Kreis	7	3	1	1316951.3	1	1317790.3	839	rm_hit	MH05
+run_3	block_2	Stern	6	3	0	1318918		-1	-1318919	rm_other	MH05
+run_3	block_2	Kreis	6	3	0	1321851.3		-1	-1321852.3	rm_other	MH05
+run_3	block_2	Stern	4	3	0	1325984.7	1	1326478.3	493.6	rm_false_alarm	MH05
+run_3	block_2	Kreis	2	3	0	1327601.3	2	1327966.3	365	rm_false_alarm	MH05
+run_3	block_2	Stern	6	3	0	1328901.3	1	1329222.4	321.1	rm_false_alarm	MH05
+run_3	block_2	Stern	2	3	0	1329951.3		-1	-1329952.3	rm_other	MH05
+run_3	block_2	Dreieck	6	3	0	1332284.7	1	1332606.3	321.6	rm_false_alarm	MH05
+run_3	block_2	Viereck	6	3	2	1333334.7		-1	-1333335.7	rm_miss	MH05
+run_3	block_2	Dreieck	2	3	0	1335868		-1	-1335869	rm_other	MH05
+run_3	block_2	Dreieck	7	3	1	1339801.3	1	1340142.4	341.1	rm_hit	MH05
+run_3	block_2	Dreieck	3	3	0	1340668		-1	-1340669	rm_other	MH05
+run_3	block_2	Kreis	9	3	0	1343201.3		-1	-1343202.3	rm_other	MH05
+run_3	block_2	Dreieck	2	3	0	1345934.7		-1	-1345935.7	rm_other	MH05
+run_3	block_2	Stern	2	3	0	1348868	2	1349174.3	306.3	rm_false_alarm	MH05
+run_3	block_2	Stern	6	3	0	1350101.3		-1	-1350102.3	rm_other	MH05
+run_3	block_2	Viereck	2	3	2	1352834.7	1	1353102.3	267.6	rm_incorrect	MH05
+run_3	block_2	Stern	3	3	0	1355234.7	1	1355734.3	499.6	rm_false_alarm	MH05
+run_3	block_2	Dreieck	7	3	1	1357468	1	1357910.3	442.3	rm_hit	MH05
+run_3	block_2	Kreis	9	3	0	1359234.7		-1	-1359235.7	rm_other	MH05
+run_3	block_2	Viereck	9	3	2	1362368		-1	-1362369	rm_miss	MH05
+run_3	block_2	Kreis	6	3	0	1364701.4		-1	-1364702.4	rm_other	MH05
+run_3	block_2	Dreieck	6	3	0	1368834.7	2	1369326.3	491.6	rm_false_alarm	MH05
+run_3	block_2	Stern	6	3	0	1370251.4		-1	-1370252.4	rm_other	MH05
+run_3	block_2	Stern	4	3	0	1372984.7		-1	-1372985.7	rm_other	MH05
+run_3	block_3	Dreieck	D	1	0	1379218		-1	-1379219	rm_other	MH05
+run_3	block_3	Kreis	T	1	1	1383151.4	1	1383558.3	406.9	rm_hit	MH05
+run_3	block_3	Viereck	X	1	0	1385284.7		-1	-1385285.7	rm_other	MH05
+run_3	block_3	Stern	E	1	0	1389018.1		-1	-1389019.1	rm_other	MH05
+run_3	block_3	Dreieck	E	1	0	1391551.4		-1	-1391552.4	rm_other	MH05
+run_3	block_3	Stern	E	1	0	1394284.7		-1	-1394285.7	rm_other	MH05
+run_3	block_3	Viereck	T	1	1	1396818.1	1	1397262.3	444.2	rm_hit	MH05
+run_3	block_3	Kreis	D	1	0	1399584.7		-1	-1399585.7	rm_other	MH05
+run_3	block_3	Viereck	M	1	0	1402718.1		-1	-1402719.1	rm_other	MH05
+run_3	block_3	Kreis	T	1	1	1405051.4	1	1405470.2	418.8	rm_hit	MH05
+run_3	block_3	Kreis	D	1	0	1407401.4		-1	-1407402.4	rm_other	MH05
+run_3	block_3	Kreis	X	1	0	1410734.7		-1	-1410735.7	rm_other	MH05
+run_3	block_3	Viereck	E	1	0	1413668.1		-1	-1413669.1	rm_other	MH05
+run_3	block_3	Viereck	A	1	0	1417401.4		-1	-1417402.4	rm_other	MH05
+run_3	block_3	Stern	D	1	0	1420934.8		-1	-1420935.8	rm_other	MH05
+run_3	block_3	Viereck	E	1	0	1424268.1		-1	-1424269.1	rm_other	MH05
+run_3	block_3	Kreis	X	1	0	1428401.4		-1	-1428402.4	rm_other	MH05
+run_3	block_3	Viereck	T	1	1	1432334.8	1	1432742.3	407.5	rm_hit	MH05
+run_3	block_3	Viereck	M	1	0	1434868.1		-1	-1434869.1	rm_other	MH05
+run_3	block_3	Viereck	T	1	1	1437801.4	1	1438246.3	444.9	rm_hit	MH05
+run_3	block_3	Kreis	E	1	0	1439968.1		-1	-1439969.1	rm_other	MH05
+run_3	block_3	Kreis	M	1	0	1442701.4		-1	-1442702.4	rm_other	MH05
+run_3	block_3	Kreis	X	1	0	1445634.8		-1	-1445635.8	rm_other	MH05
+run_3	block_3	Stern	M	1	0	1448368.1		-1	-1448369.1	rm_other	MH05
+run_3	block_3	Stern	X	1	0	1451101.5		-1	-1451102.5	rm_other	MH05
+run_3	block_3	Viereck	T	1	1	1454434.8	1	1454830.3	395.5	rm_hit	MH05
+run_3	block_4	Dreieck	6	3	0	1459668.1		-1	-1459669.1	rm_other	MH05
+run_3	block_4	Viereck	2	3	0	1463601.5		-1	-1463602.5	rm_other	MH05
+run_3	block_4	Viereck	3	3	0	1466734.8		-1	-1466735.8	rm_other	MH05
+run_3	block_4	Stern	4	3	0	1469868.1		-1	-1469869.1	rm_other	MH05
+run_3	block_4	Stern	6	3	0	1474001.5		-1	-1474002.5	rm_other	MH05
+run_3	block_4	Viereck	3	3	0	1476934.8		-1	-1476935.8	rm_other	MH05
+run_3	block_4	Kreis	6	3	2	1479868.1	2	1480366.2	498.1	rm_hit	MH05
+run_3	block_4	Stern	7	3	0	1482701.5		-1	-1482702.5	rm_other	MH05
+run_3	block_4	Dreieck	2	3	0	1486234.8		-1	-1486235.8	rm_other	MH05
+run_3	block_4	Viereck	6	3	0	1488768.2		-1	-1488769.2	rm_other	MH05
+run_3	block_4	Dreieck	7	3	0	1491701.5		-1	-1491702.5	rm_other	MH05
+run_3	block_4	Dreieck	9	3	1	1494834.8	1	1495190.3	355.5	rm_hit	MH05
+run_3	block_4	Stern	6	3	0	1496718.2		-1	-1496719.2	rm_other	MH05
+run_3	block_4	Dreieck	4	3	0	1499251.5		-1	-1499252.5	rm_other	MH05
+run_3	block_4	Dreieck	7	3	0	1501984.8		-1	-1501985.8	rm_other	MH05
+run_3	block_4	Viereck	9	3	1	1505918.2	1	1506366.3	448.1	rm_hit	MH05
+run_3	block_4	Stern	7	3	0	1508701.5		-1	-1508702.5	rm_other	MH05
+run_3	block_4	Stern	9	3	1	1512834.8	1	1513374.3	539.5	rm_hit	MH05
+run_3	block_4	Viereck	6	3	0	1514301.5		-1	-1514302.5	rm_other	MH05
+run_3	block_4	Dreieck	7	3	0	1517834.9		-1	-1517835.9	rm_other	MH05
+run_3	block_4	Stern	2	3	0	1521768.2		-1	-1521769.2	rm_other	MH05
+run_3	block_4	Kreis	7	3	2	1525101.5	1	1525662.3	560.8	rm_incorrect	MH05
+run_3	block_4	Stern	6	3	0	1526384.9		-1	-1526385.9	rm_other	MH05
+run_3	block_4	Dreieck	7	3	0	1530518.2		-1	-1530519.2	rm_other	MH05
+run_3	block_4	Kreis	7	3	2	1533251.5	2	1533894.2	642.7	rm_hit	MH05
+run_3	block_4	Dreieck	3	3	0	1534818.2		-1	-1534819.2	rm_other	MH05
+run_3	block_5	Kreis	7	2	0	1541884.9		-1	-1541885.9	rm_other	MH05
+run_3	block_5	Stern	7	2	0	1545818.2		-1	-1545819.2	rm_other	MH05
+run_3	block_5	Kreis	3	2	0	1549551.5		-1	-1549552.5	rm_other	MH05
+run_3	block_5	Stern	6	2	0	1552284.9		-1	-1552285.9	rm_other	MH05
+run_3	block_5	Dreieck	2	2	2	1554818.2	2	1555326.3	508.1	rm_hit	MH05
+run_3	block_5	Stern	7	2	0	1556651.6		-1	-1556652.6	rm_other	MH05
+run_3	block_5	Kreis	9	2	0	1559984.9		-1	-1559985.9	rm_other	MH05
+run_3	block_5	Dreieck	4	2	2	1563918.2	2	1564510.3	592.1	rm_hit	MH05
+run_3	block_5	Viereck	4	2	0	1566234.9		-1	-1566235.9	rm_other	MH05
+run_3	block_5	Dreieck	6	2	2	1569368.2	2	1569790.3	422.1	rm_hit	MH05
+run_3	block_5	Kreis	7	2	0	1571318.2		-1	-1571319.2	rm_other	MH05
+run_3	block_5	Dreieck	6	2	2	1573651.6	2	1574070.3	418.7	rm_hit	MH05
+run_3	block_5	Kreis	9	2	0	1575601.6		-1	-1575602.6	rm_other	MH05
+run_3	block_5	Kreis	6	2	0	1579734.9		-1	-1579735.9	rm_other	MH05
+run_3	block_5	Kreis	7	2	0	1582468.3		-1	-1582469.3	rm_other	MH05
+run_3	block_5	Dreieck	4	2	2	1585001.6	2	1585526.3	524.7	rm_hit	MH05
+run_3	block_5	Kreis	3	2	0	1587251.6		-1	-1587252.6	rm_other	MH05
+run_3	block_5	Viereck	7	2	0	1590384.9		-1	-1590385.9	rm_other	MH05
+run_3	block_5	Stern	4	2	0	1592918.3		-1	-1592919.3	rm_other	MH05
+run_3	block_5	Viereck	3	2	0	1595251.6		-1	-1595252.6	rm_other	MH05
+run_3	block_5	Kreis	6	2	0	1598584.9		-1	-1598585.9	rm_other	MH05
+run_3	block_5	Kreis	2	2	0	1600918.3		-1	-1600919.3	rm_other	MH05
+run_3	block_5	Kreis	7	2	0	1604451.6		-1	-1604452.6	rm_other	MH05
+run_3	block_5	Kreis	2	2	0	1608384.9		-1	-1608385.9	rm_other	MH05
+run_3	block_5	Dreieck	4	2	2	1612118.3	2	1612470.2	351.9	rm_hit	MH05
+run_3	block_5	Kreis	7	2	0	1614601.6		-1	-1614602.6	rm_other	MH05
+run_3	block_6	Viereck	D	3	0	1621268.3		-1	-1621269.3	rm_other	MH05
+run_3	block_6	Viereck	E	3	1	1623801.6	1	1624278.2	476.6	rm_hit	MH05
+run_3	block_6	Viereck	M	3	0	1625601.6		-1	-1625602.6	rm_other	MH05
+run_3	block_6	Viereck	T	3	0	1628135		-1	-1628136	rm_other	MH05
+run_3	block_6	Dreieck	M	3	0	1632068.3		-1	-1632069.3	rm_other	MH05
+run_3	block_6	Viereck	D	3	0	1634601.6		-1	-1634602.6	rm_other	MH05
+run_3	block_6	Viereck	T	3	0	1638135		-1	-1638136	rm_other	MH05
+run_3	block_6	Stern	X	3	2	1642068.3	2	1642534.2	465.9	rm_hit	MH05
+run_3	block_6	Kreis	A	3	0	1643068.3		-1	-1643069.3	rm_other	MH05
+run_3	block_6	Stern	T	3	2	1646401.6	2	1646838.2	436.6	rm_hit	MH05
+run_3	block_6	Kreis	T	3	0	1647768.3		-1	-1647769.3	rm_other	MH05
+run_3	block_6	Dreieck	T	3	0	1650301.7		-1	-1650302.7	rm_other	MH05
+run_3	block_6	Kreis	A	3	0	1653835		-1	-1653836	rm_other	MH05
+run_3	block_6	Viereck	M	3	0	1656968.3		-1	-1656969.3	rm_other	MH05
+run_3	block_6	Dreieck	E	3	1	1660101.7	1	1660670.3	568.6	rm_hit	MH05
+run_3	block_6	Viereck	M	3	0	1662801.7		-1	-1662802.7	rm_other	MH05
+run_3	block_6	Viereck	X	3	0	1665135		-1	-1665136	rm_other	MH05
+run_3	block_6	Stern	D	3	2	1668068.3	2	1668566.2	497.9	rm_hit	MH05
+run_3	block_6	Viereck	A	3	0	1669701.7		-1	-1669702.7	rm_other	MH05
+run_3	block_6	Kreis	E	3	1	1672035	1	1672598.2	563.2	rm_hit	MH05
+run_3	block_6	Kreis	D	3	0	1673335		-1	-1673336	rm_other	MH05
+run_3	block_6	Viereck	T	3	0	1676468.3		-1	-1676469.3	rm_other	MH05
+run_3	block_6	Dreieck	D	3	0	1680401.7		-1	-1680402.7	rm_other	MH05
+run_3	block_6	Dreieck	X	3	0	1683135		-1	-1683136	rm_other	MH05
+run_3	block_6	Dreieck	M	3	0	1685468.4		-1	-1685469.4	rm_other	MH05
+run_3	block_6	Dreieck	X	3	0	1689401.7		-1	-1689402.7	rm_other	MH05
+run_3	block_7	Viereck	9	1	0	1694551.7		-1	-1694552.7	rm_other	MH05
+run_3	block_7	Stern	9	1	0	1696885		-1	-1696886	rm_other	MH05
+run_3	block_7	Viereck	7	1	0	1699818.4		-1	-1699819.4	rm_other	MH05
+run_3	block_7	Dreieck	3	1	0	1703551.7		-1	-1703552.7	rm_other	MH05
+run_3	block_7	Kreis	7	1	0	1707285		-1	-1707286	rm_other	MH05
+run_3	block_7	Kreis	4	1	0	1709818.4		-1	-1709819.4	rm_other	MH05
+run_3	block_7	Stern	7	1	0	1712551.7		-1	-1712552.7	rm_other	MH05
+run_3	block_7	Dreieck	6	1	0	1715485		-1	-1715486	rm_other	MH05
+run_3	block_7	Kreis	2	1	1	1718218.4	1	1718710.2	491.8	rm_hit	MH05
+run_3	block_7	Stern	7	1	0	1719835.1		-1	-1719836.1	rm_other	MH05
+run_3	block_7	Dreieck	2	1	1	1723768.4	1	1724206.2	437.8	rm_hit	MH05
+run_3	block_7	Viereck	9	1	0	1726535.1		-1	-1726536.1	rm_other	MH05
+run_3	block_7	Kreis	2	1	1	1730468.4	1	1730894.2	425.8	rm_hit	MH05
+run_3	block_7	Viereck	3	1	0	1733018.4		-1	-1733019.4	rm_other	MH05
+run_3	block_7	Dreieck	6	1	0	1735951.7		-1	-1735952.7	rm_other	MH05
+run_3	block_7	Dreieck	2	1	1	1738485.1	1	1738862.2	377.1	rm_hit	MH05
+run_3	block_7	Kreis	9	1	0	1739985.1		-1	-1739986.1	rm_other	MH05
+run_3	block_7	Dreieck	4	1	0	1744118.4		-1	-1744119.4	rm_other	MH05
+run_3	block_7	Stern	2	1	1	1747251.8	1	1747590.3	338.5	rm_hit	MH05
+run_3	block_7	Dreieck	4	1	0	1748718.4		-1	-1748719.4	rm_other	MH05
+run_3	block_7	Viereck	9	1	0	1752051.8		-1	-1752052.8	rm_other	MH05
+run_3	block_7	Stern	2	1	1	1754585.1	1	1755022.3	437.2	rm_hit	MH05
+run_3	block_7	Kreis	4	1	0	1756951.8		-1	-1756952.8	rm_other	MH05
+run_3	block_7	Viereck	3	1	0	1760885.1		-1	-1760886.1	rm_other	MH05
+run_3	block_7	Kreis	7	1	0	1764418.4		-1	-1764419.4	rm_other	MH05
+run_3	block_7	Viereck	3	1	0	1767151.8		-1	-1767152.8	rm_other	MH05
+run_3	block_8	Kreis	A	3	0	1776185.1		-1	-1776186.1	rm_other	MH05
+run_3	block_8	Viereck	E	3	2	1779118.4	2	1779742.2	623.8	rm_hit	MH05
+run_3	block_8	Kreis	E	3	0	1781668.5		-1	-1781669.5	rm_other	MH05
+run_3	block_8	Viereck	X	3	2	1785801.8	2	1786590.2	788.4	rm_hit	MH05
+run_3	block_8	Stern	A	3	0	1788318.5		-1	-1788319.5	rm_other	MH05
+run_3	block_8	Kreis	D	3	1	1791451.8	1	1791910.2	458.4	rm_hit	MH05
+run_3	block_8	Dreieck	T	3	0	1792435.1		-1	-1792436.1	rm_other	MH05
+run_3	block_8	Dreieck	M	3	0	1795368.5		-1	-1795369.5	rm_other	MH05
+run_3	block_8	Stern	T	3	0	1798901.8		-1	-1798902.8	rm_other	MH05
+run_3	block_8	Stern	A	3	0	1802035.1		-1	-1802036.1	rm_other	MH05
+run_3	block_8	Dreieck	D	3	1	1804568.5	1	1804998.2	429.7	rm_hit	MH05
+run_3	block_8	Dreieck	M	3	0	1805535.1		-1	-1805536.1	rm_other	MH05
+run_3	block_8	Viereck	X	3	2	1808068.5	2	1808918.2	849.7	rm_hit	MH05
+run_3	block_8	Stern	A	3	0	1809451.8		-1	-1809452.8	rm_other	MH05
+run_3	block_8	Dreieck	M	3	0	1812385.2		-1	-1812386.2	rm_other	MH05
+run_3	block_8	Kreis	X	3	0	1814718.5		-1	-1814719.5	rm_other	MH05
+run_3	block_8	Kreis	T	3	0	1817451.8		-1	-1817452.8	rm_other	MH05
+run_3	block_8	Stern	D	3	1	1820785.2	1	1821254.2	469	rm_hit	MH05
+run_3	block_8	Stern	M	3	0	1822585.2		-1	-1822586.2	rm_other	MH05
+run_3	block_8	Dreieck	M	3	0	1824918.5		-1	-1824919.5	rm_other	MH05
+run_3	block_8	Stern	X	3	0	1828451.8		-1	-1828452.8	rm_other	MH05
+run_3	block_8	Kreis	E	3	0	1831385.2		-1	-1831386.2	rm_other	MH05
+run_3	block_8	Stern	X	3	0	1835318.5		-1	-1835319.5	rm_other	MH05
+run_3	block_8	Dreieck	M	3	0	1838451.8		-1	-1838452.8	rm_other	MH05
+run_3	block_8	Stern	M	3	0	1841585.2		-1	-1841586.2	rm_other	MH05
+run_3	block_8	Dreieck	X	3	0	1845718.5		-1	-1845719.5	rm_other	MH05
+

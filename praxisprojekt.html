@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Praxisprojekt</title>
+        <link rel="stylesheet" href="praxisprojekt.css">
+        <script src="praxisprojekt.js"></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="header"></div>
+            
+            <div class="form-container">
+                <form>
+                    <label for="run-amount">Number of Runs</label>
+                    <select onchange="runsChanged()" name="run-amount" id="run-amount" required>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                        <option value=7>7</option>
+                        <option value=8>8</option>
+                        <option value=9>9</option>
+                        <option value=10>10</option>
+                    </select>
+                    <div>
+                        <label for="run1" class="run-submenu" id="run-label1">Blocks in Run 1</label>
+                        <select class="run-submenu" name="run1" id="run1" required>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>
+                        <label for="run2" class="run-submenu" id="run-label2">Blocks in Run 2</label>
+                        <select class="run-submenu" name="run2" id="run2" required>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>
+                        <label for="run3" class="run-submenu" id="run-label3">Blocks in Run 3</label>
+                        <select class="run-submenu" name="run3" id="run3" required>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>
+                        <label for="run4" class="run-submenu" id="run-label4">Blocks in Run 4</label>
+                        <select class="run-submenu" name="run4" id="run4" required>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>
+                        <label for="run5" class="run-submenu" id="run-label5">Blocks in Run 5</label>
+                        <select class="run-submenu" name="run5" id="run5" required>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>
+                        <label for="run6" class="run-submenu" id="run-label6">Blocks in Run 6</label>
+                        <select class="run-submenu" name="run6" id="run6" required>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>
+                        <label for="run7" class="run-submenu" id="run-label7">Blocks in Run 7</label>
+                        <select class="run-submenu" name="run7" id="run7" required>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>
+                        <label for="run8" class="run-submenu" id="run-label8">Blocks in Run 8</label>
+                        <select class="run-submenu" name="run8" id="run8" required>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>
+                        <label for="run9" class="run-submenu" id="run-label9">Blocks in Run 9</label>
+                        <select class="run-submenu" name="run9" id="run9" required>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>
+                        <label for="run10" class="run-submenu" id="run-label10">Blocks in Run 10</label>
+                        <select class="run-submenu" name="run10" id="run10" required>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                        </select>
+                    </div>      
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,588 @@
+Scenario - Messung von Wechselkosten zwischen geteilter und selektiver Aufmerksamkeit
+Logfile written - 07/09/2018 13:34:01
+
+Subject	Trial	Event Type	Code	runid(str)	blockid(str)	form(str)	character(str)	seperateAttention(num)	target(num)	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+AR01	1	Response	3							139490	139091	0
+AR01	2	Response	3							185977	46377	0
+AR01	3	Response	3							286930	100731	0
+AR01	5	Picture	test;block_1;Dreieck;A;1;0	test	block_1	Dreieck	A	1	0	297199	0	1	2600	1	0	2500	other	0
+AR01	8	Picture	test;block_1;Dreieck;D;1;1	test	block_1	Dreieck	D	1	1	350799	0	1	2600	1	0	2500	hit	6
+AR01	8	Response	1							355410	4611	0
+AR01	11	Picture	test;block_1;Kreis;M;1;0	test	block_1	Kreis	M	1	0	380999	0	1	2600	1	0	2500	other	0
+AR01	14	Picture	test;block_1;Kreis;D;1;1	test	block_1	Kreis	D	1	1	442599	0	1	2600	1	0	2500	hit	9
+AR01	14	Response	1							446850	4251	0
+AR01	17	Picture	test;block_1;Kreis;X;1;0	test	block_1	Kreis	X	1	0	486399	0	1	2600	1	0	2500	other	0
+AR01	20	Picture	test;block_1;Stern;X;1;0	test	block_1	Stern	X	1	0	547999	0	1	2600	1	0	2500	other	0
+AR01	23	Picture	test;block_1;Viereck;D;1;1	test	block_1	Viereck	D	1	1	605599	0	1	2600	1	0	2500	hit	13
+AR01	23	Response	1							609170	3571	0
+AR01	26	Picture	test;block_1;Viereck;T;1;0	test	block_1	Viereck	T	1	0	646799	0	1	2600	1	0	2500	other	0
+AR01	29	Picture	test;block_1;Viereck;X;1;0	test	block_1	Viereck	X	1	0	700399	0	1	2600	1	0	2500	other	0
+AR01	32	Picture	test;block_1;Kreis;D;1;1	test	block_1	Kreis	D	1	1	751999	0	1	2600	1	0	2500	hit	17
+AR01	32	Response	1							756930	4931	0
+AR01	34	Response	3							880930	103731	0
+AR01	36	Picture	test;block_2;Kreis;6;3;0	test	block_2	Kreis	6	3	0	891199	0	1	2600	1	0	2500	false_alarm	20
+AR01	36	Response	1							906690	15491	0
+AR01	39	Picture	test;block_2;Viereck;9;3;2	test	block_2	Viereck	9	3	2	932199	0	1	2600	1	0	2500	hit	22
+AR01	39	Response	2							940209	8010	1
+AR01	42	Picture	test;block_2;Kreis;3;3;0	test	block_2	Kreis	3	3	0	969799	0	1	2600	1	0	2500	other	0
+AR01	45	Picture	test;block_2;Dreieck;2;3;1	test	block_2	Dreieck	2	3	1	1021399	0	1	2600	1	0	2500	hit	25
+AR01	45	Response	1							1024930	3531	0
+AR01	48	Picture	test;block_2;Kreis;7;3;0	test	block_2	Kreis	7	3	0	1062399	0	1	2600	1	0	2500	other	0
+AR01	51	Picture	test;block_2;Stern;4;3;0	test	block_2	Stern	4	3	0	1109999	0	1	2600	1	0	2500	other	0
+AR01	54	Picture	test;block_2;Stern;3;3;0	test	block_2	Stern	3	3	0	1157599	0	1	2600	1	0	2500	other	0
+AR01	57	Picture	test;block_2;Stern;2;3;1	test	block_2	Stern	2	3	1	1203199	0	1	2600	1	0	2500	hit	30
+AR01	57	Response	1							1206690	3491	0
+AR01	60	Picture	test;block_2;Kreis;7;3;0	test	block_2	Kreis	7	3	0	1242199	0	1	2600	1	0	2500	other	0
+AR01	63	Picture	test;block_2;Viereck;7;3;2	test	block_2	Viereck	7	3	2	1293799	0	1	2600	1	0	2500	hit	33
+AR01	63	Response	2							1302610	8811	0
+AR01	65	Response	2							1551250	228251	0
+AR01	66	Response	3							1669970	46771	0
+AR01	67	Response	3							1723250	53051	0
+AR01	69	Picture	run_1;block_1;Dreieck;E;2;0	run_1	block_1	Dreieck	E	2	0	1733598	0	1	2600	1	0	2500	other	0
+AR01	71	Picture	run_1;block_1;Viereck;D;2;0	run_1	block_1	Viereck	D	2	0	1766998	0	1	2600	1	0	2500	other	0
+AR01	73	Picture	run_1;block_1;Stern;E;2;0	run_1	block_1	Stern	E	2	0	1806398	0	1	2600	1	0	2500	other	0
+AR01	75	Picture	run_1;block_1;Viereck;D;2;0	run_1	block_1	Viereck	D	2	0	1837798	0	1	2600	1	0	2500	other	0
+AR01	77	Picture	run_1;block_1;Kreis;M;2;2	run_1	block_1	Kreis	M	2	2	1861198	0	1	2600	1	0	2500	hit	42
+AR01	77	Response	2							1866449	5251	0
+AR01	79	Picture	run_1;block_1;Stern;T;2;0	run_1	block_1	Stern	T	2	0	1877798	0	1	2600	1	0	2500	other	0
+AR01	81	Picture	run_1;block_1;Stern;A;2;0	run_1	block_1	Stern	A	2	0	1909198	0	1	2600	1	0	2500	other	0
+AR01	83	Picture	run_1;block_1;Dreieck;E;2;0	run_1	block_1	Dreieck	E	2	0	1938598	0	1	2600	1	0	2500	other	0
+AR01	85	Picture	run_1;block_1;Viereck;E;2;0	run_1	block_1	Viereck	E	2	0	1975998	0	1	2600	1	0	2500	other	0
+AR01	87	Picture	run_1;block_1;Kreis;E;2;2	run_1	block_1	Kreis	E	2	2	2003398	0	1	2600	1	0	2500	hit	48
+AR01	87	Response	2							2007569	4171	0
+AR01	89	Picture	run_1;block_1;Viereck;A;2;0	run_1	block_1	Viereck	A	2	0	2028998	0	1	2600	1	0	2500	other	0
+AR01	91	Picture	run_1;block_1;Kreis;E;2;2	run_1	block_1	Kreis	E	2	2	2070398	0	1	2600	1	0	2500	hit	51
+AR01	91	Response	2							2073889	3491	0
+AR01	93	Picture	run_1;block_1;Stern;D;2;0	run_1	block_1	Stern	D	2	0	2095198	0	1	2600	1	0	2500	other	0
+AR01	95	Picture	run_1;block_1;Viereck;D;2;0	run_1	block_1	Viereck	D	2	0	2134598	0	1	2600	1	0	2500	other	0
+AR01	97	Picture	run_1;block_1;Viereck;X;2;0	run_1	block_1	Viereck	X	2	0	2171998	0	1	2600	1	0	2500	other	0
+AR01	99	Picture	run_1;block_1;Kreis;T;2;2	run_1	block_1	Kreis	T	2	2	2207398	0	1	2600	1	0	2500	hit	56
+AR01	99	Response	2							2210529	3131	0
+AR01	101	Picture	run_1;block_1;Viereck;D;2;0	run_1	block_1	Viereck	D	2	0	2225798	0	1	2600	1	0	2500	other	0
+AR01	103	Picture	run_1;block_1;Stern;X;2;0	run_1	block_1	Stern	X	2	0	2255198	0	1	2600	1	0	2500	other	0
+AR01	105	Picture	run_1;block_1;Dreieck;T;2;0	run_1	block_1	Dreieck	T	2	0	2284598	0	1	2600	1	0	2500	other	0
+AR01	107	Picture	run_1;block_1;Kreis;X;2;2	run_1	block_1	Kreis	X	2	2	2323998	0	1	2600	1	0	2500	hit	61
+AR01	107	Response	2							2327409	3411	0
+AR01	109	Picture	run_1;block_1;Dreieck;A;2;0	run_1	block_1	Dreieck	A	2	0	2334798	0	1	2600	1	0	2500	other	0
+AR01	111	Picture	run_1;block_1;Stern;M;2;0	run_1	block_1	Stern	M	2	0	2368198	0	1	2600	1	0	2500	other	0
+AR01	113	Picture	run_1;block_1;Stern;X;2;0	run_1	block_1	Stern	X	2	0	2395598	0	1	2600	1	0	2500	other	0
+AR01	115	Picture	run_1;block_1;Viereck;E;2;0	run_1	block_1	Viereck	E	2	0	2430998	0	1	2600	1	0	2500	other	0
+AR01	117	Picture	run_1;block_1;Kreis;E;2;2	run_1	block_1	Kreis	E	2	2	2466398	0	1	2600	1	0	2500	hit	67
+AR01	117	Response	2							2470129	3731	0
+AR01	119	Picture	run_1;block_1;Viereck;D;2;0	run_1	block_1	Viereck	D	2	0	2493398	0	1	2600	1	0	2500	other	0
+AR01	120	Response	3							2556289	44691	0
+AR01	122	Picture	run_1;block_2;Stern;4;1;0	run_1	block_2	Stern	4	1	0	2566598	0	1	2600	1	0	2500	other	0
+AR01	124	Picture	run_1;block_2;Dreieck;2;1;0	run_1	block_2	Dreieck	2	1	0	2591998	0	1	2600	1	0	2500	other	0
+AR01	126	Picture	run_1;block_2;Stern;7;1;0	run_1	block_2	Stern	7	1	0	2629398	0	1	2600	1	0	2500	other	0
+AR01	128	Picture	run_1;block_2;Kreis;7;1;0	run_1	block_2	Kreis	7	1	0	2666798	0	1	2600	1	0	2500	other	0
+AR01	130	Picture	run_1;block_2;Kreis;3;1;1	run_1	block_2	Kreis	3	1	1	2698198	0	1	2600	1	0	2500	hit	75
+AR01	130	Response	1							2702129	3931	0
+AR01	132	Picture	run_1;block_2;Dreieck;4;1;0	run_1	block_2	Dreieck	4	1	0	2707398	0	1	2600	1	0	2500	other	0
+AR01	134	Picture	run_1;block_2;Viereck;7;1;0	run_1	block_2	Viereck	7	1	0	2730798	0	1	2600	1	0	2500	other	0
+AR01	136	Picture	run_1;block_2;Stern;3;1;1	run_1	block_2	Stern	3	1	1	2758198	0	1	2600	1	0	2500	hit	79
+AR01	136	Response	1							2762129	3931	0
+AR01	138	Picture	run_1;block_2;Dreieck;4;1;0	run_1	block_2	Dreieck	4	1	0	2773398	0	1	2600	1	0	2500	other	0
+AR01	140	Picture	run_1;block_2;Viereck;4;1;0	run_1	block_2	Viereck	4	1	0	2806798	0	1	2600	1	0	2500	other	0
+AR01	142	Picture	run_1;block_2;Viereck;6;1;0	run_1	block_2	Viereck	6	1	0	2830198	0	1	2600	1	0	2500	other	0
+AR01	144	Picture	run_1;block_2;Stern;3;1;1	run_1	block_2	Stern	3	1	1	2855598	0	1	2600	1	0	2500	hit	84
+AR01	144	Response	1							2859409	3811	0
+AR01	146	Picture	run_1;block_2;Dreieck;7;1;0	run_1	block_2	Dreieck	7	1	0	2880798	0	1	2600	1	0	2500	other	0
+AR01	148	Picture	run_1;block_2;Stern;2;1;0	run_1	block_2	Stern	2	1	0	2906197	0	1	2600	1	0	2500	other	0
+AR01	150	Picture	run_1;block_2;Dreieck;2;1;0	run_1	block_2	Dreieck	2	1	0	2939598	0	1	2600	1	0	2500	other	0
+AR01	152	Picture	run_1;block_2;Stern;4;1;0	run_1	block_2	Stern	4	1	0	2970997	0	1	2600	1	0	2500	other	0
+AR01	154	Picture	run_1;block_2;Viereck;3;1;1	run_1	block_2	Viereck	3	1	1	2994397	0	1	2600	1	0	2500	hit	90
+AR01	154	Response	1							2998129	3731	0
+AR01	156	Picture	run_1;block_2;Viereck;7;1;0	run_1	block_2	Viereck	7	1	0	3017397	0	1	2600	1	0	2500	other	0
+AR01	158	Picture	run_1;block_2;Viereck;3;1;1	run_1	block_2	Viereck	3	1	1	3040797	0	1	2600	1	0	2500	hit	93
+AR01	158	Response	1							3047809	7011	0
+AR01	160	Picture	run_1;block_2;Viereck;2;1;0	run_1	block_2	Viereck	2	1	0	3069197	0	1	2600	1	0	2500	other	0
+AR01	162	Picture	run_1;block_2;Viereck;7;1;0	run_1	block_2	Viereck	7	1	0	3106597	0	1	2600	1	0	2500	other	0
+AR01	164	Picture	run_1;block_2;Stern;3;1;1	run_1	block_2	Stern	3	1	1	3141997	0	1	2600	1	0	2500	hit	97
+AR01	164	Response	1							3145889	3891	0
+AR01	166	Picture	run_1;block_2;Dreieck;9;1;0	run_1	block_2	Dreieck	9	1	0	3151197	0	1	2600	1	0	2500	other	0
+AR01	168	Picture	run_1;block_2;Stern;4;1;0	run_1	block_2	Stern	4	1	0	3182597	0	1	2600	1	0	2500	other	0
+AR01	170	Picture	run_1;block_2;Viereck;7;1;0	run_1	block_2	Viereck	7	1	0	3223997	0	1	2600	1	0	2500	other	0
+AR01	172	Picture	run_1;block_2;Dreieck;6;1;0	run_1	block_2	Dreieck	6	1	0	3257397	0	1	2600	1	0	2500	other	0
+AR01	173	Response	3							3330049	54451	0
+AR01	175	Picture	run_1;block_3;Viereck;A;1;0	run_1	block_3	Viereck	A	1	0	3340397	0	1	2600	1	0	2500	other	0
+AR01	177	Picture	run_1;block_3;Stern;X;1;0	run_1	block_3	Stern	X	1	0	3379797	0	1	2600	1	0	2500	other	0
+AR01	179	Picture	run_1;block_3;Stern;M;1;1	run_1	block_3	Stern	M	1	1	3405197	0	1	2600	1	0	2500	hit	106
+AR01	179	Response	1							3408768	3571	0
+AR01	181	Picture	run_1;block_3;Stern;D;1;0	run_1	block_3	Stern	D	1	0	3420197	0	1	2600	1	0	2500	other	0
+AR01	183	Picture	run_1;block_3;Dreieck;X;1;0	run_1	block_3	Dreieck	X	1	0	3461597	0	1	2600	1	0	2500	other	0
+AR01	185	Picture	run_1;block_3;Stern;A;1;0	run_1	block_3	Stern	A	1	0	3500997	0	1	2600	1	0	2500	other	0
+AR01	187	Picture	run_1;block_3;Kreis;T;1;0	run_1	block_3	Kreis	T	1	0	3536397	0	1	2600	1	0	2500	other	0
+AR01	189	Picture	run_1;block_3;Kreis;M;1;1	run_1	block_3	Kreis	M	1	1	3567797	0	1	2600	1	0	2500	hit	112
+AR01	189	Response	1							3571329	3531	0
+AR01	191	Picture	run_1;block_3;Viereck;E;1;0	run_1	block_3	Viereck	E	1	0	3578597	0	1	2600	1	0	2500	other	0
+AR01	193	Picture	run_1;block_3;Viereck;T;1;0	run_1	block_3	Viereck	T	1	0	3601997	0	1	2600	1	0	2500	other	0
+AR01	195	Picture	run_1;block_3;Viereck;E;1;0	run_1	block_3	Viereck	E	1	0	3633397	0	1	2600	1	0	2500	other	0
+AR01	197	Picture	run_1;block_3;Viereck;M;1;1	run_1	block_3	Viereck	M	1	1	3664797	0	1	2600	1	0	2500	hit	117
+AR01	197	Response	1							3668288	3491	0
+AR01	199	Picture	run_1;block_3;Stern;X;1;0	run_1	block_3	Stern	X	1	0	3679597	0	1	2600	1	0	2500	other	0
+AR01	201	Picture	run_1;block_3;Viereck;E;1;0	run_1	block_3	Viereck	E	1	0	3716997	0	1	2600	1	0	2500	other	0
+AR01	203	Picture	run_1;block_3;Kreis;X;1;0	run_1	block_3	Kreis	X	1	0	3752397	0	1	2600	1	0	2500	other	0
+AR01	205	Picture	run_1;block_3;Viereck;D;1;0	run_1	block_3	Viereck	D	1	0	3779797	0	1	2600	1	0	2500	other	0
+AR01	207	Picture	run_1;block_3;Stern;M;1;1	run_1	block_3	Stern	M	1	1	3813197	0	1	2600	1	0	2500	hit	123
+AR01	207	Response	1							3816448	3252	0
+AR01	209	Picture	run_1;block_3;Dreieck;X;1;0	run_1	block_3	Dreieck	X	1	0	3837797	0	1	2600	1	0	2500	other	0
+AR01	211	Picture	run_1;block_3;Stern;X;1;0	run_1	block_3	Stern	X	1	0	3871197	0	1	2600	1	0	2500	other	0
+AR01	213	Picture	run_1;block_3;Kreis;M;1;1	run_1	block_3	Kreis	M	1	1	3904597	0	1	2600	1	0	2500	hit	127
+AR01	213	Response	1							3908608	4012	0
+AR01	215	Picture	run_1;block_3;Viereck;X;1;0	run_1	block_3	Viereck	X	1	0	3927997	0	1	2600	1	0	2500	other	0
+AR01	217	Picture	run_1;block_3;Viereck;M;1;1	run_1	block_3	Viereck	M	1	1	3957397	0	1	2600	1	0	2500	hit	130
+AR01	217	Response	1							3962208	4811	0
+AR01	219	Picture	run_1;block_3;Kreis;T;1;0	run_1	block_3	Kreis	T	1	0	3979597	0	1	2600	1	0	2500	other	0
+AR01	221	Picture	run_1;block_3;Dreieck;A;1;0	run_1	block_3	Dreieck	A	1	0	4018997	0	1	2600	1	0	2500	other	0
+AR01	223	Picture	run_1;block_3;Kreis;X;1;0	run_1	block_3	Kreis	X	1	0	4060397	0	1	2600	1	0	2500	other	0
+AR01	225	Picture	run_1;block_3;Stern;A;1;0	run_1	block_3	Stern	A	1	0	4097797	0	1	2600	1	0	2500	other	0
+AR01	226	Response	3							4149408	33411	0
+AR01	228	Picture	run_1;block_4;Kreis;3;2;0	run_1	block_4	Kreis	3	2	0	4159797	0	1	2600	1	0	2500	other	0
+AR01	230	Picture	run_1;block_4;Kreis;6;2;0	run_1	block_4	Kreis	6	2	0	4201197	0	1	2600	1	0	2500	other	0
+AR01	232	Picture	run_1;block_4;Stern;9;2;0	run_1	block_4	Stern	9	2	0	4232597	0	1	2600	1	0	2500	other	0
+AR01	234	Picture	run_1;block_4;Viereck;3;2;0	run_1	block_4	Viereck	3	2	0	4257997	0	1	2600	1	0	2500	other	0
+AR01	236	Picture	run_1;block_4;Stern;9;2;0	run_1	block_4	Stern	9	2	0	4299397	0	1	2600	1	0	2500	other	0
+AR01	238	Picture	run_1;block_4;Viereck;9;2;0	run_1	block_4	Viereck	9	2	0	4338796	0	1	2600	1	0	2500	other	0
+AR01	240	Picture	run_1;block_4;Stern;9;2;0	run_1	block_4	Stern	9	2	0	4376196	0	1	2600	1	0	2500	other	0
+AR01	242	Picture	run_1;block_4;Viereck;3;2;0	run_1	block_4	Viereck	3	2	0	4405596	0	1	2600	1	0	2500	other	0
+AR01	244	Picture	run_1;block_4;Viereck;7;2;0	run_1	block_4	Viereck	7	2	0	4442996	0	1	2600	1	0	2500	other	0
+AR01	246	Picture	run_1;block_4;Viereck;2;2;0	run_1	block_4	Viereck	2	2	0	4476396	0	1	2600	1	0	2500	other	0
+AR01	248	Picture	run_1;block_4;Dreieck;6;2;2	run_1	block_4	Dreieck	6	2	2	4499796	0	1	2600	1	0	2500	hit	147
+AR01	248	Response	2							4506768	6971	0
+AR01	250	Picture	run_1;block_4;Kreis;2;2;0	run_1	block_4	Kreis	2	2	0	4520196	0	1	2600	1	0	2500	other	0
+AR01	252	Picture	run_1;block_4;Stern;7;2;0	run_1	block_4	Stern	7	2	0	4553596	0	1	2600	1	0	2500	other	0
+AR01	254	Picture	run_1;block_4;Dreieck;9;2;2	run_1	block_4	Dreieck	9	2	2	4580996	0	1	2600	1	0	2500	hit	151
+AR01	254	Response	2							4585408	4411	0
+AR01	256	Picture	run_1;block_4;Viereck;6;2;0	run_1	block_4	Viereck	6	2	0	4598796	0	1	2600	1	0	2500	other	0
+AR01	258	Picture	run_1;block_4;Stern;4;2;0	run_1	block_4	Stern	4	2	0	4636196	0	1	2600	1	0	2500	other	0
+AR01	260	Picture	run_1;block_4;Dreieck;3;2;2	run_1	block_4	Dreieck	3	2	2	4663596	0	1	2600	1	0	2500	hit	155
+AR01	260	Response	2							4668928	5332	0
+AR01	262	Picture	run_1;block_4;Viereck;2;2;0	run_1	block_4	Viereck	2	2	0	4688196	0	1	2600	1	0	2500	other	0
+AR01	264	Picture	run_1;block_4;Dreieck;3;2;2	run_1	block_4	Dreieck	3	2	2	4719596	0	1	2600	1	0	2500	hit	158
+AR01	264	Response	2							4724208	4612	0
+AR01	266	Picture	run_1;block_4;Kreis;2;2;0	run_1	block_4	Kreis	2	2	0	4747596	0	1	2600	1	0	2500	other	0
+AR01	268	Picture	run_1;block_4;Dreieck;7;2;2	run_1	block_4	Dreieck	7	2	2	4770996	0	1	2600	1	0	2500	hit	161
+AR01	268	Response	2							4777888	6892	0
+AR01	270	Picture	run_1;block_4;Kreis;4;2;0	run_1	block_4	Kreis	4	2	0	4783196	0	1	2600	1	0	2500	other	0
+AR01	272	Picture	run_1;block_4;Dreieck;4;2;2	run_1	block_4	Dreieck	4	2	2	4814596	0	1	2600	1	0	2500	hit	164
+AR01	272	Response	2							4818368	3772	0
+AR01	274	Picture	run_1;block_4;Viereck;6;2;0	run_1	block_4	Viereck	6	2	0	4823796	0	1	2600	1	0	2500	other	0
+AR01	276	Picture	run_1;block_4;Kreis;2;2;0	run_1	block_4	Kreis	2	2	0	4853196	0	1	2600	1	0	2500	other	0
+AR01	278	Picture	run_1;block_4;Viereck;4;2;0	run_1	block_4	Viereck	4	2	0	4880596	0	1	2600	1	0	2500	other	0
+AR01	280	Response	3							6130849	31853	0
+AR01	281	Response	3							6210527	79532	0
+AR01	283	Picture	run_2;block_1;Dreieck;E;3;0	run_2	block_1	Dreieck	E	3	0	6220795	0	1	2600	1	0	2500	other	0
+AR01	285	Picture	run_2;block_1;Stern;M;3;2	run_2	block_1	Stern	M	3	2	6258195	0	1	2600	1	0	2500	hit	172
+AR01	285	Response	2							6261967	3771	0
+AR01	287	Picture	run_2;block_1;Kreis;A;3;0	run_2	block_1	Kreis	A	3	0	6277395	0	1	2600	1	0	2500	other	0
+AR01	289	Picture	run_2;block_1;Kreis;M;3;0	run_2	block_1	Kreis	M	3	0	6302795	0	1	2600	1	0	2500	other	0
+AR01	291	Picture	run_2;block_1;Kreis;T;3;0	run_2	block_1	Kreis	T	3	0	6338195	0	1	2600	1	0	2500	other	0
+AR01	293	Picture	run_2;block_1;Viereck;E;3;0	run_2	block_1	Viereck	E	3	0	6367595	0	1	2600	1	0	2500	other	0
+AR01	295	Picture	run_2;block_1;Dreieck;X;3;1	run_2	block_1	Dreieck	X	3	1	6406995	0	1	2600	1	0	2500	hit	178
+AR01	295	Response	1							6416047	9052	0
+AR01	297	Picture	run_2;block_1;Kreis;M;3;0	run_2	block_1	Kreis	M	3	0	6437395	0	1	2600	1	0	2500	other	0
+AR01	299	Picture	run_2;block_1;Stern;D;3;2	run_2	block_1	Stern	D	3	2	6474795	0	1	2600	1	0	2500	hit	181
+AR01	299	Response	2							6482607	7812	0
+AR01	301	Picture	run_2;block_1;Kreis;M;3;0	run_2	block_1	Kreis	M	3	0	6499995	0	1	2600	1	0	2500	other	0
+AR01	303	Picture	run_2;block_1;Dreieck;D;3;0	run_2	block_1	Dreieck	D	3	0	6533395	0	1	2600	1	0	2500	other	0
+AR01	305	Picture	run_2;block_1;Kreis;X;3;1	run_2	block_1	Kreis	X	3	1	6570795	0	1	2600	1	0	2500	hit	185
+AR01	305	Response	1							6577166	6372	0
+AR01	307	Picture	run_2;block_1;Viereck;T;3;0	run_2	block_1	Viereck	T	3	0	6590595	0	1	2600	1	0	2500	other	0
+AR01	309	Picture	run_2;block_1;Dreieck;E;3;0	run_2	block_1	Dreieck	E	3	0	6617995	0	1	2600	1	0	2500	other	0
+AR01	311	Picture	run_2;block_1;Dreieck;A;3;0	run_2	block_1	Dreieck	A	3	0	6647395	0	1	2600	1	0	2500	other	0
+AR01	313	Picture	run_2;block_1;Viereck;M;3;0	run_2	block_1	Viereck	M	3	0	6686795	0	1	2600	1	0	2500	other	0
+AR01	315	Picture	run_2;block_1;Kreis;D;3;0	run_2	block_1	Kreis	D	3	0	6710195	0	1	2600	1	0	2500	other	0
+AR01	317	Picture	run_2;block_1;Viereck;M;3;0	run_2	block_1	Viereck	M	3	0	6737595	0	1	2600	1	0	2500	other	0
+AR01	319	Picture	run_2;block_1;Kreis;E;3;0	run_2	block_1	Kreis	E	3	0	6764995	0	1	2600	1	0	2500	other	0
+AR01	321	Picture	run_2;block_1;Dreieck;M;3;0	run_2	block_1	Dreieck	M	3	0	6806395	0	1	2600	1	0	2500	other	0
+AR01	323	Picture	run_2;block_1;Dreieck;X;3;1	run_2	block_1	Dreieck	X	3	1	6835795	0	1	2600	1	0	2500	hit	195
+AR01	323	Response	1							6840447	4652	0
+AR01	325	Picture	run_2;block_1;Kreis;D;3;0	run_2	block_1	Kreis	D	3	0	6845795	0	1	2600	1	0	2500	other	0
+AR01	327	Picture	run_2;block_1;Kreis;A;3;0	run_2	block_1	Kreis	A	3	0	6873195	0	1	2600	1	0	2500	other	0
+AR01	329	Picture	run_2;block_1;Stern;E;3;2	run_2	block_1	Stern	E	3	2	6900595	0	1	2600	1	0	2500	hit	199
+AR01	329	Response	2							6904687	4092	0
+AR01	331	Picture	run_2;block_1;Dreieck;T;3;0	run_2	block_1	Dreieck	T	3	0	6911995	0	1	2600	1	0	2500	other	0
+AR01	333	Picture	run_2;block_1;Viereck;T;3;0	run_2	block_1	Viereck	T	3	0	6947394	0	1	2601	1	0	2500	other	0
+AR01	334	Response	3							7005486	39892	0
+AR01	336	Picture	run_2;block_2;Kreis;7;3;0	run_2	block_2	Kreis	7	3	0	7015795	0	1	2600	1	0	2500	other	0
+AR01	338	Picture	run_2;block_2;Kreis;2;3;0	run_2	block_2	Kreis	2	3	0	7039194	0	1	2600	1	0	2500	other	0
+AR01	340	Picture	run_2;block_2;Dreieck;3;3;0	run_2	block_2	Dreieck	3	3	0	7072594	0	1	2600	1	0	2500	other	0
+AR01	342	Picture	run_2;block_2;Stern;3;3;0	run_2	block_2	Stern	3	3	0	7107994	0	1	2600	1	0	2500	other	0
+AR01	344	Picture	run_2;block_2;Kreis;4;3;1	run_2	block_2	Kreis	4	3	1	7149394	0	1	2600	1	0	2500	hit	208
+AR01	344	Response	1							7155886	6492	0
+AR01	346	Picture	run_2;block_2;Kreis;2;3;0	run_2	block_2	Kreis	2	3	0	7175194	0	1	2600	1	0	2500	other	0
+AR01	348	Picture	run_2;block_2;Dreieck;3;3;0	run_2	block_2	Dreieck	3	3	0	7200594	0	1	2600	1	0	2500	other	0
+AR01	350	Picture	run_2;block_2;Dreieck;2;3;0	run_2	block_2	Dreieck	2	3	0	7231994	0	1	2600	1	0	2500	other	0
+AR01	352	Picture	run_2;block_2;Kreis;9;3;0	run_2	block_2	Kreis	9	3	0	7265394	0	1	2600	1	0	2500	other	0
+AR01	354	Picture	run_2;block_2;Dreieck;9;3;0	run_2	block_2	Dreieck	9	3	0	7292794	0	1	2600	1	0	2500	other	0
+AR01	356	Picture	run_2;block_2;Dreieck;4;3;1	run_2	block_2	Dreieck	4	3	1	7322194	0	1	2600	1	0	2500	hit	215
+AR01	356	Response	1							7329566	7372	0
+AR01	358	Picture	run_2;block_2;Stern;9;3;0	run_2	block_2	Stern	9	3	0	7350994	0	1	2600	1	0	2500	other	0
+AR01	360	Picture	run_2;block_2;Stern;2;3;0	run_2	block_2	Stern	2	3	0	7384394	0	1	2600	1	0	2500	other	0
+AR01	362	Picture	run_2;block_2;Stern;4;3;1	run_2	block_2	Stern	4	3	1	7421794	0	1	2600	1	0	2500	hit	219
+AR01	362	Response	1							7428926	7132	0
+AR01	364	Picture	run_2;block_2;Kreis;2;3;0	run_2	block_2	Kreis	2	3	0	7444194	0	1	2600	1	0	2500	other	0
+AR01	366	Picture	run_2;block_2;Dreieck;2;3;0	run_2	block_2	Dreieck	2	3	0	7479594	0	1	2600	1	0	2500	other	0
+AR01	368	Picture	run_2;block_2;Dreieck;7;3;0	run_2	block_2	Dreieck	7	3	0	7504994	0	1	2600	1	0	2500	other	0
+AR01	370	Picture	run_2;block_2;Dreieck;9;3;0	run_2	block_2	Dreieck	9	3	0	7540394	0	1	2600	1	0	2500	other	0
+AR01	372	Picture	run_2;block_2;Viereck;7;3;2	run_2	block_2	Viereck	7	3	2	7577794	0	1	2600	1	0	2500	hit	225
+AR01	372	Response	2							7582126	4332	0
+AR01	374	Picture	run_2;block_2;Dreieck;6;3;0	run_2	block_2	Dreieck	6	3	0	7603394	0	1	2600	1	0	2500	other	0
+AR01	376	Picture	run_2;block_2;Dreieck;7;3;0	run_2	block_2	Dreieck	7	3	0	7636794	0	1	2600	1	0	2500	other	0
+AR01	378	Picture	run_2;block_2;Stern;6;3;0	run_2	block_2	Stern	6	3	0	7660194	0	1	2600	1	0	2500	other	0
+AR01	380	Picture	run_2;block_2;Stern;2;3;0	run_2	block_2	Stern	2	3	0	7699594	0	1	2600	1	0	2500	other	0
+AR01	382	Picture	run_2;block_2;Viereck;9;3;2	run_2	block_2	Viereck	9	3	2	7740994	0	1	2600	1	0	2500	hit	231
+AR01	382	Response	2							7748686	7692	0
+AR01	384	Picture	run_2;block_2;Kreis;3;3;0	run_2	block_2	Kreis	3	3	0	7763994	0	1	2600	1	0	2500	other	0
+AR01	386	Picture	run_2;block_2;Viereck;7;3;2	run_2	block_2	Viereck	7	3	2	7801394	0	1	2600	1	0	2500	hit	234
+AR01	386	Response	2							7807806	6412	0
+AR01	387	Response	3							7861966	53972	0
+AR01	389	Picture	run_2;block_3;Viereck;M;3;0	run_2	block_3	Viereck	M	3	0	7872394	0	1	2600	1	0	2500	other	0
+AR01	391	Picture	run_2;block_3;Stern;E;3;0	run_2	block_3	Stern	E	3	0	7907794	0	1	2600	1	0	2500	other	0
+AR01	393	Picture	run_2;block_3;Stern;A;3;1	run_2	block_3	Stern	A	3	1	7947194	0	1	2600	1	0	2500	hit	239
+AR01	393	Response	1							7950766	3572	0
+AR01	395	Picture	run_2;block_3;Dreieck;M;3;0	run_2	block_3	Dreieck	M	3	0	7962194	0	1	2600	1	0	2500	other	0
+AR01	397	Picture	run_2;block_3;Stern;X;3;0	run_2	block_3	Stern	X	3	0	8001594	0	1	2600	1	0	2500	other	0
+AR01	399	Picture	run_2;block_3;Viereck;X;3;0	run_2	block_3	Viereck	X	3	0	8024994	0	1	2600	1	0	2500	other	0
+AR01	401	Picture	run_2;block_3;Viereck;D;3;0	run_2	block_3	Viereck	D	3	0	8062394	0	1	2600	1	0	2500	other	0
+AR01	403	Picture	run_2;block_3;Stern;X;3;0	run_2	block_3	Stern	X	3	0	8089794	0	1	2600	1	0	2500	other	0
+AR01	405	Picture	run_2;block_3;Dreieck;X;3;0	run_2	block_3	Dreieck	X	3	0	8113194	0	1	2600	1	0	2500	other	0
+AR01	407	Picture	run_2;block_3;Stern;M;3;0	run_2	block_3	Stern	M	3	0	8144594	0	1	2600	1	0	2500	other	0
+AR01	409	Picture	run_2;block_3;Dreieck;A;3;1	run_2	block_3	Dreieck	A	3	1	8183994	0	1	2600	1	0	2500	hit	248
+AR01	409	Response	1							8189165	5172	0
+AR01	411	Picture	run_2;block_3;Stern;D;3;0	run_2	block_3	Stern	D	3	0	8208594	0	1	2600	1	0	2500	other	0
+AR01	413	Picture	run_2;block_3;Stern;E;3;0	run_2	block_3	Stern	E	3	0	8241994	0	1	2600	1	0	2500	other	0
+AR01	415	Picture	run_2;block_3;Kreis;D;3;2	run_2	block_3	Kreis	D	3	2	8271394	0	1	2600	1	0	2500	hit	252
+AR01	415	Response	2							8279565	8172	0
+AR01	417	Picture	run_2;block_3;Dreieck;T;3;0	run_2	block_3	Dreieck	T	3	0	8296994	0	1	2600	1	0	2500	other	0
+AR01	419	Picture	run_2;block_3;Dreieck;M;3;0	run_2	block_3	Dreieck	M	3	0	8322394	0	1	2600	1	0	2500	other	0
+AR01	421	Picture	run_2;block_3;Kreis;T;3;2	run_2	block_3	Kreis	T	3	2	8363794	0	1	2600	1	0	2500	hit	256
+AR01	421	Response	2							8371006	7212	0
+AR01	423	Picture	run_2;block_3;Viereck;T;3;0	run_2	block_3	Viereck	T	3	0	8386394	0	1	2600	1	0	2500	other	0
+AR01	425	Picture	run_2;block_3;Dreieck;A;3;1	run_2	block_3	Dreieck	A	3	1	8419793	0	1	2600	1	0	2500	hit	259
+AR01	425	Response	1							8423485	3692	0
+AR01	427	Picture	run_2;block_3;Viereck;D;3;0	run_2	block_3	Viereck	D	3	0	8434793	0	1	2600	1	0	2500	other	0
+AR01	429	Picture	run_2;block_3;Viereck;T;3;0	run_2	block_3	Viereck	T	3	0	8470193	0	1	2600	1	0	2500	other	0
+AR01	431	Picture	run_2;block_3;Dreieck;T;3;0	run_2	block_3	Dreieck	T	3	0	8493593	0	1	2600	1	0	2500	other	0
+AR01	433	Picture	run_2;block_3;Kreis;D;3;2	run_2	block_3	Kreis	D	3	2	8534993	0	1	2600	1	0	2500	hit	264
+AR01	433	Response	2							8540206	5212	0
+AR01	435	Picture	run_2;block_3;Dreieck;X;3;0	run_2	block_3	Dreieck	X	3	0	8557593	0	1	2600	1	0	2500	other	0
+AR01	437	Picture	run_2;block_3;Viereck;T;3;0	run_2	block_3	Viereck	T	3	0	8588993	0	1	2600	1	0	2500	other	0
+AR01	439	Picture	run_2;block_3;Viereck;E;3;0	run_2	block_3	Viereck	E	3	0	8618393	0	1	2600	1	0	2500	other	0
+AR01	440	Response	3							8688685	52092	0
+AR01	442	Picture	run_2;block_4;Stern;2;3;0	run_2	block_4	Stern	2	3	0	8698993	0	1	2600	1	0	2500	other	0
+AR01	444	Picture	run_2;block_4;Dreieck;9;3;2	run_2	block_4	Dreieck	9	3	2	8730393	0	1	2600	1	0	2500	hit	271
+AR01	444	Response	2							8736845	6452	0
+AR01	446	Picture	run_2;block_4;Stern;3;3;0	run_2	block_4	Stern	3	3	0	8752193	0	1	2600	1	0	2500	other	0
+AR01	448	Picture	run_2;block_4;Viereck;4;3;0	run_2	block_4	Viereck	4	3	0	8781593	0	1	2600	1	0	2500	other	0
+AR01	450	Picture	run_2;block_4;Stern;3;3;0	run_2	block_4	Stern	3	3	0	8818993	0	1	2600	1	0	2500	other	0
+AR01	452	Picture	run_2;block_4;Kreis;7;3;0	run_2	block_4	Kreis	7	3	0	8858393	0	1	2600	1	0	2500	other	0
+AR01	454	Picture	run_2;block_4;Dreieck;2;3;2	run_2	block_4	Dreieck	2	3	2	8887793	0	1	2600	1	0	2500	hit	277
+AR01	454	Response	2							8893565	5772	0
+AR01	456	Picture	run_2;block_4;Kreis;7;3;0	run_2	block_4	Kreis	7	3	0	8908993	0	1	2600	1	0	2500	other	0
+AR01	458	Picture	run_2;block_4;Kreis;3;3;0	run_2	block_4	Kreis	3	3	0	8936393	0	1	2600	1	0	2500	false_alarm	280
+AR01	458	Response	2							8943885	7492	0
+AR01	460	Picture	run_2;block_4;Kreis;7;3;0	run_2	block_4	Kreis	7	3	0	8959193	0	1	2600	1	0	2500	other	0
+AR01	462	Picture	run_2;block_4;Viereck;2;3;0	run_2	block_4	Viereck	2	3	0	8984593	0	1	2600	1	0	2500	other	0
+AR01	464	Picture	run_2;block_4;Kreis;9;3;0	run_2	block_4	Kreis	9	3	0	9021993	0	1	2600	1	0	2500	other	0
+AR01	466	Picture	run_2;block_4;Stern;9;3;0	run_2	block_4	Stern	9	3	0	9051393	0	1	2600	1	0	2500	other	0
+AR01	468	Picture	run_2;block_4;Kreis;3;3;0	run_2	block_4	Kreis	3	3	0	9074793	0	1	2600	1	0	2500	other	0
+AR01	470	Picture	run_2;block_4;Kreis;6;3;1	run_2	block_4	Kreis	6	3	1	9098193	0	1	2600	1	0	2500	hit	287
+AR01	470	Response	1							9102925	4732	0
+AR01	472	Picture	run_2;block_4;Stern;3;3;0	run_2	block_4	Stern	3	3	0	9112193	0	1	2600	1	0	2500	other	0
+AR01	474	Picture	run_2;block_4;Kreis;9;3;0	run_2	block_4	Kreis	9	3	0	9151593	0	1	2600	1	0	2500	other	0
+AR01	476	Picture	run_2;block_4;Viereck;6;3;1	run_2	block_4	Viereck	6	3	1	9184993	0	1	2600	1	0	2500	hit	291
+AR01	476	Response	1							9190365	5372	0
+AR01	478	Picture	run_2;block_4;Viereck;7;3;0	run_2	block_4	Viereck	7	3	0	9211793	0	1	2600	1	0	2500	other	0
+AR01	480	Picture	run_2;block_4;Kreis;7;3;0	run_2	block_4	Kreis	7	3	0	9253193	0	1	2600	1	0	2500	other	0
+AR01	482	Picture	run_2;block_4;Stern;4;3;0	run_2	block_4	Stern	4	3	0	9292593	0	1	2600	1	0	2500	other	0
+AR01	484	Picture	run_2;block_4;Kreis;7;3;0	run_2	block_4	Kreis	7	3	0	9331993	0	1	2600	1	0	2500	other	0
+AR01	486	Picture	run_2;block_4;Dreieck;4;3;2	run_2	block_4	Dreieck	4	3	2	9363393	0	1	2600	1	0	2500	hit	297
+AR01	486	Response	2							9367648	4255	0
+AR01	488	Picture	run_2;block_4;Kreis;3;3;0	run_2	block_4	Kreis	3	3	0	9388993	0	1	2600	1	0	2500	other	0
+AR01	490	Picture	run_2;block_4;Kreis;6;3;1	run_2	block_4	Kreis	6	3	1	9426393	0	1	2600	1	0	2500	hit	300
+AR01	490	Response	1							9431325	4932	0
+AR01	492	Picture	run_2;block_4;Stern;2;3;0	run_2	block_4	Stern	2	3	0	9448593	0	1	2600	1	0	2500	other	0
+AR01	494	Response	3							10697564	30572	0
+AR01	495	Response	3							10734684	36892	0
+AR01	497	Picture	run_3;block_1;Viereck;D;2;0	run_3	block_1	Viereck	D	2	0	10744992	0	1	2600	1	0	2500	other	0
+AR01	499	Picture	run_3;block_1;Dreieck;T;2;0	run_3	block_1	Dreieck	T	2	0	10776392	0	1	2600	1	0	2500	other	0
+AR01	501	Picture	run_3;block_1;Dreieck;M;2;0	run_3	block_1	Dreieck	M	2	0	10815792	0	1	2600	1	0	2500	other	0
+AR01	503	Picture	run_3;block_1;Kreis;T;2;0	run_3	block_1	Kreis	T	2	0	10845192	0	1	2600	1	0	2500	other	0
+AR01	505	Picture	run_3;block_1;Dreieck;D;2;0	run_3	block_1	Dreieck	D	2	0	10870592	0	1	2600	1	0	2500	other	0
+AR01	507	Picture	run_3;block_1;Dreieck;M;2;0	run_3	block_1	Dreieck	M	2	0	10909992	0	1	2600	1	0	2500	other	0
+AR01	509	Picture	run_3;block_1;Viereck;E;2;0	run_3	block_1	Viereck	E	2	0	10947392	0	1	2600	1	0	2500	other	0
+AR01	511	Picture	run_3;block_1;Dreieck;D;2;0	run_3	block_1	Dreieck	D	2	0	10984792	0	1	2600	1	0	2500	other	0
+AR01	513	Picture	run_3;block_1;Dreieck;A;2;0	run_3	block_1	Dreieck	A	2	0	11024192	0	1	2600	1	0	2500	other	0
+AR01	515	Picture	run_3;block_1;Stern;X;2;2	run_3	block_1	Stern	X	2	2	11047592	0	1	2600	1	0	2500	hit	314
+AR01	515	Response	2							11054044	6452	0
+AR01	517	Picture	run_3;block_1;Dreieck;A;2;0	run_3	block_1	Dreieck	A	2	0	11061392	0	1	2600	1	0	2500	other	0
+AR01	519	Picture	run_3;block_1;Kreis;M;2;0	run_3	block_1	Kreis	M	2	0	11102792	0	1	2600	1	0	2500	other	0
+AR01	521	Picture	run_3;block_1;Kreis;E;2;0	run_3	block_1	Kreis	E	2	0	11132192	0	1	2600	1	0	2500	other	0
+AR01	523	Picture	run_3;block_1;Stern;D;2;2	run_3	block_1	Stern	D	2	2	11173591	0	1	2600	1	0	2500	hit	319
+AR01	523	Response	2							11178684	5092	0
+AR01	525	Picture	run_3;block_1;Dreieck;D;2;0	run_3	block_1	Dreieck	D	2	0	11189991	0	1	2600	1	0	2500	other	0
+AR01	527	Picture	run_3;block_1;Stern;X;2;2	run_3	block_1	Stern	X	2	2	11221391	0	1	2600	1	0	2500	hit	322
+AR01	527	Response	2							11226284	4892	0
+AR01	529	Picture	run_3;block_1;Dreieck;M;2;0	run_3	block_1	Dreieck	M	2	0	11247591	0	1	2600	1	0	2500	other	0
+AR01	531	Picture	run_3;block_1;Kreis;M;2;0	run_3	block_1	Kreis	M	2	0	11284991	0	1	2600	1	0	2500	other	0
+AR01	533	Picture	run_3;block_1;Stern;M;2;2	run_3	block_1	Stern	M	2	2	11320391	0	1	2600	1	0	2500	hit	326
+AR01	533	Response	2							11325404	5012	0
+AR01	535	Picture	run_3;block_1;Kreis;M;2;0	run_3	block_1	Kreis	M	2	0	11336791	0	1	2600	1	0	2500	other	0
+AR01	537	Picture	run_3;block_1;Viereck;M;2;0	run_3	block_1	Viereck	M	2	0	11362191	0	1	2600	1	0	2500	other	0
+AR01	539	Picture	run_3;block_1;Kreis;M;2;0	run_3	block_1	Kreis	M	2	0	11397591	0	1	2600	1	0	2500	other	0
+AR01	541	Picture	run_3;block_1;Viereck;X;2;0	run_3	block_1	Viereck	X	2	0	11436991	0	1	2600	1	0	2500	other	0
+AR01	543	Picture	run_3;block_1;Stern;X;2;2	run_3	block_1	Stern	X	2	2	11478391	0	1	2600	1	0	2500	hit	332
+AR01	543	Response	2							11482603	4212	0
+AR01	545	Picture	run_3;block_1;Dreieck;T;2;0	run_3	block_1	Dreieck	T	2	0	11487991	0	1	2600	1	0	2500	other	0
+AR01	547	Picture	run_3;block_1;Stern;A;2;2	run_3	block_1	Stern	A	2	2	11521391	0	1	2600	1	0	2500	hit	335
+AR01	547	Response	2							11532123	10732	0
+AR01	548	Response	3							11588204	55813	0
+AR01	550	Picture	run_3;block_2;Kreis;2;3;0	run_3	block_2	Kreis	2	3	0	11598591	0	1	2600	1	0	2500	other	0
+AR01	552	Picture	run_3;block_2;Dreieck;6;3;0	run_3	block_2	Dreieck	6	3	0	11635991	0	1	2600	1	0	2500	other	0
+AR01	554	Picture	run_3;block_2;Stern;9;3;0	run_3	block_2	Stern	9	3	0	11665391	0	1	2600	1	0	2500	other	0
+AR01	556	Picture	run_3;block_2;Dreieck;2;3;0	run_3	block_2	Dreieck	2	3	0	11700791	0	1	2600	1	0	2500	other	0
+AR01	558	Picture	run_3;block_2;Kreis;7;3;1	run_3	block_2	Kreis	7	3	1	11726191	0	1	2600	1	0	2500	hit	342
+AR01	558	Response	1							11731243	5052	0
+AR01	560	Picture	run_3;block_2;Kreis;2;3;0	run_3	block_2	Kreis	2	3	0	11736591	0	1	2600	1	0	2500	other	0
+AR01	562	Picture	run_3;block_2;Dreieck;7;3;1	run_3	block_2	Dreieck	7	3	1	11771991	0	1	2600	1	0	2500	hit	345
+AR01	562	Response	1							11777323	5332	0
+AR01	564	Picture	run_3;block_2;Stern;6;3;0	run_3	block_2	Stern	6	3	0	11792591	0	1	2600	1	0	2500	other	0
+AR01	566	Picture	run_3;block_2;Kreis;9;3;0	run_3	block_2	Kreis	9	3	0	11819991	0	1	2600	1	0	2500	other	0
+AR01	568	Picture	run_3;block_2;Viereck;9;3;2	run_3	block_2	Viereck	9	3	2	11845391	0	1	2600	1	0	2500	hit	349
+AR01	568	Response	2							11854043	8652	0
+AR01	570	Picture	run_3;block_2;Stern;3;3;0	run_3	block_2	Stern	3	3	0	11871391	0	1	2600	1	0	2500	other	0
+AR01	572	Picture	run_3;block_2;Dreieck;6;3;0	run_3	block_2	Dreieck	6	3	0	11908791	0	1	2600	1	0	2500	other	0
+AR01	574	Picture	run_3;block_2;Dreieck;3;3;0	run_3	block_2	Dreieck	3	3	0	11934191	0	1	2600	1	0	2500	other	0
+AR01	576	Picture	run_3;block_2;Dreieck;4;3;0	run_3	block_2	Dreieck	4	3	0	11959591	0	1	2600	1	0	2500	other	0
+AR01	578	Picture	run_3;block_2;Kreis;2;3;0	run_3	block_2	Kreis	2	3	0	11984991	0	1	2600	1	0	2500	other	0
+AR01	580	Picture	run_3;block_2;Dreieck;3;3;0	run_3	block_2	Dreieck	3	3	0	12020391	0	1	2600	1	0	2500	other	0
+AR01	582	Picture	run_3;block_2;Stern;4;3;0	run_3	block_2	Stern	4	3	0	12045791	0	1	2600	1	0	2500	other	0
+AR01	584	Picture	run_3;block_2;Kreis;7;3;1	run_3	block_2	Kreis	7	3	1	12077191	0	1	2600	1	0	2500	hit	358
+AR01	584	Response	1							12081083	3892	0
+AR01	586	Picture	run_3;block_2;Dreieck;2;3;0	run_3	block_2	Dreieck	2	3	0	12086391	0	1	2600	1	0	2500	other	0
+AR01	588	Picture	run_3;block_2;Kreis;6;3;0	run_3	block_2	Kreis	6	3	0	12121791	0	1	2600	1	0	2500	other	0
+AR01	590	Picture	run_3;block_2;Stern;6;3;0	run_3	block_2	Stern	6	3	0	12151191	0	1	2600	1	0	2500	other	0
+AR01	592	Picture	run_3;block_2;Viereck;4;3;2	run_3	block_2	Viereck	4	3	2	12176591	0	1	2599	1	0	2500	hit	363
+AR01	592	Response	2							12183883	7292	0
+AR01	594	Picture	run_3;block_2;Dreieck;4;3;0	run_3	block_2	Dreieck	4	3	0	12193191	0	1	2600	1	0	2500	other	0
+AR01	596	Picture	run_3;block_2;Stern;9;3;0	run_3	block_2	Stern	9	3	0	12216591	0	1	2600	1	0	2500	other	0
+AR01	598	Picture	run_3;block_2;Stern;6;3;0	run_3	block_2	Stern	6	3	0	12247991	0	1	2600	1	0	2500	other	0
+AR01	600	Picture	run_3;block_2;Viereck;2;3;2	run_3	block_2	Viereck	2	3	2	12279391	0	1	2600	1	0	2500	hit	368
+AR01	600	Response	2							12286523	7132	0
+AR01	601	Response	3							12320283	33692	0
+AR01	603	Picture	run_3;block_3;Kreis;D;1;0	run_3	block_3	Kreis	D	1	0	12330591	0	1	2600	1	0	2500	other	0
+AR01	605	Picture	run_3;block_3;Stern;X;1;0	run_3	block_3	Stern	X	1	0	12361991	0	1	2600	1	0	2500	other	0
+AR01	607	Picture	run_3;block_3;Kreis;X;1;0	run_3	block_3	Kreis	X	1	0	12399391	0	1	2600	1	0	2500	other	0
+AR01	609	Picture	run_3;block_3;Stern;E;1;0	run_3	block_3	Stern	E	1	0	12434791	0	1	2600	1	0	2500	other	0
+AR01	611	Picture	run_3;block_3;Viereck;A;1;0	run_3	block_3	Viereck	A	1	0	12476191	0	1	2600	1	0	2500	other	0
+AR01	613	Picture	run_3;block_3;Dreieck;E;1;0	run_3	block_3	Dreieck	E	1	0	12515591	0	1	2600	1	0	2500	other	0
+AR01	615	Picture	run_3;block_3;Viereck;E;1;0	run_3	block_3	Viereck	E	1	0	12548990	0	1	2600	1	0	2500	other	0
+AR01	617	Picture	run_3;block_3;Dreieck;E;1;0	run_3	block_3	Dreieck	E	1	0	12580390	0	1	2600	1	0	2500	other	0
+AR01	619	Picture	run_3;block_3;Kreis;T;1;1	run_3	block_3	Kreis	T	1	1	12611790	0	1	2600	1	0	2500	hit	379
+AR01	619	Response	1							12615483	3692	0
+AR01	621	Picture	run_3;block_3;Viereck;E;1;0	run_3	block_3	Viereck	E	1	0	12634790	0	1	2600	1	0	2500	other	0
+AR01	623	Picture	run_3;block_3;Kreis;D;1;0	run_3	block_3	Kreis	D	1	0	12664190	0	1	2600	1	0	2500	other	0
+AR01	625	Picture	run_3;block_3;Kreis;X;1;0	run_3	block_3	Kreis	X	1	0	12701590	0	1	2600	1	0	2500	other	0
+AR01	627	Picture	run_3;block_3;Kreis;T;1;1	run_3	block_3	Kreis	T	1	1	12728990	0	1	2600	1	0	2500	hit	384
+AR01	627	Response	1							12733963	4972	0
+AR01	629	Picture	run_3;block_3;Dreieck;X;1;0	run_3	block_3	Dreieck	X	1	0	12753390	0	1	2600	1	0	2500	other	0
+AR01	631	Picture	run_3;block_3;Stern;T;1;1	run_3	block_3	Stern	T	1	1	12794790	0	1	2600	1	0	2500	hit	387
+AR01	631	Response	1							12799323	4532	0
+AR01	633	Picture	run_3;block_3;Stern;D;1;0	run_3	block_3	Stern	D	1	0	12816590	0	1	2600	1	0	2500	other	0
+AR01	635	Picture	run_3;block_3;Viereck;M;1;0	run_3	block_3	Viereck	M	1	0	12849990	0	1	2600	1	0	2500	other	0
+AR01	637	Picture	run_3;block_3;Dreieck;T;1;1	run_3	block_3	Dreieck	T	1	1	12877390	0	1	2600	1	0	2500	hit	391
+AR01	637	Response	1							12882283	4893	0
+AR01	639	Picture	run_3;block_3;Viereck;E;1;0	run_3	block_3	Viereck	E	1	0	12897590	0	1	2600	1	0	2500	other	0
+AR01	641	Picture	run_3;block_3;Stern;D;1;0	run_3	block_3	Stern	D	1	0	12930990	0	1	2600	1	0	2500	other	0
+AR01	643	Picture	run_3;block_3;Stern;A;1;0	run_3	block_3	Stern	A	1	0	12956390	0	1	2600	1	0	2500	other	0
+AR01	645	Picture	run_3;block_3;Stern;T;1;1	run_3	block_3	Stern	T	1	1	12987790	0	1	2600	1	0	2500	hit	396
+AR01	645	Response	1							12993083	5292	0
+AR01	647	Picture	run_3;block_3;Dreieck;D;1;0	run_3	block_3	Dreieck	D	1	0	13006390	0	1	2600	1	0	2500	other	0
+AR01	649	Picture	run_3;block_3;Stern;T;1;1	run_3	block_3	Stern	T	1	1	13043790	0	1	2600	1	0	2500	hit	399
+AR01	649	Response	1							13050283	6492	0
+AR01	651	Picture	run_3;block_3;Dreieck;M;1;0	run_3	block_3	Dreieck	M	1	0	13067590	0	1	2600	1	0	2500	other	0
+AR01	653	Picture	run_3;block_3;Kreis;E;1;0	run_3	block_3	Kreis	E	1	0	13098989	0	1	2601	2	0	2500	other	0
+AR01	654	Response	3							13169322	52132	0
+AR01	656	Picture	run_3;block_4;Viereck;2;3;0	run_3	block_4	Viereck	2	3	0	13179590	0	1	2600	1	0	2500	other	0
+AR01	658	Picture	run_3;block_4;Stern;9;3;1	run_3	block_4	Stern	9	3	1	13214990	0	1	2600	1	0	2500	hit	405
+AR01	658	Response	1							13221962	6972	0
+AR01	660	Picture	run_3;block_4;Stern;3;3;0	run_3	block_4	Stern	3	3	0	13231390	0	1	2600	1	0	2500	other	0
+AR01	662	Picture	run_3;block_4;Viereck;7;3;0	run_3	block_4	Viereck	7	3	0	13256790	0	1	2600	1	0	2500	other	0
+AR01	664	Picture	run_3;block_4;Dreieck;4;3;0	run_3	block_4	Dreieck	4	3	0	13280190	0	1	2600	1	0	2500	other	0
+AR01	666	Picture	run_3;block_4;Stern;7;3;0	run_3	block_4	Stern	7	3	0	13313590	0	1	2600	1	0	2500	other	0
+AR01	668	Picture	run_3;block_4;Kreis;4;3;2	run_3	block_4	Kreis	4	3	2	13350990	0	1	2600	1	0	2500	hit	411
+AR01	668	Response	2							13355882	4893	0
+AR01	670	Picture	run_3;block_4;Dreieck;6;3;0	run_3	block_4	Dreieck	6	3	0	13375190	0	1	2600	1	0	2500	other	0
+AR01	672	Picture	run_3;block_4;Viereck;7;3;0	run_3	block_4	Viereck	7	3	0	13408590	0	1	2600	1	0	2500	other	0
+AR01	674	Picture	run_3;block_4;Viereck;4;3;0	run_3	block_4	Viereck	4	3	0	13437990	0	1	2600	1	0	2500	other	0
+AR01	676	Picture	run_3;block_4;Dreieck;3;3;0	run_3	block_4	Dreieck	3	3	0	13475390	0	1	2600	1	0	2500	other	0
+AR01	678	Picture	run_3;block_4;Stern;2;3;0	run_3	block_4	Stern	2	3	0	13504790	0	1	2600	1	0	2500	other	0
+AR01	680	Picture	run_3;block_4;Stern;9;3;1	run_3	block_4	Stern	9	3	1	13536190	0	1	2600	1	0	2500	hit	418
+AR01	680	Response	1							13541322	5133	0
+AR01	682	Picture	run_3;block_4;Stern;7;3;0	run_3	block_4	Stern	7	3	0	13558590	0	1	2600	1	0	2500	other	0
+AR01	684	Picture	run_3;block_4;Kreis;4;3;2	run_3	block_4	Kreis	4	3	2	13597990	0	1	2600	1	0	2500	hit	421
+AR01	684	Response	2							13604282	6293	0
+AR01	686	Picture	run_3;block_4;Dreieck;2;3;0	run_3	block_4	Dreieck	2	3	0	13615590	0	1	2600	1	0	2500	other	0
+AR01	688	Picture	run_3;block_4;Stern;7;3;0	run_3	block_4	Stern	7	3	0	13644990	0	1	2600	1	0	2500	other	0
+AR01	690	Picture	run_3;block_4;Viereck;4;3;0	run_3	block_4	Viereck	4	3	0	13684390	0	1	2600	1	0	2500	other	0
+AR01	692	Picture	run_3;block_4;Stern;9;3;1	run_3	block_4	Stern	9	3	1	13707790	0	1	2600	1	0	2500	hit	426
+AR01	692	Response	1							13713242	5453	0
+AR01	694	Picture	run_3;block_4;Viereck;7;3;0	run_3	block_4	Viereck	7	3	0	13726590	0	1	2600	1	0	2500	other	0
+AR01	696	Picture	run_3;block_4;Viereck;4;3;0	run_3	block_4	Viereck	4	3	0	13755990	0	1	2600	1	0	2500	other	0
+AR01	698	Picture	run_3;block_4;Kreis;2;3;2	run_3	block_4	Kreis	2	3	2	13797390	0	1	2600	1	0	2500	hit	430
+AR01	698	Response	2							13803162	5773	0
+AR01	700	Picture	run_3;block_4;Dreieck;7;3;0	run_3	block_4	Dreieck	7	3	0	13812590	0	1	2600	1	0	2500	other	0
+AR01	702	Picture	run_3;block_4;Stern;6;3;0	run_3	block_4	Stern	6	3	0	13847990	0	1	2600	1	0	2500	other	0
+AR01	704	Picture	run_3;block_4;Stern;7;3;0	run_3	block_4	Stern	7	3	0	13881389	0	1	2600	1	0	2500	other	0
+AR01	706	Picture	run_3;block_4;Viereck;6;3;0	run_3	block_4	Viereck	6	3	0	13918789	0	1	2600	1	0	2500	other	0
+AR01	707	Response	3							13960282	23293	0
+AR01	709	Picture	run_3;block_5;Stern;2;2;0	run_3	block_5	Stern	2	2	0	13970589	0	1	2600	1	0	2500	other	0
+AR01	711	Picture	run_3;block_5;Kreis;2;2;0	run_3	block_5	Kreis	2	2	0	13995989	0	1	2600	1	0	2500	other	0
+AR01	713	Picture	run_3;block_5;Stern;6;2;0	run_3	block_5	Stern	6	2	0	14025389	0	1	2600	1	0	2500	other	0
+AR01	715	Picture	run_3;block_5;Dreieck;9;2;2	run_3	block_5	Dreieck	9	2	2	14066789	0	1	2600	1	0	2500	hit	440
+AR01	715	Response	2							14070682	3893	0
+AR01	717	Picture	run_3;block_5;Stern;3;2;0	run_3	block_5	Stern	3	2	0	14079989	0	1	2600	1	0	2500	other	0
+AR01	719	Picture	run_3;block_5;Viereck;3;2;0	run_3	block_5	Viereck	3	2	0	14113389	0	1	2600	1	0	2500	other	0
+AR01	721	Picture	run_3;block_5;Kreis;4;2;0	run_3	block_5	Kreis	4	2	0	14142789	0	1	2600	1	0	2500	other	0
+AR01	723	Picture	run_3;block_5;Stern;7;2;0	run_3	block_5	Stern	7	2	0	14170189	0	1	2600	1	0	2500	other	0
+AR01	725	Picture	run_3;block_5;Viereck;4;2;0	run_3	block_5	Viereck	4	2	0	14197589	0	1	2600	1	0	2500	other	0
+AR01	727	Picture	run_3;block_5;Dreieck;3;2;2	run_3	block_5	Dreieck	3	2	2	14230989	0	1	2600	1	0	2500	hit	447
+AR01	727	Response	2							14234202	3213	0
+AR01	729	Picture	run_3;block_5;Viereck;2;2;0	run_3	block_5	Viereck	2	2	0	14241589	0	1	2600	1	0	2500	other	0
+AR01	731	Picture	run_3;block_5;Kreis;4;2;0	run_3	block_5	Kreis	4	2	0	14276989	0	1	2600	1	0	2500	other	0
+AR01	733	Picture	run_3;block_5;Viereck;3;2;0	run_3	block_5	Viereck	3	2	0	14312389	0	1	2600	1	0	2500	other	0
+AR01	735	Picture	run_3;block_5;Dreieck;6;2;2	run_3	block_5	Dreieck	6	2	2	14341789	0	1	2600	1	0	2500	hit	452
+AR01	735	Response	2							14345242	3453	0
+AR01	737	Picture	run_3;block_5;Viereck;9;2;0	run_3	block_5	Viereck	9	2	0	14352589	0	1	2600	1	0	2500	other	0
+AR01	739	Picture	run_3;block_5;Dreieck;2;2;2	run_3	block_5	Dreieck	2	2	2	14385989	0	1	2600	1	0	2500	hit	455
+AR01	739	Response	2							14389642	3653	0
+AR01	741	Picture	run_3;block_5;Kreis;4;2;0	run_3	block_5	Kreis	4	2	0	14402989	0	1	2600	1	0	2500	other	0
+AR01	743	Picture	run_3;block_5;Kreis;7;2;0	run_3	block_5	Kreis	7	2	0	14430389	0	1	2600	1	0	2500	other	0
+AR01	745	Picture	run_3;block_5;Stern;4;2;0	run_3	block_5	Stern	4	2	0	14467789	0	1	2600	1	0	2500	other	0
+AR01	747	Picture	run_3;block_5;Viereck;7;2;0	run_3	block_5	Viereck	7	2	0	14507189	0	1	2600	1	0	2500	other	0
+AR01	749	Picture	run_3;block_5;Dreieck;7;2;2	run_3	block_5	Dreieck	7	2	2	14536589	0	1	2600	1	0	2500	hit	461
+AR01	749	Response	2							14542202	5613	0
+AR01	751	Picture	run_3;block_5;Viereck;9;2;0	run_3	block_5	Viereck	9	2	0	14555589	0	1	2600	1	0	2500	other	0
+AR01	753	Picture	run_3;block_5;Dreieck;4;2;2	run_3	block_5	Dreieck	4	2	2	14586989	0	1	2600	1	0	2500	hit	464
+AR01	753	Response	2							14592282	5293	0
+AR01	755	Picture	run_3;block_5;Stern;4;2;0	run_3	block_5	Stern	4	2	0	14597589	0	1	2600	1	0	2500	other	0
+AR01	757	Picture	run_3;block_5;Viereck;3;2;0	run_3	block_5	Viereck	3	2	0	14630989	0	1	2600	1	0	2500	other	0
+AR01	759	Picture	run_3;block_5;Kreis;7;2;0	run_3	block_5	Kreis	7	2	0	14670389	0	1	2600	1	0	2500	false_alarm	468
+AR01	759	Response	2							14674602	4213	0
+AR01	760	Response	3							14730522	55733	0
+AR01	762	Picture	run_3;block_6;Viereck;A;3;0	run_3	block_6	Viereck	A	3	0	14740789	0	1	2600	1	0	2500	other	0
+AR01	764	Picture	run_3;block_6;Kreis;A;3;0	run_3	block_6	Kreis	A	3	0	14774189	0	1	2600	1	0	2500	other	0
+AR01	766	Picture	run_3;block_6;Viereck;M;3;0	run_3	block_6	Viereck	M	3	0	14809589	0	1	2600	1	0	2500	other	0
+AR01	768	Picture	run_3;block_6;Dreieck;E;3;1	run_3	block_6	Dreieck	E	3	1	14834989	0	1	2600	1	0	2500	hit	474
+AR01	768	Response	1							14839643	4654	0
+AR01	770	Picture	run_3;block_6;Dreieck;T;3;0	run_3	block_6	Dreieck	T	3	0	14844989	0	1	2600	1	0	2500	other	0
+AR01	772	Picture	run_3;block_6;Dreieck;E;3;1	run_3	block_6	Dreieck	E	3	1	14874389	0	1	2600	1	0	2500	hit	477
+AR01	772	Response	1							14879481	5093	0
+AR01	774	Picture	run_3;block_6;Kreis;A;3;0	run_3	block_6	Kreis	A	3	0	14888789	0	1	2600	1	0	2500	other	0
+AR01	776	Picture	run_3;block_6;Stern;D;3;2	run_3	block_6	Stern	D	3	2	14930189	0	1	2600	1	0	2500	hit	480
+AR01	776	Response	2							14935401	5213	0
+AR01	778	Picture	run_3;block_6;Dreieck;A;3;0	run_3	block_6	Dreieck	A	3	0	14950789	0	1	2600	1	0	2500	other	0
+AR01	780	Picture	run_3;block_6;Viereck;E;3;1	run_3	block_6	Viereck	E	3	1	14976189	0	1	2600	1	0	2500	hit	483
+AR01	780	Response	1							14980201	4013	0
+AR01	782	Picture	run_3;block_6;Dreieck;M;3;0	run_3	block_6	Dreieck	M	3	0	14991589	0	1	2600	1	0	2500	other	0
+AR01	784	Picture	run_3;block_6;Stern;M;3;2	run_3	block_6	Stern	M	3	2	15024989	0	1	2600	1	0	2500	hit	486
+AR01	784	Response	2							15029481	4493	0
+AR01	786	Picture	run_3;block_6;Kreis;X;3;0	run_3	block_6	Kreis	X	3	0	15040789	0	1	2600	1	0	2500	other	0
+AR01	788	Picture	run_3;block_6;Dreieck;A;3;0	run_3	block_6	Dreieck	A	3	0	15082189	0	1	2600	1	0	2500	other	0
+AR01	790	Picture	run_3;block_6;Dreieck;D;3;0	run_3	block_6	Dreieck	D	3	0	15109589	0	1	2600	1	0	2500	other	0
+AR01	792	Picture	run_3;block_6;Kreis;M;3;0	run_3	block_6	Kreis	M	3	0	15138989	0	1	2600	1	0	2500	other	0
+AR01	794	Picture	run_3;block_6;Dreieck;A;3;0	run_3	block_6	Dreieck	A	3	0	15170389	0	1	2600	1	0	2500	other	0
+AR01	796	Picture	run_3;block_6;Stern;A;3;2	run_3	block_6	Stern	A	3	2	15193789	0	1	2600	1	0	2500	hit	493
+AR01	796	Response	2							15202361	8573	0
+AR01	798	Picture	run_3;block_6;Viereck;X;3;0	run_3	block_6	Viereck	X	3	0	15221789	0	1	2600	1	0	2500	other	0
+AR01	800	Picture	run_3;block_6;Viereck;M;3;0	run_3	block_6	Viereck	M	3	0	15253188	0	1	2600	1	0	2500	other	0
+AR01	802	Picture	run_3;block_6;Viereck;X;3;0	run_3	block_6	Viereck	X	3	0	15294588	0	1	2600	1	0	2500	other	0
+AR01	804	Picture	run_3;block_6;Kreis;X;3;0	run_3	block_6	Kreis	X	3	0	15321988	0	1	2600	1	0	2500	other	0
+AR01	806	Picture	run_3;block_6;Viereck;D;3;0	run_3	block_6	Viereck	D	3	0	15363388	0	1	2600	1	0	2500	other	0
+AR01	808	Picture	run_3;block_6;Kreis;M;3;0	run_3	block_6	Kreis	M	3	0	15400788	0	1	2600	1	0	2500	other	0
+AR01	810	Picture	run_3;block_6;Dreieck;A;3;0	run_3	block_6	Dreieck	A	3	0	15430188	0	1	2600	1	0	2500	other	0
+AR01	812	Picture	run_3;block_6;Dreieck;X;3;0	run_3	block_6	Dreieck	X	3	0	15457588	0	1	2600	1	0	2500	other	0
+AR01	813	Response	3							15501721	25933	0
+AR01	815	Picture	run_3;block_7;Dreieck;7;1;0	run_3	block_7	Dreieck	7	1	0	15511988	0	1	2600	1	0	2500	other	0
+AR01	817	Picture	run_3;block_7;Dreieck;2;1;1	run_3	block_7	Dreieck	2	1	1	15543388	0	1	2600	1	0	2500	hit	505
+AR01	817	Response	1							15547081	3693	0
+AR01	819	Picture	run_3;block_7;Dreieck;4;1;0	run_3	block_7	Dreieck	4	1	0	15566388	0	1	2600	1	0	2500	other	0
+AR01	821	Picture	run_3;block_7;Kreis;3;1;0	run_3	block_7	Kreis	3	1	0	15589788	0	1	2600	1	0	2500	other	0
+AR01	823	Picture	run_3;block_7;Kreis;2;1;1	run_3	block_7	Kreis	2	1	1	15623188	0	1	2600	1	0	2500	hit	509
+AR01	823	Response	1							15627001	3813	0
+AR01	825	Picture	run_3;block_7;Kreis;3;1;0	run_3	block_7	Kreis	3	1	0	15634388	0	1	2600	1	0	2500	other	0
+AR01	827	Picture	run_3;block_7;Kreis;2;1;1	run_3	block_7	Kreis	2	1	1	15675788	0	1	2600	1	0	2500	hit	512
+AR01	827	Response	1							15679961	4173	0
+AR01	829	Picture	run_3;block_7;Viereck;9;1;0	run_3	block_7	Viereck	9	1	0	15689388	0	1	2600	1	0	2500	other	0
+AR01	831	Picture	run_3;block_7;Viereck;4;1;0	run_3	block_7	Viereck	4	1	0	15728788	0	1	2600	1	0	2500	other	0
+AR01	833	Picture	run_3;block_7;Kreis;9;1;0	run_3	block_7	Kreis	9	1	0	15752188	0	1	2600	1	0	2500	other	0
+AR01	835	Picture	run_3;block_7;Dreieck;6;1;0	run_3	block_7	Dreieck	6	1	0	15783588	0	1	2600	1	0	2500	other	0
+AR01	837	Picture	run_3;block_7;Stern;4;1;0	run_3	block_7	Stern	4	1	0	15818988	0	1	2600	1	0	2500	other	0
+AR01	839	Picture	run_3;block_7;Kreis;3;1;0	run_3	block_7	Kreis	3	1	0	15846388	0	1	2600	1	0	2500	other	0
+AR01	841	Picture	run_3;block_7;Kreis;9;1;0	run_3	block_7	Kreis	9	1	0	15871788	0	1	2600	1	0	2500	other	0
+AR01	843	Picture	run_3;block_7;Viereck;2;1;1	run_3	block_7	Viereck	2	1	1	15905188	0	1	2600	1	0	2500	hit	521
+AR01	843	Response	1							15909401	4213	0
+AR01	845	Picture	run_3;block_7;Kreis;4;1;0	run_3	block_7	Kreis	4	1	0	15916788	0	1	2600	1	0	2500	other	0
+AR01	847	Picture	run_3;block_7;Dreieck;3;1;0	run_3	block_7	Dreieck	3	1	0	15946188	0	1	2600	1	0	2500	other	0
+AR01	849	Picture	run_3;block_7;Dreieck;7;1;0	run_3	block_7	Dreieck	7	1	0	15973588	0	1	2600	1	0	2500	other	0
+AR01	851	Picture	run_3;block_7;Kreis;4;1;0	run_3	block_7	Kreis	4	1	0	16010988	0	1	2600	1	0	2500	other	0
+AR01	853	Picture	run_3;block_7;Viereck;3;1;0	run_3	block_7	Viereck	3	1	0	16044388	0	1	2600	1	0	2500	other	0
+AR01	855	Picture	run_3;block_7;Kreis;2;1;1	run_3	block_7	Kreis	2	1	1	16085788	0	1	2600	1	0	2500	hit	528
+AR01	855	Response	1							16090281	4493	0
+AR01	857	Picture	run_3;block_7;Dreieck;6;1;0	run_3	block_7	Dreieck	6	1	0	16109588	0	1	2600	1	0	2500	other	0
+AR01	859	Picture	run_3;block_7;Viereck;9;1;0	run_3	block_7	Viereck	9	1	0	16140988	0	1	2600	1	0	2500	other	0
+AR01	861	Picture	run_3;block_7;Dreieck;6;1;0	run_3	block_7	Dreieck	6	1	0	16164388	0	1	2600	1	0	2500	other	0
+AR01	863	Picture	run_3;block_7;Kreis;4;1;0	run_3	block_7	Kreis	4	1	0	16189788	0	1	2600	1	0	2500	other	0
+AR01	865	Picture	run_3;block_7;Dreieck;2;1;1	run_3	block_7	Dreieck	2	1	1	16219188	0	1	2600	1	0	2500	hit	534
+AR01	865	Response	1							16222761	3573	0
+AR01	866	Response	3							16279241	56253	0
+AR01	868	Picture	run_3;block_8;Kreis;A;3;0	run_3	block_8	Kreis	A	3	0	16289588	0	1	2600	1	0	2500	other	0
+AR01	870	Picture	run_3;block_8;Kreis;D;3;1	run_3	block_8	Kreis	D	3	1	16314988	0	1	2600	1	0	2500	hit	538
+AR01	870	Response	1							16319401	4413	0
+AR01	872	Picture	run_3;block_8;Stern;X;3;0	run_3	block_8	Stern	X	3	0	16324788	0	1	2600	1	0	2500	other	0
+AR01	874	Picture	run_3;block_8;Stern;E;3;0	run_3	block_8	Stern	E	3	0	16350188	0	1	2600	1	0	2500	other	0
+AR01	876	Picture	run_3;block_8;Dreieck;A;3;0	run_3	block_8	Dreieck	A	3	0	16377588	0	1	2600	1	0	2500	other	0
+AR01	878	Picture	run_3;block_8;Stern;X;3;0	run_3	block_8	Stern	X	3	0	16408988	0	1	2600	1	0	2500	other	0
+AR01	880	Picture	run_3;block_8;Stern;A;3;0	run_3	block_8	Stern	A	3	0	16446388	0	1	2600	1	0	2500	other	0
+AR01	882	Picture	run_3;block_8;Stern;T;3;0	run_3	block_8	Stern	T	3	0	16473788	0	1	2600	1	0	2500	other	0
+AR01	884	Picture	run_3;block_8;Kreis;T;3;0	run_3	block_8	Kreis	T	3	0	16507188	0	1	2600	1	0	2500	other	0
+AR01	886	Picture	run_3;block_8;Dreieck;D;3;1	run_3	block_8	Dreieck	D	3	1	16536588	0	1	2600	1	0	2500	hit	547
+AR01	886	Response	1							16540921	4333	0
+AR01	888	Picture	run_3;block_8;Kreis;X;3;0	run_3	block_8	Kreis	X	3	0	16548188	0	1	2600	1	0	2500	other	0
+AR01	890	Picture	run_3;block_8;Dreieck;X;3;0	run_3	block_8	Dreieck	X	3	0	16573588	0	1	2600	1	0	2500	other	0
+AR01	892	Picture	run_3;block_8;Dreieck;T;3;0	run_3	block_8	Dreieck	T	3	0	16606987	0	1	2600	1	0	2500	other	0
+AR01	894	Picture	run_3;block_8;Kreis;D;3;1	run_3	block_8	Kreis	D	3	1	16648387	0	1	2600	1	0	2500	hit	552
+AR01	894	Response	1							16653081	4693	0
+AR01	896	Picture	run_3;block_8;Stern;T;3;0	run_3	block_8	Stern	T	3	0	16658387	0	1	2600	1	0	2500	other	0
+AR01	898	Picture	run_3;block_8;Stern;A;3;0	run_3	block_8	Stern	A	3	0	16681787	0	1	2600	1	0	2500	other	0
+AR01	900	Picture	run_3;block_8;Kreis;A;3;0	run_3	block_8	Kreis	A	3	0	16707187	0	1	2600	1	0	2500	other	0
+AR01	902	Picture	run_3;block_8;Dreieck;T;3;0	run_3	block_8	Dreieck	T	3	0	16738587	0	1	2600	1	0	2500	other	0
+AR01	904	Picture	run_3;block_8;Kreis;M;3;0	run_3	block_8	Kreis	M	3	0	16769987	0	1	2600	1	0	2500	other	0
+AR01	906	Picture	run_3;block_8;Viereck;X;3;2	run_3	block_8	Viereck	X	3	2	16799387	0	1	2600	1	0	2500	hit	559
+AR01	906	Response	2							16806920	7533	0
+AR01	908	Picture	run_3;block_8;Dreieck;M;3;0	run_3	block_8	Dreieck	M	3	0	16820187	0	1	2600	1	0	2500	other	0
+AR01	910	Picture	run_3;block_8;Kreis;E;3;0	run_3	block_8	Kreis	E	3	0	16851587	0	1	2600	1	0	2500	other	0
+AR01	912	Picture	run_3;block_8;Viereck;M;3;2	run_3	block_8	Viereck	M	3	2	16886987	0	1	2600	1	0	2500	hit	563
+AR01	912	Response	2							16894360	7373	0
+AR01	914	Picture	run_3;block_8;Kreis;T;3;0	run_3	block_8	Kreis	T	3	0	16901787	0	1	2600	1	0	2500	other	0
+AR01	916	Picture	run_3;block_8;Viereck;E;3;2	run_3	block_8	Viereck	E	3	2	16931187	0	1	2600	1	0	2500	hit	566
+AR01	916	Response	2							16943000	11813	0
+AR01	918	Picture	run_3;block_8;Kreis;A;3;0	run_3	block_8	Kreis	A	3	0	16966387	0	1	2600	1	0	2500	other	0
+AR01	919	Quit								17054600	70013	NA
+
+
+{
+   "app": "Presentation Version 20.1 Build 12.04.17",
+   "device": "Dell Inc. Latitude 3590",
+   "experiment": "{3EDEE026-D8DC-4466-8CD4-50C9D6AA7BA0}",
+   "os": "Windows 10 64 bit",
+   "package": "",
+   "parameters": {
+      "configuration": "Default configuration"
+   },
+   "scenario": "Praxisprojekt.sce",
+   "subject": "AR01",
+   "timestamp": "2018/07/09 11:05:34 GMT"
+}

@@ -1,0 +1,417 @@
+﻿runid1	blockid1	form1	character1	seperateAttention1	target1	time1	code2	time2	time_diff	rm_type	subject1
+run_1	block_4	Stern	6	2	0	500517	2	500877,9	360,9	rm_false_alarm	JT02
+run_2	block_3	Viereck	X	3	0	843083,8	1	843957,7	873,9	rm_false_alarm	JT02
+run_1	block_1	Kreis	E	2	2	228900,1	2	229350,1	450	rm_hit	JT02
+run_1	block_1	Kreis	A	2	2	241483,5	2	241998	514,5	rm_hit	JT02
+run_1	block_1	Kreis	M	2	2	246066,8	2	246966	899,2	rm_hit	JT02
+run_1	block_1	Kreis	A	2	2	256766,8	2	257182	415,2	rm_hit	JT02
+run_1	block_1	Kreis	X	2	2	261250,1	2	261822	571,9	rm_hit	JT02
+run_1	block_1	Kreis	E	2	2	296083,5	2	296470	386,5	rm_hit	JT02
+run_1	block_2	Viereck	3	1	1	324716,8	1	325174	457,2	rm_hit	JT02
+run_1	block_2	Viereck	3	1	1	340766,9	1	341198	431,1	rm_hit	JT02
+run_1	block_2	Stern	3	1	1	347066,9	1	347494	427,1	rm_hit	JT02
+run_1	block_2	Viereck	3	1	1	356683,5	1	357054	370,5	rm_hit	JT02
+run_1	block_2	Kreis	3	1	1	367383,5	1	367758	374,5	rm_hit	JT02
+run_1	block_2	Stern	3	1	1	372016,9	1	372406	389,1	rm_hit	JT02
+run_1	block_3	Viereck	M	1	1	394833,6	1	395350	516,4	rm_hit	JT02
+run_1	block_3	Kreis	M	1	1	406483,6	1	406886	402,4	rm_hit	JT02
+run_1	block_3	Viereck	M	1	1	419616,9	1	420022	405,1	rm_hit	JT02
+run_1	block_3	Dreieck	M	1	1	427216,9	1	427613,9	397	rm_hit	JT02
+run_1	block_3	Stern	M	1	1	432083,6	1	432389,9	306,3	rm_hit	JT02
+run_1	block_3	Stern	M	1	1	442716,9	1	443125,9	409	rm_hit	JT02
+run_1	block_4	Dreieck	7	2	2	475466,9	2	475901,9	435	rm_hit	JT02
+run_1	block_4	Dreieck	2	2	2	489966,9	2	490382	415,1	rm_hit	JT02
+run_1	block_4	Dreieck	9	2	2	503200,3	2	503709,9	509,6	rm_hit	JT02
+run_1	block_4	Dreieck	3	2	2	511700,3	2	512109,9	409,6	rm_hit	JT02
+run_1	block_4	Dreieck	4	2	2	517567	2	518013,9	446,9	rm_hit	JT02
+run_1	block_4	Dreieck	2	2	2	535217	2	535717,9	500,9	rm_hit	JT02
+run_2	block_1	Stern	A	3	2	680583,7	2	681133,8	550,1	rm_hit	JT02
+run_2	block_1	Kreis	X	3	1	686000,4	1	686389,8	389,4	rm_hit	JT02
+run_2	block_1	Stern	T	3	2	720250,4	2	720741,8	491,4	rm_hit	JT02
+run_2	block_1	Stern	A	3	2	725000,4	2	725781,8	781,4	rm_hit	JT02
+run_2	block_1	Kreis	X	3	1	729250,4	1	729821,8	571,4	rm_hit	JT02
+run_2	block_1	Kreis	X	3	1	733083,8	1	733573,8	490	rm_hit	JT02
+run_2	block_2	Viereck	7	3	2	770133,8	2	770949,8	816	rm_hit	JT02
+run_2	block_2	Viereck	7	3	2	777150,5	2	777509,8	359,3	rm_hit	JT02
+run_2	block_2	Viereck	9	3	2	785300,5	2	785757,7	457,2	rm_hit	JT02
+run_2	block_2	Dreieck	4	3	1	798817,1	1	799437,7	620,6	rm_hit	JT02
+run_2	block_2	Stern	4	3	1	804500,5	1	805325,7	825,2	rm_hit	JT02
+run_2	block_2	Stern	4	3	1	815250,5	1	815821,7	571,2	rm_hit	JT02
+run_2	block_3	Stern	A	3	1	829800,5	1	830309,7	509,2	rm_hit	JT02
+run_2	block_3	Viereck	A	3	1	836767,2	1	837229,7	462,5	rm_hit	JT02
+run_2	block_3	Kreis	T	3	2	840283,8	2	841349,7	1065,9	rm_hit	JT02
+run_2	block_3	Dreieck	A	3	1	845883,8	1	846437,7	553,9	rm_hit	JT02
+run_2	block_3	Kreis	T	3	2	874033,9	2	874893,7	859,8	rm_hit	JT02
+run_2	block_3	Kreis	E	3	2	888750,5	2	889477,7	727,2	rm_hit	JT02
+run_2	block_4	Dreieck	9	3	2	905383,9	2	906133,7	749,8	rm_hit	JT02
+run_2	block_4	Dreieck	2	3	2	940600,6	2	941285,7	685,1	rm_hit	JT02
+run_2	block_4	Dreieck	7	3	2	947150,6	2	947797,7	647,1	rm_hit	JT02
+run_2	block_4	Viereck	6	3	1	959333,9	1	959837,7	503,8	rm_hit	JT02
+run_2	block_4	Kreis	6	3	1	967833,9	1	968821,6	987,7	rm_hit	JT02
+run_2	block_4	Kreis	6	3	1	973883,9	1	974317,6	433,7	rm_hit	JT02
+run_3	block_1	Stern	A	2	2	1118384	2	1118813,6	429,6	rm_hit	JT02
+run_3	block_1	Stern	M	2	2	1123067,4	2	1123525,5	458,1	rm_hit	JT02
+run_3	block_1	Stern	E	2	2	1145050,7	2	1145597,5	546,8	rm_hit	JT02
+run_3	block_1	Stern	A	2	2	1150467,4	2	1150877,5	410,1	rm_hit	JT02
+run_3	block_1	Stern	X	2	2	1158467,4	2	1158901,5	434,1	rm_hit	JT02
+run_3	block_1	Stern	X	2	2	1165700,7	2	1166149,5	448,8	rm_hit	JT02
+run_3	block_2	Stern	7	3	1	1197184,1	1	1197669,5	485,4	rm_hit	JT02
+run_3	block_2	Kreis	7	3	1	1200934,1	1	1201653,5	719,4	rm_hit	JT02
+run_3	block_2	Dreieck	7	3	1	1221784,1	1	1222397,5	613,4	rm_hit	JT02
+run_3	block_2	Viereck	3	3	2	1227267,4	2	1227757,5	490,1	rm_hit	JT02
+run_3	block_2	Viereck	6	3	2	1232017,4	2	1232533,5	516,1	rm_hit	JT02
+run_3	block_2	Viereck	3	3	2	1253867,4	2	1254405,5	538,1	rm_hit	JT02
+run_3	block_3	Stern	T	1	1	1278834,1	1	1279557,5	723,4	rm_hit	JT02
+run_3	block_3	Stern	T	1	1	1303217,5	1	1303717,4	499,9	rm_hit	JT02
+run_3	block_3	Dreieck	T	1	1	1312317,5	1	1312765,4	447,9	rm_hit	JT02
+run_3	block_3	Dreieck	T	1	1	1322900,8	1	1323261,4	360,6	rm_hit	JT02
+run_3	block_3	Dreieck	T	1	1	1331250,8	1	1331781,4	530,6	rm_hit	JT02
+run_3	block_3	Stern	T	1	1	1340784,2	1	1341205,4	421,2	rm_hit	JT02
+run_3	block_4	Stern	9	3	1	1364900,8	1	1365485,4	584,6	rm_hit	JT02
+run_3	block_4	Viereck	9	3	1	1378950,8	1	1380381,4	1430,6	rm_hit	JT02
+run_3	block_4	Kreis	6	3	2	1402717,5	2	1403325,4	607,9	rm_hit	JT02
+run_3	block_4	Viereck	9	3	1	1409317,5	1	1410269,4	951,9	rm_hit	JT02
+run_3	block_4	Kreis	2	3	2	1418667,5	2	1419421,4	753,9	rm_hit	JT02
+run_3	block_5	Dreieck	6	2	2	1447350,9	2	1447845,4	494,5	rm_hit	JT02
+run_3	block_5	Dreieck	7	2	2	1451700,9	2	1452285,4	584,5	rm_hit	JT02
+run_3	block_5	Dreieck	3	2	2	1460484,2	2	1460909,4	425,2	rm_hit	JT02
+run_3	block_5	Dreieck	6	2	2	1466567,6	2	1467045,4	477,8	rm_hit	JT02
+run_3	block_5	Dreieck	2	2	2	1482700,9	2	1483205,3	504,4	rm_hit	JT02
+run_3	block_5	Dreieck	9	2	2	1494534,3	2	1494981,3	447	rm_hit	JT02
+run_3	block_6	Dreieck	E	3	1	1526984,3	1	1527981,3	997	rm_hit	JT02
+run_3	block_6	Stern	A	3	2	1532851	2	1533453,3	602,3	rm_hit	JT02
+run_3	block_6	Dreieck	E	3	1	1550451	1	1551125,3	674,3	rm_hit	JT02
+run_3	block_6	Dreieck	E	3	1	1579517,6	1	1580037,3	519,7	rm_hit	JT02
+run_3	block_6	Stern	D	3	2	1585301	2	1585877,3	576,3	rm_hit	JT02
+run_3	block_7	Kreis	2	1	1	1599851	1	1600237,3	386,3	rm_hit	JT02
+run_3	block_7	Viereck	2	1	1	1608634,3	1	1609045,3	411	rm_hit	JT02
+run_3	block_7	Dreieck	2	1	1	1618567,7	1	1618925,3	357,6	rm_hit	JT02
+run_3	block_7	Viereck	2	1	1	1646917,7	1	1647269,3	351,6	rm_hit	JT02
+run_3	block_7	Stern	2	1	1	1662734,4	1	1663173,2	438,8	rm_hit	JT02
+run_3	block_7	Stern	2	1	1	1667234,4	1	1667693,3	458,9	rm_hit	JT02
+run_3	block_8	Dreieck	D	3	1	1685167,7	1	1685797,2	629,5	rm_hit	JT02
+run_3	block_8	Dreieck	D	3	1	1709851,1	1	1710565,3	714,2	rm_hit	JT02
+run_3	block_8	Viereck	T	3	2	1725634,4	2	1726461,2	826,8	rm_hit	JT02
+run_3	block_8	Viereck	T	3	2	1731717,7	2	1732309,2	591,5	rm_hit	JT02
+run_3	block_8	Stern	D	3	1	1740901,1	1	1741533,3	632,2	rm_hit	JT02
+run_3	block_8	Viereck	A	3	2	1754401,1	2	1755045,2	644,1	rm_hit	JT02
+run_3	block_4	Kreis	3	3	2	1390517,5	1	1391189,4	671,9	rm_incorrect	JT02
+run_3	block_6	Stern	X	3	2	1566184,3	 	-1	-1566185,3	rm_miss	JT02
+run_1	block_1	Dreieck	X	2	0	221433,4	 	-1	-221434,4	rm_other	JT02
+run_1	block_1	Stern	A	2	0	225566,8	 	-1	-225567,8	rm_other	JT02
+run_1	block_1	Stern	A	2	0	231483,5	 	-1	-231484,5	rm_other	JT02
+run_1	block_1	Stern	D	2	0	235016,8	 	-1	-235017,8	rm_other	JT02
+run_1	block_1	Stern	X	2	0	239150,1	 	-1	-239151,1	rm_other	JT02
+run_1	block_1	Viereck	E	2	0	243533,5	 	-1	-243534,5	rm_other	JT02
+run_1	block_1	Stern	A	2	0	249300,1	 	-1	-249301,1	rm_other	JT02
+run_1	block_1	Stern	D	2	0	253433,5	 	-1	-253434,5	rm_other	JT02
+run_1	block_1	Viereck	X	2	0	258916,8	 	-1	-258917,8	rm_other	JT02
+run_1	block_1	Dreieck	E	2	0	262950,1	 	-1	-262951,1	rm_other	JT02
+run_1	block_1	Stern	T	2	0	265683,5	 	-1	-265684,5	rm_other	JT02
+run_1	block_1	Stern	E	2	0	269816,8	 	-1	-269817,8	rm_other	JT02
+run_1	block_1	Stern	D	2	0	273950,1	 	-1	-273951,1	rm_other	JT02
+run_1	block_1	Stern	E	2	0	277883,5	 	-1	-277884,5	rm_other	JT02
+run_1	block_1	Dreieck	T	2	0	280816,8	 	-1	-280817,8	rm_other	JT02
+run_1	block_1	Viereck	M	2	0	283750,2	 	-1	-283751,2	rm_other	JT02
+run_1	block_1	Viereck	A	2	0	286883,5	 	-1	-286884,5	rm_other	JT02
+run_1	block_1	Stern	M	2	0	289416,8	 	-1	-289417,8	rm_other	JT02
+run_1	block_1	Viereck	X	2	0	292550,2	 	-1	-292551,2	rm_other	JT02
+run_1	block_1	Viereck	D	2	0	298600,2	 	-1	-298601,2	rm_other	JT02
+run_1	block_2	Viereck	7	1	0	307116,8	 	-1	-307117,8	rm_other	JT02
+run_1	block_2	Kreis	2	1	0	309450,2	 	-1	-309451,2	rm_other	JT02
+run_1	block_2	Stern	6	1	0	312183,5	 	-1	-312184,5	rm_other	JT02
+run_1	block_2	Stern	9	1	0	315316,8	 	-1	-315317,8	rm_other	JT02
+run_1	block_2	Stern	7	1	0	317650,2	 	-1	-317651,2	rm_other	JT02
+run_1	block_2	Viereck	9	1	0	321583,5	 	-1	-321584,5	rm_other	JT02
+run_1	block_2	Viereck	2	1	0	325900,2	 	-1	-325901,2	rm_other	JT02
+run_1	block_2	Stern	2	1	0	328433,5	 	-1	-328434,5	rm_other	JT02
+run_1	block_2	Dreieck	4	1	0	331766,8	 	-1	-331767,8	rm_other	JT02
+run_1	block_2	Stern	2	1	0	335300,2	 	-1	-335301,2	rm_other	JT02
+run_1	block_2	Kreis	2	1	0	338433,5	 	-1	-338434,5	rm_other	JT02
+run_1	block_2	Kreis	4	1	0	343533,5	 	-1	-343534,5	rm_other	JT02
+run_1	block_2	Viereck	2	1	0	349816,9	 	-1	-349817,9	rm_other	JT02
+run_1	block_2	Stern	2	1	0	353550,2	 	-1	-353551,2	rm_other	JT02
+run_1	block_2	Viereck	2	1	0	357783,5	 	-1	-357784,5	rm_other	JT02
+run_1	block_2	Stern	9	1	0	360316,9	 	-1	-360317,9	rm_other	JT02
+run_1	block_2	Stern	6	1	0	363650,2	 	-1	-363651,2	rm_other	JT02
+run_1	block_2	Stern	6	1	0	369683,5	 	-1	-369684,5	rm_other	JT02
+run_1	block_2	Dreieck	4	1	0	373933,5	 	-1	-373934,5	rm_other	JT02
+run_1	block_2	Stern	9	1	0	376266,9	 	-1	-376267,9	rm_other	JT02
+run_1	block_3	Viereck	X	1	0	384633,5	 	-1	-384634,5	rm_other	JT02
+run_1	block_3	Stern	E	1	0	388166,9	 	-1	-388167,9	rm_other	JT02
+run_1	block_3	Kreis	X	1	0	392300,2	 	-1	-392301,2	rm_other	JT02
+run_1	block_3	Dreieck	T	1	0	397083,6	 	-1	-397084,6	rm_other	JT02
+run_1	block_3	Stern	E	1	0	399816,9	 	-1	-399817,9	rm_other	JT02
+run_1	block_3	Viereck	T	1	0	403350,2	 	-1	-403351,2	rm_other	JT02
+run_1	block_3	Kreis	T	1	0	409216,9	 	-1	-409217,9	rm_other	JT02
+run_1	block_3	Dreieck	T	1	0	412550,2	 	-1	-412551,2	rm_other	JT02
+run_1	block_3	Stern	A	1	0	416083,6	 	-1	-416084,6	rm_other	JT02
+run_1	block_3	Kreis	T	1	0	420750,2	 	-1	-420751,2	rm_other	JT02
+run_1	block_3	Stern	X	1	0	423283,6	 	-1	-423284,6	rm_other	JT02
+run_1	block_3	Stern	X	1	0	428150,2	 	-1	-428151,2	rm_other	JT02
+run_1	block_3	Stern	E	1	0	433916,9	 	-1	-433917,9	rm_other	JT02
+run_1	block_3	Kreis	T	1	0	437450,2	 	-1	-437451,2	rm_other	JT02
+run_1	block_3	Dreieck	E	1	0	439783,6	 	-1	-439784,6	rm_other	JT02
+run_1	block_3	Stern	A	1	0	443650,3	 	-1	-443651,3	rm_other	JT02
+run_1	block_3	Kreis	A	1	0	446983,6	 	-1	-446984,6	rm_other	JT02
+run_1	block_3	Stern	T	1	0	449716,9	 	-1	-449717,9	rm_other	JT02
+run_1	block_3	Kreis	D	1	0	452450,3	 	-1	-452451,3	rm_other	JT02
+run_1	block_3	Dreieck	E	1	0	455783,6	 	-1	-455784,6	rm_other	JT02
+run_1	block_4	Kreis	3	2	0	462933,6	 	-1	-462934,6	rm_other	JT02
+run_1	block_4	Kreis	4	2	0	465866,9	 	-1	-465867,9	rm_other	JT02
+run_1	block_4	Viereck	7	2	0	469400,3	 	-1	-469401,3	rm_other	JT02
+run_1	block_4	Kreis	2	2	0	472533,6	 	-1	-472534,6	rm_other	JT02
+run_1	block_4	Viereck	4	2	0	478033,6	 	-1	-478034,6	rm_other	JT02
+run_1	block_4	Kreis	9	2	0	481166,9	 	-1	-481167,9	rm_other	JT02
+run_1	block_4	Kreis	6	2	0	483700,3	 	-1	-483701,3	rm_other	JT02
+run_1	block_4	Kreis	9	2	0	486033,6	 	-1	-486034,6	rm_other	JT02
+run_1	block_4	Stern	4	2	0	491116,9	 	-1	-491117,9	rm_other	JT02
+run_1	block_4	Viereck	7	2	0	494250,3	 	-1	-494251,3	rm_other	JT02
+run_1	block_4	Stern	2	2	0	497383,6	 	-1	-497384,6	rm_other	JT02
+run_1	block_4	Stern	4	2	0	505633,6	 	-1	-505634,6	rm_other	JT02
+run_1	block_4	Stern	6	2	0	508167	 	-1	-508168	rm_other	JT02
+run_1	block_4	Kreis	6	2	0	514233,6	 	-1	-514234,6	rm_other	JT02
+run_1	block_4	Kreis	9	2	0	520150,3	 	-1	-520151,3	rm_other	JT02
+run_1	block_4	Stern	2	2	0	523683,6	 	-1	-523684,6	rm_other	JT02
+run_1	block_4	Viereck	7	2	0	526617	 	-1	-526618	rm_other	JT02
+run_1	block_4	Viereck	3	2	0	529350,3	 	-1	-529351,3	rm_other	JT02
+run_1	block_4	Stern	2	2	0	532283,6	 	-1	-532284,6	rm_other	JT02
+run_2	block_1	Viereck	D	3	0	668450,4	 	-1	-668451,4	rm_other	JT02
+run_2	block_1	Viereck	E	3	0	670783,7	 	-1	-670784,7	rm_other	JT02
+run_2	block_1	Dreieck	E	3	0	673917,1	 	-1	-673918,1	rm_other	JT02
+run_2	block_1	Kreis	E	3	0	677650,4	 	-1	-677651,4	rm_other	JT02
+run_2	block_1	Viereck	E	3	0	682067,1	 	-1	-682068,1	rm_other	JT02
+run_2	block_1	Dreieck	E	3	0	687517,1	 	-1	-687518,1	rm_other	JT02
+run_2	block_1	Kreis	A	3	0	690650,4	 	-1	-690651,4	rm_other	JT02
+run_2	block_1	Kreis	T	3	0	694783,7	 	-1	-694784,7	rm_other	JT02
+run_2	block_1	Viereck	E	3	0	697917,1	 	-1	-697918,1	rm_other	JT02
+run_2	block_1	Dreieck	D	3	0	701250,4	 	-1	-701251,4	rm_other	JT02
+run_2	block_1	Viereck	A	3	0	704983,8	 	-1	-704984,8	rm_other	JT02
+run_2	block_1	Kreis	A	3	0	707917,1	 	-1	-707918,1	rm_other	JT02
+run_2	block_1	Dreieck	M	3	0	711450,4	 	-1	-711451,4	rm_other	JT02
+run_2	block_1	Kreis	A	3	0	715383,8	 	-1	-715384,8	rm_other	JT02
+run_2	block_1	Viereck	A	3	0	717917,1	 	-1	-717918,1	rm_other	JT02
+run_2	block_1	Dreieck	M	3	0	722667,1	 	-1	-722668,1	rm_other	JT02
+run_2	block_1	Dreieck	E	3	0	726717,1	 	-1	-726718,1	rm_other	JT02
+run_2	block_1	Kreis	M	3	0	730550,4	 	-1	-730551,4	rm_other	JT02
+run_2	block_1	Kreis	D	3	0	734100,4	 	-1	-734101,4	rm_other	JT02
+run_2	block_1	Dreieck	M	3	0	736633,8	 	-1	-736634,8	rm_other	JT02
+run_2	block_2	Dreieck	3	3	0	745467,1	 	-1	-745468,1	rm_other	JT02
+run_2	block_2	Stern	7	3	0	749200,4	 	-1	-749201,4	rm_other	JT02
+run_2	block_2	Dreieck	7	3	0	752333,8	 	-1	-752334,8	rm_other	JT02
+run_2	block_2	Stern	2	3	0	755467,1	 	-1	-755468,1	rm_other	JT02
+run_2	block_2	Stern	3	3	0	758000,5	 	-1	-758001,5	rm_other	JT02
+run_2	block_2	Stern	7	3	0	761533,8	 	-1	-761534,8	rm_other	JT02
+run_2	block_2	Dreieck	6	3	0	765267,1	 	-1	-765268,1	rm_other	JT02
+run_2	block_2	Kreis	6	3	0	767800,5	 	-1	-767801,5	rm_other	JT02
+run_2	block_2	Dreieck	3	3	0	771483,8	 	-1	-771484,8	rm_other	JT02
+run_2	block_2	Dreieck	2	3	0	774217,1	 	-1	-774218,1	rm_other	JT02
+run_2	block_2	Stern	6	3	0	779433,8	 	-1	-779434,8	rm_other	JT02
+run_2	block_2	Kreis	9	3	0	782167,1	 	-1	-782168,1	rm_other	JT02
+run_2	block_2	Dreieck	3	3	0	786683,8	 	-1	-786684,8	rm_other	JT02
+run_2	block_2	Stern	9	3	0	789617,1	 	-1	-789618,1	rm_other	JT02
+run_2	block_2	Stern	2	3	0	792350,5	 	-1	-792351,5	rm_other	JT02
+run_2	block_2	Dreieck	6	3	0	795483,8	 	-1	-795484,8	rm_other	JT02
+run_2	block_2	Kreis	3	3	0	800367,2	 	-1	-800368,2	rm_other	JT02
+run_2	block_2	Kreis	2	3	0	807050,5	 	-1	-807051,5	rm_other	JT02
+run_2	block_2	Stern	6	3	0	809583,8	 	-1	-809584,8	rm_other	JT02
+run_2	block_2	Stern	7	3	0	812717,2	 	-1	-812718,2	rm_other	JT02
+run_2	block_3	Dreieck	T	3	0	823533,8	 	-1	-823534,8	rm_other	JT02
+run_2	block_3	Viereck	T	3	0	826667,2	 	-1	-826668,2	rm_other	JT02
+run_2	block_3	Stern	E	3	0	832633,8	 	-1	-832634,8	rm_other	JT02
+run_2	block_3	Viereck	D	3	0	837950,5	 	-1	-837951,5	rm_other	JT02
+run_2	block_3	Dreieck	X	3	0	848367,2	 	-1	-848368,2	rm_other	JT02
+run_2	block_3	Dreieck	T	3	0	851500,5	 	-1	-851501,5	rm_other	JT02
+run_2	block_3	Viereck	E	3	0	854433,8	 	-1	-854434,8	rm_other	JT02
+run_2	block_3	Dreieck	X	3	0	856967,2	 	-1	-856968,2	rm_other	JT02
+run_2	block_3	Dreieck	M	3	0	859500,5	 	-1	-859501,5	rm_other	JT02
+run_2	block_3	Stern	M	3	0	863433,9	 	-1	-863434,9	rm_other	JT02
+run_2	block_3	Stern	T	3	0	867367,2	 	-1	-867368,2	rm_other	JT02
+run_2	block_3	Dreieck	T	3	0	870300,5	 	-1	-870301,5	rm_other	JT02
+run_2	block_3	Viereck	M	3	0	875417,2	 	-1	-875418,2	rm_other	JT02
+run_2	block_3	Stern	X	3	0	878750,5	 	-1	-878751,5	rm_other	JT02
+run_2	block_3	Viereck	E	3	0	881883,9	 	-1	-881884,9	rm_other	JT02
+run_2	block_3	Dreieck	E	3	0	885217,2	 	-1	-885218,2	rm_other	JT02
+run_2	block_3	Stern	X	3	0	890200,5	 	-1	-890201,5	rm_other	JT02
+run_2	block_3	Viereck	T	3	0	893333,9	 	-1	-893334,9	rm_other	JT02
+run_2	block_3	Dreieck	X	3	0	896467,2	 	-1	-896468,2	rm_other	JT02
+run_2	block_4	Stern	7	3	0	902450,5	 	-1	-902451,5	rm_other	JT02
+run_2	block_4	Kreis	9	3	0	908267,2	 	-1	-908268,2	rm_other	JT02
+run_2	block_4	Viereck	7	3	0	911800,6	 	-1	-911801,6	rm_other	JT02
+run_2	block_4	Kreis	9	3	0	915133,9	 	-1	-915134,9	rm_other	JT02
+run_2	block_4	Stern	4	3	0	917867,2	 	-1	-917868,2	rm_other	JT02
+run_2	block_4	Stern	2	3	0	920400,6	 	-1	-920401,6	rm_other	JT02
+run_2	block_4	Kreis	4	3	0	924333,9	 	-1	-924334,9	rm_other	JT02
+run_2	block_4	Stern	7	3	0	928267,2	 	-1	-928268,2	rm_other	JT02
+run_2	block_4	Stern	9	3	0	931200,6	 	-1	-931201,6	rm_other	JT02
+run_2	block_4	Kreis	4	3	0	934333,9	 	-1	-934334,9	rm_other	JT02
+run_2	block_4	Kreis	3	3	0	937467,2	 	-1	-937468,2	rm_other	JT02
+run_2	block_4	Viereck	9	3	0	943417,2	 	-1	-943418,2	rm_other	JT02
+run_2	block_4	Viereck	4	3	0	949333,9	 	-1	-949334,9	rm_other	JT02
+run_2	block_4	Kreis	7	3	0	952867,2	 	-1	-952868,2	rm_other	JT02
+run_2	block_4	Viereck	3	3	0	957000,6	 	-1	-957001,6	rm_other	JT02
+run_2	block_4	Viereck	2	3	0	960767,3	 	-1	-960768,3	rm_other	JT02
+run_2	block_4	Viereck	3	3	0	963900,6	 	-1	-963901,6	rm_other	JT02
+run_2	block_4	Kreis	9	3	0	970750,6	 	-1	-970751,6	rm_other	JT02
+run_2	block_4	Stern	2	3	0	975850,6	 	-1	-975851,6	rm_other	JT02
+run_2	block_4	Kreis	7	3	0	979583,9	 	-1	-979584,9	rm_other	JT02
+run_3	block_1	Dreieck	A	2	0	1108184	 	-1	-1108185	rm_other	JT02
+run_3	block_1	Viereck	D	2	0	1111917,3	 	-1	-1111918,3	rm_other	JT02
+run_3	block_1	Kreis	X	2	0	1115450,7	 	-1	-1115451,7	rm_other	JT02
+run_3	block_1	Kreis	T	2	0	1120734	 	-1	-1120735	rm_other	JT02
+run_3	block_1	Kreis	M	2	0	1125250,7	 	-1	-1125251,7	rm_other	JT02
+run_3	block_1	Kreis	T	2	0	1127984	 	-1	-1127985	rm_other	JT02
+run_3	block_1	Dreieck	T	2	0	1132117,4	 	-1	-1132118,4	rm_other	JT02
+run_3	block_1	Kreis	T	2	0	1136250,7	 	-1	-1136251,7	rm_other	JT02
+run_3	block_1	Viereck	M	2	0	1139584	 	-1	-1139585	rm_other	JT02
+run_3	block_1	Kreis	E	2	0	1142117,4	 	-1	-1142118,4	rm_other	JT02
+run_3	block_1	Viereck	T	2	0	1147534	 	-1	-1147535	rm_other	JT02
+run_3	block_1	Viereck	D	2	0	1151600,7	 	-1	-1151601,7	rm_other	JT02
+run_3	block_1	Dreieck	T	2	0	1155134	 	-1	-1155135	rm_other	JT02
+run_3	block_1	Dreieck	T	2	0	1159834	 	-1	-1159835	rm_other	JT02
+run_3	block_1	Dreieck	A	2	0	1162967,4	 	-1	-1162968,4	rm_other	JT02
+run_3	block_1	Kreis	M	2	0	1168484	 	-1	-1168485	rm_other	JT02
+run_3	block_1	Kreis	A	2	0	1171817,4	 	-1	-1171818,4	rm_other	JT02
+run_3	block_1	Dreieck	M	2	0	1175550,7	 	-1	-1175551,7	rm_other	JT02
+run_3	block_1	Dreieck	T	2	0	1179484,1	 	-1	-1179485,1	rm_other	JT02
+run_3	block_1	Dreieck	E	2	0	1183617,4	 	-1	-1183618,4	rm_other	JT02
+run_3	block_2	Stern	2	3	0	1190717,4	 	-1	-1190718,4	rm_other	JT02
+run_3	block_2	Kreis	6	3	0	1194250,7	 	-1	-1194251,7	rm_other	JT02
+run_3	block_2	Dreieck	3	3	0	1198400,7	 	-1	-1198401,7	rm_other	JT02
+run_3	block_2	Stern	2	3	0	1202584,1	 	-1	-1202585,1	rm_other	JT02
+run_3	block_2	Stern	9	3	0	1205117,4	 	-1	-1205118,4	rm_other	JT02
+run_3	block_2	Kreis	9	3	0	1208650,7	 	-1	-1208651,7	rm_other	JT02
+run_3	block_2	Kreis	2	3	0	1211584,1	 	-1	-1211585,1	rm_other	JT02
+run_3	block_2	Stern	9	3	0	1215717,4	 	-1	-1215718,4	rm_other	JT02
+run_3	block_2	Kreis	6	3	0	1218450,7	 	-1	-1218451,7	rm_other	JT02
+run_3	block_2	Dreieck	6	3	0	1224534,1	 	-1	-1224535,1	rm_other	JT02
+run_3	block_2	Dreieck	6	3	0	1228484,1	 	-1	-1228485,1	rm_other	JT02
+run_3	block_2	Dreieck	9	3	0	1233267,4	 	-1	-1233268,4	rm_other	JT02
+run_3	block_2	Kreis	2	3	0	1237400,8	 	-1	-1237401,8	rm_other	JT02
+run_3	block_2	Dreieck	4	3	0	1241334,1	 	-1	-1241335,1	rm_other	JT02
+run_3	block_2	Kreis	3	3	0	1244867,4	 	-1	-1244868,4	rm_other	JT02
+run_3	block_2	Dreieck	6	3	0	1247200,8	 	-1	-1247201,8	rm_other	JT02
+run_3	block_2	Stern	9	3	0	1251334,1	 	-1	-1251335,1	rm_other	JT02
+run_3	block_2	Stern	9	3	0	1255334,1	 	-1	-1255335,1	rm_other	JT02
+run_3	block_2	Stern	3	3	0	1258067,4	 	-1	-1258068,4	rm_other	JT02
+run_3	block_2	Stern	9	3	0	1262200,8	 	-1	-1262201,8	rm_other	JT02
+run_3	block_3	Stern	M	1	0	1269234,1	 	-1	-1269235,1	rm_other	JT02
+run_3	block_3	Kreis	X	1	0	1273167,4	 	-1	-1273168,4	rm_other	JT02
+run_3	block_3	Kreis	E	1	0	1275700,8	 	-1	-1275701,8	rm_other	JT02
+run_3	block_3	Dreieck	A	1	0	1281484,1	 	-1	-1281485,1	rm_other	JT02
+run_3	block_3	Stern	D	1	0	1284817,5	 	-1	-1284818,5	rm_other	JT02
+run_3	block_3	Stern	X	1	0	1287750,8	 	-1	-1287751,8	rm_other	JT02
+run_3	block_3	Viereck	A	1	0	1291284,1	 	-1	-1291285,1	rm_other	JT02
+run_3	block_3	Stern	E	1	0	1294217,5	 	-1	-1294218,5	rm_other	JT02
+run_3	block_3	Viereck	X	1	0	1297150,8	 	-1	-1297151,8	rm_other	JT02
+run_3	block_3	Kreis	E	1	0	1300684,1	 	-1	-1300685,1	rm_other	JT02
+run_3	block_3	Kreis	A	1	0	1305450,8	 	-1	-1305451,8	rm_other	JT02
+run_3	block_3	Kreis	X	1	0	1309584,1	 	-1	-1309585,1	rm_other	JT02
+run_3	block_3	Dreieck	M	1	0	1314300,8	 	-1	-1314301,8	rm_other	JT02
+run_3	block_3	Stern	E	1	0	1317634,1	 	-1	-1317635,1	rm_other	JT02
+run_3	block_3	Viereck	A	1	0	1320367,5	 	-1	-1320368,5	rm_other	JT02
+run_3	block_3	Viereck	X	1	0	1324584,2	 	-1	-1324585,2	rm_other	JT02
+run_3	block_3	Kreis	M	1	0	1328317,5	 	-1	-1328318,5	rm_other	JT02
+run_3	block_3	Viereck	D	1	0	1332717,5	 	-1	-1332718,5	rm_other	JT02
+run_3	block_3	Dreieck	E	1	0	1336850,8	 	-1	-1336851,8	rm_other	JT02
+run_3	block_3	Stern	D	1	0	1343334,2	 	-1	-1343335,2	rm_other	JT02
+run_3	block_4	Stern	6	3	0	1349367,5	 	-1	-1349368,5	rm_other	JT02
+run_3	block_4	Dreieck	3	3	0	1353100,8	 	-1	-1353101,8	rm_other	JT02
+run_3	block_4	Viereck	2	3	0	1356634,2	 	-1	-1356635,2	rm_other	JT02
+run_3	block_4	Dreieck	4	3	0	1360767,5	 	-1	-1360768,5	rm_other	JT02
+run_3	block_4	Dreieck	2	3	0	1366217,5	 	-1	-1366218,5	rm_other	JT02
+run_3	block_4	Stern	3	3	0	1369950,8	 	-1	-1369951,8	rm_other	JT02
+run_3	block_4	Stern	2	3	0	1373084,2	 	-1	-1373085,2	rm_other	JT02
+run_3	block_4	Stern	4	3	0	1375417,5	 	-1	-1375418,5	rm_other	JT02
+run_3	block_4	Stern	3	3	0	1381717,5	 	-1	-1381718,5	rm_other	JT02
+run_3	block_4	Dreieck	3	3	0	1385050,9	 	-1	-1385051,9	rm_other	JT02
+run_3	block_4	Stern	6	3	0	1387984,2	 	-1	-1387985,2	rm_other	JT02
+run_3	block_4	Dreieck	6	3	0	1391717,5	 	-1	-1391718,5	rm_other	JT02
+run_3	block_4	Stern	6	3	0	1395650,9	 	-1	-1395651,9	rm_other	JT02
+run_3	block_4	Dreieck	2	3	0	1399384,2	 	-1	-1399385,2	rm_other	JT02
+run_3	block_4	Dreieck	3	3	0	1404250,9	 	-1	-1404251,9	rm_other	JT02
+run_3	block_4	Dreieck	6	3	0	1406584,2	 	-1	-1406585,2	rm_other	JT02
+run_3	block_4	Viereck	7	3	0	1411400,9	 	-1	-1411401,9	rm_other	JT02
+run_3	block_4	Stern	7	3	0	1415534,2	 	-1	-1415535,2	rm_other	JT02
+run_3	block_4	Dreieck	6	3	0	1420950,9	 	-1	-1420951,9	rm_other	JT02
+run_3	block_4	Stern	6	3	0	1423884,2	 	-1	-1423885,2	rm_other	JT02
+run_3	block_5	Stern	6	2	0	1428884,2	 	-1	-1428885,2	rm_other	JT02
+run_3	block_5	Kreis	9	2	0	1432817,5	 	-1	-1432818,5	rm_other	JT02
+run_3	block_5	Viereck	3	2	0	1436350,9	 	-1	-1436351,9	rm_other	JT02
+run_3	block_5	Kreis	6	2	0	1439884,2	 	-1	-1439885,2	rm_other	JT02
+run_3	block_5	Stern	2	2	0	1443417,6	 	-1	-1443418,6	rm_other	JT02
+run_3	block_5	Viereck	2	2	0	1448767,6	 	-1	-1448768,6	rm_other	JT02
+run_3	block_5	Kreis	3	2	0	1453817,6	 	-1	-1453818,6	rm_other	JT02
+run_3	block_5	Stern	3	2	0	1456550,9	 	-1	-1456551,9	rm_other	JT02
+run_3	block_5	Viereck	4	2	0	1463034,2	 	-1	-1463035,2	rm_other	JT02
+run_3	block_5	Kreis	6	2	0	1467767,6	 	-1	-1467768,6	rm_other	JT02
+run_3	block_5	Kreis	4	2	0	1471900,9	 	-1	-1471901,9	rm_other	JT02
+run_3	block_5	Stern	2	2	0	1476034,2	 	-1	-1476035,2	rm_other	JT02
+run_3	block_5	Viereck	4	2	0	1479967,6	 	-1	-1479968,6	rm_other	JT02
+run_3	block_5	Viereck	2	2	0	1483734,3	 	-1	-1483735,3	rm_other	JT02
+run_3	block_5	Kreis	7	2	0	1487867,6	 	-1	-1487868,6	rm_other	JT02
+run_3	block_5	Viereck	4	2	0	1491400,9	 	-1	-1491401,9	rm_other	JT02
+run_3	block_5	Kreis	3	2	0	1496517,6	 	-1	-1496518,6	rm_other	JT02
+run_3	block_5	Viereck	7	2	0	1500050,9	 	-1	-1500051,9	rm_other	JT02
+run_3	block_5	Viereck	6	2	0	1503184,3	 	-1	-1503185,3	rm_other	JT02
+run_3	block_5	Kreis	7	2	0	1507317,6	 	-1	-1507318,6	rm_other	JT02
+run_3	block_6	Kreis	M	3	0	1515784,3	 	-1	-1515785,3	rm_other	JT02
+run_3	block_6	Viereck	A	3	0	1519317,6	 	-1	-1519318,6	rm_other	JT02
+run_3	block_6	Kreis	T	3	0	1523250,9	 	-1	-1523251,9	rm_other	JT02
+run_3	block_6	Kreis	T	3	0	1529517,6	 	-1	-1529518,6	rm_other	JT02
+run_3	block_6	Kreis	M	3	0	1535584,3	 	-1	-1535585,3	rm_other	JT02
+run_3	block_6	Dreieck	M	3	0	1537917,6	 	-1	-1537918,6	rm_other	JT02
+run_3	block_6	Viereck	T	3	0	1541050,9	 	-1	-1541051,9	rm_other	JT02
+run_3	block_6	Viereck	D	3	0	1543984,3	 	-1	-1543985,3	rm_other	JT02
+run_3	block_6	Viereck	X	3	0	1546317,6	 	-1	-1546318,6	rm_other	JT02
+run_3	block_6	Dreieck	X	3	0	1553051	 	-1	-1553052	rm_other	JT02
+run_3	block_6	Dreieck	A	3	0	1557184,3	 	-1	-1557185,3	rm_other	JT02
+run_3	block_6	Viereck	A	3	0	1559517,6	 	-1	-1559518,6	rm_other	JT02
+run_3	block_6	Viereck	M	3	0	1563651	 	-1	-1563652	rm_other	JT02
+run_3	block_6	Dreieck	T	3	0	1569717,6	 	-1	-1569718,6	rm_other	JT02
+run_3	block_6	Dreieck	D	3	0	1573051	 	-1	-1573052	rm_other	JT02
+run_3	block_6	Kreis	T	3	0	1575784,3	 	-1	-1575785,3	rm_other	JT02
+run_3	block_6	Dreieck	M	3	0	1582367,6	 	-1	-1582368,6	rm_other	JT02
+run_3	block_6	Dreieck	M	3	0	1586801	 	-1	-1586802	rm_other	JT02
+run_3	block_6	Viereck	A	3	0	1589134,3	 	-1	-1589135,3	rm_other	JT02
+run_3	block_6	Kreis	M	3	0	1591667,7	 	-1	-1591668,7	rm_other	JT02
+run_3	block_7	Viereck	3	1	0	1596917,7	 	-1	-1596918,7	rm_other	JT02
+run_3	block_7	Viereck	9	1	0	1602167,7	 	-1	-1602168,7	rm_other	JT02
+run_3	block_7	Kreis	6	1	0	1605701	 	-1	-1605702	rm_other	JT02
+run_3	block_7	Dreieck	7	1	0	1610367,7	 	-1	-1610368,7	rm_other	JT02
+run_3	block_7	Kreis	4	1	0	1613501	 	-1	-1613502	rm_other	JT02
+run_3	block_7	Dreieck	4	1	0	1616034,3	 	-1	-1616035,3	rm_other	JT02
+run_3	block_7	Stern	3	1	0	1621051	 	-1	-1621052	rm_other	JT02
+run_3	block_7	Dreieck	3	1	0	1623584,3	 	-1	-1623585,3	rm_other	JT02
+run_3	block_7	Viereck	3	1	0	1627717,7	 	-1	-1627718,7	rm_other	JT02
+run_3	block_7	Stern	3	1	0	1631051	 	-1	-1631052	rm_other	JT02
+run_3	block_7	Stern	4	1	0	1633384,3	 	-1	-1633385,3	rm_other	JT02
+run_3	block_7	Kreis	6	1	0	1636317,7	 	-1	-1636318,7	rm_other	JT02
+run_3	block_7	Viereck	6	1	0	1639451	 	-1	-1639452	rm_other	JT02
+run_3	block_7	Kreis	9	1	0	1642984,4	 	-1	-1642985,4	rm_other	JT02
+run_3	block_7	Kreis	9	1	0	1647801	 	-1	-1647802	rm_other	JT02
+run_3	block_7	Viereck	7	1	0	1651334,4	 	-1	-1651335,4	rm_other	JT02
+run_3	block_7	Viereck	4	1	0	1655467,7	 	-1	-1655468,7	rm_other	JT02
+run_3	block_7	Stern	6	1	0	1659601	 	-1	-1659602	rm_other	JT02
+run_3	block_7	Dreieck	6	1	0	1664301	 	-1	-1664302	rm_other	JT02
+run_3	block_7	Kreis	3	1	0	1669217,7	 	-1	-1669218,7	rm_other	JT02
+run_3	block_8	Kreis	X	3	0	1679501	 	-1	-1679502	rm_other	JT02
+run_3	block_8	Kreis	E	3	0	1682034,4	 	-1	-1682035,4	rm_other	JT02
+run_3	block_8	Dreieck	A	3	0	1688117,7	 	-1	-1688118,7	rm_other	JT02
+run_3	block_8	Kreis	E	3	0	1692251,1	 	-1	-1692252,1	rm_other	JT02
+run_3	block_8	Kreis	T	3	0	1696184,4	 	-1	-1696185,4	rm_other	JT02
+run_3	block_8	Dreieck	A	3	0	1698517,7	 	-1	-1698518,7	rm_other	JT02
+run_3	block_8	Stern	X	3	0	1701851,1	 	-1	-1701852,1	rm_other	JT02
+run_3	block_8	Kreis	M	3	0	1704784,4	 	-1	-1704785,4	rm_other	JT02
+run_3	block_8	Stern	T	3	0	1707117,7	 	-1	-1707118,7	rm_other	JT02
+run_3	block_8	Kreis	A	3	0	1711901,1	 	-1	-1711902,1	rm_other	JT02
+run_3	block_8	Stern	A	3	0	1715834,4	 	-1	-1715835,4	rm_other	JT02
+run_3	block_8	Dreieck	A	3	0	1718967,7	 	-1	-1718968,7	rm_other	JT02
+run_3	block_8	Dreieck	T	3	0	1722701,1	 	-1	-1722702,1	rm_other	JT02
+run_3	block_8	Dreieck	A	3	0	1728584,4	 	-1	-1728585,4	rm_other	JT02
+run_3	block_8	Stern	T	3	0	1734234,4	 	-1	-1734235,4	rm_other	JT02
+run_3	block_8	Dreieck	M	3	0	1737567,7	 	-1	-1737568,7	rm_other	JT02
+run_3	block_8	Stern	T	3	0	1743067,7	 	-1	-1743068,7	rm_other	JT02
+run_3	block_8	Dreieck	X	3	0	1745601,1	 	-1	-1745602,1	rm_other	JT02
+run_3	block_8	Dreieck	A	3	0	1748134,4	 	-1	-1748135,4	rm_other	JT02
+run_3	block_8	Dreieck	X	3	0	1750667,8	 	-1	-1750668,8	rm_other	JT02

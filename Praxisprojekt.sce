@@ -109,15 +109,15 @@ begin;
 	} form_array;
 
 	trial {
-		trial_duration = 1800;
+		trial_duration = EXPARAM("Time Response Active" : 1800);
 		trial_type = first_response;
 		
 		stimulus_event{
 		picture {} main_picture;
-		duration = 250;
+		duration = EXPARAM("Time Stimulus" : 250);
 		}stim_event;
 		
-	} main_trial;
+	} trial_main;
 
 	trial {
 		picture {
@@ -130,12 +130,12 @@ begin;
 	} trial_cross;
 
 	trial {
-		trial_duration = 2000;
+		trial_duration = EXPARAM("Time Feedback" : 2000);
 		picture {
 			text { caption = ""; font_size = 24; max_text_width = 600;} feedback_text; 
 			x=0; y=0;
 		} feedback_pic;
-	} feedback_trial;
+	} trial_feedback;
 	
 	trial {
 		trial_duration = forever;
@@ -377,101 +377,104 @@ begin_pcl;
 	sub present_trials( int seperate_attention, int char_target_index, array<text,1> char_array, 
 								int form_target_index, array<int> trial_list[][], bool show_feedback, string run_id, string block_id)
 	begin
-	string instruction_string = "";
-	if seperate_attention == 1
-	then
-		instruction_string = ("Drücken Sie die Taste \"L\" wenn ein(e) " + char_array[char_target_index].caption() + " erscheint.");
-	elseif seperate_attention == 2
-	then
-		instruction_string = ("Drücken Sie die Taste \"S\" wenn ein " + form_array[form_target_index].description() + " erscheint.");
-	elseif seperate_attention == 3
-	then
-		instruction_string = "Drücken Sie die Taste \"L\" wenn ein(e) " + char_array[char_target_index].caption() + " erscheint." +
-									"\nDrücken Sie die Taste \"S\" wenn ein " + form_array[form_target_index].description() + " erscheint."
-	end;
-	instruction_string = instruction_string + "\nAntworten Sie so schnell und richtig wie möglich." +
-															"\nDrücken Sie die Leertaste um fortzufahren.";
-	instruction_text.set_caption(instruction_string, true);
-	set_response_mode(1);
-	instruction_trial.present();
-	
-	loop int i = 1 until i > trial_list.count()
-	begin
-		int char_index = trial_list[i][CHAR];
-		int form_index = trial_list[i][FORM];
-
-		main_picture = form_array[form_index];
-		main_picture.set_part(3,char_array[char_index]);
-		stim_event.set_stimulus(main_picture);
-		string tmp_event_code = run_id + ";" + block_id + ";" + main_picture.description() + 
-											";" + char_array[char_index].caption() + ";" + string(seperate_attention);
-
-		string caption = char_array[char_index].caption();
-		stim_event.set_target_button(0);
-		stim_event.set_response_active(true);
+		string instruction_string = "";
 		if seperate_attention == 1
 		then
-			if char_array[char_target_index].caption() == caption
-			then
-				stim_event.set_target_button(1);
-				stim_event.set_event_code(tmp_event_code + ";" + "1");
-			else
-				stim_event.set_event_code(tmp_event_code + ";" + "0");
-			end;
+			instruction_string = ("Drücken Sie die Taste \"L\" wenn ein(e) " + char_array[char_target_index].caption() + " erscheint.");
 		elseif seperate_attention == 2
 		then
-			if form_target_index == form_index
-			then 
-				stim_event.set_target_button(2);
-				stim_event.set_event_code(tmp_event_code + ";" + "2");
-			else
-				stim_event.set_event_code(tmp_event_code + ";" + "0");
-			end;
-		elseif seperate_attention == 3 
+			instruction_string = ("Drücken Sie die Taste \"S\" wenn ein " + form_array[form_target_index].description() + " erscheint.");
+		elseif seperate_attention == 3
 		then
-			if char_array[char_target_index].caption() == caption
-			then
-				stim_event.set_target_button(1);
-				stim_event.set_event_code(tmp_event_code + ";" + "1");
-			elseif form_target_index == form_index
-			then
-				stim_event.set_target_button(2);
-				stim_event.set_event_code(tmp_event_code + ";" + "2");
-			else
-				stim_event.set_event_code(tmp_event_code + ";" + "0");
-			end;
-		else
-			
+			instruction_string = "Drücken Sie die Taste \"L\" wenn ein(e) " + char_array[char_target_index].caption() + " erscheint." +
+										"\nDrücken Sie die Taste \"S\" wenn ein " + form_array[form_target_index].description() + " erscheint."
 		end;
+		instruction_string = instruction_string + "\nAntworten Sie so schnell und richtig wie möglich." +
+																"\nDrücken Sie die Leertaste um fortzufahren.";
+		instruction_text.set_caption(instruction_string, true);
+		instruction_trial.present();
 		
-		#ISI
-		if i == 1
-		then 
-			trial_cross.set_duration(1000);
-		else
-			trial_cross.set_duration(ISI_values[random(1,ISI_values.count())]);
-		end;
-		trial_cross.present();
-		set_response_mode(2);
-		main_trial.present();
-		i=i+1;
-			
-		if show_feedback
-		then
-			string new_caption = "";
-			stimulus_data last = stimulus_manager.last_stimulus_data();
-			if (last.type() == last.HIT) then
-				new_caption = "Richtig";
-			elseif (last.type() == last.INCORRECT) then
-				new_caption = "Falsche Taste";
-			elseif (last.type() == last.MISS) then
-				new_caption = "Falsch\nSie hätten drücken müssen";
-			elseif (last.type() == last.FALSE_ALARM) then
-				new_caption = "Falsch\nSie hätten nicht drücken müssen";
+		loop int i = 1 until i > trial_list.count()
+		begin
+			int char_index = trial_list[i][CHAR];
+			int form_index = trial_list[i][FORM];
+
+			main_picture = form_array[form_index];
+			main_picture.set_part(3,char_array[char_index]);
+			stim_event.set_stimulus(main_picture);
+			string tmp_event_code = run_id + ";" + block_id + ";" + main_picture.description() + 
+												";" + char_array[char_index].caption() + ";" + string(seperate_attention);
+
+			string caption = char_array[char_index].caption();
+			stim_event.set_target_button(0);
+			stim_event.set_response_active(true);
+			if seperate_attention == 1
+			then
+				if char_array[char_target_index].caption() == caption
+				then
+					stim_event.set_target_button(1);
+					stim_event.set_event_code(tmp_event_code + ";" + "1");
+				else
+					stim_event.set_event_code(tmp_event_code + ";" + "0");
+				end;
+			elseif seperate_attention == 2
+			then
+				if form_target_index == form_index
+				then 
+					stim_event.set_target_button(2);
+					stim_event.set_event_code(tmp_event_code + ";" + "2");
+				else
+					stim_event.set_event_code(tmp_event_code + ";" + "0");
+				end;
+			elseif seperate_attention == 3 
+			then
+				if char_array[char_target_index].caption() == caption
+				then
+					stim_event.set_target_button(1);
+					stim_event.set_event_code(tmp_event_code + ";" + "1");
+				elseif form_target_index == form_index
+				then
+					stim_event.set_target_button(2);
+					stim_event.set_event_code(tmp_event_code + ";" + "2");
+				else
+					stim_event.set_event_code(tmp_event_code + ";" + "0");
+				end;
+			else
+				
 			end;
 			
-			feedback_text.set_caption(new_caption, true);
-			feedback_trial.present();	
+			#ISI
+			if i == 1
+			then 
+				trial_cross.set_duration(1000);
+			else
+				trial_cross.set_duration(ISI_values[random(1,ISI_values.count())]);
+			end;
+			trial_cross.present();
+			set_response_mode(2);
+			trial_main.present();
+			set_response_mode(1);
+			i=i+1;
+		
+			if show_feedback
+			then
+				string feedback = "";
+				stimulus_data last = stimulus_manager.last_stimulus_data();
+				if (last.type() == last.HIT) then
+					feedback = parameter_manager.get_string("Feedback HIT", "Richtig");
+				elseif (last.type() == last.INCORRECT) then
+					feedback = parameter_manager.get_string("Feedback INCORRECT", "Falsche Taste");
+				elseif (last.type() == last.MISS) then
+					feedback = parameter_manager.get_string("Feedback MISS", "Falsch\nSie hätten drücken müssen");
+				elseif (last.type() == last.FALSE_ALARM) then
+					feedback = parameter_manager.get_string("Feedback FALSE ALARM", "Falsch\nSie hätten nicht drücken müssen");
+				end;
+				
+				if feedback != ""
+				then
+				feedback_text.set_caption(feedback, true);
+				trial_feedback.present();	
+				end;
 			end;
 		end;
 	end;
@@ -486,7 +489,7 @@ begin_pcl;
 											 form_target_index, trial_presentet, show_feedback, run_id, block_id)
 	end;
 	
-#	Parameter for make_and_present_trials
+#	Parameters for make_and_present_trials
 #	1. Value: selective_attention: 1 = only a char is a target
 #											 2 = only a form is a target
 #											 3 = a char and a form is a target
@@ -524,7 +527,6 @@ begin_pcl;
 											"Im Folgenden wird ihnen kein Feedback mehr präsentiert.\m" +
 											"Der erste Durchgang beginnt.\n" + 
 											"Weiter mit Leertaste (nach einer Sekunde möglich)",true);
-	set_response_mode(1);
 	introduction_trial.present();
 	
 	make_and_present_trials(2, -1, letters, 2, 6, 20, false, "run_1", "block_1");
@@ -538,7 +540,6 @@ begin_pcl;
 	
 	introduction_text.set_caption("Der zweite Durchgang beginnt.\n" + 
 											"Weiter mit Leertaste (nach einer Sekunde möglich)",true);
-	set_response_mode(1);
 	introduction_trial.present();
 	
 	make_and_present_trials(3, 3, letters, 4, 6, 20, false, "run_2", "block_1");
@@ -552,7 +553,6 @@ begin_pcl;
 
 	introduction_text.set_caption("Der dritte Durchgang beginnt.\n" + 
 											"Weiter mit Leertaste (nach einer Sekunde möglich)",true);
-	set_response_mode(1);
 	introduction_trial.present();
 	
 	make_and_present_trials(2, -1, letters, 4, 6, 20, false, "run_3", "block_1");
@@ -566,6 +566,5 @@ begin_pcl;
 	make_and_present_trials(3, 1, letters, 1, 6, 20, false, "run_3", "block_8");
 	
 	introduction_text.set_caption("Bitte wenden Sie sich an den Versuchsleiter",true);
-	set_response_mode(1);
 	introduction_trial.present();
 

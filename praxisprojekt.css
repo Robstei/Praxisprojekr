@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.main-container{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 15% 85%;
+}
+
+.header {
+    background-color: lightgray;
+    text-align: center;
+}
+
+.form-container {
+    background-color: lightblue;
+    text-align: center;
+    margin: 5em 5em;
+}
+
+.run-submenu {
+    display: none;
+}
