@@ -518,7 +518,7 @@ AGGREGATE
  /mean_run2_block1cleaned=MEAN(mean_run2_block1cleaned)
  /mean_run2_block2cleaned=MEAN(mean_run2_block2cleaned)
  /mean_run2_block3cleaned=MEAN(mean_run2_block3cleaned)
- /mean_run2_block4cleaned=MEAN(mean_run2_block3cleaned)
+ /mean_run2_block4cleaned=MEAN(mean_run2_block4cleaned)
  /mean_run3_block1cleaned=MEAN(mean_run3_block1cleaned)
  /mean_run3_block2cleaned=MEAN(mean_run3_block2cleaned)
  /mean_run3_block3cleaned=MEAN(mean_run3_block3cleaned)

@@ -1,0 +1,13 @@
+﻿* Encoding: UTF-8.
+
+DATASET ACTIVATE DataSet1.
+COMPUTE delta_run3_block1_run1_block1=mean_run3_block1cleaned - mean_run1_block1cleaned.
+COMPUTE delta_run3_block2_run2_block1=mean_run3_block2cleaned - mean_run2_block1cleaned.
+COMPUTE delta_run3_block3_run1_block2=mean_run3_block3cleaned - mean_run1_block2cleaned.
+COMPUTE delta_run3_block4_run2_block2=mean_run3_block4cleaned - mean_run2_block2cleaned.
+COMPUTE delta_run3_block5_run1_block3=mean_run3_block5cleaned - mean_run1_block3cleaned.
+COMPUTE delta_run3_block6_run2_block3=mean_run3_block6cleaned - mean_run2_block3cleaned.
+COMPUTE delta_run3_block7_run1_block4=mean_run3_block7cleaned - mean_run1_block4cleaned.
+COMPUTE delta_run3_block8_run2_block4=mean_run3_block8cleaned - mean_run2_block4cleaned.
+
+EXECUTE.
