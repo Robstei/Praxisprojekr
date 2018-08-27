@@ -21,7 +21,7 @@ begin;
 		text{caption = "2"; font_size= 50;};
 		text{caption = "3"; font_size= 50;};
 		text{caption = "4"; font_size= 50;};
-		text{caption = "6"; font_size= 50;};
+		text{caption = "5"; font_size= 50;};
 		text{caption = "7"; font_size= 50;};
 		text{caption = "9"; font_size= 50;};
 	}numbers;
@@ -88,10 +88,10 @@ begin;
 		picture {
 			description = "Stern";
 			line_graphic {
-			coordinates = 0, 300, 67, 93, 285, 93, 109, -35, 176, -243, 
-								0, -115, -176, -243, -109, -35, -285, 93, -67, 93, 
-								0, 300, 67, 93;
-			line_width = 15;
+				coordinates = 0, 300, 67, 93, 285, 93, 109, -35, 176, -243, 
+									0, -115, -176, -243, -109, -35, -285, 93, -67, 93, 
+									0, 300, 67, 93;
+				line_width = 15;
 			};
 			x = 0; y = 0;
 			
@@ -106,15 +106,61 @@ begin;
 			text{caption = ""; font_size= 50;};
 			x=0;y=0;
 		} main_picture_star;
+		
+		picture {
+			description = "Raute";
+			line_graphic {
+				coordinates = 0, 300, 200, 0, 0, -300, -200, 0, 0, 300, 200, 0;
+				line_width = 15;
+			};
+			x = 0; y = 0;
+			
+			polygon_graphic {
+					height = 0;
+					width = 0;
+					sides = 3;
+					fill_color = 0,0,0,255;
+				};
+			x = 0; y = 0;
+				
+			text{caption = ""; font_size= 50;};
+			x = 0;y = 0;
+		} main_picture_diamand;
+		
+		picture {
+			description = "Achteck";
+			
+			polygon_graphic {
+				sides = 8;
+				radius = 300;
+				line_width = 15;
+				join_type = join_flat;
+				height = 650;
+				width = 650;
+			};
+			x = 0; y = 0;
+			
+			polygon_graphic {
+					height = 0;
+					width = 0;
+					sides = 3;
+					fill_color = 0,0,0,255;
+				};
+			x = 0; y = 0;
+				
+			text{caption = ""; font_size= 50;};
+			x = 0;y = 0;
+		} main_picture_octagon;
 	} form_array;
 
 	trial {
-		trial_duration = EXPARAM("Time Response Active" : 1800);
+		trial_duration = forever;
+		#EXPARAM("Time Response Active" : 1800);
 		trial_type = first_response;
 		
 		stimulus_event{
 		picture {} main_picture;
-		duration = EXPARAM("Time Stimulus" : 250);
+		##duration = EXPARAM("Time Stimulus" : 250);
 		}stim_event;
 	} trial_main;
 
