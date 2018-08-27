@@ -426,11 +426,6 @@ Sie hätten drücken müssen</val>
 <device>
 <device_type>4</device_type>
 <dx_device_type>17</dx_device_type>
-<name>HyperX 7.1 Audio</name>
-</device>
-<device>
-<device_type>4</device_type>
-<dx_device_type>17</dx_device_type>
 <name>ndPoint1 Inte</name>
 </device>
 <device>
@@ -740,7 +735,7 @@ Sie hätten drücken müssen</val>
 </device>
 </rdl>
 <refchg>1</refchg>
-<rep>1</rep>
+<rep>2</rep>
 <require_name_match>0</require_name_match>
 <reschg>1</reschg>
 <rng>1</rng>
