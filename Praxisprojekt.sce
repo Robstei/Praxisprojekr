@@ -291,7 +291,7 @@ begin_pcl;
 		begin
 			if seperate_attention == 1
 			then
-				if char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption() &&
+					if char_array[list_to_test[i][CHAR]].caption() == char_array[char_target_index].caption() &&
 					char_array[list_to_test[i+1][CHAR]].caption() == char_array[char_target_index].caption()
 				then 
 					return false;
@@ -320,97 +320,208 @@ begin_pcl;
 	end;
 
 	sub array<int,2> make_trials (int seperate_attention, int char_target_index, array<text,1> char_array,
-											int form_target_index, int number_of_stimuli, int number_of_non_stimuli)
+											int form_target_index, int number_of_targets, int number_of_non_targets)
 	begin
 		array<int> list[0][2];
+		array<int> tmp_possible_targets[0][2];
+		array<int> tmp_possible_char_targets[0][2];
+		array<int> tmp_possible_form_targets[0][2];
+		array<int> tmp_possible_non_targets[0][2];
+		
+		term.print_line(tmp_possible_targets);
+		term.print_line(tmp_possible_non_targets);
 		
 		if seperate_attention == 1
 		then
-			loop int i = 1 until i > number_of_stimuli
+			loop int i = 1 until i > form_array.count()
 			begin
 				array<int> tmp[2];
 				tmp[CHAR] = char_target_index;
-				tmp[FORM] = random(1, form_array.count());
-				list.add(tmp);
+				tmp[FORM] = i;
+				tmp_possible_targets.add(tmp);
+				i = i + 1;
+			end;
+			tmp_possible_targets.shuffle();
+			
+			loop int i = 1 until i > number_of_targets
+			begin
+				int index = i % tmp_possible_targets.count();
+				if index == 0
+				then
+					list.add(tmp_possible_targets[tmp_possible_targets.count()]);
+				else
+					list.add(tmp_possible_targets[index]);
+				end;
 				i = i + 1;
 			end;
 			
-			loop until list.count() == number_of_stimuli + number_of_non_stimuli
+			loop int char_count = 1 until char_count > char_array.count()
 			begin
-				array<int> tmp[2];
-				int rmd = random(1,char_array.count());
-				if rmd != char_target_index
-				then
-					tmp[CHAR] = rmd;
-					tmp[FORM] = random(1, form_array.count());
-					list.add(tmp);
+				loop int form_count = 1 until form_count > form_array.count()
+				begin
+					if char_count != char_target_index
+					then
+						array<int> tmp[2];
+						tmp[CHAR] = char_count;
+						tmp[FORM] = form_count;
+						tmp_possible_non_targets.add(tmp);
+					end;
+					form_count = form_count + 1;
 				end;
+				char_count = char_count + 1;
 			end;
+			tmp_possible_non_targets.shuffle();		
+			
+			
+			loop int i = 1 until list.count() == number_of_targets + number_of_non_targets
+			begin
+				int index = i % tmp_possible_non_targets.count();
+				if index == 0
+				then
+					list.add(tmp_possible_non_targets[tmp_possible_non_targets.count()]);
+				else
+					list.add(tmp_possible_non_targets[index]);
+				end;
+				i = i + 1;
+			end;
+			
 		elseif seperate_attention == 2
 		then
-			loop int i = 1 until i > number_of_stimuli
+			loop int i = 1 until i > char_array.count()
 			begin
 				array<int> tmp[2];
-				tmp[CHAR] = random(1, char_array.count());
+				tmp[CHAR] = i;
 				tmp[FORM] = form_target_index;
-				list.add(tmp);
+				tmp_possible_targets.add(tmp);
+				i = i + 1;
+			end;
+			tmp_possible_targets.shuffle();
+			
+			loop int i = 1 until i > number_of_targets
+			begin
+				int index = i % tmp_possible_targets.count();
+				if index == 0
+				then
+					list.add(tmp_possible_targets[tmp_possible_targets.count()]);
+				else
+					list.add(tmp_possible_targets[index]);
+				end;
 				i = i + 1;
 			end;
 			
-			loop until list.count() == number_of_stimuli + number_of_non_stimuli
+			loop int char_count = 1 until char_count > char_array.count()
 			begin
-				array<int> tmp[2];
-				int rmd = random(1,form_array.count());
-				if rmd != form_target_index
-				then
-					tmp[CHAR] = random(1,char_array.count());
-					tmp[FORM] = rmd;
-					list.add(tmp);
+				loop int form_count = 1 until form_count > form_array.count()
+				begin
+					if form_count != form_target_index
+					then
+						array<int> tmp[2];
+						tmp[CHAR] = char_count;
+						tmp[FORM] = form_count;
+						tmp_possible_non_targets.add(tmp);
+					end;
+					form_count = form_count + 1;
 				end;
+				char_count = char_count + 1;
+			end;
+			tmp_possible_non_targets.shuffle();		
+			
+			
+			loop int i = 1 until list.count() == number_of_targets + number_of_non_targets
+			begin
+				int index = i % tmp_possible_non_targets.count();
+				if index == 0
+				then
+					list.add(tmp_possible_non_targets[tmp_possible_non_targets.count()]);
+				else
+					list.add(tmp_possible_non_targets[index]);
+				end;
+				i = i + 1;
 			end;
 		elseif seperate_attention == 3
 		then
-			loop int i = 1 until i > number_of_stimuli/2
+			loop int i = 1 until i > form_array.count()
 			begin
-				array<int> tmp[2];
-				tmp[CHAR] = char_target_index;
-				tmp[FORM] = random(1, form_array.count());
-				if tmp[FORM] != form_target_index
+				if i != form_target_index
 				then
-				list.add(tmp);
+					array<int> tmp[2];
+					tmp[CHAR] = char_target_index;
+					tmp[FORM] = i;
+					tmp_possible_char_targets.add(tmp);
+				end;
 				i = i + 1;
-				end
+			end;
+			tmp_possible_char_targets.shuffle();
+			
+			loop int i = 1 until i > char_array.count()
+			begin
+				if i != char_target_index
+				then
+					array<int> tmp[2];
+					tmp[CHAR] = i;
+					tmp[FORM] = form_target_index;
+					tmp_possible_form_targets.add(tmp);
+				end;
+				i = i + 1;
+			end;
+			tmp_possible_form_targets.shuffle();
+			
+			loop int i = 1 until i > number_of_targets/2
+			begin
+				int char_index = i % tmp_possible_char_targets.count();
+				if char_index == 0
+				then
+					list.add(tmp_possible_char_targets[tmp_possible_char_targets.count()]);
+				else
+					list.add(tmp_possible_char_targets[char_index]);
+				end;
+				
+				int form_index = i % tmp_possible_form_targets.count();
+				if form_index == 0
+				then
+					list.add(tmp_possible_form_targets[tmp_possible_form_targets.count()]);
+				else
+					list.add(tmp_possible_form_targets[form_index]);
+				end;
+				i = i + 1;
 			end;
 			
-			loop until list.count() == number_of_stimuli
+			loop int char_count = 1 until char_count > char_array.count()
 			begin
-				array<int> tmp[2];
-				tmp[CHAR] = random(1,char_array.count());
-				tmp[FORM] = form_target_index;
-				if tmp[CHAR] != char_target_index
-				then
-					list.add(tmp);
+				loop int form_count = 1 until form_count > form_array.count()
+				begin
+					if char_count != char_target_index && form_count!= form_target_index
+					then
+						array<int> tmp[2];
+						tmp[CHAR] = char_count;
+						tmp[FORM] = form_count;
+						tmp_possible_non_targets.add(tmp);
+					end;
+					form_count = form_count + 1;
 				end;
+				char_count = char_count + 1;
 			end;
-				
-			loop until list.count() == number_of_stimuli + number_of_non_stimuli
+			tmp_possible_non_targets.shuffle();		
+			
+			loop int i = 1 until list.count() == number_of_targets + number_of_non_targets
 			begin
-				array<int> tmp[2];
-				int rmd_char = random(1,char_array.count());
-				int rmd_form = random(1,form_array.count());
-				if rmd_char != char_target_index && rmd_form != form_target_index
+				int index = i % tmp_possible_non_targets.count();
+				if index == 0
 				then
-					tmp[CHAR] = rmd_char;
-					tmp[FORM] = rmd_form;
-					list.add(tmp);
+					list.add(tmp_possible_non_targets[tmp_possible_non_targets.count()]);
+				else
+					list.add(tmp_possible_non_targets[index]);
 				end;
+				i = i + 1;
 			end;
 		end;
+		
 		loop until (validade(list, seperate_attention ,form_target_index,
-						char_target_index,char_array))
+						char_target_index, char_array))
 		begin
 			list.shuffle();
 		end;
+		term.print_line(list);
 		return list;
 	end;
 
@@ -525,11 +636,11 @@ begin_pcl;
 	end;
 	
 	sub make_and_present_trials (int seperate_attention, int char_target_index, array<text,1> char_array,
-											int form_target_index, int number_of_stimuli, int number_of_non_stimuli,  
+											int form_target_index, int number_of_targets, int number_of_non_targets,  
 											bool show_feedback, string run_id, string block_id)
 	begin
 		array<int> trial_presentet[][] = make_trials(seperate_attention,char_target_index, char_array,
-											form_target_index, number_of_stimuli, number_of_non_stimuli);
+											form_target_index, number_of_targets, number_of_non_targets);
 		present_trials(seperate_attention, char_target_index, char_array,
 											 form_target_index, trial_presentet, show_feedback, run_id, block_id)
 	end;
@@ -561,7 +672,7 @@ begin_pcl;
 	introduction_text.set_caption("Dies ist ein Testdurchlauf. Weiter mit Leertaste (nach einer Sekunde möglich)",true);
 	introduction_trial.present();
 	
-	make_and_present_trials(1, 1, letters, -1, 4, 6, true, "test", "block_1");
+	make_and_present_trials(3, 1, letters, 1, 4, 6, true, "test", "block_1");
 	make_and_present_trials(3, 1, numbers, 1, 4, 6, true, "test", "block_2");
 	
 ##########################Run 1########################################
