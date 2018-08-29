@@ -1,4 +1,4 @@
-event_pair_table custom_pair_table(runid1, blockid1, form1, character1, seperateAttention1, target1, time1, code2, time2, time_diff, rm_type, subject1)
+event_pair_table custom_pair_table(configuration1, runid1, blockid1, form1, character1, seperateAttention1, target1, time1, code2, time2, time_diff, rm_type, subject1)
 allruns(rm_all):: runid1 != "test"
 
 print custom_pair_table(allruns, "\t", "\n")
