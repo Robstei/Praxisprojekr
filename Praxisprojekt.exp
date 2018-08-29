@@ -105,6 +105,12 @@ Sie hätten drücken müssen</val>
 </dat>
 <id>6</id>
 </val>
+<val>
+<dat>
+<val></val>
+</dat>
+<id>7</id>
+</val>
 </sd>
 <sid>-1</sid>
 </ss>
@@ -118,6 +124,7 @@ Sie hätten drücken müssen</val>
 <pl>
 <pid>0</pid>
 <pid>1</pid>
+<pid>7</pid>
 </pl>
 </grp>
 <grp>
@@ -229,6 +236,20 @@ Sie hätten drücken müssen</val>
 </set>
 <temp>0</temp>
 <type>string</type>
+<vis>1</vis>
+</set>
+</parm>
+<parm>
+<id>7</id>
+<set>
+<desc>Determines which configuration will be used</desc>
+<edit>1</edit>
+<name>Configuration Parameter</name>
+<set>
+<rest>[1,6]</rest>
+</set>
+<temp>1</temp>
+<type>int</type>
 <vis>1</vis>
 </set>
 </parm>
