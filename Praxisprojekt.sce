@@ -189,10 +189,10 @@ begin;
 		picture {
 			text { caption = ""; font_size = 25; max_text_width = 1200;} text_introduction;
 			x=0;y=0;
-		} introduction_picture;
+		} picture_information;
 		stimulus_time_in = 1000;
 		response_active= true;
-	} trial_introduction;
+	} trial_information;
 	
 	trial {
 		trial_duration = forever;
@@ -239,33 +239,33 @@ begin_pcl;
 		trial_pause.present();
 	end;
 	
-	sub present_introduction (string introduction, int font_size)
+	sub present_information (string information, int font_size)
 	begin
 		text_introduction.set_font_size(font_size);
 		text_introduction.set_caption(introduction, true);
-		trial_introduction.present();
+		trial_information.present();
 	end;
 	
-	string introduction_start = 
+	string information_start = 
 		"Im Folgenden werden ihnen auf dem Bildschirm unterschiedliche Buchstaben, Zahlen und Formen " +
 		"präsentiert. Vor jedem Durchlauf erhalten Sie eine kurze Instruktion, auf welche Symbole" + 
 		"(Buchstaben, Zahlen, Formen) Sie reagieren sollen. Die Reaktion erfolgt mit den Tasten " +
 		"\"L\" und \"S\". Reagieren Sie so schnell und so richtig wie möglich. \n\n Zunächst " +
 		"folgt ein Testdurchlauf. \n\n Drücken Sie die Leertaste um fortzufahren";
-	string introduction_test = 
+	string information_test = 
 		"Dies ist ein Testdurchlauf. Weiter mit Leertaste (nach einer Sekunde möglich)";
-	string introduction_first_run = 
+	string information_first_run = 
 		"Der Testdurchlauf ist vorbei.\n" +
 		"Im Folgenden wird ihnen kein Feedback mehr präsentiert.\n" +
 		"Der erste Durchgang beginnt.\n" + 
 		"Weiter mit Leertaste (nach einer Sekunde möglich)";
-	string introduction_second_run =
+	string information_second_run =
 		"Der zweite Durchgang beginnt.\n" + 
 		"Weiter mit Leertaste (nach einer Sekunde möglich)";
-	string introduction_third_run =
+	string information_third_run =
 		"Der dritte Durchgang beginnt.\n" + 
 		"Weiter mit Leertaste (nach einer Sekunde möglich)";
-	string introduction_end =
+	string information_end =
 		"Bitte wenden Sie sich an den Versuchsleiter";
 		
 	sub set_response_mode (int mode)
@@ -701,8 +701,8 @@ begin_pcl;
 ##########################Test Run########################################
 	
 	set_response_mode(1);
-	present_introduction(introduction_start, 25);
-   present_introduction(introduction_test, 30);
+	present_information(introduction_start, 25);
+   present_information(introduction_test, 30);
 
 	make_and_present_block(1, 1, numbers, -1, 4, 6, true, "test", "block_1");
 	make_and_present_block(3, 2, numbers, 1, 4, 6, true, "test", "block_2");
@@ -712,7 +712,7 @@ begin_pcl;
 		##########################Run 1########################################
 
 			pause_seconds(30);
-			present_introduction(introduction_first_run, 30);
+			present_information(introduction_first_run, 30);
 			make_and_present_block(2, -1, numbers, 2, 6, 20, false, "selective", "block_1");
 			make_and_present_block(1, 3, numbers, -1, 6, 20, false, "selective", "block_2");
 			make_and_present_block(1, 4, numbers, -1, 6, 20, false, "selective", "block_3");
@@ -721,7 +721,7 @@ begin_pcl;
 		##########################Run 2########################################
 
 			pause_minutes(2);
-			present_introduction(introduction_second_run, 30);
+			present_information(introduction_second_run, 30);
 			make_and_present_block(3, 5, numbers, 4, 6, 20, false, "divided", "block_1");
 			make_and_present_block(3, 6, numbers, 5, 6, 20, false, "divided", "block_2");
 			make_and_present_block(3, 1, numbers, 6, 6, 20, false, "divided", "block_3");
@@ -730,7 +730,7 @@ begin_pcl;
 		##########################Run 3########################################
 
 			pause_minutes(2);
-			present_introduction(introduction_third_run, 30);
+			present_information(introduction_third_run, 30);
 			make_and_present_block(2, -1, numbers, 2, 6, 20, false, "combination", "block_1");
 			make_and_present_block(3, 3, numbers, 3, 6, 20, false, "combination", "block_2");
 			make_and_present_block(1, 4, numbers, -1, 6, 20, false, "combination", "block_3");
@@ -740,14 +740,14 @@ begin_pcl;
 			make_and_present_block(3, 6, numbers, 6, 6, 20, false, "combination", "block_6");
 			make_and_present_block(1, 1, numbers, -1, 6, 20, false, "combination", "block_7");
 			make_and_present_block(3, 2, numbers, 1, 6, 20, false, "combination", "block_8");
-			present_introduction(introduction_end, 30);
+			present_information(introduction_end, 30);
 			
 	elseif configuration == 2
 	then
 		##########################Run 1########################################
 
 			pause_seconds(30);
-			present_introduction(introduction_first_run, 30);
+			present_information(introduction_first_run, 30);
 			make_and_present_block(3, 3, numbers, 2, 6, 20, false, "divided", "block_1");
 			make_and_present_block(3, 4, numbers, 3, 6, 20, false, "divided", "block_2");
 			make_and_present_block(3, 5, numbers, 4, 6, 20, false, "divided", "block_3");
@@ -756,7 +756,7 @@ begin_pcl;
 		##########################Run 2########################################
 
 			pause_minutes(2);
-			present_introduction(introduction_second_run, 30);
+			present_information(introduction_second_run, 30);
 			make_and_present_block(2, -1, numbers, 6, 6, 20, false, "selective", "block_1");
 			make_and_present_block(1, 1, numbers, -1, 6, 20, false, "selective", "block_2");
 			make_and_present_block(1, 2, numbers, -1, 6, 20, false, "selective", "block_3");
@@ -765,7 +765,7 @@ begin_pcl;
 		##########################Run 3########################################
 
 			pause_minutes(2);
-			present_introduction(introduction_third_run, 30);
+			present_information(introduction_third_run, 30);
 			make_and_present_block(2, -1, numbers, 2, 6, 20, false, "combination", "block_1");
 			make_and_present_block(3, 3, numbers, 3, 6, 20, false, "combination", "block_2");
 			make_and_present_block(1, 4, numbers, -1, 6, 20, false, "combination", "block_3");
@@ -775,14 +775,14 @@ begin_pcl;
 			make_and_present_block(3, 6, numbers, 6, 6, 20, false, "combination", "block_6");
 			make_and_present_block(1, 1, numbers, -1, 6, 20, false, "combination", "block_7");
 			make_and_present_block(3, 2, numbers, 1, 6, 20, false, "combination", "block_8");
-			present_introduction(introduction_end, 30);
+			present_information(introduction_end, 30);
 			
 	elseif configuration == 3
 	then
 		##########################Run 1########################################
 
 			pause_seconds(30);
-			present_introduction(introduction_first_run, 30);
+			present_information(introduction_first_run, 30);
 			make_and_present_block(2, -1, numbers, 2, 6, 20, false, "combination", "block_1");
 			make_and_present_block(3, 3, numbers, 3, 6, 20, false, "combination", "block_2");
 			make_and_present_block(1, 4, numbers, -1, 6, 20, false, "combination", "block_3");
@@ -796,7 +796,7 @@ begin_pcl;
 		##########################Run 2########################################
 
 			pause_minutes(2);
-			present_introduction(introduction_second_run, 30);
+			present_information(introduction_second_run, 30);
 			make_and_present_block(2, -1, numbers, 2, 6, 20, false, "divided", "block_1");
 			make_and_present_block(1, 3, numbers, -1, 6, 20, false, "divided", "block_2");
 			make_and_present_block(1, 4, numbers, -1, 6, 20, false, "divided", "block_3");
@@ -805,19 +805,19 @@ begin_pcl;
 		##########################Run 3########################################
 
 			pause_minutes(2);
-			present_introduction(introduction_third_run, 30);
+			present_information(introduction_third_run, 30);
 			make_and_present_block(3, 5, numbers, 4, 6, 20, false, "selective", "block_1");
 			make_and_present_block(3, 6, numbers, 5, 6, 20, false, "selective", "block_2");
 			make_and_present_block(3, 1, numbers, 6, 6, 20, false, "selective", "block_3");
 			make_and_present_block(3, 2, numbers, 1, 6, 20, false, "selective", "block_4");
-			present_introduction(introduction_end, 30);
+			present_information(introduction_end, 30);
 			
 	elseif configuration == 4
 	then
 		##########################Run 1########################################
 
 			pause_seconds(30);
-			present_introduction(introduction_first_run, 30);
+			present_information(introduction_first_run, 30);
 			make_and_present_block(2, -1, numbers, 2, 6, 20, false, "combination", "block_1");
 			make_and_present_block(3, 3, numbers, 3, 6, 20, false, "combination", "block_2");
 			make_and_present_block(1, 4, numbers, -1, 6, 20, false, "combination", "block_3");
@@ -831,7 +831,7 @@ begin_pcl;
 		##########################Run 2########################################
 
 			pause_minutes(2);
-			present_introduction(introduction_second_run, 30);
+			present_information(introduction_second_run, 30);
 			make_and_present_block(3, 3, numbers, 2, 6, 20, false, "selective", "block_1");
 			make_and_present_block(3, 4, numbers, 3, 6, 20, false, "selective", "block_2");
 			make_and_present_block(3, 5, numbers, 4, 6, 20, false, "selective", "block_3");
@@ -840,19 +840,19 @@ begin_pcl;
 		##########################Run 3########################################
 
 			pause_minutes(2);
-			present_introduction(introduction_third_run, 30);
+			present_information(introduction_third_run, 30);
 			make_and_present_block(2, -1, numbers, 6, 6, 20, false, "divided", "block_1");
 			make_and_present_block(1, 1, numbers, -1, 6, 20, false, "divided", "block_2");
 			make_and_present_block(1, 2, numbers, -1, 6, 20, false, "divided", "block_3");
 			make_and_present_block(2, -1, numbers, 1, 6, 20, false, "divided", "block_4");
-			present_introduction(introduction_end, 30);
+			present_information(introduction_end, 30);
 			
 	elseif configuration == 5
 	then
 		##########################Run 1########################################
 
 			pause_seconds(30);
-			present_introduction(introduction_first_run, 30);
+			present_information(introduction_first_run, 30);
 			make_and_present_block(2, -1, numbers, 2, 6, 20, false, "divided", "block_1");
 			make_and_present_block(1, 3, numbers, -1, 6, 20, false, "divided", "block_2");
 			make_and_present_block(1, 4, numbers, -1, 6, 20, false, "divided", "block_3");
@@ -861,7 +861,7 @@ begin_pcl;
 		##########################Run 2########################################
 
 			pause_minutes(2);
-			present_introduction(introduction_second_run, 30);
+			present_information(introduction_second_run, 30);
 			make_and_present_block(2, -1, numbers, 4, 6, 20, false, "combination", "block_1");
 			make_and_present_block(3, 5, numbers, 5, 6, 20, false, "combination", "block_2");
 			make_and_present_block(1, 6, numbers, -1, 6, 20, false, "combination", "block_3");
@@ -875,19 +875,19 @@ begin_pcl;
 		##########################Run 3########################################
 
 			pause_minutes(2);
-			present_introduction(introduction_third_run, 30);
+			present_information(introduction_third_run, 30);
 			make_and_present_block(3, 5, numbers, 4, 6, 20, false, "selective", "block_1");
 			make_and_present_block(3, 6, numbers, 5, 6, 20, false, "selective", "block_2");
 			make_and_present_block(3, 1, numbers, 6, 6, 20, false, "selective", "block_3");
 			make_and_present_block(3, 2, numbers, 1, 6, 20, false, "selective", "block_4");
-			present_introduction(introduction_end, 30);
+			present_information(introduction_end, 30);
 			
 	elseif configuration == 6
 	then
 		##########################Run 1########################################
 
 			pause_seconds(30);
-			present_introduction(introduction_first_run, 30);
+			present_information(introduction_first_run, 30);
 			make_and_present_block(3, 3, numbers, 2, 6, 20, false, "selective", "block_1");
 			make_and_present_block(3, 4, numbers, 3, 6, 20, false, "selective", "block_2");
 			make_and_present_block(3, 5, numbers, 4, 6, 20, false, "selective", "block_3");
@@ -896,7 +896,7 @@ begin_pcl;
 		##########################Run 2########################################
 
 			pause_minutes(2);
-			present_introduction(introduction_second_run, 30);
+			present_information(introduction_second_run, 30);
 			make_and_present_block(2, -1, numbers, 6, 6, 20, false, "combination", "block_1");
 			make_and_present_block(3, 1, numbers, 1, 6, 20, false, "combination", "block_2");
 			make_and_present_block(1, 2, numbers, -1, 6, 20, false, "combination", "block_3");
@@ -910,10 +910,10 @@ begin_pcl;
 		##########################Run 3########################################
 
 			pause_minutes(2);
-			present_introduction(introduction_third_run, 30);
+			present_information(introduction_third_run, 30);
 			make_and_present_block(2, -1, numbers, 6, 6, 20, false, "divided", "block_1");
 			make_and_present_block(1, 1, numbers, -1, 6, 20, false, "divided", "block_2");
 			make_and_present_block(1, 2, numbers, -1, 6, 20, false, "divided", "block_3");
 			make_and_present_block(2, -1, numbers, 1, 6, 20, false, "divided", "block_4");
-			present_introduction(introduction_end, 30);
+			present_information(introduction_end, 30);
 	end;

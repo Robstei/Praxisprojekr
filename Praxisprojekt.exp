@@ -265,7 +265,7 @@ Sie hätten drücken müssen</val>
 <set>
 <desc>Validate() will ensure, that the first X Stimuli will not be targets for each block</desc>
 <edit>1</edit>
-<name>Non Targets at start of each Block</name>
+<name>Non Targets at Start of each Block</name>
 <set>
 <rest>[0,)</rest>
 </set>
