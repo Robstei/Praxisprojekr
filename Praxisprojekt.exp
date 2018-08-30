@@ -111,6 +111,12 @@ Sie hätten drücken müssen</val>
 </dat>
 <id>7</id>
 </val>
+<val>
+<dat>
+<val>1</val>
+</dat>
+<id>8</id>
+</val>
 </sd>
 <sid>-1</sid>
 </ss>
@@ -125,6 +131,7 @@ Sie hätten drücken müssen</val>
 <pid>0</pid>
 <pid>1</pid>
 <pid>7</pid>
+<pid>8</pid>
 </pl>
 </grp>
 <grp>
@@ -249,6 +256,20 @@ Sie hätten drücken müssen</val>
 <rest>[1,6]</rest>
 </set>
 <temp>1</temp>
+<type>int</type>
+<vis>1</vis>
+</set>
+</parm>
+<parm>
+<id>8</id>
+<set>
+<desc>Validate() will ensure, that the first X Stimuli will not be targets for each block</desc>
+<edit>1</edit>
+<name>Non Targets at start of each Block</name>
+<set>
+<rest>[0,)</rest>
+</set>
+<temp>0</temp>
 <type>int</type>
 <vis>1</vis>
 </set>

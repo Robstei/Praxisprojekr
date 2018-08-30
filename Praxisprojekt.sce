@@ -154,13 +154,12 @@ begin;
 	} form_array;
 
 	trial {
-		trial_duration = forever;
-		#EXPARAM("Time Response Active" : 1800);
+		trial_duration = EXPARAM("Time Response Active" : 1800);
 		trial_type = first_response;
 		
 		stimulus_event{
 		picture {} main_picture;
-		##duration = EXPARAM("Time Stimulus" : 250);
+		duration = EXPARAM("Time Stimulus" : 250);
 		}stim_event;
 	} trial_main;
 
@@ -199,6 +198,7 @@ begin;
 		trial_duration = forever;
 		trial_type = first_response;
 		all_responses = false;
+		
 		picture {
 			text { caption = ""; font_size = 30;} text_instruction;
 			x=0; y=0;
@@ -223,6 +223,7 @@ begin_pcl;
 	int FORM = 2;
 	array <int> ISI_values [] = {500, 700, 900, 1100, 1300, 1500, 1700, 1900, 2100, 2300};
 	int configuration = parameter_manager.get_int("Configuration Parameter");
+	int non_targets = parameter_manager.get_int("Non Targets at Start of each Block");
 	
 	sub pause_seconds (int time_in_seconds)
 	begin
@@ -282,9 +283,16 @@ begin_pcl;
 		end;
 	end;
 	
+	# returns true if
+	# 1. successive stimuli are never identical
+	# 2. first "Non Targets at Start of each Block" (parameter) are non targets
+	# 3. successive stimuli are never targets
+	
 	sub bool validade (array<int,2> list_to_test, int seperate_attention, int form_target_index, 
 							int char_target_index, array<text,1> char_array)
 	begin 
+		
+	
 		loop int i = 1 until i == list_to_test.count()
 		begin
 			if list_to_test[i] == list_to_test[i+1]
@@ -294,7 +302,7 @@ begin_pcl;
 			i = i + 1;
 		end;
 		
-		loop int i = 1 until i == 2
+		loop int i = 1 until i > non_targets
 		begin
 			if seperate_attention == 1 
 			then
@@ -349,6 +357,11 @@ begin_pcl;
 		return true;
 	end;
 
+	# returns  a 2D array representation of a valid block with given paramters
+	# for each pair the first value represents the index of the used char in char_array and the second vlaue
+	# represents the index of the used form in form_array
+	# see make_and_present_block for parameter explanation
+	
 	sub array<int,2> make_block (int seperate_attention, int char_target_index, array<text,1> char_array,
 											int form_target_index, int number_of_targets, int number_of_non_targets)
 	begin
@@ -551,13 +564,13 @@ begin_pcl;
 		return list;
 	end;
 
-	# form_target:
-	# 1 = Recktangle
-	# 2 = Circle
-	# 3 = Triangle
-	# 4 = Star
+	# presents a block with given paramters.
+	# that means showing instroction, fixation cross and possibly feedback.
+	# The block is normally created by make_block() but could be created manually aswell
+	# see make_and_present_block for parameter explanation
+	
 	sub present_block( int seperate_attention, int char_target_index, array<text,1> char_array, 
-								int form_target_index, array<int> trial_list[][], bool show_feedback, string run_id, string block_id)
+								int form_target_index, array<int> block[][], bool show_feedback, string run_id, string block_id)
 	begin
 		string instruction_string = "";
 		if seperate_attention == 1
@@ -576,10 +589,10 @@ begin_pcl;
 		text_instruction.set_caption(instruction_string, true);
 		trial_instruction.present();
 		
-		loop int i = 1 until i > trial_list.count()
+		loop int i = 1 until i > block.count()
 		begin
-			int char_index = trial_list[i][CHAR];
-			int form_index = trial_list[i][FORM];
+			int char_index = block[i][CHAR];
+			int form_index = block[i][FORM];
 
 			main_picture = form_array[form_index];
 			main_picture.set_part(3,char_array[char_index]);
