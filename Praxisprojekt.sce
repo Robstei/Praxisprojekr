@@ -325,7 +325,7 @@ begin_pcl;
 			i = i + 1;
 		end;		
 	
-		loop int i = 2 until i == list_to_test.count()
+		loop int i = (non_targets + 1) until i == list_to_test.count()
 		begin
 			if seperate_attention == 1
 			then
