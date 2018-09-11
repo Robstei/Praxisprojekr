@@ -48,7 +48,7 @@ begin;
 		} main_picture_diamand;
 		
 		picture {
-			description = "Viereck";
+			description = "Quadrat";
 			box {width= 600; height= 600; color = 255,255,255;};
 			x=0;y=0;
 			box {width= 570; height=570; color = 0,0,0;};
@@ -211,7 +211,7 @@ begin;
 		trial_duration = 120000;
 		
 		picture {
-			text {caption = "Pause \nIn 2 Minuten geht es weiter"; font_size = 25;} pause_text;
+			text {caption = "Pause. \nIn 2 Minuten geht es weiter."; font_size = 25;} pause_text;
 			x=0; y=0;
 		};
 	} trial_pause;
@@ -247,26 +247,26 @@ begin_pcl;
 	end;
 	
 	string information_start = 
-		"Im Folgenden werden ihnen auf dem Bildschirm unterschiedliche Buchstaben, Zahlen und Formen " +
-		"präsentiert. Vor jedem Durchlauf erhalten Sie eine kurze Instruktion, auf welche Symbole" + 
-		"(Buchstaben, Zahlen, Formen) Sie reagieren sollen. Die Reaktion erfolgt mit den Tasten " +
+		"Im Folgenden werden Ihnen auf dem Bildschirm unterschiedliche Buchstaben, Zahlen und Formen " +
+		"präsentiert. Vor jedem Durchlauf erhalten Sie eine kurze Instruktion, auf welche Zeichen " + 
+		"(Buchstaben, Zahlen) und/oder Formen Sie reagieren sollen. Die Reaktion erfolgt mit den Tasten " +
 		"\"L\" und \"S\". Reagieren Sie so schnell und so richtig wie möglich. \n\n Zunächst " +
-		"folgt ein Testdurchlauf. \n\n Drücken Sie die Leertaste um fortzufahren";
+		"folgt ein Testdurchlauf. \n\n Drücken Sie die Leertaste, um fortzufahren.";
 	string information_test = 
-		"Dies ist ein Testdurchlauf. Weiter mit Leertaste (nach einer Sekunde möglich)";
+		"Dies ist ein Testdurchlauf. \n\n Weiter mit Leertaste.";
 	string information_first_run = 
-		"Der Testdurchlauf ist vorbei.\n" +
-		"Im Folgenden wird ihnen kein Feedback mehr präsentiert.\n" +
+		"Der Testdurchlauf ist vorbei.\n\n" +
+		"Im Folgenden wird Ihnen kein Feedback mehr präsentiert.\n\n" +
 		"Der erste Durchgang beginnt.\n" + 
-		"Weiter mit Leertaste (nach einer Sekunde möglich)";
+		"Weiter mit Leertaste.";
 	string information_second_run =
 		"Der zweite Durchgang beginnt.\n" + 
-		"Weiter mit Leertaste (nach einer Sekunde möglich)";
+		"Weiter mit Leertaste.";
 	string information_third_run =
 		"Der dritte Durchgang beginnt.\n" + 
-		"Weiter mit Leertaste (nach einer Sekunde möglich)";
+		"Weiter mit Leertaste.";
 	string information_end =
-		"Bitte wenden Sie sich an den Versuchsleiter";
+		"Bitte wenden Sie sich an den Versuchsleiter.";
 		
 	sub set_response_mode (int mode)
 	begin
@@ -575,17 +575,17 @@ begin_pcl;
 		string instruction_string = "";
 		if seperate_attention == 1
 		then
-			instruction_string = ("Drücken Sie die Taste \"L\" wenn ein(e) " + char_array[char_target_index].caption() + " erscheint.");
+			instruction_string = ("Drücken Sie die Taste \"L\", wenn das Zeichen \"" + char_array[char_target_index].caption() + "\" erscheint.");
 		elseif seperate_attention == 2
 		then
-			instruction_string = ("Drücken Sie die Taste \"S\" wenn ein " + form_array[form_target_index].description() + " erscheint.");
+			instruction_string = ("Drücken Sie die Taste \"S\", wenn die Form \"" + form_array[form_target_index].description() + "\" erscheint.");
 		elseif seperate_attention == 3
 		then
-			instruction_string = "Drücken Sie die Taste \"L\" wenn ein(e) " + char_array[char_target_index].caption() + " erscheint." +
-										"\nDrücken Sie die Taste \"S\" wenn ein " + form_array[form_target_index].description() + " erscheint."
+			instruction_string = "Drücken Sie die Taste \"L\", wenn das Zeichen \"" + char_array[char_target_index].caption() + "\" erscheint." +
+										"\nDrücken Sie die Taste \"S\", wenn die Form \"" + form_array[form_target_index].description() + "\" erscheint."
 		end;
-		instruction_string = instruction_string + "\nAntworten Sie so schnell und richtig wie möglich." +
-																"\nDrücken Sie die Leertaste um fortzufahren.";
+		instruction_string = instruction_string + "\n\nAntworten Sie so schnell und richtig wie möglich." +
+																"\nDrücken Sie die Leertaste, um fortzufahren.";
 		text_instruction.set_caption(instruction_string, true);
 		trial_instruction.present();
 		
@@ -661,9 +661,9 @@ begin_pcl;
 				elseif (last.type() == last.INCORRECT) then
 					feedback = parameter_manager.get_string("Feedback INCORRECT", "Falsche Taste");
 				elseif (last.type() == last.MISS) then
-					feedback = parameter_manager.get_string("Feedback MISS", "Falsch\nSie hätten drücken müssen");
+					feedback = parameter_manager.get_string("Feedback MISS", "Falsch.\nSie hätten drücken müssen.");
 				elseif (last.type() == last.FALSE_ALARM) then
-					feedback = parameter_manager.get_string("Feedback FALSE ALARM", "Falsch\nSie hätten nicht drücken müssen");
+					feedback = parameter_manager.get_string("Feedback FALSE ALARM", "Falsch.\nSie hätten nicht drücken müssen.");
 				end;
 				
 				if feedback != ""
