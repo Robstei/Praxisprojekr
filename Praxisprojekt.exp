@@ -87,8 +87,8 @@
 </val>
 <val>
 <dat>
-<val>Falsch
-Sie hätten nicht drücken müssen</val>
+<val>Falsch.
+Sie hätten nicht drücken müssen.</val>
 </dat>
 <id>4</id>
 </val>
@@ -100,8 +100,8 @@ Sie hätten nicht drücken müssen</val>
 </val>
 <val>
 <dat>
-<val>Falsch
-Sie hätten drücken müssen</val>
+<val>Falsch.
+Sie hätten drücken müssen.</val>
 </dat>
 <id>6</id>
 </val>
