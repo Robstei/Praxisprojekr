@@ -247,9 +247,9 @@ begin_pcl;
 	end;
 	
 	string information_start = 
-		"Im Folgenden werden Ihnen auf dem Bildschirm unterschiedliche Buchstaben, Zahlen und Formen " +
-		"präsentiert. Vor jedem Durchlauf erhalten Sie eine kurze Instruktion, auf welche Zeichen " + 
-		"(Buchstaben, Zahlen) und/oder Formen Sie reagieren sollen. Die Reaktion erfolgt mit den Tasten " +
+		"Im Folgenden werden Ihnen auf dem Bildschirm unterschiedliche Zahlen und Formen " +
+		"präsentiert. Vor jedem Durchlauf erhalten Sie eine kurze Instruktion, auf welche Zahlen " + 
+		"und/oder Formen Sie reagieren sollen. Die Reaktion erfolgt mit den Tasten " +
 		"\"L\" und \"S\". Reagieren Sie so schnell und so richtig wie möglich. \n\n Zunächst " +
 		"folgt ein Testdurchlauf. \n\n Drücken Sie die Leertaste, um fortzufahren.";
 	string information_test = 
@@ -358,7 +358,7 @@ begin_pcl;
 	end;
 
 	# returns  a 2D array representation of a valid block with given paramters
-	# for each pair the first value represents the index of the used char in char_array and the second vlaue
+	# for each pair the first value represents the index of the used char in char_array and the second value
 	# represents the index of the used form in form_array
 	# see make_and_present_block for parameter explanation
 	
