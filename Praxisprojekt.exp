@@ -40,7 +40,7 @@
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd>C:\Praxisprojekt</dsd>
+<dsd>C:\Praxisprojekt\GNG\stimuli</dsd>
 <dxv>8</dxv>
 <efs>
 <filename>C:\Praxisprojekt\Praxisprojekt.sce</filename>
@@ -317,7 +317,7 @@ Sie hätten drücken müssen.</val>
 <idt>0</idt>
 <ilc>0</ilc>
 <ip_chans></ip_chans>
-<lfd>C:\Praxisprojekt</lfd>
+<lfd>C:\Praxisprojekt\GNG\logfiles</lfd>
 <lnb>2</lnb>
 <lno>0</lno>
 <log>
